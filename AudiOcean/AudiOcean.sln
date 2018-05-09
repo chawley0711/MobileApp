@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiOcean.Android", "AudiOcean\AudiOcean.Android\AudiOcean.Android.csproj", "{03F57D6C-2333-4D17-8D17-739D6C6F49C6}"
+EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AudiOcean", "AudiOcean\AudiOcean\AudiOcean.shproj", "{0986E3C5-26F4-44A3-A860-36CE168498DF}"
+EndProject
+Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		AudiOcean\AudiOcean\AudiOcean.projitems*{03f57d6c-2333-4d17-8d17-739d6c6f49c6}*SharedItemsImports = 4
+		AudiOcean\AudiOcean\AudiOcean.projitems*{0986e3c5-26f4-44a3-a860-36ce168498df}*SharedItemsImports = 13
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{03F57D6C-2333-4D17-8D17-739D6C6F49C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03F57D6C-2333-4D17-8D17-739D6C6F49C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03F57D6C-2333-4D17-8D17-739D6C6F49C6}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{03F57D6C-2333-4D17-8D17-739D6C6F49C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03F57D6C-2333-4D17-8D17-739D6C6F49C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03F57D6C-2333-4D17-8D17-739D6C6F49C6}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F17EF0D9-286F-41A5-A7EA-6E0AF549C389}
+	EndGlobalSection
+EndGlobal
