@@ -12,6 +12,7 @@ We aim to provide a platform upon which people may upload, share, and react to m
 a.	Name
 b.	Profile Picture
 c.	List of Songs Created by the User
+4.	5 Star Rating System
 ### Stretch Goals:
 1.	Display an Oscillator that Responds to the Music that is Currently Streaming
 2.	Subscription Features such as Upload or Comment Notifications for Other Users of which a Particular User is Subscribed
