@@ -25,7 +25,7 @@ c.	List of Songs Created by the User
 	Integrated Development Environment: Visual Studios
 	User Accounts and Authentication: Google Identity Platform
 ## The How
-Using C# and JavaScript, our group will create an audio streaming app in Visual Studios with Xamarin for IOS mobile devices. Users will be able to upload music files of either MP3 or WAV file formats, but MP3s will be converted to the WAV format. Google Authenticator will be used to allow users to create and authenticate their accounts. The user’s account and profile information will be stored in an SQL database and EntityFramework will be utilized by our server application in order to interface with the database. Audio files will be stored on a server’s hard drive and its file path will be stored in the database. 
+Using C# and JavaScript, our group will create an audio streaming app in Visual Studios with Xamarin for Android mobile devices. Users will be able to upload music files of either MP3 or WAV file formats, but MP3s will be converted to the WAV format. Google Authenticator will be used to allow users to create and authenticate their accounts. The user’s account and profile information will be stored in an SQL database and EntityFramework will be utilized by our server application in order to interface with the database. Audio files will be stored on a server’s hard drive and its file path will be stored in the database. 
 ### Team Members:
 	Jeffrey Henderson
 	Boris Ho
