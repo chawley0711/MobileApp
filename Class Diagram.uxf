@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>9</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>0</x>
+      <y>243</y>
+      <w>243</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>User
+--
+
+-ID
+-Name
+-DisplayName
+-ProfilePictureURL
+-Subscriptions: Collection&lt;Users&gt;
+-UploadedSongs: Collection&lt;Song&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>270</x>
+      <y>243</y>
+      <w>234</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Song
+--
+-ID
+-SongName
+-Owner
+-DateUploaded
+-Genre
+-Rating
+-Comments collection&lt;strings&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>558</x>
+      <y>387</y>
+      <w>225</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>/DatabaseModel/
+-
+
+AddUser(User)
+
+AddSong(User, Song)
+
+AddSubscription(User, User)
+
+AddComment(User, Song, string)
+
+RateSong(User, Song, rating: int)
+
+DeleteSubscription(User, User)
+
+DeleteSong(Song)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>558</x>
+      <y>720</y>
+      <w>216</w>
+      <h>27</h>
+    </coordinates>
+    <panel_attributes>EntityFrameworkDatabaseModel</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>648</x>
+      <y>648</y>
+      <w>162</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+Concrete Implementation</panel_attributes>
+    <additional_attributes>10.0;80.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>135</x>
+      <y>450</y>
+      <w>351</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>UserFactory
+-
+
+CreateUser(IUserInfoProvider, ITokenValidator) : User</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>882</x>
+      <y>189</y>
+      <w>171</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>INetworkStreamSender
+-
+
+StreamDataAsync(Stream)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1089</x>
+      <y>189</y>
+      <w>207</w>
+      <h>63</h>
+    </coordinates>
+    <panel_attributes>NetworkStreamReceiver
+-
+
+BeginReceiveDataAsync(): Stream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>414</y>
+      <w>432</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>IAudioConverter
+-
+
+Convert(Stream, from: AudioFileFormat, to: AudioFileFormat) : Stream</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>891</x>
+      <y>504</y>
+      <w>153</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;enum&gt;&gt;
+AudioFileFormat
+-
+MP3
+WAV
+lskdjfsdlkjf
+sldkfjsdlfj
+lasdjkf</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>783</y>
+      <w>270</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;abstract&gt;&gt;
+AudioStreamPlayer
+--
+
+AudioStreamPlayer(Stream)
+
+Play()
+Pause()
+Close()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>972</y>
+      <w>270</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>WAVAudioStreamPlayer
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1125</x>
+      <y>909</y>
+      <w>162</w>
+      <h>81</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;-
+Concrete Implementation</panel_attributes>
+    <additional_attributes>10.0;70.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1053</x>
+      <y>504</y>
+      <w>270</w>
+      <h>270</h>
+    </coordinates>
+    <panel_attributes>Playlist
+--
+ICollection AudioStreamPlayer
+--
+
+Playlist(ICollection AudioStreamPlayer) &lt;&lt;ctor&gt;&gt;
+
+Next()
+
+Previous()
+
+Play()
+
+Pause()
+
+Shuffle()
+
+Close()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1395</x>
+      <y>612</y>
+      <w>270</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>NetworkStreamPlaylist
+--
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>1314</x>
+      <y>612</y>
+      <w>99</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;-
+extends</panel_attributes>
+    <additional_attributes>90.0;20.0;10.0;20.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1440</x>
+      <y>306</y>
+      <w>216</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ITokenRetreiver&lt;T&gt;
+--
+RetrieveToken&lt;T&gt;(): Token&lt;T&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1431</x>
+      <y>126</y>
+      <w>198</w>
+      <h>162</h>
+    </coordinates>
+    <panel_attributes>Token&lt;T&gt;
+--
+Token&lt;T&gt;&lt;&lt;property&gt;&gt;
+--
+Token(T)&lt;&lt;ctor&gt;&gt;</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1143</x>
+      <y>306</y>
+      <w>207</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>SimpleClass</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
