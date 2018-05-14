@@ -2,7 +2,8 @@
 Create Table Users(ID int Primary Key identity(1,1)
 					, [Name] varchar(20)
 					, DisplayName varchar(20)
-					, ProfilePictureURL varchar(max))
+					, ProfilePictureURL varchar(max)
+					, Email varchar(40) Unique)
 go
 
 Create Table Genres(ID int Primary Key identity(1,1), [Name] varchar(20))
