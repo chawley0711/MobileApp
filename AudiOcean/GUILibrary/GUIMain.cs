@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace GUILibrary
 {
-    public class Class1
+    public class GUIMain
     {
-
+        
     }
 }
