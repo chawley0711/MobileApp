@@ -1,10 +1,12 @@
-﻿namespace AudiOcean.Droid
+﻿namespace Authentication
 {
     public class Token<T, U>
     {
-        T Value { get; }
+        private U _payload;
 
-        U Payload { get; set; }
+        public virtual T Value { get; protected set; }
+
+        public virtual U Payload { get => _payload; set => _payload = value; }
 
         public Token(T token)
         {

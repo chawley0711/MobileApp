@@ -1,9 +1,8 @@
-﻿using AudiOcean.Droid;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace AudiOcean
+namespace Authentication
 {
     interface ITokenRetriever<T, U>
     {
