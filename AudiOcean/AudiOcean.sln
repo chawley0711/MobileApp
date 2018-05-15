@@ -9,8 +9,6 @@ Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "AudiOcean", "AudiOcean\Audi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiOceanServer", "AudiOceanServer\AudiOceanServer.csproj", "{6FAE716E-F330-41DE-B775-AD048CD120C8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUILibrary", "GUILibrary\GUILibrary.csproj", "{01D61717-EA7E-468B-8998-90A263071CBC}"
-EndProject
 Global
 	GlobalSection(SharedMSBuildProjectFiles) = preSolution
 		AudiOcean\AudiOcean\AudiOcean.projitems*{03f57d6c-2333-4d17-8d17-739d6c6f49c6}*SharedItemsImports = 4
@@ -31,10 +29,6 @@ Global
 		{6FAE716E-F330-41DE-B775-AD048CD120C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6FAE716E-F330-41DE-B775-AD048CD120C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6FAE716E-F330-41DE-B775-AD048CD120C8}.Release|Any CPU.Build.0 = Release|Any CPU
-		{01D61717-EA7E-468B-8998-90A263071CBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{01D61717-EA7E-468B-8998-90A263071CBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{01D61717-EA7E-468B-8998-90A263071CBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{01D61717-EA7E-468B-8998-90A263071CBC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
