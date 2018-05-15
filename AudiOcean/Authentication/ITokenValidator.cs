@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Authentication
 {
-    interface ITokenValidator<T, U>
+    public interface ITokenValidator<T, U>
     {
         bool ValidateToken(Token<T, U> token);
     }

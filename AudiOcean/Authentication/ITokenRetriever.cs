@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Authentication
 {
-    interface ITokenRetriever<T, U>
+    public interface ITokenRetriever<T, U>
     {
         Token<T, U> RetrieveToken();
     }
