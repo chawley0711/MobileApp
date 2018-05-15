@@ -5,10 +5,13 @@
              x:Class="AudiOcean.MainPage">
 
     <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
+        <local:TitleBar Title="AudiOcean"/>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand">
+            <Label HorizontalOptions="Center">
+                Hello World
+            </Label>
+        </StackLayout>
+        <local:Navbar/>
     </StackLayout>
 
 </ContentPage>
