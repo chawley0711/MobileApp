@@ -1,14 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage
-    xmlns:audiocean="clr-namespace:AudiOcean" xmlns="http://xamarin.com/schemas/2014/forms"
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AudiOcean.HomePage">
-    <ContentPage.Content>
-        <StackLayout>
-            <audiocean:TitleBar />
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
-</ContentPage>
+  <!--Pages can be added as references or inline-->
+  <ContentPage Title="Home Page" />
+  <ContentPage Title="Top Chart" />
+  <ContentPage Title="My Songs" />
+  <ContentPage Title="Profile" />
+</TabbedPage>
