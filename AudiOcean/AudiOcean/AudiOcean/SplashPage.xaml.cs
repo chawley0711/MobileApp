@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AudiOcean
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Navbar : ContentView
+	public partial class SplashPage : ContentPage
 	{
-		public Navbar()
+		public SplashPage()
 		{
 			InitializeComponent();
 		}

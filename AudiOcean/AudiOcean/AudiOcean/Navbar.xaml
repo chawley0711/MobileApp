@@ -3,11 +3,11 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AudiOcean.Navbar">
   <ContentView.Content>
-      <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
+        <StackLayout VerticalOptions="EndAndExpand" Orientation="Horizontal">
             <Button Text="Home"/>
             <Button Text="Subs"/>
             <Button Text="Profile"/>
             <Button Text="Settings"/>
         </StackLayout>
-  </ContentView.Content>
+    </ContentView.Content>    
 </ContentView>
