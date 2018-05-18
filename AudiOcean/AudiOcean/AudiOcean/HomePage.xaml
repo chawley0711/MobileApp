@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AudiOcean.HomePage">
   <!--Pages can be added as references or inline-->
-    
+    <android.support.v7.widget.RecyclerView></android.support.v7.widget.RecyclerView>  
   <ContentPage Title="Home Page" />
   <ContentPage Title="Top Chart" />
   <ContentPage Title="My Songs" />
