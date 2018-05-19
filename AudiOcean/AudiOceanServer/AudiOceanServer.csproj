@@ -32,14 +32,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Carbon.Forms, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Forms.1.5.0\lib\net461\Carbon.Forms.dll</HintPath>
+    <Reference Include="Carbon.Forms, Version=1.6.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Carbon.Forms.1.6.0\lib\netstandard2.0\Carbon.Forms.dll</HintPath>
     </Reference>
-    <Reference Include="Carbon.Json, Version=1.5.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.Json.1.5.0\lib\net461\Carbon.Json.dll</HintPath>
+    <Reference Include="Carbon.Json, Version=1.6.1.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Carbon.Json.1.6.1\lib\netstandard2.0\Carbon.Json.dll</HintPath>
     </Reference>
-    <Reference Include="Carbon.OAuth2, Version=0.11.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Carbon.OAuth2.0.11.0\lib\netstandard2.0\Carbon.OAuth2.dll</HintPath>
+    <Reference Include="Carbon.OAuth2, Version=0.14.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Carbon.OAuth2.0.14.0\lib\netstandard2.0\Carbon.OAuth2.dll</HintPath>
     </Reference>
     <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
@@ -49,6 +49,9 @@
     </Reference>
     <Reference Include="Google.Authentication, Version=0.17.0.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>..\packages\Google.Authentication.0.17.0\lib\netstandard2.0\Google.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
@@ -64,6 +67,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AudiOceanHttpServer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
