@@ -14,10 +14,15 @@ namespace GoogleAuthentication
     {
         public bool ValidateToken(Token<string, Payload> token)
         {
-            var validationTask = ValidateAsync(token.Value);
-            validationTask.RunSynchronously();
-            token.Payload = validationTask.Result;
-            return token.Payload != null;
+            Task<Payload> validationTask = null;
+            try
+            {
+                validationTask = ValidateAsync(token.Value);
+                validationTask.RunSynchronously();
+                token.Payload = validationTask.Result;
+                return true;
+            }
+            catch (InvalidJwtException) { return false; }
         }
     }
 }
