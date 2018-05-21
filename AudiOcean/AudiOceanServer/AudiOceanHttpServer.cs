@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Authentication;
+using GoogleAuthentication;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -10,6 +12,7 @@ namespace AudiOceanServer
     public class AudiOceanHttpServer
     {
         HttpListener listener;
+        private GoogleTokenValidator tokenValidator = new GoogleTokenValidator();
 
         public AudiOceanHttpServer(string[] prefixes)
         {
@@ -34,14 +37,6 @@ namespace AudiOceanServer
             {
                 case "GET":
                     HandleGetRequest(context);
-                    //Get music stream ?id
-
-                    //Get User information ?id
-
-                    //Get SongsUploadedByUser ?id
-
-                    //Get most recent song uploads ?numOfSongs
-
                     break;
                 case "POST":
                     HandlePostRequest(context);
@@ -71,20 +66,56 @@ namespace AudiOceanServer
                     context.Response.ContentLength64 = 0;
                     context.Response.KeepAlive = false;
                     context.Response.StatusDescription = "Method type cannot be performed.";
+                    context.Response.OutputStream.Flush();
+                    context.Response.Close();
                     break;
             }
-
-
-          
-
 
             throw new NotImplementedException();
         }
 
         private void HandleGetRequest(HttpListenerContext context)
         {
+            //Get music stream ?id
+
+            //Get User information ?id
+
+            //Get SongsUploadedByUser ?id
+
+            //Get most recent song uploads ?numOfSongs
+            AuthenticateRequest(context);
+            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
 
             throw new NotImplementedException();
+        }
+
+        private void AuthenticateRequest(HttpListenerContext context)
+        {
+            string authType = context.Request.Headers["Authorization"].Split(' ')[0];
+            if (authType != "Bearer")
+            {
+                string token = context.Request.Headers["Authentication"].Split(' ')[1];
+                tokenValidator.ValidateToken(new GoogleToken(token));
+            }
+            else
+            {
+                CreateResponseMessage((int)HttpStatusCode.Unauthorized, "Bearer Authentication was not specified.", context);
+            }
+        }
+        private static void CreateResponseMessage(int statusCode, string description, HttpListenerContext context, IEnumerable<KeyValuePair<HttpResponseHeader, string>> headers = null, byte[] body = null)
+        {
+            context.Response.StatusCode = statusCode;
+            context.Response.ProtocolVersion = new Version("1.1");
+            foreach (var header in headers)
+            {
+                context.Response.Headers.Add(header.Key, header.Value);
+            }
+            context.Response.ContentLength64 = body == null ? 0 : body.Length;
+            context.Response.OutputStream.Write(body, 0, body.Length);
+            context.Response.KeepAlive = false;
+            context.Response.StatusDescription = description;
+            context.Response.OutputStream.Flush();
+            context.Response.Close();
         }
 
         private void HandlePostRequest(HttpListenerContext context)
