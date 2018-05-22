@@ -12,9 +12,9 @@ namespace AudiOcean
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class ProfilePage : ContentPage
 	{
-		public ProfilePage ()
+		public ProfilePage()
 		{
-			InitializeComponent ();
+			InitializeComponent();
 		}
 	}
 }

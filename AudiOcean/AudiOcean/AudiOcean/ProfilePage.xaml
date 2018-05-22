@@ -4,9 +4,24 @@
              x:Class="AudiOcean.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label>Display Name</Label>
+                    <Label Grid.Row="1">@Username</Label>
+                </Grid>
+                <Label Grid.Column="1" BackgroundColor="Brown">Profile Picture</Label>
+            </Grid>
+            <Grid>
+                
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
