@@ -19,7 +19,7 @@
                 </Grid>
                 <Label Grid.Column="1" BackgroundColor="Brown">Profile Picture</Label>
             </Grid>
-            <ListView x:Name="SongList">
+            <ListView HeightRequest="200" x:Name="SongList" BackgroundColor="Navy">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell Height="200">
@@ -44,7 +44,8 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <Grid HeightRequest="20">
+            <!--Need to figure out absolute positioning
+            <Grid BackgroundColor="Lavender" HeightRequest="20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="2*" />
@@ -69,7 +70,7 @@
                     <Label FontSize="8" Grid.Column="2">Go Forward</Label>
                 </Grid>
                 <Button FontSize="50" Grid.Column="2">...</Button>
-            </Grid>
+            </Grid>-->
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
