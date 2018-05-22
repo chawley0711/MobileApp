@@ -13,8 +13,7 @@ namespace DatabaseInterface.Services
         ICollection<Comment> GetCommentsForSong(Song song);
         ICollection<Song> GetMostRecentSongsUploads(int NumofSongs);
         ICollection<User> GetSubscriptionsForUser(User user);
-        ICollection<Song> GetSongsPostedBySubscriptionsOrderedByDateUploaded(User user, int NumOfSongs);
-        void AddUser(User u);
+         void AddUser(User u);
         void AddSong(User user, Song song);
         void AddSubscription(User subscribers, User subscriptions);
         void AddComment(User user, Song song, string comment);

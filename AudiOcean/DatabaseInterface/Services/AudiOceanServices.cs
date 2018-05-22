@@ -17,8 +17,9 @@ namespace DatabaseInterface.Services
                     UserID = user.ID,
                     Text = comment,
                     SongID = song.ID,
+                    DatePosted = BitConverter.GetBytes(DateTime.Now.Ticks)
                     //DatePosted
-                    
+
                 };
                 db.Comments.Add(newComment);
             }
@@ -40,9 +41,15 @@ namespace DatabaseInterface.Services
             }
          }
 
-        public void AddSubscription(User subscribers, User subscriptions)
+        public void AddSubscription(User user, User userToAddToSubscriptionList)
         {
-            throw new NotImplementedException();
+            using(var db = new AudiOceanEntities())
+            {
+                var query = db.Users.Where(x => x.ID == user.ID).First();
+                var subquery = db.Users.Where(x => x.ID == userToAddToSubscriptionList.ID).First();
+                query.Subscriptions.Add(subquery);
+            }
+            
         }
 
         public void AddUser(User u)
@@ -70,11 +77,13 @@ namespace DatabaseInterface.Services
             }
         }
 
-        public void DeleteSubscription(User subscribers, User subscriptions)
+        public void DeleteSubscription(User user, User userToDeleteFromSubscriptionList)
         {
-            using(var db = new AudiOceanEntities())
+            using (var db = new AudiOceanEntities())
             {
-                var query = db.Users.Where(x => x.ID == subscribers.ID).First();
+                var query = db.Users.Where(x => x.ID == user.ID).First();
+                var subquery = db.Users.Where(x => x.ID == userToDeleteFromSubscriptionList.ID).First();
+                query.Subscriptions.Remove(subquery);
             }
         }
 
@@ -117,12 +126,7 @@ namespace DatabaseInterface.Services
             return MostRecentSongsByNum;
 
         }
-
-        public ICollection<Song> GetSongsPostedBySubscriptionsOrderedByDateUploaded(User user, int NumOfSongs)
-        {
-            throw new NotImplementedException();
-        }
-
+         
         public ICollection<Song> GetSongsUploadedByUser(User u)
         {
             ICollection<Song> UploadsByUser = null;
@@ -139,7 +143,16 @@ namespace DatabaseInterface.Services
 
         public ICollection<User> GetSubscriptionsForUser(User user)
         {
-            throw new NotImplementedException();
+            ICollection<User> SubscriptionList = null; 
+            using(var db = new AudiOceanEntities())
+            {
+                var query = db.Users.Where(x => x.ID == user.ID).First();
+                foreach(User q in query.Subscriptions)
+                {
+                    SubscriptionList.Add(q);
+                }
+            }
+            return SubscriptionList;
         }
 
         public User GetUserWithEmail(string email)
