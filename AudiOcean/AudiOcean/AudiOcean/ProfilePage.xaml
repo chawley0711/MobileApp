@@ -44,6 +44,32 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
+            <Grid HeightRequest="20">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="2*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Label FontSize="8">Song Name</Label>
+                    <Label FontSize="6" Grid.Row="1">Song Artist</Label>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                        <ColumnDefinition />
+                    </Grid.ColumnDefinitions>
+                    <Label FontSize="8">Go Back</Label>
+                    <Label FontSize="8" Grid.Column="1">Play/Pause</Label>
+                    <Label FontSize="8" Grid.Column="2">Go Forward</Label>
+                </Grid>
+                <Button FontSize="50" Grid.Column="2">...</Button>
+            </Grid>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
