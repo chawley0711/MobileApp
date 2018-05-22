@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AudiOcean.SongPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            
+            <Label Text="Oscillator" HeightRequest="500" WidthRequest="500" HorizontalOptions="CenterAndExpand"/>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Button Text="Left"/>
+                <Button Grid.Column="1" Text="Play"/>
+                <Button Grid.Column="2" Text="Right"/>
+            </Grid>
+            <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand">
+                <Slider x:Name="slider" WidthRequest="400" Value="47" Maximum="201" HorizontalOptions="CenterAndExpand"/>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+                        </Style>
+                    </StackLayout.Resources>
+                    <Label BindingContext="{x:Reference slider}" Text="{Binding Path=Value, Mode=OneWay}"/>
+                    <Label Text="/"/>
+                    <Label BindingContext="{x:Reference slider}" Text="{Binding Path=Maximum, Mode=OneWay}"/>
+                </StackLayout>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
