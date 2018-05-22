@@ -16,11 +16,6 @@ namespace AudiOcean
 
 		protected override void OnStart()
 		{
-            //Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
-            //{
-            //    App.Current.MainPage.Navigation.PushAsync(new HomePage());
-            //    return false;
-            //});
             MainPage.Navigation.PushModalAsync(new SplashPage());
             Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
             {
