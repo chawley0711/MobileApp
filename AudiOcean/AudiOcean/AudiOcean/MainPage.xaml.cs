@@ -13,5 +13,5 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 		}
-	}
+    }
 }

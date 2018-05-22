@@ -32,6 +32,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)ProfilePage.xaml.cs">
       <DependentUpon>ProfilePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Song.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SplashPage.xaml.cs">
       <DependentUpon>SplashPage.xaml</DependentUpon>
       <SubType>Code</SubType>

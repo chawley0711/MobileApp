@@ -15,6 +15,18 @@ namespace AudiOcean
 		public ProfilePage()
 		{
 			InitializeComponent();
+
+            SetUpSongs();
 		}
-	}
+
+        public void SetUpSongs()
+        {
+            SongList.ItemsSource = new List<Song>()
+            {
+                new Song("Run", "Ski Mask", 107, 4.6),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1),
+                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
+            };
+        }
+    }
 }
