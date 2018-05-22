@@ -6,6 +6,14 @@
 
     <StackLayout>
         <!-- Place new controls here -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Label Margin="15">Logo</Label>
+            <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
+        </Grid>
         <ListView x:Name="SongList">
             <ListView.ItemTemplate>
                 <DataTemplate>
