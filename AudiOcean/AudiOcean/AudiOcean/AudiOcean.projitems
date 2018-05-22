@@ -19,15 +19,15 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)GUIMain.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)HomePage.xaml.cs">
-      <DependentUpon>HomePage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Navbar.xaml.cs">
       <DependentUpon>Navbar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)ProfilePage.xaml.cs">
+      <DependentUpon>ProfilePage.xaml</DependentUpon>
+      <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Song.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SplashPage.xaml.cs">
@@ -39,10 +39,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)HomePage.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Navbar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
@@ -56,6 +52,12 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)SplashPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)ProfilePage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace AudiOcean
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class HomePage : TabbedPage
+    public partial class ProfilePage : TabbedPage
     {
-        public HomePage ()
+        public ProfilePage ()
         {
             InitializeComponent();
         }
