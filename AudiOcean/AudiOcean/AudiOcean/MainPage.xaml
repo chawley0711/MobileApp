@@ -4,5 +4,6 @@
              xmlns:local="clr-namespace:AudiOcean"
              x:Class="AudiOcean.MainPage">
 
+    <local:SongPage/>
     <local:ProfilePage/>
 </TabbedPage>
