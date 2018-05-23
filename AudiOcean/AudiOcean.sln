@@ -10,6 +10,7 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AudiOceanServer", "AudiOceanServer\AudiOceanServer.csproj", "{6FAE716E-F330-41DE-B775-AD048CD120C8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DatabaseInterface", "DatabaseInterface\DatabaseInterface.csproj", "{69F98FC6-80A6-4B9E-84BC-D5A6353975C0}"
+EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{963322A3-CF12-4705-AA6D-7793A0938C65}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleAuthentication", "GoogleAuthentication\GoogleAuthentication.csproj", "{99D005CA-9910-4C05-948D-BA5D3E197428}"

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="51fcfbae5c2a4c6f97823de22f0d57e3" Name="Diagram1" ZoomLevel="74">
+        <EntityTypeShape EntityType="AudiOceanModel.Comment" Width="1.5" PointX="3" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiOceanModel.Genre" Width="1.5" PointX="3.75" PointY="7.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiOceanModel.Rating" Width="1.5" PointX="3" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiOceanModel.Song" Width="1.5" PointX="6" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiOceanModel.sysdiagram" Width="1.5" PointX="5.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="AudiOceanModel.User" Width="1.5" PointX="0.75" PointY="4.125" IsExpanded="true" />
+        <AssociationConnector Association="AudiOceanModel.FK__Comments__SongID__47DBAE45" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiOceanModel.FK__Comments__UserID__48CFD27E" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiOceanModel.FK__Songs__GenreID__3D5E1FD2" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiOceanModel.FK__Ratings__SongID__412EB0B6" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiOceanModel.FK__Ratings__UserID__403A8C7D" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiOceanModel.FK__Songs__OwnerID__3C69FB99" ManuallyRouted="false" />
+        <AssociationConnector Association="AudiOceanModel.Subscribers" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
