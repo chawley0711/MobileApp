@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AudiOcean"
              x:Class="AudiOcean.MainPage">
@@ -14,10 +14,10 @@
             <Label Margin="15">Logo</Label>
             <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
         </Grid>
-        <ListView x:Name="SongList">
+        <ListView x:Name="SongList" RowHeight="70">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell Height="200">
+                    <ViewCell>
                         <Grid>
                             <Grid.RowDefinitions>
                                 <RowDefinition />
@@ -39,17 +39,5 @@
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-        <Grid>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-                <ColumnDefinition />
-            </Grid.ColumnDefinitions>
-            <Button FontSize="9" Text="Home"></Button>
-            <Button FontSize="9" Grid.Column="1" Text="Top Chart"></Button>
-            <Button FontSize="9" Grid.Column="2" Text="My Songs"></Button>
-            <Button FontSize="9" Grid.Column="3" Text="Profile"></Button>
-        </Grid>
     </StackLayout>
 </ContentPage>
