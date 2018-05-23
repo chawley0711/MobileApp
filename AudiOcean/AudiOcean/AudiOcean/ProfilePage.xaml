@@ -4,7 +4,7 @@
              x:Class="AudiOcean.ProfilePage">
     <ContentPage.Content>
         <StackLayout>
-            <Grid>
+            <Grid x:Name="ProfileHead">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
@@ -17,12 +17,12 @@
                     <Label>Display Name</Label>
                     <Label Grid.Row="1">@Username</Label>
                 </Grid>
-                <Label Grid.Column="1" BackgroundColor="Brown">Profile Picture</Label>
+                <Label Grid.Column="1">Profile Picture</Label>
             </Grid>
-            <ListView HeightRequest="200" x:Name="SongList" BackgroundColor="Navy">
+            <ListView RowHeight="60" x:Name="SongList">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                        <ViewCell Height="200">
+                        <ViewCell>
                             <Grid>
                                 <Grid.RowDefinitions>
                                     <RowDefinition />
@@ -44,8 +44,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-            <!--Need to figure out absolute positioning
-            <Grid BackgroundColor="Lavender" HeightRequest="20">
+            <!--<Grid x:Name="SongBar" HeightRequest="20">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
                     <ColumnDefinition Width="2*" />
