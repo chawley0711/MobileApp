@@ -4,6 +4,52 @@
              xmlns:local="clr-namespace:AudiOcean"
              x:Class="AudiOcean.MainPage">
 
-    <local:SongPage/>
-    <local:ProfilePage/>
-</TabbedPage>
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="4*" />
+            </Grid.ColumnDefinitions>
+            <Label Margin="15">Logo</Label>
+            <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
+        </Grid>
+        <ListView x:Name="SongList">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="200">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+                            <Label Margin="10, 0, 0, 0" Grid.RowSpan="3" BackgroundColor="AliceBlue">Play Button</Label>
+                            <Label FontSize="11" Grid.Column="1" Text="{Binding name}"></Label>
+                            <Label FontSize="11" Grid.Column="1" Grid.Row="1" Text="{Binding artist}"></Label>
+                            <Label FontSize="11" Grid.Column="1" Grid.Row="2" Text="{Binding length}"></Label>
+                            <Label FontSize="11" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="End" Text="{Binding rating}"></Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Button FontSize="9" Text="Home"></Button>
+            <Button FontSize="9" Grid.Column="1" Text="Top Chart"></Button>
+            <Button FontSize="9" Grid.Column="2" Text="My Songs"></Button>
+            <Button FontSize="9" Grid.Column="3" Text="Profile"></Button>
+        </Grid>
+    </StackLayout>
+</ContentPage>
