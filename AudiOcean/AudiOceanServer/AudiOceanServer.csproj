@@ -149,7 +149,7 @@
       <Project>{99D005CA-9910-4C05-948D-BA5D3E197428}</Project>
       <Name>GoogleAuthentication</Name>
     </ProjectReference>
-  <ItemGroup />
+  </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7">
       <Visible>False</Visible>
