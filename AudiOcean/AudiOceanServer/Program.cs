@@ -15,6 +15,14 @@ namespace AudiOceanServer
     {
         public static void Main(string[] args)
         {
+            AudiOceanHttpServer server = new AudiOceanHttpServer();
+
+            server.StartServer();
+
+            while (Console.ReadLine() != "stop") ;
+
+            server.StopServer();
+
         }
     }
 }

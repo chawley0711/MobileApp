@@ -126,7 +126,17 @@ namespace DatabaseInterface.Services
             return MostRecentSongsByNum;
 
         }
-         
+
+        public Song GetSongByID(int v)
+        {
+            Song song;
+            using(var db = new AudiOceanEntities())
+            {
+                song = db.Songs.Where((s) => s.ID == v).First();
+            }
+            return song;
+        }
+
         public ICollection<Song> GetSongsUploadedByUser(User u)
         {
             ICollection<Song> UploadsByUser = null;

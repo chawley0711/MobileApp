@@ -20,7 +20,6 @@ namespace DatabaseInterface.Services
         void RateSong(User user, Song song, int rating);
         void DeleteSubscription(User subscribers, User subscriptions);
         void DeleteSong(Song song);
-
-
+        Song GetSongByID(int v);
     }
 }

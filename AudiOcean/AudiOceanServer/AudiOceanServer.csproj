@@ -145,6 +145,10 @@
       <Project>{963322A3-CF12-4705-AA6D-7793A0938C65}</Project>
       <Name>Authentication</Name>
     </ProjectReference>
+    <ProjectReference Include="..\DatabaseInterface\DatabaseInterface.csproj">
+      <Project>{2B0B3BF4-75F2-43D6-9643-DA8CE0BC3225}</Project>
+      <Name>DatabaseInterface</Name>
+    </ProjectReference>
     <ProjectReference Include="..\GoogleAuthentication\GoogleAuthentication.csproj">
       <Project>{99D005CA-9910-4C05-948D-BA5D3E197428}</Project>
       <Name>GoogleAuthentication</Name>
