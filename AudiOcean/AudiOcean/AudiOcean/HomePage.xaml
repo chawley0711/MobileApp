@@ -6,6 +6,6 @@
   <!--Pages can be added as references or inline-->
     <local:MainPage Title="Home Page" />
     <local:MainPage Title="Top Chart" />
-    <local:SongPage Title="Song Page" />
+    <local:MainPage Title="My Songs" />
     <local:ProfilePage Title="Profile Page"/>
 </TabbedPage>

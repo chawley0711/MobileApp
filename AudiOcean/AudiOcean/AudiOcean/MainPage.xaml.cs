@@ -25,5 +25,9 @@ namespace AudiOcean
                 new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
             };
         }
-	}
+        private void SongNameLink_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SongPage());
+        }
+    }
 }

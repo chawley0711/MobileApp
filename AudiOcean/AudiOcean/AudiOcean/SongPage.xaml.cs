@@ -12,8 +12,10 @@ namespace AudiOcean
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SongPage : ContentPage
 	{
-		public SongPage ()
+		public SongPage()
 		{
+            //add a way to pass in song and load it
+
 			InitializeComponent();
 		}
 	}

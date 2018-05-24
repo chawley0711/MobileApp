@@ -11,7 +11,7 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 
-			MainPage = new HomePage();
+            MainPage = new NavigationPage(new HomePage());
 		}
 
 		protected override void OnStart()

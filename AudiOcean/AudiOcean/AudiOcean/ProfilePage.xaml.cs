@@ -32,5 +32,10 @@ namespace AudiOcean
                 new Song("Massacre", "Dodge & Fuski", 181, 4.1)
             };
         }
+
+        private void SongNameLink_Tapped(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new SongPage());
+        }
     }
 }
