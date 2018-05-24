@@ -22,7 +22,9 @@ namespace DatabaseInterface.Services
 
                 };
                 db.Comments.Add(newComment);
+                db.SaveChanges();
             }
+          
         }
 
         public void AddSong(User user, Song song)
@@ -38,6 +40,7 @@ namespace DatabaseInterface.Services
                     GenreID = song.Genre.ID,
                 };
                 db.Songs.Add(newSong);
+                db.SaveChanges();
             }
          }
 
@@ -48,6 +51,8 @@ namespace DatabaseInterface.Services
                 var query = db.Users.Where(x => x.ID == user.ID).First();
                 var subquery = db.Users.Where(x => x.ID == userToAddToSubscriptionList.ID).First();
                 query.Subscriptions.Add(subquery);
+
+                db.SaveChanges();
             }
             
         }
@@ -65,6 +70,7 @@ namespace DatabaseInterface.Services
                     Email = u.Email
                 };
                 db.Users.Add(newUser);
+                db.SaveChanges();
             }
         }
 
@@ -74,6 +80,7 @@ namespace DatabaseInterface.Services
             {
                 var query = db.Songs.Where(x => x.ID == song.ID).First();
                 db.Songs.Remove(query);
+                db.SaveChanges();
             }
         }
 
@@ -84,6 +91,7 @@ namespace DatabaseInterface.Services
                 var query = db.Users.Where(x => x.ID == user.ID).First();
                 var subquery = db.Users.Where(x => x.ID == userToDeleteFromSubscriptionList.ID).First();
                 query.Subscriptions.Remove(subquery);
+                db.SaveChanges();
             }
         }
 
@@ -98,6 +106,7 @@ namespace DatabaseInterface.Services
                 {
                     AllCommentsForSong.Add(c);
                 }
+                db.SaveChanges();
             }
              return AllCommentsForSong;
         }
@@ -113,6 +122,7 @@ namespace DatabaseInterface.Services
                 {
                     MostRecentSongs.Add(s);
                 }
+                db.SaveChanges();
             }
             Song[] SongArray = new Song[NumofSongs];
             for(int i = 0; i < NumofSongs; i++)
@@ -126,7 +136,18 @@ namespace DatabaseInterface.Services
             return MostRecentSongsByNum;
 
         }
-         
+
+        public Song GetSong(int id)
+        {
+            Song SongFound;
+            using(var db = new AudiOceanEntities())
+            {
+                var query = db.Songs.Where(x => x.ID == id).First();
+                SongFound = query;
+            }
+            return SongFound;
+        }
+
         public ICollection<Song> GetSongsUploadedByUser(User u)
         {
             ICollection<Song> UploadsByUser = null;
@@ -137,7 +158,9 @@ namespace DatabaseInterface.Services
                 {
                     UploadsByUser.Add(s);
                 }
+                db.SaveChanges();
             }
+           
             return UploadsByUser;
         }
 
@@ -151,8 +174,20 @@ namespace DatabaseInterface.Services
                 {
                     SubscriptionList.Add(q);
                 }
+                db.SaveChanges();
             }
             return SubscriptionList;
+        }
+
+        public User GetUser(int id)
+        {
+            User UserFound;
+            using (var db = new AudiOceanEntities())
+            {
+                var query = db.Users.Where(x => x.ID == id).First();
+                UserFound = query;
+            }
+            return UserFound;
         }
 
         public User GetUserWithEmail(string email)
@@ -162,6 +197,8 @@ namespace DatabaseInterface.Services
             {
                 var query = db.Users.Where(x => x.Email == email).First();
                 UserFound = query;
+
+                db.SaveChanges();
             }
             return UserFound;
         }
@@ -178,6 +215,7 @@ namespace DatabaseInterface.Services
                     Rating1 = rating
                 };
                 db.Ratings.Add(NewRating);
+                db.SaveChanges();
             }
             
         }

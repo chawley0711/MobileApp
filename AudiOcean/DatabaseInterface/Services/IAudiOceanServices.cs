@@ -9,6 +9,9 @@ namespace DatabaseInterface.Services
     public interface IAudiOceanServices
     {
         User GetUserWithEmail(string email);
+        User GetUser(int id);
+        Song GetSong(int id);
+        
         ICollection<Song> GetSongsUploadedByUser(User u);
         ICollection<Comment> GetCommentsForSong(Song song);
         ICollection<Song> GetMostRecentSongsUploads(int NumofSongs);
