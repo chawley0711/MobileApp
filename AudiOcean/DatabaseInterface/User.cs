@@ -29,6 +29,7 @@ namespace DatabaseInterface
         public string DisplayName { get; set; }
         public string ProfilePictureURL { get; set; }
         public string Email { get; set; }
+        public string URL { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Comment> Comments { get; set; }
