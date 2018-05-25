@@ -27,6 +27,8 @@ namespace AudiOcean
         }
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
+            Label l = (Label)sender;
+            Grid g = (Grid)l.Parent;
             Navigation.PushAsync(new SongPage());
         }
     }

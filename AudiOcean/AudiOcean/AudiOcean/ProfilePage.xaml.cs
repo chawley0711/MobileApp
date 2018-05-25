@@ -35,6 +35,8 @@ namespace AudiOcean
 
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
+            Label l = (Label)sender;
+            //Song s = (Song)l.BindingContext;
             Navigation.PushAsync(new SongPage());
         }
     }
