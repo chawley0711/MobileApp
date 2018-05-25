@@ -9,6 +9,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Text;
+using Newtonsoft.Json;
 using System.Threading.Tasks;
 
 namespace AudiOceanServer
@@ -29,7 +30,6 @@ namespace AudiOceanServer
                 localAddress + "music/",
                 localAddress + "users/",
                 localAddress + "list-music/",
-                localAddress + "home/",
                 localAddress + "comments/",
                 localAddress + "rate/",
                 localAddress + "subscriptions/"
@@ -88,40 +88,173 @@ namespace AudiOceanServer
             AuthenticateRequest(context);
             if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
 
-            if (context.Request.RawUrl == "music")
-            {
-                Song song = audiOceanServices.GetSongByID(int.Parse(context.Request.QueryString["id"]));
-                byte[] songBytes = File.ReadAllBytes(song.URL);
-                context.Response.ContentLength64 = songBytes.Length;
-                context.Response.ContentType = "audio/mpeg3";
-                context.Response.StatusCode = 200;
-                context.Response.StatusDescription = "OK";
-                //Send Chunked later
-                context.Response.OutputStream.Write(songBytes, 0, songBytes.Length);
-                context.Response.OutputStream.Close();
-            }
+            var dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
 
-            if(context.Request.RawUrl == "users")
+            if (dir == "music")
             {
-                User user = audiOceanServices.GetUserByID(context.Request.QueryString["id"]);
-                context.Response.ContentType = "application/json";
-                context.Response.StatusCode = 200;
-                context.Response.StatusDescription = "OK";
-                byte[] jsonBytes = Encoding.UTF8.GetBytes($"{{" +
-                    $"\"displayName\": \"{user.DisplayName}\"" +
-                    $"\"profileURL\": \"{user.ProfilePictureURL}\"" +
-                    $"}}");
-                context.Response.ContentLength64 = jsonBytes.Length;
-                context.Response.OutputStream.Write(jsonBytes, 0, jsonBytes.Length);
-                context.Response.OutputStream.Close();
+                GetSong(context);
             }
-            if(context.Request.RawUrl == "list-music")
+            else if (dir == "users")
             {
-                var songs = audiOceanServices.GetSongsUploadedByUser(audiOceanServices.GetUserByID(context.Request.QueryString["id"]));
-
+                GetUser(context);
+            }
+            else if (dir == "list-music")
+            {
+                //Need to do the numOfSongs bit
+                GetListOfMusic(context);
+            }
+            else if (dir == "comments")
+            {
+                GetComments(context);
+            }
+            else if (dir == "subscriptions")
+            {
+                GetSubscriptions(context);
             }
 
             context.Response.Close();
+        }
+
+        private void GetSubscriptions(HttpListenerContext context)
+        {
+            var subscriptions = audiOceanServices.GetSubscriptionsForUser(audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"])));
+            string json = "{ [";
+            var lastSub = subscriptions.ElementAt(subscriptions.Count - 1);
+            foreach (var sub in subscriptions)
+            {
+                json += JsonConvert.SerializeObject(new
+                {
+                    id = sub.ID,
+                    displayName = sub.DisplayName,
+                    profileURL = sub.ProfilePictureURL
+                });
+
+                if (sub != lastSub)
+                {
+                    json += ",";
+                }
+            }
+            json += "] }";
+
+            byte[] jsonBytes = Encoding.UTF8.GetBytes(json);
+            context.Response.ContentLength64 = jsonBytes.Length;
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = 200;
+            context.Response.StatusDescription = "OK";
+            context.Response.OutputStream.Write(jsonBytes, 0, jsonBytes.Length);
+            context.Response.OutputStream.Close();
+        }
+
+        private void GetComments(HttpListenerContext context)
+        {
+            var comments = audiOceanServices.GetCommentsForSong(audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"]));
+            string json = "{ [";
+            var lastComment = comments.ElementAt(comments.Count);
+            foreach (var comment in comments)
+            {
+                json += JsonConvert.SerializeObject(new
+                {
+                    id = comment.CommentID,
+                    datePosted = comment.DatePosted,
+                    text = comment.Text,
+                    userId = comment.UserID,
+                    ownerName = comment.User.DisplayName
+                });
+                if (comment != lastComment)
+                {
+                    json += ",";
+                }
+            }
+            json += "] }";
+
+            byte[] jsonBytes = Encoding.UTF8.GetBytes(json);
+            context.Response.ContentLength64 = jsonBytes.Length;
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = 200;
+            context.Response.StatusDescription = "OK";
+            context.Response.OutputStream.Write(jsonBytes, 0, jsonBytes.Length);
+            context.Response.OutputStream.Close();
+        }
+
+        private void GetListOfMusic(HttpListenerContext context)
+        {
+            ICollection<Song> songs = null;
+            if (context.Request.QueryString.Keys.Count != 1)
+            {
+
+            }
+            else if (context.Request.QueryString.Get("numOfSongs") != null)
+            {
+                songs = audiOceanServices.GetMostRecentSongsUploads(int.Parse(context.Request.QueryString["numOfSongs"]));
+            }
+            else
+            {
+                songs = audiOceanServices.GetSongsUploadedByUser(audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"])));
+            }
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = 200;
+            context.Response.StatusDescription = "OK";
+            string json = "{ songs: [";
+            foreach (var song in songs)
+            {
+                json += JsonConvert.SerializeObject(SongToJSong(song));
+            }
+
+            json += "] }";
+
+            byte[] jsonbytes = Encoding.UTF8.GetBytes(json);
+            context.Response.ContentLength64 = jsonbytes.Length;
+            context.Response.OutputStream.Write(jsonbytes, 0, jsonbytes.Length);
+            context.Response.OutputStream.Close();
+        }
+
+        private void GetUser(HttpListenerContext context)
+        {
+            User user = audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"]));
+            context.Response.ContentType = "application/json";
+            context.Response.StatusCode = 200;
+            context.Response.StatusDescription = "OK";
+            byte[] jsonBytes = Encoding.UTF8.GetBytes($"{{" +
+                $"\"displayName\": \"{user.DisplayName}\" " +
+                $"\"profileURL\": \"{user.ProfilePictureURL}\" " +
+                $"}}");
+            context.Response.ContentLength64 = jsonBytes.Length;
+            context.Response.OutputStream.Write(jsonBytes, 0, jsonBytes.Length);
+            context.Response.OutputStream.Close();
+        }
+
+        private void GetSong(HttpListenerContext context)
+        {
+            Song song = audiOceanServices.GetSongByID(int.Parse(context.Request.QueryString["id"]));
+            byte[] songBytes = File.ReadAllBytes(song.URL);
+            context.Response.ContentLength64 = songBytes.Length;
+            context.Response.ContentType = "audio/mpeg3";
+            context.Response.StatusCode = 200;
+            context.Response.StatusDescription = "OK";
+            //Send Chunked later
+            context.Response.OutputStream.Write(songBytes, 0, songBytes.Length);
+            context.Response.OutputStream.Close();
+        }
+
+        public object SongToJSong(Song song)
+        {
+            var jsong = new
+            {
+                type = "Song",
+                name = song.SongName,
+                rating = song.Ratings.Average((r) => r.Rating1),
+                id = song.ID,
+                ownerId = song.OwnerID,
+                genre = song.Genre.Name,
+                dateUploaded = song.DateUploaded
+            };
+
+            return jsong;
+        }
+
+        public string MakeJson(string name, string value)
+        {
+            return $"\"{name}\": \"{value}\"";
         }
 
         private void AuthenticateRequest(HttpListenerContext context)
