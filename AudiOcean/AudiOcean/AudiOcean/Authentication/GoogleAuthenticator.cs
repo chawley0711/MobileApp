@@ -14,7 +14,7 @@ namespace AudiOcean.Authentication
         private OAuth2Authenticator _auth;
         private IGoogleAuthenticatorDelegate _authenticationDelegate;
 
-        public GoogleAuthenticator(string clientId, string scope, string redirectUrl, IGoogleAuthenticationDelegate authenticationDelegate)
+        public GoogleAuthenticator(string clientId, string scope, string redirectUrl, IGoogleAuthenticatorDelegate authenticationDelegate)
         {
             _authenticationDelegate = authenticationDelegate;
 
@@ -35,6 +35,7 @@ namespace AudiOcean.Authentication
 
         public void OnPageLoading(Uri uri)
         {
+          
             _auth.OnPageLoading(uri);
         }
 
@@ -51,7 +52,7 @@ namespace AudiOcean.Authentication
             }
             else
             {
-                _authenticationDelegate.OnAuthenticationCanceled();
+                _authenticationDelegate.OnAuthenticationCancelled();
             }
         }
 

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Xamarin.Auth;
 
 namespace AudiOcean
 {
@@ -15,6 +16,7 @@ namespace AudiOcean
 		public GoogleAuthPage ()
 		{
 			InitializeComponent ();
-		}
+        }
+
 	}
 }

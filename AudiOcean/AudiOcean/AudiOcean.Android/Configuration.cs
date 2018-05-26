@@ -12,7 +12,10 @@ using Android.Widget;
 
 namespace AudiOcean.Droid
 {
-    class Configuration
+    public static class Configuration
     {
+        public const string ClientId = "877386569820-18p3tqbqo7b07og15dkjhe7vfnbjtlkm.apps.googleusercontent.com​";
+        public const string Scope = "email";
+        public const string RedirectUrl = "www.linkedin.com/in/bholinked";
     }
 }
