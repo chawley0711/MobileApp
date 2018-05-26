@@ -79,12 +79,6 @@
     <Compile Include="Song.cs">
       <DependentUpon>AudiOceanDAL.tt</DependentUpon>
     </Compile>
-    <Compile Include="sp_helpdiagramdefinition_Result.cs">
-      <DependentUpon>AudiOceanDAL.tt</DependentUpon>
-    </Compile>
-    <Compile Include="sp_helpdiagrams_Result.cs">
-      <DependentUpon>AudiOceanDAL.tt</DependentUpon>
-    </Compile>
     <Compile Include="sysdiagram.cs">
       <DependentUpon>AudiOceanDAL.tt</DependentUpon>
     </Compile>
