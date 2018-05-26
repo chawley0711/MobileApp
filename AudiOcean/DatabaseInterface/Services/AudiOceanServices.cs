@@ -31,12 +31,13 @@ namespace DatabaseInterface.Services
         {
             using(var db = new AudiOceanEntities())
             {
-                
+
                 var newSong = new Song()
                 {
                     SongName = song.SongName,
                     OwnerID = user.ID,
                     //DateUploaded
+                    DateUploaded = BitConverter.GetBytes(DateTime.Now.Ticks),
                     GenreID = song.Genre.ID,
                 };
                 db.Songs.Add(newSong);

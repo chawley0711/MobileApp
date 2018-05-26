@@ -48,6 +48,9 @@ namespace AudiOceanServer
             listener.GetContextAsync().ContinueWith((context) => HandleClientRequest(context.Result)).Start();
         }
 
+
+
+
         private void HandleClientRequest(HttpListenerContext context)
         {
             var request = context.Request;
@@ -107,6 +110,66 @@ namespace AudiOceanServer
             context.Response.Close();
         }
 
+        private void HandlePostRequest(HttpListenerContext context)
+        {
+            //Post User Information uses token user/
+
+            GoogleToken token = AuthenticateRequest(context);
+            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
+
+            string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
+
+            if (dir == "user") { PostNewUser(context, token); }
+            //Post Comment ?songId commentBody
+            else if (dir == "comments") { PostNewComment(context, token); }
+            //Post Song ?name; genre   - byteBody
+            else if (dir == "music") { PostNewSong(context, token); }
+            //Post Rating ?id ratingBody
+            else if (dir == "rate") { RateSong(context, token); }
+            //Post new subscription ?id
+            else if (dir == "subscriptions") { AddNewSubscription(context, token); }
+
+            context.Response.Close();
+        }
+
+        private void HandleDeleteRequest(HttpListenerContext context)
+        {
+            GoogleToken token = AuthenticateRequest(context);
+            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
+
+            string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
+            //Delete Subscription ?id
+            if (dir == "subscriptions")
+            {
+                User subscriber = audiOceanServices.GetUserWithEmail(token.Payload.Email);
+                User subscription = audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"]));
+                audiOceanServices.DeleteSubscription(subscriber, subscription);
+                context.Response.StatusCode = (int)HttpStatusCode.NoContent;
+                context.Response.StatusDescription = "Successfully Deleted Subscription";
+            }
+            //Delete Song ?id must own resource
+            if (dir == "music")
+            {
+                Song song = audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"]));
+                if (audiOceanServices.GetUserWithEmail(token.Payload.Email).ID == song.OwnerID)
+                {
+                    audiOceanServices.DeleteSong(song);
+                    context.Response.StatusCode = 204;
+                    context.Response.StatusDescription = "Successfully Deleted Song";
+                }
+                else
+                {
+                    context.Response.StatusCode = (int)HttpStatusCode.Forbidden;
+                    context.Response.StatusDescription = "Request was not made by the owner of the resource to delete.";
+                }
+            }
+
+            context.Response.Close();
+        }
+
+
+
+
         private void GetSubscriptions(HttpListenerContext context)
         {
             var subscriptions = audiOceanServices.GetSubscriptionsForUser(audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"])));
@@ -139,7 +202,7 @@ namespace AudiOceanServer
 
         private void GetComments(HttpListenerContext context)
         {
-            var comments = audiOceanServices.GetCommentsForSong(audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"]));
+            var comments = audiOceanServices.GetCommentsForSong(audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"])));
             string json = "{ [";
             var lastComment = comments.ElementAt(comments.Count);
             foreach (var comment in comments)
@@ -171,15 +234,11 @@ namespace AudiOceanServer
         private void GetListOfMusic(HttpListenerContext context)
         {
             ICollection<Song> songs = null;
-            if (context.Request.QueryString.Keys.Count != 1)
-            {
-
-            }
-            else if (context.Request.QueryString.Get("numOfSongs") != null)
+            if (context.Request.QueryString["numOfSongs"] != null)
             {
                 songs = audiOceanServices.GetMostRecentSongsUploads(int.Parse(context.Request.QueryString["numOfSongs"]));
             }
-            else
+            else if(context.Request.QueryString["id"] != null)
             {
                 songs = audiOceanServices.GetSongsUploadedByUser(audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"])));
             }
@@ -228,6 +287,72 @@ namespace AudiOceanServer
             context.Response.OutputStream.Close();
         }
 
+        private void AddNewSubscription(HttpListenerContext context, GoogleToken token)
+        {
+            User subscriber = audiOceanServices.GetUserWithEmail(token.Payload.Email);
+            User subscription = audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"]));
+            audiOceanServices.AddSubscription(subscriber, subscription);
+            context.Response.StatusCode = 204;
+            context.Response.StatusDescription = "Successfully Posted Subscription";
+        }
+
+        private void RateSong(HttpListenerContext context, GoogleToken token)
+        {
+            int rating = context.Request.InputStream.ReadByte();
+            if (1 <= rating && rating <= 5)
+            {
+                User user = audiOceanServices.GetUserWithEmail(token.Payload.Email);
+                Song song = audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"]));
+                audiOceanServices.RateSong(user, song, rating);
+                context.Response.StatusCode = 204;
+                context.Response.StatusDescription = "Successfully Rated Song";
+            }
+        }
+
+        private void PostNewSong(HttpListenerContext context, GoogleToken token)
+        {
+            string fileName = Guid.NewGuid().ToString() + ".mp3";
+            byte[] songBytes = new byte[context.Request.ContentLength64];
+            context.Request.InputStream.Read(songBytes, 0, songBytes.Length);
+            File.WriteAllBytes(Path.Combine(DIR_PATH_TO_MUSIC_FOLDER, fileName), songBytes);
+            User songOwner = audiOceanServices.GetUserWithEmail(token.Payload.Email);
+            audiOceanServices.AddSong(songOwner,
+                new Song()
+                {
+                    SongName = context.Request.QueryString["name"],
+                    Genre = new Genre() { Name = context.Request.QueryString["genre"] },
+                    URL = fileName
+                });
+        }
+
+        private void PostNewComment(HttpListenerContext context, GoogleToken token)
+        {
+            var sr = new StreamReader(context.Request.InputStream);
+            User poster = audiOceanServices.GetUserWithEmail(token.Payload.Email);
+            Song song = audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"]));
+            audiOceanServices.AddComment(poster, song, sr.ReadToEnd());
+            sr.Close();
+
+            context.Response.StatusCode = 204;
+            context.Response.StatusDescription = "Successfully posted comment.";
+            context.Response.OutputStream.Close();
+        }
+
+        private void PostNewUser(HttpListenerContext context, GoogleToken token)
+        {
+            audiOceanServices.AddUser(new User()
+            {
+                Name = token.Payload.Name,
+                Email = token.Payload.Email,
+                DisplayName = token.Payload.GivenName,
+                ProfilePictureURL = token.Payload.Picture,
+            });
+
+            context.Response.StatusCode = 204;
+            context.Response.StatusDescription = "Successfully created new user account.";
+            context.Response.OutputStream.Close();
+        }
+
         public object SongToJSong(Song song)
         {
             var jsong = new
@@ -264,6 +389,7 @@ namespace AudiOceanServer
             }
             return googToken;
         }
+
         private static void CreateResponseMessage(int statusCode, string description, HttpListenerContext context, IEnumerable<KeyValuePair<HttpResponseHeader, string>> headers = null, byte[] body = null)
         {
             context.Response.StatusCode = statusCode;
@@ -280,119 +406,6 @@ namespace AudiOceanServer
             context.Response.Close();
         }
 
-        private void HandlePostRequest(HttpListenerContext context)
-        {
-            //Post User Information uses token user/
-
-            GoogleToken token = AuthenticateRequest(context);
-            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
-
-            string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
-
-            if (dir == "user") { PostNewUser(context, token); }
-            //Post Comment ?songId commentBody
-            else if (dir == "comments") { PostNewComment(context, token); }
-            //Post Song ?name; genre   - byteBody
-            else if (dir == "music") { PostNewSong(context, token); }
-            //Post Rating ?id ratingBody
-            else if (dir == "rate") { RateSong(context, token); }
-            //Post new subscription ?id
-            else if (dir == "subscriptions") { AddNewSubscription(context, token); }
-
-            context.Response.Close();
-        }
-
-        private void AddNewSubscription(HttpListenerContext context, GoogleToken token)
-        {
-            audiOceanServices.AddSubscription(new User { Email = token.Payload.Email },
-                new User() { ID = int.Parse(context.Request.QueryString["id"]) });
-            context.Response.StatusCode = 204;
-            context.Response.StatusDescription = "Successfully Posted Subscription";
-        }
-
-        private void RateSong(HttpListenerContext context, GoogleToken token)
-        {
-            int rating = context.Request.InputStream.ReadByte();
-            if (0 < rating && rating < 5)
-            {
-                audiOceanServices.RateSong(new User() { Email = token.Payload.Email },
-                    new Song() { ID = int.Parse(context.Request.QueryString["id"]) },
-                    context.Request.InputStream.ReadByte());
-                context.Response.StatusCode = 204;
-                context.Response.StatusDescription = "Successfully Rated Song";
-            }
-        }
-
-        private void PostNewSong(HttpListenerContext context, GoogleToken token)
-        {
-            string fileName = Guid.NewGuid().ToString() + ".mp3";
-            byte[] songBytes = new byte[context.Request.ContentLength64];
-            context.Request.InputStream.Read(songBytes, 0, songBytes.Length);
-            File.WriteAllBytes(Path.Combine(DIR_PATH_TO_MUSIC_FOLDER, fileName), songBytes);
-            audiOceanServices.AddSong(new User() { Email = token.Payload.Email },
-                new Song()
-                {
-                    SongName = context.Request.QueryString["name"],
-                    Genre = new Genre() { Name = context.Request.QueryString["genre"] },
-                    URL = fileName
-                });
-        }
-
-        private void PostNewComment(HttpListenerContext context, GoogleToken token)
-        {
-            var sr = new StreamReader(context.Request.InputStream);
-            audiOceanServices.AddComment(new User()
-            {
-                Email = token.Payload.Email
-            }, new Song()
-            {
-                ID = int.Parse(context.Request.QueryString["songId"])
-            }, sr.ReadToEnd());
-            sr.Close();
-
-            context.Response.StatusCode = 204;
-            context.Response.StatusDescription = "Successfully posted comment.";
-            context.Response.OutputStream.Close();
-        }
-
-        private void PostNewUser(HttpListenerContext context, GoogleToken token)
-        {
-            audiOceanServices.AddUser(new User()
-            {
-                Name = token.Payload.Name,
-                Email = token.Payload.Email,
-                DisplayName = token.Payload.GivenName,
-                ProfilePictureURL = token.Payload.Picture,
-            });
-
-            context.Response.StatusCode = 204;
-            context.Response.StatusDescription = "Successfully created new user account.";
-            context.Response.OutputStream.Close();
-        }
-
-        private void HandleDeleteRequest(HttpListenerContext context)
-        {
-            GoogleToken token = AuthenticateRequest(context);
-            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
-
-            string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
-            //Delete Subscription ?id
-            if (dir == "subscriptions")
-            {
-                audiOceanServices.DeleteSubscription(new User() { Email = token.Payload.Email }, new User() { ID = int.Parse(context.Request.QueryString["id"]));
-                context.Response.StatusCode = (int)HttpStatusCode.NoContent;
-                context.Response.StatusDescription = "Successfully Deleted Subscription";
-            }
-            //Delete Song ?id must own resource
-            if(dir == "music")
-            {
-                audiOceanServices.DeleteSong(new Song() { ID = int.Parse(context.Request.QueryString["id"]) });
-                context.Response.StatusCode = 204;
-                context.Response.StatusDescription = "Successfully Deleted Song";
-            }
-
-            context.Response.Close();
-        }
 
         public void StopServer()
         {
