@@ -24,5 +24,6 @@ namespace DatabaseInterface.Services
         void DeleteSubscription(User subscribers, User subscriptions);
         void DeleteSong(Song song);
         Song GetSongByID(int v);
+        Genre GetGenreWithName(string v);
     }
 }
