@@ -22,6 +22,7 @@ namespace AudiOceanServer
         private readonly string localAddress = "http://" + IPAddress.Parse("10.10.18.46").ToString() + "/";
         IAudiOceanServices audiOceanServices = new AudiOceanServices();
         string DIR_PATH_TO_MUSIC_FOLDER;
+        private int SONG_BUFFER_SIZE = 200;
 
         public AudiOceanHttpServer()
         {
@@ -63,7 +64,7 @@ namespace AudiOceanServer
         {
             var request = context.Request;
 
-            if(QueryStringHasKey(context, "id"))
+            if (QueryStringHasKey(context, "id"))
             {
                 int id;
                 bool canParse = int.TryParse(context.Request.QueryString["id"], out id);
@@ -131,7 +132,12 @@ namespace AudiOceanServer
             {
                 GetSubscriptions(context);
             }
+            else if (dir == "rate")
+            {
+                GetAvgRating(context);
+            }
         }
+
 
         private void HandlePostRequest(HttpListenerContext context)
         {
@@ -238,6 +244,26 @@ namespace AudiOceanServer
 
 
 
+        private void GetAvgRating(HttpListenerContext context)
+        {
+            if (!QueryStringHasKey(context, "id"))
+            {
+                CreateResponseMessage((int)HttpStatusCode.BadRequest, "Cannot provide an average rating if id is not specified.", context);
+                return;
+            }
+
+            Song song = audiOceanServices.GetSong(int.Parse(context.Request.QueryString["id"]));
+
+            if (song == null)
+            {
+                CreateResponseMessage((int)HttpStatusCode.NotFound, "Couldn't find a song with the specified id.", context);
+                return;
+            }
+
+            byte avgRating = (byte)song.Ratings.Average((r) => (byte)r.Rating1);
+
+            CreateResponseMessage(200, "OK", context, "text/plain-text", body: new[] { avgRating });
+        }
 
         private void GetSubscriptions(HttpListenerContext context)
         {
@@ -281,7 +307,7 @@ namespace AudiOceanServer
 
         private void GetComments(HttpListenerContext context)
         {
-            if (QueryStringHasKey(context, "id"))
+            if (!QueryStringHasKey(context, "id"))
             {
                 CreateResponseMessage((int)HttpStatusCode.BadRequest, "Request's query string requires an integer to be mapped to \"id\"", context);
                 return;
@@ -408,7 +434,7 @@ namespace AudiOceanServer
             context.Response.StatusCode = 200;
             context.Response.StatusDescription = "OK";
 
-            for (int i = 0, step = 200; i < songBytes.Length; i += step)
+            for (int i = 0, step = SONG_BUFFER_SIZE; i < songBytes.Length; i += step)
             {
                 if (i + step >= songBytes.Length)
                 {
@@ -564,7 +590,7 @@ namespace AudiOceanServer
                 DisplayName = token.Payload.GivenName,
                 ProfilePictureURL = token.Payload.Picture,
             });
-            
+
             CreateResponseMessage((int)HttpStatusCode.OK, "Successfully created new user account.", context);
         }
 
