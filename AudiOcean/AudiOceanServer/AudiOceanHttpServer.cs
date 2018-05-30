@@ -138,6 +138,23 @@ namespace AudiOceanServer
             }
         }
 
+        private void HandleDeleteRequest(HttpListenerContext context)
+        {
+            GoogleToken token = AuthenticateRequest(context);
+            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
+
+            string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
+            //Delete Subscription ?id
+            if (dir == "subscriptions")
+            {
+                DeleteSubscription(context, token);
+            }
+            //Delete Song ?id must own resource
+            if (dir == "music")
+            {
+                DeleteSong(context, token);
+            }
+        }
 
         private void HandlePostRequest(HttpListenerContext context)
         {
@@ -158,24 +175,6 @@ namespace AudiOceanServer
             //Post new subscription ?id
             else if (dir == "subscriptions") { AddNewSubscription(context, token); }
 
-        }
-
-        private void HandleDeleteRequest(HttpListenerContext context)
-        {
-            GoogleToken token = AuthenticateRequest(context);
-            if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
-
-            string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
-            //Delete Subscription ?id
-            if (dir == "subscriptions")
-            {
-                DeleteSubscription(context, token);
-            }
-            //Delete Song ?id must own resource
-            if (dir == "music")
-            {
-                DeleteSong(context, token);
-            }
         }
 
 
@@ -238,7 +237,7 @@ namespace AudiOceanServer
             }
 
             audiOceanServices.DeleteSubscription(subscriber, subscription);
-            context.Response.StatusCode = (int)HttpStatusCode.NoContent;
+            context.Response.StatusCode = (int)HttpStatusCode.OK;
             context.Response.StatusDescription = "Successfully Deleted Subscription";
         }
 
@@ -472,7 +471,7 @@ namespace AudiOceanServer
             }
 
             audiOceanServices.AddSubscription(subscriber, subscription);
-            CreateResponseMessage((int)HttpStatusCode.NoContent, "Successfully Posted Subscription", context);
+            CreateResponseMessage((int)HttpStatusCode.OK, "Successfully Posted Subscription", context);
         }
 
         private void RateSong(HttpListenerContext context, GoogleToken token)
@@ -509,7 +508,7 @@ namespace AudiOceanServer
                 }
 
                 audiOceanServices.RateSong(user, song, rating);
-                CreateResponseMessage((int)HttpStatusCode.NoContent, "Successfully rated song", context);
+                CreateResponseMessage((int)HttpStatusCode.OK, "Successfully rated song", context);
             }
         }
 
@@ -578,11 +577,17 @@ namespace AudiOceanServer
             audiOceanServices.AddComment(poster, song, sr.ReadToEnd());
             sr.Dispose();
 
-            CreateResponseMessage((int)HttpStatusCode.NoContent, "Successfully posted comment.", context);
+            CreateResponseMessage((int)HttpStatusCode.OK, "Successfully posted comment.", context);
         }
 
         private void PostNewUser(HttpListenerContext context, GoogleToken token)
         {
+            if(audiOceanServices.GetUserWithEmail(token.Payload.Email) != null)
+            {
+                CreateResponseMessage((int)HttpStatusCode.Conflict, "Already a user with that email registered.", context);
+                return;
+            }
+
             audiOceanServices.AddUser(new User()
             {
                 Name = token.Payload.Name,

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -11,12 +12,16 @@ namespace AudiOceanServer
     public class AudiOceanHttpClient
     {
         HttpClient httpClient;
-        private static readonly string remoteAddress = "http://" + "10.10.48.47" + "/";
+                                                                     //Point address to ServerApp
+        private static readonly string remoteAddress = "http://" +          "10.10.48.47"                     + "/";
+        private static readonly string token;
 
-        public AudiOceanHttpClient()
+        public AudiOceanHttpClient(string token)
         {
             this.httpClient = new HttpClient();
+            this.httpClient.DefaultRequestHeaders.Add("Authentication", $"Bearer {token}");
         }
+
 
 
         public Stream GetMusic(int id)
@@ -68,8 +73,89 @@ namespace AudiOceanServer
             return task.Result.ReadByte();
         }
 
-       
 
+
+        public bool PostNewUser()
+        {
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}users", new ByteArrayContent(new byte[0]));
+            task.RunSynchronously();
+            HttpResponseMessage response = task.Result;
+            return response.IsSuccessStatusCode;
+        }
+
+        public bool PostNewSong(string name, string genre, string audioType,  byte[] songBytes)
+        {
+            ByteArrayContent content = new ByteArrayContent(songBytes);
+            content.Headers.ContentLength = songBytes.Length;
+            content.Headers.ContentType = new MediaTypeHeaderValue($"audio/{audioType}");
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}music?name={name}&genre={genre}", new ByteArrayContent(songBytes));
+            task.RunSynchronously();
+            HttpResponseMessage response = task.Result;
+            return response.IsSuccessStatusCode;
+        }
+
+        public bool PostNewSong(string name, string genre, Stream songByteStream)
+        {
+            byte[] songBytes;
+            if (songByteStream.CanSeek)
+            {
+                songBytes = new byte[songByteStream.Length];
+                songByteStream.Read(songBytes, 0, songBytes.Length);
+
+            }
+            else
+            {
+
+                List<byte> bytes = new List<byte>();
+                int b = songByteStream.ReadByte();
+                if (b != -1)
+                {
+                    bytes.Add((byte)b);
+                }
+                songBytes = bytes.ToArray();
+            }
+
+            return PostNewSong(name, genre, songBytes);
+        }
+
+        public bool RateSong(int songId, byte rating)
+        {
+            if (rating < 1 || 5 < rating) { throw new ArgumentException("Rating must be 1-5"); }
+
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}rate?id={songId}", new ByteArrayContent(new[] { rating }));
+            task.RunSynchronously();
+            HttpResponseMessage response = task.Result;
+            return response.IsSuccessStatusCode;
+        }
+
+        public bool AddNewSubscription(int subscriptionId)
+        {
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}subscriptions?id={subscriptionId}", new ByteArrayContent(new byte[0]));
+            task.RunSynchronously();
+            HttpResponseMessage response = task.Result;
+            return response.IsSuccessStatusCode;
+        }
+
+        public bool PostComment(int songId, string comment)
+        {
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}comments?id={songId}", new ByteArrayContent(Encoding.UTF8.GetBytes(comment)));
+            task.RunSynchronously();
+            return task.Result.IsSuccessStatusCode;
+        }
+
+        public bool DeleteSong(int songId)
+        {
+            Task<HttpResponseMessage> task = httpClient.DeleteAsync($"{remoteAddress}music?id={songId}");
+            task.RunSynchronously();
+            return task.Result.IsSuccessStatusCode;
+        }
+
+        public bool DeleteSubscription(int subscriptionId)
+        {
+            Task<HttpResponseMessage> task = httpClient.DeleteAsync($"{remoteAddress}subscriptions?id={subscriptionId}");
+            task.RunSynchronously();
+            return task.Result.IsSuccessStatusCode;
+        }
 
         /*      localAddress + "music/",
                 localAddress + "users/",

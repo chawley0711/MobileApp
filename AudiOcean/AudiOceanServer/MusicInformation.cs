@@ -9,7 +9,7 @@ namespace AudiOceanServer
         {
         }
 
-        internal static ICollection<MusicInformation> ParseJSONCollection(string result)
+        public static ICollection<MusicInformation> ParseJSONCollection(string result)
         {
             throw new NotImplementedException();
         }
