@@ -9,7 +9,7 @@ using Android.OS;
 
 namespace AudiOcean.Droid
 {
-    [Activity(Label = "AudiOcean", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -22,6 +22,7 @@ namespace AudiOcean.Droid
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
+
     }
 }
 
