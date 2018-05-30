@@ -357,7 +357,7 @@ namespace AudiOceanServer
 
             if (!QueryStringHasKey(context, "id") && !QueryStringHasKey(context, "numOfSongs"))
             {
-                CreateResponseMessage((int)HttpStatusCode.BadRequest, "A request for music lists must contain either \"id\" or \"numOfSongs\" in query string.", contentType);
+                CreateResponseMessage((int)HttpStatusCode.BadRequest, "A request for music lists must contain either \"id\" or \"numOfSongs\" in query string.", context);
                 return;
             }
 

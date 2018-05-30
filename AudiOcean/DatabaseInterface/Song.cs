@@ -24,7 +24,7 @@ namespace DatabaseInterface
         public int ID { get; set; }
         public string SongName { get; set; }
         public Nullable<int> OwnerID { get; set; }
-        public byte[] DateUploaded { get; set; }
+        public System.DateTime DateUploaded { get; set; }
         public Nullable<int> GenreID { get; set; }
         public string URL { get; set; }
     

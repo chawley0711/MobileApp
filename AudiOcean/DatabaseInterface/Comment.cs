@@ -17,7 +17,7 @@ namespace DatabaseInterface
         public int CommentID { get; set; }
         public Nullable<int> SongID { get; set; }
         public string Text { get; set; }
-        public byte[] DatePosted { get; set; }
+        public System.DateTime DatePosted { get; set; }
         public Nullable<int> UserID { get; set; }
     
         public virtual Song Song { get; set; }

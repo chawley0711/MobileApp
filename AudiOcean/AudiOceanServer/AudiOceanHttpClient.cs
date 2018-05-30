@@ -14,14 +14,14 @@ namespace AudiOceanServer
         HttpClient httpClient;
                                                                      //Point address to ServerApp
         private static readonly string remoteAddress = "http://" +          "10.10.48.47"                     + "/";
-        private static readonly string token;
+        private readonly string token;
 
         public AudiOceanHttpClient(string token)
         {
+            this.token = !string.IsNullOrWhiteSpace(token) ? token : throw new ArgumentException("Token cannot be null or empty");
             this.httpClient = new HttpClient();
             this.httpClient.DefaultRequestHeaders.Add("Authentication", $"Bearer {token}");
         }
-
 
 
         public Stream GetMusic(int id)
@@ -94,7 +94,7 @@ namespace AudiOceanServer
             return response.IsSuccessStatusCode;
         }
 
-        public bool PostNewSong(string name, string genre, Stream songByteStream)
+        public bool PostNewSong(string name, string genre, string audioType, Stream songByteStream)
         {
             byte[] songBytes;
             if (songByteStream.CanSeek)
@@ -115,7 +115,7 @@ namespace AudiOceanServer
                 songBytes = bytes.ToArray();
             }
 
-            return PostNewSong(name, genre, songBytes);
+            return PostNewSong(name, genre, audioType, songBytes);
         }
 
         public bool RateSong(int songId, byte rating)

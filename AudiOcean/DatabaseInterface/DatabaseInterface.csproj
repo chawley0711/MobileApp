@@ -106,6 +106,7 @@
       <DependentUpon>AudiOceanDAL.edmx</DependentUpon>
       <LastGenOutput>AudiOceanDAL.Context.cs</LastGenOutput>
     </Content>
+    <Content Include="AudiOceanDAL.edmx.sql" />
     <Content Include="AudiOceanDAL.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>AudiOceanDAL.edmx</DependentUpon>
