@@ -88,7 +88,7 @@ namespace AudiOceanServer
             ByteArrayContent content = new ByteArrayContent(songBytes);
             content.Headers.ContentLength = songBytes.Length;
             content.Headers.ContentType = new MediaTypeHeaderValue($"audio/{audioType}");
-            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}music?name={name}&genre={genre}", new ByteArrayContent(songBytes));
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}music?name={name}&genre={genre}", content);
             task.RunSynchronously();
             HttpResponseMessage response = task.Result;
             return response.IsSuccessStatusCode;
@@ -138,7 +138,11 @@ namespace AudiOceanServer
 
         public bool PostComment(int songId, string comment)
         {
-            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}comments?id={songId}", new ByteArrayContent(Encoding.UTF8.GetBytes(comment)));
+            byte[] commentBytes = Encoding.UTF8.GetBytes(comment);
+            ByteArrayContent content = new ByteArrayContent(commentBytes);
+            content.Headers.ContentLength = commentBytes.Length;
+            content.Headers.ContentType = new MediaTypeHeaderValue("text/plain-text");
+            Task<HttpResponseMessage> task = httpClient.PostAsync($"{remoteAddress}comments?id={songId}", content);
             task.RunSynchronously();
             return task.Result.IsSuccessStatusCode;
         }
