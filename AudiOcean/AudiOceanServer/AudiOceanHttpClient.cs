@@ -12,7 +12,7 @@ namespace AudiOceanServer
     public class AudiOceanHttpClient
     {
         HttpClient httpClient;
-                                                                     //Point address to ServerApp
+                                                                       //Point address to ServerApp
         private static readonly string remoteAddress = "http://" +          "10.10.48.47"                     + "/";
         private readonly string token;
 

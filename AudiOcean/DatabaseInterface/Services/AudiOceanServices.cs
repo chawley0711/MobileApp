@@ -17,7 +17,7 @@ namespace DatabaseInterface.Services
                     UserID = user.ID,
                     Text = comment,
                     SongID = song.ID,
-                    DatePosted = BitConverter.GetBytes(DateTime.Now.Ticks)
+                    DatePosted = DateTime.Now
                     //DatePosted
 
                 };
@@ -37,7 +37,7 @@ namespace DatabaseInterface.Services
                     SongName = song.SongName,
                     OwnerID = user.ID,
                     //DateUploaded
-                    DateUploaded = BitConverter.GetBytes(DateTime.Now.Ticks),
+                    DateUploaded = DateTime.Now,
                     GenreID = song.GenreID,
                     URL = song.URL
                 };
