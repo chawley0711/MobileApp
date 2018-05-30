@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+
 using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
 
 namespace AudiOcean
 {
-	public partial class MainPage : ContentPage
+	[XamlCompilation(XamlCompilationOptions.Compile)]
+	public partial class ProfilePage : ContentPage
 	{
-		public MainPage()
+		public ProfilePage()
 		{
 			InitializeComponent();
 
@@ -22,13 +25,18 @@ namespace AudiOcean
             {
                 new Song("Run", "Ski Mask", 107, 4.6),
                 new Song("Massacre", "Dodge & Fuski", 181, 4.1),
-                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
+                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9),
+                new Song("Run", "Ski Mask", 107, 4.6),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1),
+                new Song("Run", "Ski Mask", 107, 4.6),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1)
             };
         }
+
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
             Label l = (Label)sender;
-            Grid g = (Grid)l.Parent;
+            //Song s = (Song)l.BindingContext;
             Navigation.PushAsync(new SongPage());
         }
     }
