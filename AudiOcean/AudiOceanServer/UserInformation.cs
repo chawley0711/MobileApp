@@ -7,14 +7,14 @@ namespace AudiOceanServer
 {
     public class UserInformation
     {
-        public string ID { get; }
+        public int ID { get; }
         public string DISPLAY_NAME { get; }
         public string PROFILE_URL { get; }
 
         public UserInformation(string result)
         {
             var user = JObject.Parse(result);
-            ID = (string)user["id"];
+            ID = (int)user["id"];
             DISPLAY_NAME = (string)user["displayName"];
             PROFILE_URL = (string)user["profileURL"];
         }
