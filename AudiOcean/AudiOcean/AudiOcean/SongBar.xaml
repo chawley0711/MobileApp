@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AudiOcean.SongBar">
   <ContentView.Content>
-        <Grid HeightRequest="40" BackgroundColor="DarkSlateBlue">
+        <Grid HeightRequest="40" BackgroundColor="CornflowerBlue">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
                 <ColumnDefinition Width="2*" />
@@ -23,11 +23,11 @@
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
-                <Label FontSize="8">Go Back</Label>
-                <Label FontSize="8" Grid.Column="1">Play/Pause</Label>
-                <Label FontSize="8" Grid.Column="2">Go Forward</Label>
+                <Image Source="drawable/BackwardButton" Margin="10, 0"></Image>
+                <Image Source="drawable/PlayButton" Grid.Column="1"></Image>
+                <Image Source="drawable/ForwardButton" Grid.Column="2" Margin="10, 0"></Image>
             </Grid>
-            <Button FontSize="50" Grid.Column="2">...</Button>
+            <Label Grid.Column="2" FontSize="20" Margin="30, 0, 0, 0">...</Label>
         </Grid>
     </ContentView.Content>
 </ContentView>

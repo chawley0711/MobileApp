@@ -11,7 +11,10 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new HomePage());
+            MainPage = new NavigationPage(new HomePage()
+            {
+                BarBackgroundColor = Color.CornflowerBlue
+            });
 		}
 
 		protected override void OnStart()
