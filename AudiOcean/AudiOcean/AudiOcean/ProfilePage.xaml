@@ -41,7 +41,7 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollView>
-            <Grid x:Name="ProfileHead" HeightRequest="100" BackgroundColor="PaleGoldenrod">
+            <Grid x:Name="ProfileHead" HeightRequest="100" BackgroundColor="CornflowerBlue">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
