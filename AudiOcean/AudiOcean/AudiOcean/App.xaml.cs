@@ -3,7 +3,7 @@ using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation (XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace AudiOcean
 {
 	public partial class App : Application
@@ -14,14 +14,13 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 
-            MainPage = new NavigationPage(new HomePage()
-            {
-                BarBackgroundColor = Color.CornflowerBlue
-            });
-		}
+            MainPage = new NavigationPage(new HomePage() { BarBackgroundColor = Color.CornflowerBlue });
+            ((NavigationPage)MainPage).SetValue(NavigationPage.BarBackgroundColorProperty, Color.CornflowerBlue);
+            
+        }
 
-		protected override void OnStart()
-		{
+        protected override void OnStart()
+        {
             MainPage.Navigation.PushModalAsync(new SplashPage());
             Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
             {
@@ -31,13 +30,13 @@ namespace AudiOcean
         }
 
         protected override void OnSleep()
-		{
-			// Handle when your app sleeps
-		}
+        {
+            // Handle when your app sleeps
+        }
 
-		protected override void OnResume()
-		{
-			// Handle when your app resumes
-		}
-	}
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+    }
 }
