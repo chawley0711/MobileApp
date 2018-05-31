@@ -12,8 +12,11 @@ namespace AudiOcean
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SongBar : ContentView
 	{
+        public string SongName = "";
+        public string SongArtist = "";
 		public SongBar()
 		{
+            //set these things here
 			InitializeComponent();
 		}
 	}

@@ -98,7 +98,6 @@
     <Folder Include="Resources\drawable-xhdpi\" />
     <Folder Include="Resources\drawable-xxhdpi\" />
     <Folder Include="Resources\drawable-xxxhdpi\" />
-    <Folder Include="Resources\drawable\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms">
@@ -134,6 +133,12 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\ForwardButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\AudiOceanServer\AudiOceanServer.csproj">
+      <Project>{6FAE716E-F330-41DE-B775-AD048CD120C8}</Project>
+      <Name>AudiOceanServer</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="..\AudiOcean\AudiOcean.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

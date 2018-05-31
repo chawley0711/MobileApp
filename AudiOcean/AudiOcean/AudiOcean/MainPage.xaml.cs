@@ -18,12 +18,19 @@ namespace AudiOcean
 
         public void SetUpSongs()
         {
-            SongList.ItemsSource = new List<Song>()
+            List<Song> songs = new List<Song>();
+            foreach(var mi in App.HttpClient.GetMostRecentMusicUploadedInformation(20))
             {
-                new Song("Run", "Ski Mask", 107, 4.6),
-                new Song("Massacre", "Dodge & Fuski", 181, 4.1),
-                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
-            };
+                songs.Add(new Song(mi.NAME, App.HttpClient.GetUserInformation(mi.OWNER_ID).DISPLAY_NAME, 0, mi.RATING));
+            }
+            SongList.ItemsSource = songs;
+                
+            //new List<Song>()
+            //{
+            //    new Song("Run", "Ski Mask", 107, 4.6),
+            //    new Song("Massacre", "Dodge & Fuski", 181, 4.1),
+            //    new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
+            //};
         }
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
