@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-
+using Xamarin.Auth;
 using Android.App;
 using Android.Content;
 using Android.OS;
@@ -46,7 +46,6 @@ namespace AudiOcean.Droid
             Uri uri_netfx = new Uri(uri_android.ToString());
 
             // Send the URI to the Authenticator for continuation
-            MainActivity.Auth?.OnPageLoading(uri_netfx);
 
             Finish();
         }

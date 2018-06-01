@@ -1,11 +1,18 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
-using Xamarin.Auth;
 
-namespace AudiOcean.Authentication
+using Android.App;
+using Android.Content;
+using Android.OS;
+using Android.Runtime;
+using Android.Views;
+using Android.Widget;
+using Xamarin.Auth;
+namespace AudiOcean.Droid.Auth
 {
-    public class GoogleAuthenticator 
+    public class GoogleAuthenticator
     {
         private const string AuthorizeUrl = "https://accounts.google.com/o/oauth2/v2/auth";
         private const string AccessTokenUrl = "https://www.googleapis.com/oauth2/v4/token";
@@ -13,7 +20,7 @@ namespace AudiOcean.Authentication
 
         private OAuth2Authenticator _auth;
         private IGoogleAuthenticatorDelegate _authenticationDelegate;
-
+        
         public GoogleAuthenticator(string clientId, string scope, string redirectUrl, IGoogleAuthenticatorDelegate authenticationDelegate)
         {
             _authenticationDelegate = authenticationDelegate;
@@ -30,12 +37,12 @@ namespace AudiOcean.Authentication
 
         public OAuth2Authenticator GetAuthenticator()
         {
-            return _auth;
+             return _auth;
         }
 
         public void OnPageLoading(Uri uri)
         {
-          
+
             _auth.OnPageLoading(uri);
         }
 
