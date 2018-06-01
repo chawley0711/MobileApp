@@ -12,8 +12,14 @@ namespace AudiOcean
 		public MainPage()
 		{
 			InitializeComponent();
-            playSound();
 		}
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            playSound();
+        }
+
         public void playSound()
         {
             MyPlayer m = new MyPlayer();

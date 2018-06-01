@@ -8,17 +8,22 @@ using NAudio.Wave;
 
 namespace AudioPackage
 {
-    public class MP3toWAVConverter : IAudioConverter
+    public class MP3toWAVConverter// : IAudioConverter
     {
-        public void Convert(string inputFilePath, string outputFilePath)
+        public static Stream Convert(byte[] inputFilePath, string outputFilePath)
         {
-            using (Mp3FileReader m = new Mp3FileReader(inputFilePath))
-            {
-                using (WaveStream w = WaveFormatConversionStream.CreatePcmStream(m))
-                {
-                    WaveFileWriter.CreateWaveFile(outputFilePath, w);
-                }
+            MemoryStream ms = new MemoryStream(inputFilePath);
+            Mp3FileReader m = new Mp3FileReader(ms);
+ 
+            //using ()
+            //{
+            //using ()
+            //{
+            WaveStream w = WaveFormatConversionStream.CreatePcmStream(m);
+            //WaveFileWriter.CreateWaveFile(outputFilePath, w);
+            return w;
+                //}
             }
         }
     }
-}
+
