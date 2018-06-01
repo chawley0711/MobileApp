@@ -12,6 +12,7 @@ using System.Text;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
+using CSCore.MediaFoundation;
 
 namespace AudiOceanServer
 {
@@ -21,8 +22,8 @@ namespace AudiOceanServer
         private GoogleTokenValidator tokenValidator = new GoogleTokenValidator();
         private readonly string localAddress = "http://" + IPAddress.Parse("10.10.18.46").ToString() + "/";
         IAudiOceanServices audiOceanServices = new AudiOceanServices();
-        string DIR_PATH_TO_MUSIC_FOLDER;
-        private int SONG_BUFFER_SIZE = 200;
+        private readonly string DIR_PATH_TO_MUSIC_FOLDER;
+        private readonly int SONG_BUFFER_SIZE = 200;
 
         public AudiOceanHttpServer()
         {
@@ -66,8 +67,7 @@ namespace AudiOceanServer
 
             if (QueryStringHasKey(context, "id"))
             {
-                int id;
-                bool canParse = int.TryParse(context.Request.QueryString["id"], out id);
+                bool canParse = int.TryParse(context.Request.QueryString["id"], out int id);
                 if (!canParse)
                 {
                     CreateResponseMessage((int)HttpStatusCode.BadRequest, "The value for id in the query string is not an integer", context);
@@ -176,7 +176,6 @@ namespace AudiOceanServer
             else if (dir == "subscriptions") { AddNewSubscription(context, token); }
 
         }
-
 
 
         private void DeleteSong(HttpListenerContext context, GoogleToken token)
@@ -425,11 +424,13 @@ namespace AudiOceanServer
                 return;
             }
 
-            byte[] songBytes = File.ReadAllBytes(song.URL);
-
+            var decoder = new MediaFoundationDecoder(new MFByteStream(File.Open(song.URL, FileMode.Open), true));
+            byte[] songBytes = new byte[decoder.Length];
+            decoder.Read(songBytes, 0, songBytes.Length);
+            
             context.Response.SendChunked = true;
             context.Response.ContentLength64 = songBytes.Length;
-            context.Response.ContentType = "audio/mpeg3";
+            context.Response.ContentType = "audio/raw";
             context.Response.StatusCode = 200;
             context.Response.StatusDescription = "OK";
 
