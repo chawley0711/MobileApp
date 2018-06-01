@@ -6,23 +6,23 @@ namespace AudiOcean
 {
     public class Song
     {
-        public string name { get; set; }
-        public string artist { get; set; }
-        public int length { get; set; }
+        public string Name { get; set; }
+        public string Artist { get; set; }
+        public int Length { get; set; }
 
-        public string lengthFormat
+        public string LengthFormat
         {
-            get { return Math.Floor((decimal)length / 60) + ":" + (length % 60).ToString("00"); }
+            get { return (Length / 60) + ":" + (Length % 60).ToString("00"); }
         }
 
-        public double rating { get; set; }
+        public double Rating { get; set; }
 
         public Song(string n, string a, int l, double r)
         {
-            this.name = n;
-            this.artist = a;
-            this.length = l;
-            this.rating = r;
+            this.Name = n;
+            this.Artist = a;
+            this.Length = l;
+            this.Rating = r;
 
 
         }
