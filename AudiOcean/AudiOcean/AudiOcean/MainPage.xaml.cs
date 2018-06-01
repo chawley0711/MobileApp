@@ -12,6 +12,12 @@ namespace AudiOcean
 		public MainPage()
 		{
 			InitializeComponent();
+            playSound();
 		}
+        public void playSound()
+        {
+            MyPlayer m = new MyPlayer();
+            m.init();
+        }
 	}
 }
