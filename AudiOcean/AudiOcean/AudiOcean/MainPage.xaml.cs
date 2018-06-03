@@ -13,16 +13,18 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 
-            SetUpSongs();
+            List<Song> songs = new List<Song>();
+            //needs a way to change title
+            SetUpSongs(songs);
 		}
 
-        public void SetUpSongs()
+        public void SetUpSongs(List<Song> songs)
         {
-            SongList.ItemsSource = new List<Song>()
-            {
-                new Song("Run", "Ski Mask", 107, 4.6),
-                new Song("Massacre", "Dodge & Fuski", 181, 4.1),
-                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
+            SongList.ItemsSource = //songs;
+            new List<Song>() {
+                new Song("Run", "Ski Mask", 107, 4.6, new List<string>() {"It's aight", "Filler", "Filler"}),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1, new List<string>() { "It's aight", "Filler", "Filler"}),
+                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9, new List<string>() {"It's aight", "Filler", "Filler"})
             };
         }
         private void SongNameLink_Tapped(object sender, EventArgs e)

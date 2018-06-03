@@ -14,7 +14,7 @@ namespace AudiOcean
 	{
 		public SongPage()
 		{
-            //add a way to pass in song and load it
+            BindingContext = new Song("That one song", "Some dude", 194, 3.4, new List<string>() { "It's aight", "Filler", "Filler" });
 
 			InitializeComponent();
 		}

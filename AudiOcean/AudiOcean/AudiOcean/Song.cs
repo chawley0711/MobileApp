@@ -16,15 +16,15 @@ namespace AudiOcean
         }
 
         public double rating { get; set; }
+        public List<string> comments { get; set; }
 
-        public Song(string n, string a, int l, double r)
+        public Song(string n, string a, int l, double r, List<string> c)
         {
             this.name = n;
             this.artist = a;
             this.length = l;
             this.rating = r;
-
-
+            this.comments = c;
         }
     }
 }

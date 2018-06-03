@@ -33,7 +33,7 @@
                     <Button Grid.Column="2" Text="Right"/>
                 </Grid>
                 <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand">
-                    <Slider x:Name="slider" WidthRequest="400" Maximum="201" HorizontalOptions="CenterAndExpand"/>
+                    <Slider x:Name="slider" WidthRequest="400" Maximum="{Binding length}" HorizontalOptions="CenterAndExpand"/>
                     <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
                         <StackLayout.Resources>
                             <Style TargetType="Label">
@@ -55,8 +55,8 @@
                             <Setter Property="Margin" Value="5"/>
                         </Style>
                     </Grid.Resources>
-                    <Label Text="Song Name" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
-                    <Label Text="Artist" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                    <Label Text="{Binding name}" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
+                    <Label Text="{Binding artist}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
                 </Grid>
 
                 <Grid Grid.Row="4">
@@ -70,7 +70,7 @@
                         </Style>
                     </Grid.Resources>
                     <Label Text="Rating" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
-                    <Label Text="5 Stars" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                    <Label Text="{Binding rating}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
                 </Grid>
                 <Grid Grid.Row="5">
                     <Grid.RowDefinitions>
@@ -78,7 +78,7 @@
                         <RowDefinition />
                     </Grid.RowDefinitions>
                     <Label HorizontalTextAlignment="Center">Comment Box</Label>
-                    <Label Grid.Row="1" HorizontalTextAlignment="Center">Comments...</Label>
+                    <ListView Grid.Row="1" ItemsSource="{Binding comments}"></ListView>
                 </Grid>
             </Grid>
             <Grid>
@@ -87,7 +87,7 @@
                     <ColumnDefinition Width="4*" />
                 </Grid.ColumnDefinitions>
                 <Image Aspect="AspectFit" Source="drawable/Logo" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
-                <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
+                <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Song Page</Label>
             </Grid>
         </Grid>
     </ContentPage.Content>
