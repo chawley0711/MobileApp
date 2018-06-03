@@ -7,10 +7,17 @@ using Android.Views;
 using Android.Widget;
 using Android.OS;
 using AudiOcean.Droid.Auth;
+using Android.Content;
 
 namespace AudiOcean.Droid
 {
-    [Activity(Label = "AudiOcean", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges =ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+    [Activity(Label = "AudiOcean", Icon = "@mipmap/icon", Theme = "@style/MainTheme", MainLauncher = true, ConfigurationChanges = ConfigChanges.ScreenSize | ConfigChanges.Orientation)]
+
+    [IntentFilter(
+    new[] { Intent.ActionView },
+    Categories = new[] { Intent.CategoryDefault, Intent.CategoryBrowsable },
+    DataSchemes = new[] { "<insert custom URL here>" },
+    DataPath = "/oauth2redirect")]
     public class MainActivity : global::Xamarin.Forms.Platform.Android.FormsAppCompatActivity
     {
         protected override void OnCreate(Bundle bundle)
@@ -23,9 +30,8 @@ namespace AudiOcean.Droid
 
             global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
 
-             LoadApplication(new App());
-         }
-       
+            LoadApplication(new App());
+        }
     }
 }
 

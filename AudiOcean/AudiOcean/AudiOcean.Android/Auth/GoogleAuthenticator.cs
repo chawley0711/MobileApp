@@ -33,6 +33,8 @@ namespace AudiOcean.Droid.Auth
 
             _auth.Completed += OnAuthenticationCompleted;
             _auth.Error += OnAuthenticationFailed;
+
+
         }
 
         public OAuth2Authenticator GetAuthenticator()

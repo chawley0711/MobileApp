@@ -16,6 +16,8 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Auth\GoogleOAuthToken.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Auth\IGoogleAuthenticationDelegate.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GoogleAuthPage.xaml.cs">
       <DependentUpon>GoogleAuthPage.xaml</DependentUpon>
       <SubType>Code</SubType>
