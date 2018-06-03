@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace AudiOcean
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class ProfilePage : ContentPage
-	{
-		public ProfilePage()
-		{
-			InitializeComponent();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class ProfilePage : ContentPage
+    {
+        public ProfilePage()
+        {
+            InitializeComponent();
 
             BindingContext = new AudiOceanUser("@me", "Me", "ProfilePicture", new List<Song>()
             {
@@ -31,13 +31,25 @@ namespace AudiOcean
                 new AudiOceanUser("@notme", "Not Me", "ProfilePicture", null, null),
                 new AudiOceanUser("@notyou", "Not You", "ProfilePicture", null, null)
             });
-		}
+        }
 
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
             Label l = (Label)sender;
             //Song s = (Song)l.BindingContext;
             Navigation.PushAsync(new SongPage());
+        }
+
+        private void MySongs_Tapped(object sender, EventArgs e)
+        {
+            SongList.IsVisible = true;
+            SubscribeList.IsVisible = false;
+        }
+
+        private void SubbedTo_Tapped(object sender, EventArgs e)
+        {
+            SongList.IsVisible = false;
+            SubscribeList.IsVisible = true;
         }
     }
 }

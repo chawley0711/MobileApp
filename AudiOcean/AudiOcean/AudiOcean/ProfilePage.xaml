@@ -13,11 +13,27 @@
             </Grid.RowDefinitions>
             <ScrollView IsClippedToBounds="True" Grid.Row="1">
                 <Grid>
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="2*" />
-                        <ColumnDefinition Width="1*" />
-                    </Grid.ColumnDefinitions>
-                    <ListView x:Name="SubscribeList" ItemsSource="{Binding subscribedList}" Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Label HorizontalTextAlignment="Center">My Songs
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MySongs_Tapped"  NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label Grid.Column="1" HorizontalTextAlignment="Center">Subbed to
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SubbedTo_Tapped"  NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <ListView x:Name="SubscribeList" ItemsSource="{Binding subscribedList}" IsVisible="False" Grid.Row="1">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
@@ -33,7 +49,7 @@
                             </DataTemplate>
                         </ListView.ItemTemplate>
                     </ListView>
-                    <ListView RowHeight="60" x:Name="SongList" ItemsSource="{Binding userSongs}">
+                    <ListView RowHeight="60" x:Name="SongList" ItemsSource="{Binding userSongs}" Grid.Row="1">
                         <ListView.ItemTemplate>
                             <DataTemplate>
                                 <ViewCell>
