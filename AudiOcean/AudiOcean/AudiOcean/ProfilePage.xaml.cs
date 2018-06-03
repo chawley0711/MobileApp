@@ -16,12 +16,7 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 
-            SetUpSongs();
-		}
-
-        public void SetUpSongs()
-        {
-            SongList.ItemsSource = new List<Song>()
+            BindingContext = new AudiOceanUser("@me", "Me", "ProfilePicture", new List<Song>()
             {
                 new Song("Run", "Ski Mask", 107, 4.6),
                 new Song("Massacre", "Dodge & Fuski", 181, 4.1),
@@ -30,8 +25,13 @@ namespace AudiOcean
                 new Song("Massacre", "Dodge & Fuski", 181, 4.1),
                 new Song("Run", "Ski Mask", 107, 4.6),
                 new Song("Massacre", "Dodge & Fuski", 181, 4.1)
-            };
-        }
+            }, new List<AudiOceanUser>()
+            {
+                new AudiOceanUser("@you", "You", "ProfilePicture", null, null),
+                new AudiOceanUser("@notme", "Not Me", "ProfilePicture", null, null),
+                new AudiOceanUser("@notyou", "Not You", "ProfilePicture", null, null)
+            });
+		}
 
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {

@@ -16,6 +16,7 @@
                     <RowDefinition/>
                     <RowDefinition/>
                     <RowDefinition/>
+                    <RowDefinition/>
                 </Grid.RowDefinitions>
 
                 <Frame Margin="20,0" OutlineColor="Black">
@@ -70,6 +71,14 @@
                     </Grid.Resources>
                     <Label Text="Rating" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
                     <Label Text="5 Stars" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition />
+                        <RowDefinition />
+                    </Grid.RowDefinitions>
+                    <Label HorizontalTextAlignment="Center">Comment Box</Label>
+                    <Label Grid.Row="1" HorizontalTextAlignment="Center">Comments...</Label>
                 </Grid>
             </Grid>
             <Grid>
