@@ -21,11 +21,12 @@
     <Compile Include="$(MSBuildThisFileDirectory)AuthPage.xaml.cs">
       <DependentUpon>AuthPage.xaml</DependentUpon>
       <SubType>Code</SubType>
-	  </Compile>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)GUIMain.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)HomePage.xaml.cs">
       <DependentUpon>HomePage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Interfaces\MusicService.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
@@ -44,6 +45,7 @@
       <DependentUpon>SplashPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Static Helper Classes\MusicServiceHelper.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)HomePage.xaml">
