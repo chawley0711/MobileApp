@@ -6,7 +6,7 @@
     <ContentPage.Content>
         <Grid>
             <Grid.RowDefinitions>
-                <RowDefinition Height="50" />
+                <RowDefinition Height="100" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="40" />
             </Grid.RowDefinitions>
@@ -41,20 +41,39 @@
                     </ListView.ItemTemplate>
                 </ListView>
             </ScrollView>
-            <Grid x:Name="ProfileHead" HeightRequest="100" BackgroundColor="CornflowerBlue">
+            <Grid x:Name="ProfileHead" BackgroundColor="CornflowerBlue">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition />
                     <ColumnDefinition />
                 </Grid.ColumnDefinitions>
                 <Grid>
                     <Grid.RowDefinitions>
-                        <RowDefinition />
-                        <RowDefinition />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="3*" />
                     </Grid.RowDefinitions>
-                    <Label>Display Name</Label>
-                    <Label Grid.Row="1">@Username</Label>
+                    <Label FontSize="10">Display Name</Label>
+                    <Label Grid.Row="1" FontSize="10">@Username</Label>
+                    <Picker Grid.Row="2">
+                        <Picker.Items FontSize="10">
+                            <x:String>Alphabetical Ascending</x:String>
+                            <x:String>Alphabetical Descending</x:String>
+                            <x:String>Rating Ascending</x:String>
+                            <x:String>Rating Descending</x:String>
+                            <x:String>Date Uploaded Ascending</x:String>
+                            <x:String>Date Uploaded Descending</x:String>
+                        </Picker.Items>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
                 </Grid>
-                <Label Grid.Column="1">Profile Picture</Label>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Label>Profile Picture</Label>
+                    <Label x:Name="UploadButton" Grid.Row="1" HorizontalTextAlignment="Center">Upload</Label>
+                </Grid>
             </Grid>
             <local:SongBar Grid.Row="2" />
         </Grid>

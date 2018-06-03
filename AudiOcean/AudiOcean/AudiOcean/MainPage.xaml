@@ -41,10 +41,22 @@
         <Grid>
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="1*" />
-                <ColumnDefinition Width="4*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
             </Grid.ColumnDefinitions>
             <Image Aspect="AspectFit" Source="drawable/Logo" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
             <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
+            <Picker Grid.Column="2">
+                <Picker.Items>
+                    <x:String>Alphabetical Ascending</x:String>
+                    <x:String>Alphabetical Descending</x:String>
+                    <x:String>Rating Ascending</x:String>
+                    <x:String>Rating Descending</x:String>
+                    <x:String>Date Uploaded Ascending</x:String>
+                    <x:String>Date Uploaded Descending</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>0</Picker.SelectedIndex>
+            </Picker>
         </Grid>
         <local:SongBar Grid.Row="2" />
     </Grid>
