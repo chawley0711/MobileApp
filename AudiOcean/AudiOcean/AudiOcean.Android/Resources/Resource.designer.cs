@@ -26,91 +26,1417 @@ namespace AudiOcean.Droid
 		
 		public static void UpdateIdValues()
 		{
-			global::Xamarin.Auth.Resource.Animation.slide_in_right = global::AudiOcean.Droid.Resource.Animation.slide_in_right;
-			global::Xamarin.Auth.Resource.Animation.slide_out_left = global::AudiOcean.Droid.Resource.Animation.slide_out_left;
-			global::Xamarin.Auth.Resource.Boolean.abc_action_bar_embed_tabs = global::AudiOcean.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
-			global::Xamarin.Auth.Resource.Color.notification_action_color_filter = global::AudiOcean.Droid.Resource.Color.notification_action_color_filter;
-			global::Xamarin.Auth.Resource.Color.notification_icon_bg_color = global::AudiOcean.Droid.Resource.Color.notification_icon_bg_color;
-			global::Xamarin.Auth.Resource.Color.notification_material_background_media_default_color = global::AudiOcean.Droid.Resource.Color.notification_material_background_media_default_color;
-			global::Xamarin.Auth.Resource.Color.primary_text_default_material_dark = global::AudiOcean.Droid.Resource.Color.primary_text_default_material_dark;
-			global::Xamarin.Auth.Resource.Color.ripple_material_light = global::AudiOcean.Droid.Resource.Color.ripple_material_light;
-			global::Xamarin.Auth.Resource.Color.secondary_text_default_material_dark = global::AudiOcean.Droid.Resource.Color.secondary_text_default_material_dark;
-			global::Xamarin.Auth.Resource.Color.secondary_text_default_material_light = global::AudiOcean.Droid.Resource.Color.secondary_text_default_material_light;
-			global::Xamarin.Auth.Resource.Dimension.notification_action_icon_size = global::AudiOcean.Droid.Resource.Dimension.notification_action_icon_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_action_text_size = global::AudiOcean.Droid.Resource.Dimension.notification_action_text_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_big_circle_margin = global::AudiOcean.Droid.Resource.Dimension.notification_big_circle_margin;
-			global::Xamarin.Auth.Resource.Dimension.notification_content_margin_start = global::AudiOcean.Droid.Resource.Dimension.notification_content_margin_start;
-			global::Xamarin.Auth.Resource.Dimension.notification_large_icon_height = global::AudiOcean.Droid.Resource.Dimension.notification_large_icon_height;
-			global::Xamarin.Auth.Resource.Dimension.notification_large_icon_width = global::AudiOcean.Droid.Resource.Dimension.notification_large_icon_width;
-			global::Xamarin.Auth.Resource.Dimension.notification_main_column_padding_top = global::AudiOcean.Droid.Resource.Dimension.notification_main_column_padding_top;
-			global::Xamarin.Auth.Resource.Dimension.notification_media_narrow_margin = global::AudiOcean.Droid.Resource.Dimension.notification_media_narrow_margin;
-			global::Xamarin.Auth.Resource.Dimension.notification_right_icon_size = global::AudiOcean.Droid.Resource.Dimension.notification_right_icon_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_right_side_padding_top = global::AudiOcean.Droid.Resource.Dimension.notification_right_side_padding_top;
-			global::Xamarin.Auth.Resource.Dimension.notification_small_icon_background_padding = global::AudiOcean.Droid.Resource.Dimension.notification_small_icon_background_padding;
-			global::Xamarin.Auth.Resource.Dimension.notification_small_icon_size_as_large = global::AudiOcean.Droid.Resource.Dimension.notification_small_icon_size_as_large;
-			global::Xamarin.Auth.Resource.Dimension.notification_subtext_size = global::AudiOcean.Droid.Resource.Dimension.notification_subtext_size;
-			global::Xamarin.Auth.Resource.Dimension.notification_top_pad = global::AudiOcean.Droid.Resource.Dimension.notification_top_pad;
-			global::Xamarin.Auth.Resource.Dimension.notification_top_pad_large_text = global::AudiOcean.Droid.Resource.Dimension.notification_top_pad_large_text;
-			global::Xamarin.Auth.Resource.Drawable.ic_arrow_back = global::AudiOcean.Droid.Resource.Drawable.ic_arrow_back;
-			global::Xamarin.Auth.Resource.Drawable.notification_action_background = global::AudiOcean.Droid.Resource.Drawable.notification_action_background;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg = global::AudiOcean.Droid.Resource.Drawable.notification_bg;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_low = global::AudiOcean.Droid.Resource.Drawable.notification_bg_low;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_low_normal = global::AudiOcean.Droid.Resource.Drawable.notification_bg_low_normal;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_low_pressed = global::AudiOcean.Droid.Resource.Drawable.notification_bg_low_pressed;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_normal = global::AudiOcean.Droid.Resource.Drawable.notification_bg_normal;
-			global::Xamarin.Auth.Resource.Drawable.notification_bg_normal_pressed = global::AudiOcean.Droid.Resource.Drawable.notification_bg_normal_pressed;
-			global::Xamarin.Auth.Resource.Drawable.notification_icon_background = global::AudiOcean.Droid.Resource.Drawable.notification_icon_background;
-			global::Xamarin.Auth.Resource.Drawable.notification_template_icon_bg = global::AudiOcean.Droid.Resource.Drawable.notification_template_icon_bg;
-			global::Xamarin.Auth.Resource.Drawable.notification_template_icon_low_bg = global::AudiOcean.Droid.Resource.Drawable.notification_template_icon_low_bg;
-			global::Xamarin.Auth.Resource.Drawable.notification_tile_bg = global::AudiOcean.Droid.Resource.Drawable.notification_tile_bg;
-			global::Xamarin.Auth.Resource.Drawable.notify_panel_notification_icon_bg = global::AudiOcean.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
-			global::Xamarin.Auth.Resource.Id.action0 = global::AudiOcean.Droid.Resource.Id.action0;
-			global::Xamarin.Auth.Resource.Id.action_container = global::AudiOcean.Droid.Resource.Id.action_container;
-			global::Xamarin.Auth.Resource.Id.action_divider = global::AudiOcean.Droid.Resource.Id.action_divider;
-			global::Xamarin.Auth.Resource.Id.action_image = global::AudiOcean.Droid.Resource.Id.action_image;
-			global::Xamarin.Auth.Resource.Id.action_text = global::AudiOcean.Droid.Resource.Id.action_text;
-			global::Xamarin.Auth.Resource.Id.actions = global::AudiOcean.Droid.Resource.Id.actions;
-			global::Xamarin.Auth.Resource.Id.cancel_action = global::AudiOcean.Droid.Resource.Id.cancel_action;
-			global::Xamarin.Auth.Resource.Id.chronometer = global::AudiOcean.Droid.Resource.Id.chronometer;
-			global::Xamarin.Auth.Resource.Id.end_padder = global::AudiOcean.Droid.Resource.Id.end_padder;
-			global::Xamarin.Auth.Resource.Id.icon = global::AudiOcean.Droid.Resource.Id.icon;
-			global::Xamarin.Auth.Resource.Id.icon_group = global::AudiOcean.Droid.Resource.Id.icon_group;
-			global::Xamarin.Auth.Resource.Id.info = global::AudiOcean.Droid.Resource.Id.info;
-			global::Xamarin.Auth.Resource.Id.line1 = global::AudiOcean.Droid.Resource.Id.line1;
-			global::Xamarin.Auth.Resource.Id.line3 = global::AudiOcean.Droid.Resource.Id.line3;
-			global::Xamarin.Auth.Resource.Id.media_actions = global::AudiOcean.Droid.Resource.Id.media_actions;
-			global::Xamarin.Auth.Resource.Id.normal = global::AudiOcean.Droid.Resource.Id.normal;
-			global::Xamarin.Auth.Resource.Id.notification_background = global::AudiOcean.Droid.Resource.Id.notification_background;
-			global::Xamarin.Auth.Resource.Id.notification_main_column = global::AudiOcean.Droid.Resource.Id.notification_main_column;
-			global::Xamarin.Auth.Resource.Id.notification_main_column_container = global::AudiOcean.Droid.Resource.Id.notification_main_column_container;
-			global::Xamarin.Auth.Resource.Id.right_icon = global::AudiOcean.Droid.Resource.Id.right_icon;
-			global::Xamarin.Auth.Resource.Id.right_side = global::AudiOcean.Droid.Resource.Id.right_side;
-			global::Xamarin.Auth.Resource.Id.status_bar_latest_event_content = global::AudiOcean.Droid.Resource.Id.status_bar_latest_event_content;
-			global::Xamarin.Auth.Resource.Id.text = global::AudiOcean.Droid.Resource.Id.text;
-			global::Xamarin.Auth.Resource.Id.text2 = global::AudiOcean.Droid.Resource.Id.text2;
-			global::Xamarin.Auth.Resource.Id.time = global::AudiOcean.Droid.Resource.Id.time;
-			global::Xamarin.Auth.Resource.Id.title = global::AudiOcean.Droid.Resource.Id.title;
-			global::Xamarin.Auth.Resource.Id.webview = global::AudiOcean.Droid.Resource.Id.webview;
-			global::Xamarin.Auth.Resource.Integer.cancel_button_image_alpha = global::AudiOcean.Droid.Resource.Integer.cancel_button_image_alpha;
-			global::Xamarin.Auth.Resource.Integer.status_bar_notification_info_maxnum = global::AudiOcean.Droid.Resource.Integer.status_bar_notification_info_maxnum;
-			global::Xamarin.Auth.Resource.Layout.activity_webview = global::AudiOcean.Droid.Resource.Layout.activity_webview;
-			global::Xamarin.Auth.Resource.Layout.notification_action = global::AudiOcean.Droid.Resource.Layout.notification_action;
-			global::Xamarin.Auth.Resource.Layout.notification_action_tombstone = global::AudiOcean.Droid.Resource.Layout.notification_action_tombstone;
-			global::Xamarin.Auth.Resource.Layout.notification_media_action = global::AudiOcean.Droid.Resource.Layout.notification_media_action;
-			global::Xamarin.Auth.Resource.Layout.notification_media_cancel_action = global::AudiOcean.Droid.Resource.Layout.notification_media_cancel_action;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media_custom = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media_custom;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media_narrow = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media_narrow;
-			global::Xamarin.Auth.Resource.Layout.notification_template_big_media_narrow_custom = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
-			global::Xamarin.Auth.Resource.Layout.notification_template_custom_big = global::AudiOcean.Droid.Resource.Layout.notification_template_custom_big;
-			global::Xamarin.Auth.Resource.Layout.notification_template_icon_group = global::AudiOcean.Droid.Resource.Layout.notification_template_icon_group;
-			global::Xamarin.Auth.Resource.Layout.notification_template_lines_media = global::AudiOcean.Droid.Resource.Layout.notification_template_lines_media;
-			global::Xamarin.Auth.Resource.Layout.notification_template_media = global::AudiOcean.Droid.Resource.Layout.notification_template_media;
-			global::Xamarin.Auth.Resource.Layout.notification_template_media_custom = global::AudiOcean.Droid.Resource.Layout.notification_template_media_custom;
-			global::Xamarin.Auth.Resource.Layout.notification_template_part_chronometer = global::AudiOcean.Droid.Resource.Layout.notification_template_part_chronometer;
-			global::Xamarin.Auth.Resource.Layout.notification_template_part_time = global::AudiOcean.Droid.Resource.Layout.notification_template_part_time;
-			global::Xamarin.Auth.Resource.String.status_bar_notification_info_overflow = global::AudiOcean.Droid.Resource.String.status_bar_notification_info_overflow;
-			global::Xamarin.Auth.Resource.String.title_activity_webview = global::AudiOcean.Droid.Resource.String.title_activity_webview;
+			global::AudiOceanClient.Resource.Animation.abc_fade_in = global::AudiOcean.Droid.Resource.Animation.abc_fade_in;
+			global::AudiOceanClient.Resource.Animation.abc_fade_out = global::AudiOcean.Droid.Resource.Animation.abc_fade_out;
+			global::AudiOceanClient.Resource.Animation.abc_grow_fade_in_from_bottom = global::AudiOcean.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::AudiOceanClient.Resource.Animation.abc_popup_enter = global::AudiOcean.Droid.Resource.Animation.abc_popup_enter;
+			global::AudiOceanClient.Resource.Animation.abc_popup_exit = global::AudiOcean.Droid.Resource.Animation.abc_popup_exit;
+			global::AudiOceanClient.Resource.Animation.abc_shrink_fade_out_from_bottom = global::AudiOcean.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::AudiOceanClient.Resource.Animation.abc_slide_in_bottom = global::AudiOcean.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::AudiOceanClient.Resource.Animation.abc_slide_in_top = global::AudiOcean.Droid.Resource.Animation.abc_slide_in_top;
+			global::AudiOceanClient.Resource.Animation.abc_slide_out_bottom = global::AudiOcean.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::AudiOceanClient.Resource.Animation.abc_slide_out_top = global::AudiOcean.Droid.Resource.Animation.abc_slide_out_top;
+			global::AudiOceanClient.Resource.Attribute.actionBarDivider = global::AudiOcean.Droid.Resource.Attribute.actionBarDivider;
+			global::AudiOceanClient.Resource.Attribute.actionBarItemBackground = global::AudiOcean.Droid.Resource.Attribute.actionBarItemBackground;
+			global::AudiOceanClient.Resource.Attribute.actionBarPopupTheme = global::AudiOcean.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::AudiOceanClient.Resource.Attribute.actionBarSize = global::AudiOcean.Droid.Resource.Attribute.actionBarSize;
+			global::AudiOceanClient.Resource.Attribute.actionBarSplitStyle = global::AudiOcean.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::AudiOceanClient.Resource.Attribute.actionBarStyle = global::AudiOcean.Droid.Resource.Attribute.actionBarStyle;
+			global::AudiOceanClient.Resource.Attribute.actionBarTabBarStyle = global::AudiOcean.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::AudiOceanClient.Resource.Attribute.actionBarTabStyle = global::AudiOcean.Droid.Resource.Attribute.actionBarTabStyle;
+			global::AudiOceanClient.Resource.Attribute.actionBarTabTextStyle = global::AudiOcean.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::AudiOceanClient.Resource.Attribute.actionBarTheme = global::AudiOcean.Droid.Resource.Attribute.actionBarTheme;
+			global::AudiOceanClient.Resource.Attribute.actionBarWidgetTheme = global::AudiOcean.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::AudiOceanClient.Resource.Attribute.actionButtonStyle = global::AudiOcean.Droid.Resource.Attribute.actionButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.actionDropDownStyle = global::AudiOcean.Droid.Resource.Attribute.actionDropDownStyle;
+			global::AudiOceanClient.Resource.Attribute.actionLayout = global::AudiOcean.Droid.Resource.Attribute.actionLayout;
+			global::AudiOceanClient.Resource.Attribute.actionMenuTextAppearance = global::AudiOcean.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::AudiOceanClient.Resource.Attribute.actionMenuTextColor = global::AudiOcean.Droid.Resource.Attribute.actionMenuTextColor;
+			global::AudiOceanClient.Resource.Attribute.actionModeBackground = global::AudiOcean.Droid.Resource.Attribute.actionModeBackground;
+			global::AudiOceanClient.Resource.Attribute.actionModeCloseButtonStyle = global::AudiOcean.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.actionModeCloseDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModeCopyDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModeCutDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModeFindDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModePasteDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModePopupWindowStyle = global::AudiOcean.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::AudiOceanClient.Resource.Attribute.actionModeSelectAllDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModeShareDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionModeSplitBackground = global::AudiOcean.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::AudiOceanClient.Resource.Attribute.actionModeStyle = global::AudiOcean.Droid.Resource.Attribute.actionModeStyle;
+			global::AudiOceanClient.Resource.Attribute.actionModeWebSearchDrawable = global::AudiOcean.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::AudiOceanClient.Resource.Attribute.actionOverflowButtonStyle = global::AudiOcean.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.actionOverflowMenuStyle = global::AudiOcean.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::AudiOceanClient.Resource.Attribute.actionProviderClass = global::AudiOcean.Droid.Resource.Attribute.actionProviderClass;
+			global::AudiOceanClient.Resource.Attribute.actionViewClass = global::AudiOcean.Droid.Resource.Attribute.actionViewClass;
+			global::AudiOceanClient.Resource.Attribute.activityChooserViewStyle = global::AudiOcean.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::AudiOceanClient.Resource.Attribute.alertDialogButtonGroupStyle = global::AudiOcean.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::AudiOceanClient.Resource.Attribute.alertDialogCenterButtons = global::AudiOcean.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::AudiOceanClient.Resource.Attribute.alertDialogStyle = global::AudiOcean.Droid.Resource.Attribute.alertDialogStyle;
+			global::AudiOceanClient.Resource.Attribute.alertDialogTheme = global::AudiOcean.Droid.Resource.Attribute.alertDialogTheme;
+			global::AudiOceanClient.Resource.Attribute.allowStacking = global::AudiOcean.Droid.Resource.Attribute.allowStacking;
+			global::AudiOceanClient.Resource.Attribute.alpha = global::AudiOcean.Droid.Resource.Attribute.alpha;
+			global::AudiOceanClient.Resource.Attribute.arrowHeadLength = global::AudiOcean.Droid.Resource.Attribute.arrowHeadLength;
+			global::AudiOceanClient.Resource.Attribute.arrowShaftLength = global::AudiOcean.Droid.Resource.Attribute.arrowShaftLength;
+			global::AudiOceanClient.Resource.Attribute.autoCompleteTextViewStyle = global::AudiOcean.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::AudiOceanClient.Resource.Attribute.background = global::AudiOcean.Droid.Resource.Attribute.background;
+			global::AudiOceanClient.Resource.Attribute.backgroundSplit = global::AudiOcean.Droid.Resource.Attribute.backgroundSplit;
+			global::AudiOceanClient.Resource.Attribute.backgroundStacked = global::AudiOcean.Droid.Resource.Attribute.backgroundStacked;
+			global::AudiOceanClient.Resource.Attribute.backgroundTint = global::AudiOcean.Droid.Resource.Attribute.backgroundTint;
+			global::AudiOceanClient.Resource.Attribute.backgroundTintMode = global::AudiOcean.Droid.Resource.Attribute.backgroundTintMode;
+			global::AudiOceanClient.Resource.Attribute.barLength = global::AudiOcean.Droid.Resource.Attribute.barLength;
+			global::AudiOceanClient.Resource.Attribute.borderlessButtonStyle = global::AudiOcean.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonBarButtonStyle = global::AudiOcean.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonBarNegativeButtonStyle = global::AudiOcean.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonBarNeutralButtonStyle = global::AudiOcean.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonBarPositiveButtonStyle = global::AudiOcean.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonBarStyle = global::AudiOcean.Droid.Resource.Attribute.buttonBarStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonGravity = global::AudiOcean.Droid.Resource.Attribute.buttonGravity;
+			global::AudiOceanClient.Resource.Attribute.buttonPanelSideLayout = global::AudiOcean.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::AudiOceanClient.Resource.Attribute.buttonStyle = global::AudiOcean.Droid.Resource.Attribute.buttonStyle;
+			global::AudiOceanClient.Resource.Attribute.buttonStyleSmall = global::AudiOcean.Droid.Resource.Attribute.buttonStyleSmall;
+			global::AudiOceanClient.Resource.Attribute.buttonTint = global::AudiOcean.Droid.Resource.Attribute.buttonTint;
+			global::AudiOceanClient.Resource.Attribute.buttonTintMode = global::AudiOcean.Droid.Resource.Attribute.buttonTintMode;
+			global::AudiOceanClient.Resource.Attribute.checkboxStyle = global::AudiOcean.Droid.Resource.Attribute.checkboxStyle;
+			global::AudiOceanClient.Resource.Attribute.checkedTextViewStyle = global::AudiOcean.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::AudiOceanClient.Resource.Attribute.closeIcon = global::AudiOcean.Droid.Resource.Attribute.closeIcon;
+			global::AudiOceanClient.Resource.Attribute.closeItemLayout = global::AudiOcean.Droid.Resource.Attribute.closeItemLayout;
+			global::AudiOceanClient.Resource.Attribute.collapseContentDescription = global::AudiOcean.Droid.Resource.Attribute.collapseContentDescription;
+			global::AudiOceanClient.Resource.Attribute.collapseIcon = global::AudiOcean.Droid.Resource.Attribute.collapseIcon;
+			global::AudiOceanClient.Resource.Attribute.color = global::AudiOcean.Droid.Resource.Attribute.color;
+			global::AudiOceanClient.Resource.Attribute.colorAccent = global::AudiOcean.Droid.Resource.Attribute.colorAccent;
+			global::AudiOceanClient.Resource.Attribute.colorBackgroundFloating = global::AudiOcean.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::AudiOceanClient.Resource.Attribute.colorButtonNormal = global::AudiOcean.Droid.Resource.Attribute.colorButtonNormal;
+			global::AudiOceanClient.Resource.Attribute.colorControlActivated = global::AudiOcean.Droid.Resource.Attribute.colorControlActivated;
+			global::AudiOceanClient.Resource.Attribute.colorControlHighlight = global::AudiOcean.Droid.Resource.Attribute.colorControlHighlight;
+			global::AudiOceanClient.Resource.Attribute.colorControlNormal = global::AudiOcean.Droid.Resource.Attribute.colorControlNormal;
+			global::AudiOceanClient.Resource.Attribute.colorPrimary = global::AudiOcean.Droid.Resource.Attribute.colorPrimary;
+			global::AudiOceanClient.Resource.Attribute.colorPrimaryDark = global::AudiOcean.Droid.Resource.Attribute.colorPrimaryDark;
+			global::AudiOceanClient.Resource.Attribute.colorSwitchThumbNormal = global::AudiOcean.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::AudiOceanClient.Resource.Attribute.commitIcon = global::AudiOcean.Droid.Resource.Attribute.commitIcon;
+			global::AudiOceanClient.Resource.Attribute.contentInsetEnd = global::AudiOcean.Droid.Resource.Attribute.contentInsetEnd;
+			global::AudiOceanClient.Resource.Attribute.contentInsetEndWithActions = global::AudiOcean.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::AudiOceanClient.Resource.Attribute.contentInsetLeft = global::AudiOcean.Droid.Resource.Attribute.contentInsetLeft;
+			global::AudiOceanClient.Resource.Attribute.contentInsetRight = global::AudiOcean.Droid.Resource.Attribute.contentInsetRight;
+			global::AudiOceanClient.Resource.Attribute.contentInsetStart = global::AudiOcean.Droid.Resource.Attribute.contentInsetStart;
+			global::AudiOceanClient.Resource.Attribute.contentInsetStartWithNavigation = global::AudiOcean.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::AudiOceanClient.Resource.Attribute.controlBackground = global::AudiOcean.Droid.Resource.Attribute.controlBackground;
+			global::AudiOceanClient.Resource.Attribute.customNavigationLayout = global::AudiOcean.Droid.Resource.Attribute.customNavigationLayout;
+			global::AudiOceanClient.Resource.Attribute.defaultQueryHint = global::AudiOcean.Droid.Resource.Attribute.defaultQueryHint;
+			global::AudiOceanClient.Resource.Attribute.dialogPreferredPadding = global::AudiOcean.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::AudiOceanClient.Resource.Attribute.dialogTheme = global::AudiOcean.Droid.Resource.Attribute.dialogTheme;
+			global::AudiOceanClient.Resource.Attribute.displayOptions = global::AudiOcean.Droid.Resource.Attribute.displayOptions;
+			global::AudiOceanClient.Resource.Attribute.divider = global::AudiOcean.Droid.Resource.Attribute.divider;
+			global::AudiOceanClient.Resource.Attribute.dividerHorizontal = global::AudiOcean.Droid.Resource.Attribute.dividerHorizontal;
+			global::AudiOceanClient.Resource.Attribute.dividerPadding = global::AudiOcean.Droid.Resource.Attribute.dividerPadding;
+			global::AudiOceanClient.Resource.Attribute.dividerVertical = global::AudiOcean.Droid.Resource.Attribute.dividerVertical;
+			global::AudiOceanClient.Resource.Attribute.drawableSize = global::AudiOcean.Droid.Resource.Attribute.drawableSize;
+			global::AudiOceanClient.Resource.Attribute.drawerArrowStyle = global::AudiOcean.Droid.Resource.Attribute.drawerArrowStyle;
+			global::AudiOceanClient.Resource.Attribute.dropDownListViewStyle = global::AudiOcean.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::AudiOceanClient.Resource.Attribute.dropdownListPreferredItemHeight = global::AudiOcean.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::AudiOceanClient.Resource.Attribute.editTextBackground = global::AudiOcean.Droid.Resource.Attribute.editTextBackground;
+			global::AudiOceanClient.Resource.Attribute.editTextColor = global::AudiOcean.Droid.Resource.Attribute.editTextColor;
+			global::AudiOceanClient.Resource.Attribute.editTextStyle = global::AudiOcean.Droid.Resource.Attribute.editTextStyle;
+			global::AudiOceanClient.Resource.Attribute.elevation = global::AudiOcean.Droid.Resource.Attribute.elevation;
+			global::AudiOceanClient.Resource.Attribute.expandActivityOverflowButtonDrawable = global::AudiOcean.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::AudiOceanClient.Resource.Attribute.gapBetweenBars = global::AudiOcean.Droid.Resource.Attribute.gapBetweenBars;
+			global::AudiOceanClient.Resource.Attribute.goIcon = global::AudiOcean.Droid.Resource.Attribute.goIcon;
+			global::AudiOceanClient.Resource.Attribute.height = global::AudiOcean.Droid.Resource.Attribute.height;
+			global::AudiOceanClient.Resource.Attribute.hideOnContentScroll = global::AudiOcean.Droid.Resource.Attribute.hideOnContentScroll;
+			global::AudiOceanClient.Resource.Attribute.homeAsUpIndicator = global::AudiOcean.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::AudiOceanClient.Resource.Attribute.homeLayout = global::AudiOcean.Droid.Resource.Attribute.homeLayout;
+			global::AudiOceanClient.Resource.Attribute.icon = global::AudiOcean.Droid.Resource.Attribute.icon;
+			global::AudiOceanClient.Resource.Attribute.iconifiedByDefault = global::AudiOcean.Droid.Resource.Attribute.iconifiedByDefault;
+			global::AudiOceanClient.Resource.Attribute.imageButtonStyle = global::AudiOcean.Droid.Resource.Attribute.imageButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.indeterminateProgressStyle = global::AudiOcean.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::AudiOceanClient.Resource.Attribute.initialActivityCount = global::AudiOcean.Droid.Resource.Attribute.initialActivityCount;
+			global::AudiOceanClient.Resource.Attribute.isLightTheme = global::AudiOcean.Droid.Resource.Attribute.isLightTheme;
+			global::AudiOceanClient.Resource.Attribute.itemPadding = global::AudiOcean.Droid.Resource.Attribute.itemPadding;
+			global::AudiOceanClient.Resource.Attribute.layout = global::AudiOcean.Droid.Resource.Attribute.layout;
+			global::AudiOceanClient.Resource.Attribute.listChoiceBackgroundIndicator = global::AudiOcean.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::AudiOceanClient.Resource.Attribute.listDividerAlertDialog = global::AudiOcean.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::AudiOceanClient.Resource.Attribute.listItemLayout = global::AudiOcean.Droid.Resource.Attribute.listItemLayout;
+			global::AudiOceanClient.Resource.Attribute.listLayout = global::AudiOcean.Droid.Resource.Attribute.listLayout;
+			global::AudiOceanClient.Resource.Attribute.listMenuViewStyle = global::AudiOcean.Droid.Resource.Attribute.listMenuViewStyle;
+			global::AudiOceanClient.Resource.Attribute.listPopupWindowStyle = global::AudiOcean.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::AudiOceanClient.Resource.Attribute.listPreferredItemHeight = global::AudiOcean.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::AudiOceanClient.Resource.Attribute.listPreferredItemHeightLarge = global::AudiOcean.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::AudiOceanClient.Resource.Attribute.listPreferredItemHeightSmall = global::AudiOcean.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::AudiOceanClient.Resource.Attribute.listPreferredItemPaddingLeft = global::AudiOcean.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::AudiOceanClient.Resource.Attribute.listPreferredItemPaddingRight = global::AudiOcean.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::AudiOceanClient.Resource.Attribute.logo = global::AudiOcean.Droid.Resource.Attribute.logo;
+			global::AudiOceanClient.Resource.Attribute.logoDescription = global::AudiOcean.Droid.Resource.Attribute.logoDescription;
+			global::AudiOceanClient.Resource.Attribute.maxButtonHeight = global::AudiOcean.Droid.Resource.Attribute.maxButtonHeight;
+			global::AudiOceanClient.Resource.Attribute.measureWithLargestChild = global::AudiOcean.Droid.Resource.Attribute.measureWithLargestChild;
+			global::AudiOceanClient.Resource.Attribute.multiChoiceItemLayout = global::AudiOcean.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::AudiOceanClient.Resource.Attribute.navigationContentDescription = global::AudiOcean.Droid.Resource.Attribute.navigationContentDescription;
+			global::AudiOceanClient.Resource.Attribute.navigationIcon = global::AudiOcean.Droid.Resource.Attribute.navigationIcon;
+			global::AudiOceanClient.Resource.Attribute.navigationMode = global::AudiOcean.Droid.Resource.Attribute.navigationMode;
+			global::AudiOceanClient.Resource.Attribute.overlapAnchor = global::AudiOcean.Droid.Resource.Attribute.overlapAnchor;
+			global::AudiOceanClient.Resource.Attribute.paddingBottomNoButtons = global::AudiOcean.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::AudiOceanClient.Resource.Attribute.paddingEnd = global::AudiOcean.Droid.Resource.Attribute.paddingEnd;
+			global::AudiOceanClient.Resource.Attribute.paddingStart = global::AudiOcean.Droid.Resource.Attribute.paddingStart;
+			global::AudiOceanClient.Resource.Attribute.paddingTopNoTitle = global::AudiOcean.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::AudiOceanClient.Resource.Attribute.panelBackground = global::AudiOcean.Droid.Resource.Attribute.panelBackground;
+			global::AudiOceanClient.Resource.Attribute.panelMenuListTheme = global::AudiOcean.Droid.Resource.Attribute.panelMenuListTheme;
+			global::AudiOceanClient.Resource.Attribute.panelMenuListWidth = global::AudiOcean.Droid.Resource.Attribute.panelMenuListWidth;
+			global::AudiOceanClient.Resource.Attribute.popupMenuStyle = global::AudiOcean.Droid.Resource.Attribute.popupMenuStyle;
+			global::AudiOceanClient.Resource.Attribute.popupTheme = global::AudiOcean.Droid.Resource.Attribute.popupTheme;
+			global::AudiOceanClient.Resource.Attribute.popupWindowStyle = global::AudiOcean.Droid.Resource.Attribute.popupWindowStyle;
+			global::AudiOceanClient.Resource.Attribute.preserveIconSpacing = global::AudiOcean.Droid.Resource.Attribute.preserveIconSpacing;
+			global::AudiOceanClient.Resource.Attribute.progressBarPadding = global::AudiOcean.Droid.Resource.Attribute.progressBarPadding;
+			global::AudiOceanClient.Resource.Attribute.progressBarStyle = global::AudiOcean.Droid.Resource.Attribute.progressBarStyle;
+			global::AudiOceanClient.Resource.Attribute.queryBackground = global::AudiOcean.Droid.Resource.Attribute.queryBackground;
+			global::AudiOceanClient.Resource.Attribute.queryHint = global::AudiOcean.Droid.Resource.Attribute.queryHint;
+			global::AudiOceanClient.Resource.Attribute.radioButtonStyle = global::AudiOcean.Droid.Resource.Attribute.radioButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.ratingBarStyle = global::AudiOcean.Droid.Resource.Attribute.ratingBarStyle;
+			global::AudiOceanClient.Resource.Attribute.ratingBarStyleIndicator = global::AudiOcean.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::AudiOceanClient.Resource.Attribute.ratingBarStyleSmall = global::AudiOcean.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::AudiOceanClient.Resource.Attribute.searchHintIcon = global::AudiOcean.Droid.Resource.Attribute.searchHintIcon;
+			global::AudiOceanClient.Resource.Attribute.searchIcon = global::AudiOcean.Droid.Resource.Attribute.searchIcon;
+			global::AudiOceanClient.Resource.Attribute.searchViewStyle = global::AudiOcean.Droid.Resource.Attribute.searchViewStyle;
+			global::AudiOceanClient.Resource.Attribute.seekBarStyle = global::AudiOcean.Droid.Resource.Attribute.seekBarStyle;
+			global::AudiOceanClient.Resource.Attribute.selectableItemBackground = global::AudiOcean.Droid.Resource.Attribute.selectableItemBackground;
+			global::AudiOceanClient.Resource.Attribute.selectableItemBackgroundBorderless = global::AudiOcean.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::AudiOceanClient.Resource.Attribute.showAsAction = global::AudiOcean.Droid.Resource.Attribute.showAsAction;
+			global::AudiOceanClient.Resource.Attribute.showDividers = global::AudiOcean.Droid.Resource.Attribute.showDividers;
+			global::AudiOceanClient.Resource.Attribute.showText = global::AudiOcean.Droid.Resource.Attribute.showText;
+			global::AudiOceanClient.Resource.Attribute.showTitle = global::AudiOcean.Droid.Resource.Attribute.showTitle;
+			global::AudiOceanClient.Resource.Attribute.singleChoiceItemLayout = global::AudiOcean.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::AudiOceanClient.Resource.Attribute.spinBars = global::AudiOcean.Droid.Resource.Attribute.spinBars;
+			global::AudiOceanClient.Resource.Attribute.spinnerDropDownItemStyle = global::AudiOcean.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::AudiOceanClient.Resource.Attribute.spinnerStyle = global::AudiOcean.Droid.Resource.Attribute.spinnerStyle;
+			global::AudiOceanClient.Resource.Attribute.splitTrack = global::AudiOcean.Droid.Resource.Attribute.splitTrack;
+			global::AudiOceanClient.Resource.Attribute.srcCompat = global::AudiOcean.Droid.Resource.Attribute.srcCompat;
+			global::AudiOceanClient.Resource.Attribute.state_above_anchor = global::AudiOcean.Droid.Resource.Attribute.state_above_anchor;
+			global::AudiOceanClient.Resource.Attribute.subMenuArrow = global::AudiOcean.Droid.Resource.Attribute.subMenuArrow;
+			global::AudiOceanClient.Resource.Attribute.submitBackground = global::AudiOcean.Droid.Resource.Attribute.submitBackground;
+			global::AudiOceanClient.Resource.Attribute.subtitle = global::AudiOcean.Droid.Resource.Attribute.subtitle;
+			global::AudiOceanClient.Resource.Attribute.subtitleTextAppearance = global::AudiOcean.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::AudiOceanClient.Resource.Attribute.subtitleTextColor = global::AudiOcean.Droid.Resource.Attribute.subtitleTextColor;
+			global::AudiOceanClient.Resource.Attribute.subtitleTextStyle = global::AudiOcean.Droid.Resource.Attribute.subtitleTextStyle;
+			global::AudiOceanClient.Resource.Attribute.suggestionRowLayout = global::AudiOcean.Droid.Resource.Attribute.suggestionRowLayout;
+			global::AudiOceanClient.Resource.Attribute.switchMinWidth = global::AudiOcean.Droid.Resource.Attribute.switchMinWidth;
+			global::AudiOceanClient.Resource.Attribute.switchPadding = global::AudiOcean.Droid.Resource.Attribute.switchPadding;
+			global::AudiOceanClient.Resource.Attribute.switchStyle = global::AudiOcean.Droid.Resource.Attribute.switchStyle;
+			global::AudiOceanClient.Resource.Attribute.switchTextAppearance = global::AudiOcean.Droid.Resource.Attribute.switchTextAppearance;
+			global::AudiOceanClient.Resource.Attribute.textAllCaps = global::AudiOcean.Droid.Resource.Attribute.textAllCaps;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceLargePopupMenu = global::AudiOcean.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceListItem = global::AudiOcean.Droid.Resource.Attribute.textAppearanceListItem;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceListItemSecondary = global::AudiOcean.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceListItemSmall = global::AudiOcean.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::AudiOceanClient.Resource.Attribute.textAppearancePopupMenuHeader = global::AudiOcean.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceSearchResultSubtitle = global::AudiOcean.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceSearchResultTitle = global::AudiOcean.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::AudiOceanClient.Resource.Attribute.textAppearanceSmallPopupMenu = global::AudiOcean.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::AudiOceanClient.Resource.Attribute.textColorAlertDialogListItem = global::AudiOcean.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::AudiOceanClient.Resource.Attribute.textColorSearchUrl = global::AudiOcean.Droid.Resource.Attribute.textColorSearchUrl;
+			global::AudiOceanClient.Resource.Attribute.theme = global::AudiOcean.Droid.Resource.Attribute.theme;
+			global::AudiOceanClient.Resource.Attribute.thickness = global::AudiOcean.Droid.Resource.Attribute.thickness;
+			global::AudiOceanClient.Resource.Attribute.thumbTextPadding = global::AudiOcean.Droid.Resource.Attribute.thumbTextPadding;
+			global::AudiOceanClient.Resource.Attribute.thumbTint = global::AudiOcean.Droid.Resource.Attribute.thumbTint;
+			global::AudiOceanClient.Resource.Attribute.thumbTintMode = global::AudiOcean.Droid.Resource.Attribute.thumbTintMode;
+			global::AudiOceanClient.Resource.Attribute.tickMark = global::AudiOcean.Droid.Resource.Attribute.tickMark;
+			global::AudiOceanClient.Resource.Attribute.tickMarkTint = global::AudiOcean.Droid.Resource.Attribute.tickMarkTint;
+			global::AudiOceanClient.Resource.Attribute.tickMarkTintMode = global::AudiOcean.Droid.Resource.Attribute.tickMarkTintMode;
+			global::AudiOceanClient.Resource.Attribute.tint = global::AudiOcean.Droid.Resource.Attribute.tint;
+			global::AudiOceanClient.Resource.Attribute.tintMode = global::AudiOcean.Droid.Resource.Attribute.tintMode;
+			global::AudiOceanClient.Resource.Attribute.title = global::AudiOcean.Droid.Resource.Attribute.title;
+			global::AudiOceanClient.Resource.Attribute.titleMargin = global::AudiOcean.Droid.Resource.Attribute.titleMargin;
+			global::AudiOceanClient.Resource.Attribute.titleMarginBottom = global::AudiOcean.Droid.Resource.Attribute.titleMarginBottom;
+			global::AudiOceanClient.Resource.Attribute.titleMarginEnd = global::AudiOcean.Droid.Resource.Attribute.titleMarginEnd;
+			global::AudiOceanClient.Resource.Attribute.titleMarginStart = global::AudiOcean.Droid.Resource.Attribute.titleMarginStart;
+			global::AudiOceanClient.Resource.Attribute.titleMarginTop = global::AudiOcean.Droid.Resource.Attribute.titleMarginTop;
+			global::AudiOceanClient.Resource.Attribute.titleMargins = global::AudiOcean.Droid.Resource.Attribute.titleMargins;
+			global::AudiOceanClient.Resource.Attribute.titleTextAppearance = global::AudiOcean.Droid.Resource.Attribute.titleTextAppearance;
+			global::AudiOceanClient.Resource.Attribute.titleTextColor = global::AudiOcean.Droid.Resource.Attribute.titleTextColor;
+			global::AudiOceanClient.Resource.Attribute.titleTextStyle = global::AudiOcean.Droid.Resource.Attribute.titleTextStyle;
+			global::AudiOceanClient.Resource.Attribute.toolbarNavigationButtonStyle = global::AudiOcean.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::AudiOceanClient.Resource.Attribute.toolbarStyle = global::AudiOcean.Droid.Resource.Attribute.toolbarStyle;
+			global::AudiOceanClient.Resource.Attribute.track = global::AudiOcean.Droid.Resource.Attribute.track;
+			global::AudiOceanClient.Resource.Attribute.trackTint = global::AudiOcean.Droid.Resource.Attribute.trackTint;
+			global::AudiOceanClient.Resource.Attribute.trackTintMode = global::AudiOcean.Droid.Resource.Attribute.trackTintMode;
+			global::AudiOceanClient.Resource.Attribute.voiceIcon = global::AudiOcean.Droid.Resource.Attribute.voiceIcon;
+			global::AudiOceanClient.Resource.Attribute.windowActionBar = global::AudiOcean.Droid.Resource.Attribute.windowActionBar;
+			global::AudiOceanClient.Resource.Attribute.windowActionBarOverlay = global::AudiOcean.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::AudiOceanClient.Resource.Attribute.windowActionModeOverlay = global::AudiOcean.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::AudiOceanClient.Resource.Attribute.windowFixedHeightMajor = global::AudiOcean.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::AudiOceanClient.Resource.Attribute.windowFixedHeightMinor = global::AudiOcean.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::AudiOceanClient.Resource.Attribute.windowFixedWidthMajor = global::AudiOcean.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::AudiOceanClient.Resource.Attribute.windowFixedWidthMinor = global::AudiOcean.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::AudiOceanClient.Resource.Attribute.windowMinWidthMajor = global::AudiOcean.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::AudiOceanClient.Resource.Attribute.windowMinWidthMinor = global::AudiOcean.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::AudiOceanClient.Resource.Attribute.windowNoTitle = global::AudiOcean.Droid.Resource.Attribute.windowNoTitle;
+			global::AudiOceanClient.Resource.Boolean.abc_action_bar_embed_tabs = global::AudiOcean.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::AudiOceanClient.Resource.Boolean.abc_allow_stacked_button_bar = global::AudiOcean.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::AudiOceanClient.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::AudiOcean.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::AudiOceanClient.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::AudiOcean.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::AudiOceanClient.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::AudiOcean.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::AudiOceanClient.Resource.Color.abc_background_cache_hint_selector_material_dark = global::AudiOcean.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::AudiOceanClient.Resource.Color.abc_background_cache_hint_selector_material_light = global::AudiOcean.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::AudiOceanClient.Resource.Color.abc_btn_colored_borderless_text_material = global::AudiOcean.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::AudiOceanClient.Resource.Color.abc_btn_colored_text_material = global::AudiOcean.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::AudiOceanClient.Resource.Color.abc_color_highlight_material = global::AudiOcean.Droid.Resource.Color.abc_color_highlight_material;
+			global::AudiOceanClient.Resource.Color.abc_hint_foreground_material_dark = global::AudiOcean.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::AudiOceanClient.Resource.Color.abc_hint_foreground_material_light = global::AudiOcean.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::AudiOceanClient.Resource.Color.abc_input_method_navigation_guard = global::AudiOcean.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::AudiOceanClient.Resource.Color.abc_primary_text_disable_only_material_dark = global::AudiOcean.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::AudiOceanClient.Resource.Color.abc_primary_text_disable_only_material_light = global::AudiOcean.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::AudiOceanClient.Resource.Color.abc_primary_text_material_dark = global::AudiOcean.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::AudiOceanClient.Resource.Color.abc_primary_text_material_light = global::AudiOcean.Droid.Resource.Color.abc_primary_text_material_light;
+			global::AudiOceanClient.Resource.Color.abc_search_url_text = global::AudiOcean.Droid.Resource.Color.abc_search_url_text;
+			global::AudiOceanClient.Resource.Color.abc_search_url_text_normal = global::AudiOcean.Droid.Resource.Color.abc_search_url_text_normal;
+			global::AudiOceanClient.Resource.Color.abc_search_url_text_pressed = global::AudiOcean.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::AudiOceanClient.Resource.Color.abc_search_url_text_selected = global::AudiOcean.Droid.Resource.Color.abc_search_url_text_selected;
+			global::AudiOceanClient.Resource.Color.abc_secondary_text_material_dark = global::AudiOcean.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::AudiOceanClient.Resource.Color.abc_secondary_text_material_light = global::AudiOcean.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::AudiOceanClient.Resource.Color.abc_tint_btn_checkable = global::AudiOcean.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::AudiOceanClient.Resource.Color.abc_tint_default = global::AudiOcean.Droid.Resource.Color.abc_tint_default;
+			global::AudiOceanClient.Resource.Color.abc_tint_edittext = global::AudiOcean.Droid.Resource.Color.abc_tint_edittext;
+			global::AudiOceanClient.Resource.Color.abc_tint_seek_thumb = global::AudiOcean.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::AudiOceanClient.Resource.Color.abc_tint_spinner = global::AudiOcean.Droid.Resource.Color.abc_tint_spinner;
+			global::AudiOceanClient.Resource.Color.abc_tint_switch_track = global::AudiOcean.Droid.Resource.Color.abc_tint_switch_track;
+			global::AudiOceanClient.Resource.Color.accent_material_dark = global::AudiOcean.Droid.Resource.Color.accent_material_dark;
+			global::AudiOceanClient.Resource.Color.accent_material_light = global::AudiOcean.Droid.Resource.Color.accent_material_light;
+			global::AudiOceanClient.Resource.Color.background_floating_material_dark = global::AudiOcean.Droid.Resource.Color.background_floating_material_dark;
+			global::AudiOceanClient.Resource.Color.background_floating_material_light = global::AudiOcean.Droid.Resource.Color.background_floating_material_light;
+			global::AudiOceanClient.Resource.Color.background_material_dark = global::AudiOcean.Droid.Resource.Color.background_material_dark;
+			global::AudiOceanClient.Resource.Color.background_material_light = global::AudiOcean.Droid.Resource.Color.background_material_light;
+			global::AudiOceanClient.Resource.Color.bright_foreground_disabled_material_dark = global::AudiOcean.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::AudiOceanClient.Resource.Color.bright_foreground_disabled_material_light = global::AudiOcean.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::AudiOceanClient.Resource.Color.bright_foreground_inverse_material_dark = global::AudiOcean.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::AudiOceanClient.Resource.Color.bright_foreground_inverse_material_light = global::AudiOcean.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::AudiOceanClient.Resource.Color.bright_foreground_material_dark = global::AudiOcean.Droid.Resource.Color.bright_foreground_material_dark;
+			global::AudiOceanClient.Resource.Color.bright_foreground_material_light = global::AudiOcean.Droid.Resource.Color.bright_foreground_material_light;
+			global::AudiOceanClient.Resource.Color.button_material_dark = global::AudiOcean.Droid.Resource.Color.button_material_dark;
+			global::AudiOceanClient.Resource.Color.button_material_light = global::AudiOcean.Droid.Resource.Color.button_material_light;
+			global::AudiOceanClient.Resource.Color.dim_foreground_disabled_material_dark = global::AudiOcean.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::AudiOceanClient.Resource.Color.dim_foreground_disabled_material_light = global::AudiOcean.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::AudiOceanClient.Resource.Color.dim_foreground_material_dark = global::AudiOcean.Droid.Resource.Color.dim_foreground_material_dark;
+			global::AudiOceanClient.Resource.Color.dim_foreground_material_light = global::AudiOcean.Droid.Resource.Color.dim_foreground_material_light;
+			global::AudiOceanClient.Resource.Color.foreground_material_dark = global::AudiOcean.Droid.Resource.Color.foreground_material_dark;
+			global::AudiOceanClient.Resource.Color.foreground_material_light = global::AudiOcean.Droid.Resource.Color.foreground_material_light;
+			global::AudiOceanClient.Resource.Color.highlighted_text_material_dark = global::AudiOcean.Droid.Resource.Color.highlighted_text_material_dark;
+			global::AudiOceanClient.Resource.Color.highlighted_text_material_light = global::AudiOcean.Droid.Resource.Color.highlighted_text_material_light;
+			global::AudiOceanClient.Resource.Color.material_blue_grey_800 = global::AudiOcean.Droid.Resource.Color.material_blue_grey_800;
+			global::AudiOceanClient.Resource.Color.material_blue_grey_900 = global::AudiOcean.Droid.Resource.Color.material_blue_grey_900;
+			global::AudiOceanClient.Resource.Color.material_blue_grey_950 = global::AudiOcean.Droid.Resource.Color.material_blue_grey_950;
+			global::AudiOceanClient.Resource.Color.material_deep_teal_200 = global::AudiOcean.Droid.Resource.Color.material_deep_teal_200;
+			global::AudiOceanClient.Resource.Color.material_deep_teal_500 = global::AudiOcean.Droid.Resource.Color.material_deep_teal_500;
+			global::AudiOceanClient.Resource.Color.material_grey_100 = global::AudiOcean.Droid.Resource.Color.material_grey_100;
+			global::AudiOceanClient.Resource.Color.material_grey_300 = global::AudiOcean.Droid.Resource.Color.material_grey_300;
+			global::AudiOceanClient.Resource.Color.material_grey_50 = global::AudiOcean.Droid.Resource.Color.material_grey_50;
+			global::AudiOceanClient.Resource.Color.material_grey_600 = global::AudiOcean.Droid.Resource.Color.material_grey_600;
+			global::AudiOceanClient.Resource.Color.material_grey_800 = global::AudiOcean.Droid.Resource.Color.material_grey_800;
+			global::AudiOceanClient.Resource.Color.material_grey_850 = global::AudiOcean.Droid.Resource.Color.material_grey_850;
+			global::AudiOceanClient.Resource.Color.material_grey_900 = global::AudiOcean.Droid.Resource.Color.material_grey_900;
+			global::AudiOceanClient.Resource.Color.notification_action_color_filter = global::AudiOcean.Droid.Resource.Color.notification_action_color_filter;
+			global::AudiOceanClient.Resource.Color.notification_icon_bg_color = global::AudiOcean.Droid.Resource.Color.notification_icon_bg_color;
+			global::AudiOceanClient.Resource.Color.notification_material_background_media_default_color = global::AudiOcean.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::AudiOceanClient.Resource.Color.primary_dark_material_dark = global::AudiOcean.Droid.Resource.Color.primary_dark_material_dark;
+			global::AudiOceanClient.Resource.Color.primary_dark_material_light = global::AudiOcean.Droid.Resource.Color.primary_dark_material_light;
+			global::AudiOceanClient.Resource.Color.primary_material_dark = global::AudiOcean.Droid.Resource.Color.primary_material_dark;
+			global::AudiOceanClient.Resource.Color.primary_material_light = global::AudiOcean.Droid.Resource.Color.primary_material_light;
+			global::AudiOceanClient.Resource.Color.primary_text_default_material_dark = global::AudiOcean.Droid.Resource.Color.primary_text_default_material_dark;
+			global::AudiOceanClient.Resource.Color.primary_text_default_material_light = global::AudiOcean.Droid.Resource.Color.primary_text_default_material_light;
+			global::AudiOceanClient.Resource.Color.primary_text_disabled_material_dark = global::AudiOcean.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::AudiOceanClient.Resource.Color.primary_text_disabled_material_light = global::AudiOcean.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::AudiOceanClient.Resource.Color.ripple_material_dark = global::AudiOcean.Droid.Resource.Color.ripple_material_dark;
+			global::AudiOceanClient.Resource.Color.ripple_material_light = global::AudiOcean.Droid.Resource.Color.ripple_material_light;
+			global::AudiOceanClient.Resource.Color.secondary_text_default_material_dark = global::AudiOcean.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::AudiOceanClient.Resource.Color.secondary_text_default_material_light = global::AudiOcean.Droid.Resource.Color.secondary_text_default_material_light;
+			global::AudiOceanClient.Resource.Color.secondary_text_disabled_material_dark = global::AudiOcean.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::AudiOceanClient.Resource.Color.secondary_text_disabled_material_light = global::AudiOcean.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::AudiOceanClient.Resource.Color.switch_thumb_disabled_material_dark = global::AudiOcean.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::AudiOceanClient.Resource.Color.switch_thumb_disabled_material_light = global::AudiOcean.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::AudiOceanClient.Resource.Color.switch_thumb_material_dark = global::AudiOcean.Droid.Resource.Color.switch_thumb_material_dark;
+			global::AudiOceanClient.Resource.Color.switch_thumb_material_light = global::AudiOcean.Droid.Resource.Color.switch_thumb_material_light;
+			global::AudiOceanClient.Resource.Color.switch_thumb_normal_material_dark = global::AudiOcean.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::AudiOceanClient.Resource.Color.switch_thumb_normal_material_light = global::AudiOcean.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_content_inset_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_default_height_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_default_padding_end_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_default_padding_start_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_elevation_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_progress_bar_size = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_stacked_max_height = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_button_min_height_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_button_min_width_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::AudiOceanClient.Resource.Dimension.abc_action_button_min_width_overflow_material = global::AudiOcean.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::AudiOceanClient.Resource.Dimension.abc_alert_dialog_button_bar_height = global::AudiOcean.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::AudiOceanClient.Resource.Dimension.abc_button_inset_horizontal_material = global::AudiOcean.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::AudiOceanClient.Resource.Dimension.abc_button_inset_vertical_material = global::AudiOcean.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::AudiOceanClient.Resource.Dimension.abc_button_padding_horizontal_material = global::AudiOcean.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::AudiOceanClient.Resource.Dimension.abc_button_padding_vertical_material = global::AudiOcean.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::AudiOceanClient.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::AudiOcean.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::AudiOceanClient.Resource.Dimension.abc_config_prefDialogWidth = global::AudiOcean.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::AudiOceanClient.Resource.Dimension.abc_control_corner_material = global::AudiOcean.Droid.Resource.Dimension.abc_control_corner_material;
+			global::AudiOceanClient.Resource.Dimension.abc_control_inset_material = global::AudiOcean.Droid.Resource.Dimension.abc_control_inset_material;
+			global::AudiOceanClient.Resource.Dimension.abc_control_padding_material = global::AudiOcean.Droid.Resource.Dimension.abc_control_padding_material;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_fixed_height_major = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_fixed_height_minor = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_fixed_width_major = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_fixed_width_minor = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_min_width_major = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_min_width_minor = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_padding_material = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_padding_top_material = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::AudiOceanClient.Resource.Dimension.abc_dialog_title_divider_material = global::AudiOcean.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::AudiOceanClient.Resource.Dimension.abc_disabled_alpha_material_dark = global::AudiOcean.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::AudiOceanClient.Resource.Dimension.abc_disabled_alpha_material_light = global::AudiOcean.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::AudiOceanClient.Resource.Dimension.abc_dropdownitem_icon_width = global::AudiOcean.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::AudiOceanClient.Resource.Dimension.abc_dropdownitem_text_padding_left = global::AudiOcean.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::AudiOceanClient.Resource.Dimension.abc_dropdownitem_text_padding_right = global::AudiOcean.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::AudiOceanClient.Resource.Dimension.abc_edit_text_inset_bottom_material = global::AudiOcean.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::AudiOceanClient.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::AudiOcean.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::AudiOceanClient.Resource.Dimension.abc_edit_text_inset_top_material = global::AudiOcean.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::AudiOceanClient.Resource.Dimension.abc_floating_window_z = global::AudiOcean.Droid.Resource.Dimension.abc_floating_window_z;
+			global::AudiOceanClient.Resource.Dimension.abc_list_item_padding_horizontal_material = global::AudiOcean.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::AudiOceanClient.Resource.Dimension.abc_panel_menu_list_width = global::AudiOcean.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::AudiOceanClient.Resource.Dimension.abc_progress_bar_height_material = global::AudiOcean.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::AudiOceanClient.Resource.Dimension.abc_search_view_preferred_height = global::AudiOcean.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::AudiOceanClient.Resource.Dimension.abc_search_view_preferred_width = global::AudiOcean.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::AudiOceanClient.Resource.Dimension.abc_seekbar_track_background_height_material = global::AudiOcean.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::AudiOceanClient.Resource.Dimension.abc_seekbar_track_progress_height_material = global::AudiOcean.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::AudiOceanClient.Resource.Dimension.abc_select_dialog_padding_start_material = global::AudiOcean.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::AudiOceanClient.Resource.Dimension.abc_switch_padding = global::AudiOcean.Droid.Resource.Dimension.abc_switch_padding;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_body_1_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_body_2_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_button_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_caption_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_display_1_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_display_2_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_display_3_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_display_4_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_headline_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_large_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_medium_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_menu_header_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_menu_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_small_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_subhead_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_title_material = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::AudiOceanClient.Resource.Dimension.abc_text_size_title_material_toolbar = global::AudiOcean.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::AudiOceanClient.Resource.Dimension.disabled_alpha_material_dark = global::AudiOcean.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::AudiOceanClient.Resource.Dimension.disabled_alpha_material_light = global::AudiOcean.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::AudiOceanClient.Resource.Dimension.highlight_alpha_material_colored = global::AudiOcean.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::AudiOceanClient.Resource.Dimension.highlight_alpha_material_dark = global::AudiOcean.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::AudiOceanClient.Resource.Dimension.highlight_alpha_material_light = global::AudiOcean.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::AudiOceanClient.Resource.Dimension.hint_alpha_material_dark = global::AudiOcean.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::AudiOceanClient.Resource.Dimension.hint_alpha_material_light = global::AudiOcean.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::AudiOceanClient.Resource.Dimension.hint_pressed_alpha_material_dark = global::AudiOcean.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::AudiOceanClient.Resource.Dimension.hint_pressed_alpha_material_light = global::AudiOcean.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::AudiOceanClient.Resource.Dimension.notification_action_icon_size = global::AudiOcean.Droid.Resource.Dimension.notification_action_icon_size;
+			global::AudiOceanClient.Resource.Dimension.notification_action_text_size = global::AudiOcean.Droid.Resource.Dimension.notification_action_text_size;
+			global::AudiOceanClient.Resource.Dimension.notification_big_circle_margin = global::AudiOcean.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::AudiOceanClient.Resource.Dimension.notification_content_margin_start = global::AudiOcean.Droid.Resource.Dimension.notification_content_margin_start;
+			global::AudiOceanClient.Resource.Dimension.notification_large_icon_height = global::AudiOcean.Droid.Resource.Dimension.notification_large_icon_height;
+			global::AudiOceanClient.Resource.Dimension.notification_large_icon_width = global::AudiOcean.Droid.Resource.Dimension.notification_large_icon_width;
+			global::AudiOceanClient.Resource.Dimension.notification_main_column_padding_top = global::AudiOcean.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::AudiOceanClient.Resource.Dimension.notification_media_narrow_margin = global::AudiOcean.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::AudiOceanClient.Resource.Dimension.notification_right_icon_size = global::AudiOcean.Droid.Resource.Dimension.notification_right_icon_size;
+			global::AudiOceanClient.Resource.Dimension.notification_right_side_padding_top = global::AudiOcean.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::AudiOceanClient.Resource.Dimension.notification_small_icon_background_padding = global::AudiOcean.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::AudiOceanClient.Resource.Dimension.notification_small_icon_size_as_large = global::AudiOcean.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::AudiOceanClient.Resource.Dimension.notification_subtext_size = global::AudiOcean.Droid.Resource.Dimension.notification_subtext_size;
+			global::AudiOceanClient.Resource.Dimension.notification_top_pad = global::AudiOcean.Droid.Resource.Dimension.notification_top_pad;
+			global::AudiOceanClient.Resource.Dimension.notification_top_pad_large_text = global::AudiOcean.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::AudiOceanClient.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_action_bar_item_background_material = global::AudiOcean.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_borderless_material = global::AudiOcean.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_check_material = global::AudiOcean.Droid.Resource.Drawable.abc_btn_check_material;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::AudiOcean.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::AudiOcean.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_colored_material = global::AudiOcean.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_default_mtrl_shape = global::AudiOcean.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_radio_material = global::AudiOcean.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::AudiOcean.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::AudiOcean.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::AudiOcean.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::AudiOceanClient.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::AudiOcean.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::AudiOceanClient.Resource.Drawable.abc_cab_background_internal_bg = global::AudiOcean.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::AudiOceanClient.Resource.Drawable.abc_cab_background_top_material = global::AudiOcean.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::AudiOceanClient.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_control_background_material = global::AudiOcean.Droid.Resource.Drawable.abc_control_background_material;
+			global::AudiOceanClient.Resource.Drawable.abc_dialog_material_background = global::AudiOcean.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::AudiOceanClient.Resource.Drawable.abc_edit_text_material = global::AudiOcean.Droid.Resource.Drawable.abc_edit_text_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_ab_back_material = global::AudiOcean.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_clear_material = global::AudiOcean.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_go_search_api_material = global::AudiOcean.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_menu_overflow_material = global::AudiOcean.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_search_api_material = global::AudiOcean.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_star_black_16dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_star_black_36dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_star_black_48dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_star_half_black_16dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_star_half_black_36dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_star_half_black_48dp = global::AudiOcean.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::AudiOceanClient.Resource.Drawable.abc_ic_voice_search_api_material = global::AudiOcean.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::AudiOceanClient.Resource.Drawable.abc_item_background_holo_dark = global::AudiOcean.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_item_background_holo_light = global::AudiOcean.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::AudiOceanClient.Resource.Drawable.abc_list_divider_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_list_focused_holo = global::AudiOcean.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::AudiOceanClient.Resource.Drawable.abc_list_longpressed_holo = global::AudiOcean.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::AudiOceanClient.Resource.Drawable.abc_list_pressed_holo_dark = global::AudiOcean.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_list_pressed_holo_light = global::AudiOcean.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::AudiOceanClient.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::AudiOcean.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::AudiOcean.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::AudiOceanClient.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::AudiOcean.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_list_selector_disabled_holo_light = global::AudiOcean.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::AudiOceanClient.Resource.Drawable.abc_list_selector_holo_dark = global::AudiOcean.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_list_selector_holo_light = global::AudiOcean.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::AudiOceanClient.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::AudiOcean.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::AudiOceanClient.Resource.Drawable.abc_popup_background_mtrl_mult = global::AudiOcean.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::AudiOceanClient.Resource.Drawable.abc_ratingbar_indicator_material = global::AudiOcean.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ratingbar_material = global::AudiOcean.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::AudiOceanClient.Resource.Drawable.abc_ratingbar_small_material = global::AudiOcean.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::AudiOceanClient.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::AudiOcean.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::AudiOceanClient.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::AudiOcean.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::AudiOceanClient.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_seekbar_thumb_material = global::AudiOcean.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::AudiOceanClient.Resource.Drawable.abc_seekbar_tick_mark_material = global::AudiOcean.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::AudiOceanClient.Resource.Drawable.abc_seekbar_track_material = global::AudiOcean.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::AudiOceanClient.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_spinner_textfield_background_material = global::AudiOcean.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::AudiOceanClient.Resource.Drawable.abc_switch_thumb_material = global::AudiOcean.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::AudiOceanClient.Resource.Drawable.abc_switch_track_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_tab_indicator_material = global::AudiOcean.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::AudiOceanClient.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_text_cursor_material = global::AudiOcean.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::AudiOceanClient.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::AudiOcean.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::AudiOcean.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::AudiOceanClient.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::AudiOcean.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::AudiOcean.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::AudiOceanClient.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::AudiOcean.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::AudiOceanClient.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::AudiOcean.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::AudiOceanClient.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::AudiOcean.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::AudiOceanClient.Resource.Drawable.abc_textfield_search_material = global::AudiOcean.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::AudiOceanClient.Resource.Drawable.abc_vector_test = global::AudiOcean.Droid.Resource.Drawable.abc_vector_test;
+			global::AudiOceanClient.Resource.Drawable.notification_action_background = global::AudiOcean.Droid.Resource.Drawable.notification_action_background;
+			global::AudiOceanClient.Resource.Drawable.notification_bg = global::AudiOcean.Droid.Resource.Drawable.notification_bg;
+			global::AudiOceanClient.Resource.Drawable.notification_bg_low = global::AudiOcean.Droid.Resource.Drawable.notification_bg_low;
+			global::AudiOceanClient.Resource.Drawable.notification_bg_low_normal = global::AudiOcean.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::AudiOceanClient.Resource.Drawable.notification_bg_low_pressed = global::AudiOcean.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::AudiOceanClient.Resource.Drawable.notification_bg_normal = global::AudiOcean.Droid.Resource.Drawable.notification_bg_normal;
+			global::AudiOceanClient.Resource.Drawable.notification_bg_normal_pressed = global::AudiOcean.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::AudiOceanClient.Resource.Drawable.notification_icon_background = global::AudiOcean.Droid.Resource.Drawable.notification_icon_background;
+			global::AudiOceanClient.Resource.Drawable.notification_template_icon_bg = global::AudiOcean.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::AudiOceanClient.Resource.Drawable.notification_template_icon_low_bg = global::AudiOcean.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::AudiOceanClient.Resource.Drawable.notification_tile_bg = global::AudiOcean.Droid.Resource.Drawable.notification_tile_bg;
+			global::AudiOceanClient.Resource.Drawable.notify_panel_notification_icon_bg = global::AudiOcean.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::AudiOceanClient.Resource.Id.action0 = global::AudiOcean.Droid.Resource.Id.action0;
+			global::AudiOceanClient.Resource.Id.action_bar = global::AudiOcean.Droid.Resource.Id.action_bar;
+			global::AudiOceanClient.Resource.Id.action_bar_activity_content = global::AudiOcean.Droid.Resource.Id.action_bar_activity_content;
+			global::AudiOceanClient.Resource.Id.action_bar_container = global::AudiOcean.Droid.Resource.Id.action_bar_container;
+			global::AudiOceanClient.Resource.Id.action_bar_root = global::AudiOcean.Droid.Resource.Id.action_bar_root;
+			global::AudiOceanClient.Resource.Id.action_bar_spinner = global::AudiOcean.Droid.Resource.Id.action_bar_spinner;
+			global::AudiOceanClient.Resource.Id.action_bar_subtitle = global::AudiOcean.Droid.Resource.Id.action_bar_subtitle;
+			global::AudiOceanClient.Resource.Id.action_bar_title = global::AudiOcean.Droid.Resource.Id.action_bar_title;
+			global::AudiOceanClient.Resource.Id.action_container = global::AudiOcean.Droid.Resource.Id.action_container;
+			global::AudiOceanClient.Resource.Id.action_context_bar = global::AudiOcean.Droid.Resource.Id.action_context_bar;
+			global::AudiOceanClient.Resource.Id.action_divider = global::AudiOcean.Droid.Resource.Id.action_divider;
+			global::AudiOceanClient.Resource.Id.action_image = global::AudiOcean.Droid.Resource.Id.action_image;
+			global::AudiOceanClient.Resource.Id.action_menu_divider = global::AudiOcean.Droid.Resource.Id.action_menu_divider;
+			global::AudiOceanClient.Resource.Id.action_menu_presenter = global::AudiOcean.Droid.Resource.Id.action_menu_presenter;
+			global::AudiOceanClient.Resource.Id.action_mode_bar = global::AudiOcean.Droid.Resource.Id.action_mode_bar;
+			global::AudiOceanClient.Resource.Id.action_mode_bar_stub = global::AudiOcean.Droid.Resource.Id.action_mode_bar_stub;
+			global::AudiOceanClient.Resource.Id.action_mode_close_button = global::AudiOcean.Droid.Resource.Id.action_mode_close_button;
+			global::AudiOceanClient.Resource.Id.action_text = global::AudiOcean.Droid.Resource.Id.action_text;
+			global::AudiOceanClient.Resource.Id.actions = global::AudiOcean.Droid.Resource.Id.actions;
+			global::AudiOceanClient.Resource.Id.activity_chooser_view_content = global::AudiOcean.Droid.Resource.Id.activity_chooser_view_content;
+			global::AudiOceanClient.Resource.Id.add = global::AudiOcean.Droid.Resource.Id.add;
+			global::AudiOceanClient.Resource.Id.alertTitle = global::AudiOcean.Droid.Resource.Id.alertTitle;
+			global::AudiOceanClient.Resource.Id.always = global::AudiOcean.Droid.Resource.Id.always;
+			global::AudiOceanClient.Resource.Id.beginning = global::AudiOcean.Droid.Resource.Id.beginning;
+			global::AudiOceanClient.Resource.Id.bottom = global::AudiOcean.Droid.Resource.Id.bottom;
+			global::AudiOceanClient.Resource.Id.buttonPanel = global::AudiOcean.Droid.Resource.Id.buttonPanel;
+			global::AudiOceanClient.Resource.Id.cancel_action = global::AudiOcean.Droid.Resource.Id.cancel_action;
+			global::AudiOceanClient.Resource.Id.checkbox = global::AudiOcean.Droid.Resource.Id.checkbox;
+			global::AudiOceanClient.Resource.Id.chronometer = global::AudiOcean.Droid.Resource.Id.chronometer;
+			global::AudiOceanClient.Resource.Id.collapseActionView = global::AudiOcean.Droid.Resource.Id.collapseActionView;
+			global::AudiOceanClient.Resource.Id.contentPanel = global::AudiOcean.Droid.Resource.Id.contentPanel;
+			global::AudiOceanClient.Resource.Id.custom = global::AudiOcean.Droid.Resource.Id.custom;
+			global::AudiOceanClient.Resource.Id.customPanel = global::AudiOcean.Droid.Resource.Id.customPanel;
+			global::AudiOceanClient.Resource.Id.decor_content_parent = global::AudiOcean.Droid.Resource.Id.decor_content_parent;
+			global::AudiOceanClient.Resource.Id.default_activity_button = global::AudiOcean.Droid.Resource.Id.default_activity_button;
+			global::AudiOceanClient.Resource.Id.disableHome = global::AudiOcean.Droid.Resource.Id.disableHome;
+			global::AudiOceanClient.Resource.Id.edit_query = global::AudiOcean.Droid.Resource.Id.edit_query;
+			global::AudiOceanClient.Resource.Id.end = global::AudiOcean.Droid.Resource.Id.end;
+			global::AudiOceanClient.Resource.Id.end_padder = global::AudiOcean.Droid.Resource.Id.end_padder;
+			global::AudiOceanClient.Resource.Id.expand_activities_button = global::AudiOcean.Droid.Resource.Id.expand_activities_button;
+			global::AudiOceanClient.Resource.Id.expanded_menu = global::AudiOcean.Droid.Resource.Id.expanded_menu;
+			global::AudiOceanClient.Resource.Id.home = global::AudiOcean.Droid.Resource.Id.home;
+			global::AudiOceanClient.Resource.Id.homeAsUp = global::AudiOcean.Droid.Resource.Id.homeAsUp;
+			global::AudiOceanClient.Resource.Id.icon = global::AudiOcean.Droid.Resource.Id.icon;
+			global::AudiOceanClient.Resource.Id.icon_group = global::AudiOcean.Droid.Resource.Id.icon_group;
+			global::AudiOceanClient.Resource.Id.ifRoom = global::AudiOcean.Droid.Resource.Id.ifRoom;
+			global::AudiOceanClient.Resource.Id.image = global::AudiOcean.Droid.Resource.Id.image;
+			global::AudiOceanClient.Resource.Id.info = global::AudiOcean.Droid.Resource.Id.info;
+			global::AudiOceanClient.Resource.Id.line1 = global::AudiOcean.Droid.Resource.Id.line1;
+			global::AudiOceanClient.Resource.Id.line3 = global::AudiOcean.Droid.Resource.Id.line3;
+			global::AudiOceanClient.Resource.Id.listMode = global::AudiOcean.Droid.Resource.Id.listMode;
+			global::AudiOceanClient.Resource.Id.list_item = global::AudiOcean.Droid.Resource.Id.list_item;
+			global::AudiOceanClient.Resource.Id.media_actions = global::AudiOcean.Droid.Resource.Id.media_actions;
+			global::AudiOceanClient.Resource.Id.middle = global::AudiOcean.Droid.Resource.Id.middle;
+			global::AudiOceanClient.Resource.Id.multiply = global::AudiOcean.Droid.Resource.Id.multiply;
+			global::AudiOceanClient.Resource.Id.never = global::AudiOcean.Droid.Resource.Id.never;
+			global::AudiOceanClient.Resource.Id.none = global::AudiOcean.Droid.Resource.Id.none;
+			global::AudiOceanClient.Resource.Id.normal = global::AudiOcean.Droid.Resource.Id.normal;
+			global::AudiOceanClient.Resource.Id.notification_background = global::AudiOcean.Droid.Resource.Id.notification_background;
+			global::AudiOceanClient.Resource.Id.notification_main_column = global::AudiOcean.Droid.Resource.Id.notification_main_column;
+			global::AudiOceanClient.Resource.Id.notification_main_column_container = global::AudiOcean.Droid.Resource.Id.notification_main_column_container;
+			global::AudiOceanClient.Resource.Id.parentPanel = global::AudiOcean.Droid.Resource.Id.parentPanel;
+			global::AudiOceanClient.Resource.Id.progress_circular = global::AudiOcean.Droid.Resource.Id.progress_circular;
+			global::AudiOceanClient.Resource.Id.progress_horizontal = global::AudiOcean.Droid.Resource.Id.progress_horizontal;
+			global::AudiOceanClient.Resource.Id.radio = global::AudiOcean.Droid.Resource.Id.radio;
+			global::AudiOceanClient.Resource.Id.right_icon = global::AudiOcean.Droid.Resource.Id.right_icon;
+			global::AudiOceanClient.Resource.Id.right_side = global::AudiOcean.Droid.Resource.Id.right_side;
+			global::AudiOceanClient.Resource.Id.screen = global::AudiOcean.Droid.Resource.Id.screen;
+			global::AudiOceanClient.Resource.Id.scrollIndicatorDown = global::AudiOcean.Droid.Resource.Id.scrollIndicatorDown;
+			global::AudiOceanClient.Resource.Id.scrollIndicatorUp = global::AudiOcean.Droid.Resource.Id.scrollIndicatorUp;
+			global::AudiOceanClient.Resource.Id.scrollView = global::AudiOcean.Droid.Resource.Id.scrollView;
+			global::AudiOceanClient.Resource.Id.search_badge = global::AudiOcean.Droid.Resource.Id.search_badge;
+			global::AudiOceanClient.Resource.Id.search_bar = global::AudiOcean.Droid.Resource.Id.search_bar;
+			global::AudiOceanClient.Resource.Id.search_button = global::AudiOcean.Droid.Resource.Id.search_button;
+			global::AudiOceanClient.Resource.Id.search_close_btn = global::AudiOcean.Droid.Resource.Id.search_close_btn;
+			global::AudiOceanClient.Resource.Id.search_edit_frame = global::AudiOcean.Droid.Resource.Id.search_edit_frame;
+			global::AudiOceanClient.Resource.Id.search_go_btn = global::AudiOcean.Droid.Resource.Id.search_go_btn;
+			global::AudiOceanClient.Resource.Id.search_mag_icon = global::AudiOcean.Droid.Resource.Id.search_mag_icon;
+			global::AudiOceanClient.Resource.Id.search_plate = global::AudiOcean.Droid.Resource.Id.search_plate;
+			global::AudiOceanClient.Resource.Id.search_src_text = global::AudiOcean.Droid.Resource.Id.search_src_text;
+			global::AudiOceanClient.Resource.Id.search_voice_btn = global::AudiOcean.Droid.Resource.Id.search_voice_btn;
+			global::AudiOceanClient.Resource.Id.select_dialog_listview = global::AudiOcean.Droid.Resource.Id.select_dialog_listview;
+			global::AudiOceanClient.Resource.Id.shortcut = global::AudiOcean.Droid.Resource.Id.shortcut;
+			global::AudiOceanClient.Resource.Id.showCustom = global::AudiOcean.Droid.Resource.Id.showCustom;
+			global::AudiOceanClient.Resource.Id.showHome = global::AudiOcean.Droid.Resource.Id.showHome;
+			global::AudiOceanClient.Resource.Id.showTitle = global::AudiOcean.Droid.Resource.Id.showTitle;
+			global::AudiOceanClient.Resource.Id.spacer = global::AudiOcean.Droid.Resource.Id.spacer;
+			global::AudiOceanClient.Resource.Id.split_action_bar = global::AudiOcean.Droid.Resource.Id.split_action_bar;
+			global::AudiOceanClient.Resource.Id.src_atop = global::AudiOcean.Droid.Resource.Id.src_atop;
+			global::AudiOceanClient.Resource.Id.src_in = global::AudiOcean.Droid.Resource.Id.src_in;
+			global::AudiOceanClient.Resource.Id.src_over = global::AudiOcean.Droid.Resource.Id.src_over;
+			global::AudiOceanClient.Resource.Id.status_bar_latest_event_content = global::AudiOcean.Droid.Resource.Id.status_bar_latest_event_content;
+			global::AudiOceanClient.Resource.Id.submenuarrow = global::AudiOcean.Droid.Resource.Id.submenuarrow;
+			global::AudiOceanClient.Resource.Id.submit_area = global::AudiOcean.Droid.Resource.Id.submit_area;
+			global::AudiOceanClient.Resource.Id.tabMode = global::AudiOcean.Droid.Resource.Id.tabMode;
+			global::AudiOceanClient.Resource.Id.text = global::AudiOcean.Droid.Resource.Id.text;
+			global::AudiOceanClient.Resource.Id.text2 = global::AudiOcean.Droid.Resource.Id.text2;
+			global::AudiOceanClient.Resource.Id.textSpacerNoButtons = global::AudiOcean.Droid.Resource.Id.textSpacerNoButtons;
+			global::AudiOceanClient.Resource.Id.textSpacerNoTitle = global::AudiOcean.Droid.Resource.Id.textSpacerNoTitle;
+			global::AudiOceanClient.Resource.Id.time = global::AudiOcean.Droid.Resource.Id.time;
+			global::AudiOceanClient.Resource.Id.title = global::AudiOcean.Droid.Resource.Id.title;
+			global::AudiOceanClient.Resource.Id.titleDividerNoCustom = global::AudiOcean.Droid.Resource.Id.titleDividerNoCustom;
+			global::AudiOceanClient.Resource.Id.title_template = global::AudiOcean.Droid.Resource.Id.title_template;
+			global::AudiOceanClient.Resource.Id.top = global::AudiOcean.Droid.Resource.Id.top;
+			global::AudiOceanClient.Resource.Id.topPanel = global::AudiOcean.Droid.Resource.Id.topPanel;
+			global::AudiOceanClient.Resource.Id.up = global::AudiOcean.Droid.Resource.Id.up;
+			global::AudiOceanClient.Resource.Id.useLogo = global::AudiOcean.Droid.Resource.Id.useLogo;
+			global::AudiOceanClient.Resource.Id.withText = global::AudiOcean.Droid.Resource.Id.withText;
+			global::AudiOceanClient.Resource.Id.wrap_content = global::AudiOcean.Droid.Resource.Id.wrap_content;
+			global::AudiOceanClient.Resource.Integer.abc_config_activityDefaultDur = global::AudiOcean.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::AudiOceanClient.Resource.Integer.abc_config_activityShortDur = global::AudiOcean.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::AudiOceanClient.Resource.Integer.cancel_button_image_alpha = global::AudiOcean.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::AudiOceanClient.Resource.Integer.status_bar_notification_info_maxnum = global::AudiOcean.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::AudiOceanClient.Resource.Layout.abc_action_bar_title_item = global::AudiOcean.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::AudiOceanClient.Resource.Layout.abc_action_bar_up_container = global::AudiOcean.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::AudiOceanClient.Resource.Layout.abc_action_menu_item_layout = global::AudiOcean.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::AudiOceanClient.Resource.Layout.abc_action_menu_layout = global::AudiOcean.Droid.Resource.Layout.abc_action_menu_layout;
+			global::AudiOceanClient.Resource.Layout.abc_action_mode_bar = global::AudiOcean.Droid.Resource.Layout.abc_action_mode_bar;
+			global::AudiOceanClient.Resource.Layout.abc_action_mode_close_item_material = global::AudiOcean.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::AudiOceanClient.Resource.Layout.abc_activity_chooser_view = global::AudiOcean.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::AudiOceanClient.Resource.Layout.abc_activity_chooser_view_list_item = global::AudiOcean.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::AudiOceanClient.Resource.Layout.abc_alert_dialog_button_bar_material = global::AudiOcean.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::AudiOceanClient.Resource.Layout.abc_alert_dialog_material = global::AudiOcean.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::AudiOceanClient.Resource.Layout.abc_alert_dialog_title_material = global::AudiOcean.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::AudiOceanClient.Resource.Layout.abc_dialog_title_material = global::AudiOcean.Droid.Resource.Layout.abc_dialog_title_material;
+			global::AudiOceanClient.Resource.Layout.abc_expanded_menu_layout = global::AudiOcean.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::AudiOceanClient.Resource.Layout.abc_list_menu_item_checkbox = global::AudiOcean.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::AudiOceanClient.Resource.Layout.abc_list_menu_item_icon = global::AudiOcean.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::AudiOceanClient.Resource.Layout.abc_list_menu_item_layout = global::AudiOcean.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::AudiOceanClient.Resource.Layout.abc_list_menu_item_radio = global::AudiOcean.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::AudiOceanClient.Resource.Layout.abc_popup_menu_header_item_layout = global::AudiOcean.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::AudiOceanClient.Resource.Layout.abc_popup_menu_item_layout = global::AudiOcean.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::AudiOceanClient.Resource.Layout.abc_screen_content_include = global::AudiOcean.Droid.Resource.Layout.abc_screen_content_include;
+			global::AudiOceanClient.Resource.Layout.abc_screen_simple = global::AudiOcean.Droid.Resource.Layout.abc_screen_simple;
+			global::AudiOceanClient.Resource.Layout.abc_screen_simple_overlay_action_mode = global::AudiOcean.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::AudiOceanClient.Resource.Layout.abc_screen_toolbar = global::AudiOcean.Droid.Resource.Layout.abc_screen_toolbar;
+			global::AudiOceanClient.Resource.Layout.abc_search_dropdown_item_icons_2line = global::AudiOcean.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::AudiOceanClient.Resource.Layout.abc_search_view = global::AudiOcean.Droid.Resource.Layout.abc_search_view;
+			global::AudiOceanClient.Resource.Layout.abc_select_dialog_material = global::AudiOcean.Droid.Resource.Layout.abc_select_dialog_material;
+			global::AudiOceanClient.Resource.Layout.notification_action = global::AudiOcean.Droid.Resource.Layout.notification_action;
+			global::AudiOceanClient.Resource.Layout.notification_action_tombstone = global::AudiOcean.Droid.Resource.Layout.notification_action_tombstone;
+			global::AudiOceanClient.Resource.Layout.notification_media_action = global::AudiOcean.Droid.Resource.Layout.notification_media_action;
+			global::AudiOceanClient.Resource.Layout.notification_media_cancel_action = global::AudiOcean.Droid.Resource.Layout.notification_media_cancel_action;
+			global::AudiOceanClient.Resource.Layout.notification_template_big_media = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media;
+			global::AudiOceanClient.Resource.Layout.notification_template_big_media_custom = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::AudiOceanClient.Resource.Layout.notification_template_big_media_narrow = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::AudiOceanClient.Resource.Layout.notification_template_big_media_narrow_custom = global::AudiOcean.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::AudiOceanClient.Resource.Layout.notification_template_custom_big = global::AudiOcean.Droid.Resource.Layout.notification_template_custom_big;
+			global::AudiOceanClient.Resource.Layout.notification_template_icon_group = global::AudiOcean.Droid.Resource.Layout.notification_template_icon_group;
+			global::AudiOceanClient.Resource.Layout.notification_template_lines_media = global::AudiOcean.Droid.Resource.Layout.notification_template_lines_media;
+			global::AudiOceanClient.Resource.Layout.notification_template_media = global::AudiOcean.Droid.Resource.Layout.notification_template_media;
+			global::AudiOceanClient.Resource.Layout.notification_template_media_custom = global::AudiOcean.Droid.Resource.Layout.notification_template_media_custom;
+			global::AudiOceanClient.Resource.Layout.notification_template_part_chronometer = global::AudiOcean.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::AudiOceanClient.Resource.Layout.notification_template_part_time = global::AudiOcean.Droid.Resource.Layout.notification_template_part_time;
+			global::AudiOceanClient.Resource.Layout.select_dialog_item_material = global::AudiOcean.Droid.Resource.Layout.select_dialog_item_material;
+			global::AudiOceanClient.Resource.Layout.select_dialog_multichoice_material = global::AudiOcean.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::AudiOceanClient.Resource.Layout.select_dialog_singlechoice_material = global::AudiOcean.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::AudiOceanClient.Resource.Layout.support_simple_spinner_dropdown_item = global::AudiOcean.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::AudiOceanClient.Resource.String.abc_action_bar_home_description = global::AudiOcean.Droid.Resource.String.abc_action_bar_home_description;
+			global::AudiOceanClient.Resource.String.abc_action_bar_up_description = global::AudiOcean.Droid.Resource.String.abc_action_bar_up_description;
+			global::AudiOceanClient.Resource.String.abc_action_menu_overflow_description = global::AudiOcean.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::AudiOceanClient.Resource.String.abc_action_mode_done = global::AudiOcean.Droid.Resource.String.abc_action_mode_done;
+			global::AudiOceanClient.Resource.String.abc_activity_chooser_view_see_all = global::AudiOcean.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::AudiOceanClient.Resource.String.abc_activitychooserview_choose_application = global::AudiOcean.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::AudiOceanClient.Resource.String.abc_capital_off = global::AudiOcean.Droid.Resource.String.abc_capital_off;
+			global::AudiOceanClient.Resource.String.abc_capital_on = global::AudiOcean.Droid.Resource.String.abc_capital_on;
+			global::AudiOceanClient.Resource.String.abc_font_family_body_1_material = global::AudiOcean.Droid.Resource.String.abc_font_family_body_1_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_body_2_material = global::AudiOcean.Droid.Resource.String.abc_font_family_body_2_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_button_material = global::AudiOcean.Droid.Resource.String.abc_font_family_button_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_caption_material = global::AudiOcean.Droid.Resource.String.abc_font_family_caption_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_display_1_material = global::AudiOcean.Droid.Resource.String.abc_font_family_display_1_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_display_2_material = global::AudiOcean.Droid.Resource.String.abc_font_family_display_2_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_display_3_material = global::AudiOcean.Droid.Resource.String.abc_font_family_display_3_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_display_4_material = global::AudiOcean.Droid.Resource.String.abc_font_family_display_4_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_headline_material = global::AudiOcean.Droid.Resource.String.abc_font_family_headline_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_menu_material = global::AudiOcean.Droid.Resource.String.abc_font_family_menu_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_subhead_material = global::AudiOcean.Droid.Resource.String.abc_font_family_subhead_material;
+			global::AudiOceanClient.Resource.String.abc_font_family_title_material = global::AudiOcean.Droid.Resource.String.abc_font_family_title_material;
+			global::AudiOceanClient.Resource.String.abc_search_hint = global::AudiOcean.Droid.Resource.String.abc_search_hint;
+			global::AudiOceanClient.Resource.String.abc_searchview_description_clear = global::AudiOcean.Droid.Resource.String.abc_searchview_description_clear;
+			global::AudiOceanClient.Resource.String.abc_searchview_description_query = global::AudiOcean.Droid.Resource.String.abc_searchview_description_query;
+			global::AudiOceanClient.Resource.String.abc_searchview_description_search = global::AudiOcean.Droid.Resource.String.abc_searchview_description_search;
+			global::AudiOceanClient.Resource.String.abc_searchview_description_submit = global::AudiOcean.Droid.Resource.String.abc_searchview_description_submit;
+			global::AudiOceanClient.Resource.String.abc_searchview_description_voice = global::AudiOcean.Droid.Resource.String.abc_searchview_description_voice;
+			global::AudiOceanClient.Resource.String.abc_shareactionprovider_share_with = global::AudiOcean.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::AudiOceanClient.Resource.String.abc_shareactionprovider_share_with_application = global::AudiOcean.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::AudiOceanClient.Resource.String.abc_toolbar_collapse_description = global::AudiOcean.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::AudiOceanClient.Resource.String.app_name = global::AudiOcean.Droid.Resource.String.app_name;
+			global::AudiOceanClient.Resource.String.hello = global::AudiOcean.Droid.Resource.String.hello;
+			global::AudiOceanClient.Resource.String.search_menu_title = global::AudiOcean.Droid.Resource.String.search_menu_title;
+			global::AudiOceanClient.Resource.String.status_bar_notification_info_overflow = global::AudiOcean.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::AudiOceanClient.Resource.Style.AlertDialog_AppCompat = global::AudiOcean.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::AudiOceanClient.Resource.Style.AlertDialog_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Animation_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Animation_AppCompat_DropDownUp = global::AudiOcean.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::AudiOceanClient.Resource.Style.Base_AlertDialog_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_AlertDialog_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_Animation_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::AudiOcean.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::AudiOceanClient.Resource.Style.Base_DialogWindowTitle_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Button = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Large = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Small = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Title = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AudiOceanClient.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::AudiOcean.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AudiOceanClient.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::AudiOcean.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::AudiOcean.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::AudiOceanClient.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::AudiOcean.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::AudiOceanClient.Resource.Style.Base_V21_Theme_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V21_Theme_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V22_Theme_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_V22_Theme_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_V23_Theme_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_V23_Theme_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_V7_Theme_AppCompat = global::AudiOcean.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::AudiOceanClient.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V7_Theme_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::AudiOcean.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::AudiOceanClient.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::AudiOcean.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionButton = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActionMode = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Button = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Button_Small = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_EditText = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ImageButton = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ListView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_RatingBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_SearchView = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_SeekBar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Spinner = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Toolbar = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::AudiOceanClient.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::AudiOcean.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AudiOceanClient.Resource.Style.Platform_AppCompat = global::AudiOcean.Droid.Resource.Style.Platform_AppCompat;
+			global::AudiOceanClient.Resource.Style.Platform_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Platform_ThemeOverlay_AppCompat = global::AudiOcean.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::AudiOceanClient.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::AudiOcean.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::AudiOceanClient.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Platform_V11_AppCompat = global::AudiOcean.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::AudiOceanClient.Resource.Style.Platform_V11_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Platform_V14_AppCompat = global::AudiOcean.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::AudiOceanClient.Resource.Style.Platform_V14_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Platform_V21_AppCompat = global::AudiOcean.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::AudiOceanClient.Resource.Style.Platform_V21_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Platform_V25_AppCompat = global::AudiOcean.Droid.Resource.Style.Platform_V25_AppCompat;
+			global::AudiOceanClient.Resource.Style.Platform_V25_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Platform_V25_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Platform_Widget_AppCompat_Spinner = global::AudiOcean.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::AudiOcean.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::AudiOceanClient.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::AudiOcean.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::AudiOceanClient.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::AudiOcean.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::AudiOceanClient.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::AudiOcean.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Body1 = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Body2 = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Button = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Caption = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Display1 = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Display2 = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Display3 = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Display4 = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Headline = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Large = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Medium = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Menu = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Small = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Subhead = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Title = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::AudiOceanClient.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::AudiOcean.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::AudiOceanClient.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::AudiOcean.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::AudiOceanClient.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::AudiOcean.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::AudiOceanClient.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::AudiOcean.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_CompactMenu = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light_Dialog = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::AudiOceanClient.Resource.Style.Theme_AppCompat_NoActionBar = global::AudiOcean.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat_Dark = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::AudiOceanClient.Resource.Style.ThemeOverlay_AppCompat_Light = global::AudiOcean.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionButton = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActionMode = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ActivityChooserView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Button = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Button_Borderless = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Button_Colored = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Button_Small = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ButtonBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_EditText = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ImageButton = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionButton = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_SearchView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ListMenuView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ListPopupWindow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ListView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ListView_DropDown = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ListView_Menu = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_PopupMenu = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_PopupWindow = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ProgressBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_RatingBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_RatingBar_Small = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_SearchView = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_SeekBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Spinner = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Toolbar = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::AudiOceanClient.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::AudiOcean.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::AudiOceanClient.Resource.Styleable.ActionBar = global::AudiOcean.Droid.Resource.Styleable.ActionBar;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_background = global::AudiOcean.Droid.Resource.Styleable.ActionBar_background;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_backgroundSplit = global::AudiOcean.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_backgroundStacked = global::AudiOcean.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_contentInsetEnd = global::AudiOcean.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::AudiOcean.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_contentInsetLeft = global::AudiOcean.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_contentInsetRight = global::AudiOcean.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_contentInsetStart = global::AudiOcean.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::AudiOcean.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_customNavigationLayout = global::AudiOcean.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_displayOptions = global::AudiOcean.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_divider = global::AudiOcean.Droid.Resource.Styleable.ActionBar_divider;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_elevation = global::AudiOcean.Droid.Resource.Styleable.ActionBar_elevation;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_height = global::AudiOcean.Droid.Resource.Styleable.ActionBar_height;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_hideOnContentScroll = global::AudiOcean.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_homeAsUpIndicator = global::AudiOcean.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_homeLayout = global::AudiOcean.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_icon = global::AudiOcean.Droid.Resource.Styleable.ActionBar_icon;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::AudiOcean.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_itemPadding = global::AudiOcean.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_logo = global::AudiOcean.Droid.Resource.Styleable.ActionBar_logo;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_navigationMode = global::AudiOcean.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_popupTheme = global::AudiOcean.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_progressBarPadding = global::AudiOcean.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_progressBarStyle = global::AudiOcean.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_subtitle = global::AudiOcean.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_subtitleTextStyle = global::AudiOcean.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_title = global::AudiOcean.Droid.Resource.Styleable.ActionBar_title;
+			global::AudiOceanClient.Resource.Styleable.ActionBar_titleTextStyle = global::AudiOcean.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::AudiOceanClient.Resource.Styleable.ActionBarLayout = global::AudiOcean.Droid.Resource.Styleable.ActionBarLayout;
+			global::AudiOceanClient.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::AudiOcean.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::AudiOceanClient.Resource.Styleable.ActionMenuItemView = global::AudiOcean.Droid.Resource.Styleable.ActionMenuItemView;
+			global::AudiOceanClient.Resource.Styleable.ActionMenuItemView_android_minWidth = global::AudiOcean.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::AudiOceanClient.Resource.Styleable.ActionMenuView = global::AudiOcean.Droid.Resource.Styleable.ActionMenuView;
+			global::AudiOceanClient.Resource.Styleable.ActionMode = global::AudiOcean.Droid.Resource.Styleable.ActionMode;
+			global::AudiOceanClient.Resource.Styleable.ActionMode_background = global::AudiOcean.Droid.Resource.Styleable.ActionMode_background;
+			global::AudiOceanClient.Resource.Styleable.ActionMode_backgroundSplit = global::AudiOcean.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::AudiOceanClient.Resource.Styleable.ActionMode_closeItemLayout = global::AudiOcean.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::AudiOceanClient.Resource.Styleable.ActionMode_height = global::AudiOcean.Droid.Resource.Styleable.ActionMode_height;
+			global::AudiOceanClient.Resource.Styleable.ActionMode_subtitleTextStyle = global::AudiOcean.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::AudiOceanClient.Resource.Styleable.ActionMode_titleTextStyle = global::AudiOcean.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::AudiOceanClient.Resource.Styleable.ActivityChooserView = global::AudiOcean.Droid.Resource.Styleable.ActivityChooserView;
+			global::AudiOceanClient.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::AudiOcean.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::AudiOceanClient.Resource.Styleable.ActivityChooserView_initialActivityCount = global::AudiOcean.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog = global::AudiOcean.Droid.Resource.Styleable.AlertDialog;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_android_layout = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_listItemLayout = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_listLayout = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_showTitle = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::AudiOceanClient.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::AudiOcean.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::AudiOceanClient.Resource.Styleable.AppCompatImageView = global::AudiOcean.Droid.Resource.Styleable.AppCompatImageView;
+			global::AudiOceanClient.Resource.Styleable.AppCompatImageView_android_src = global::AudiOcean.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::AudiOceanClient.Resource.Styleable.AppCompatImageView_srcCompat = global::AudiOcean.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::AudiOceanClient.Resource.Styleable.AppCompatImageView_tint = global::AudiOcean.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::AudiOceanClient.Resource.Styleable.AppCompatImageView_tintMode = global::AudiOcean.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::AudiOceanClient.Resource.Styleable.AppCompatSeekBar = global::AudiOcean.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::AudiOceanClient.Resource.Styleable.AppCompatSeekBar_android_thumb = global::AudiOcean.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::AudiOceanClient.Resource.Styleable.AppCompatSeekBar_tickMark = global::AudiOcean.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::AudiOceanClient.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::AudiOcean.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::AudiOceanClient.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::AudiOcean.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextView = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextView;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextView_android_textAppearance = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTextView_textAllCaps = global::AudiOcean.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarDivider = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarSize = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_checkboxStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorAccent = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorControlActivated = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorControlNormal = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorPrimary = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_controlBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_dialogTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_dividerVertical = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_editTextBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_editTextColor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_editTextStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_panelBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_searchViewStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_seekBarStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_spinnerStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_switchStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_toolbarStyle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowActionBar = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::AudiOceanClient.Resource.Styleable.AppCompatTheme_windowNoTitle = global::AudiOcean.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::AudiOceanClient.Resource.Styleable.ButtonBarLayout = global::AudiOcean.Droid.Resource.Styleable.ButtonBarLayout;
+			global::AudiOceanClient.Resource.Styleable.ButtonBarLayout_allowStacking = global::AudiOcean.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::AudiOceanClient.Resource.Styleable.ColorStateListItem = global::AudiOcean.Droid.Resource.Styleable.ColorStateListItem;
+			global::AudiOceanClient.Resource.Styleable.ColorStateListItem_alpha = global::AudiOcean.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::AudiOceanClient.Resource.Styleable.ColorStateListItem_android_alpha = global::AudiOcean.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::AudiOceanClient.Resource.Styleable.ColorStateListItem_android_color = global::AudiOcean.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::AudiOceanClient.Resource.Styleable.CompoundButton = global::AudiOcean.Droid.Resource.Styleable.CompoundButton;
+			global::AudiOceanClient.Resource.Styleable.CompoundButton_android_button = global::AudiOcean.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::AudiOceanClient.Resource.Styleable.CompoundButton_buttonTint = global::AudiOcean.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::AudiOceanClient.Resource.Styleable.CompoundButton_buttonTintMode = global::AudiOcean.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_barLength = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_color = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_drawableSize = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_spinBars = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::AudiOceanClient.Resource.Styleable.DrawerArrowToggle_thickness = global::AudiOcean.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_android_gravity = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_android_orientation = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_divider = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_showDividers = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_Layout = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::AudiOceanClient.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::AudiOcean.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::AudiOceanClient.Resource.Styleable.ListPopupWindow = global::AudiOcean.Droid.Resource.Styleable.ListPopupWindow;
+			global::AudiOceanClient.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::AudiOcean.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::AudiOceanClient.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::AudiOcean.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup = global::AudiOcean.Droid.Resource.Styleable.MenuGroup;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup_android_checkableBehavior = global::AudiOcean.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup_android_enabled = global::AudiOcean.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup_android_id = global::AudiOcean.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup_android_menuCategory = global::AudiOcean.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup_android_orderInCategory = global::AudiOcean.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::AudiOceanClient.Resource.Styleable.MenuGroup_android_visible = global::AudiOcean.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::AudiOceanClient.Resource.Styleable.MenuItem = global::AudiOcean.Droid.Resource.Styleable.MenuItem;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_actionLayout = global::AudiOcean.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_actionProviderClass = global::AudiOcean.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_actionViewClass = global::AudiOcean.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_checkable = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_checked = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_enabled = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_icon = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_id = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_id;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_menuCategory = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_numericShortcut = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_onClick = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_orderInCategory = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_title = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_title;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_titleCondensed = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_android_visible = global::AudiOcean.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::AudiOceanClient.Resource.Styleable.MenuItem_showAsAction = global::AudiOcean.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::AudiOceanClient.Resource.Styleable.MenuView = global::AudiOcean.Droid.Resource.Styleable.MenuView;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_headerBackground = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_horizontalDivider = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_itemBackground = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_itemTextAppearance = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_verticalDivider = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::AudiOceanClient.Resource.Styleable.MenuView_android_windowAnimationStyle = global::AudiOcean.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::AudiOceanClient.Resource.Styleable.MenuView_preserveIconSpacing = global::AudiOcean.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::AudiOceanClient.Resource.Styleable.MenuView_subMenuArrow = global::AudiOcean.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::AudiOceanClient.Resource.Styleable.PopupWindow = global::AudiOcean.Droid.Resource.Styleable.PopupWindow;
+			global::AudiOceanClient.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::AudiOcean.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::AudiOceanClient.Resource.Styleable.PopupWindow_android_popupBackground = global::AudiOcean.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::AudiOceanClient.Resource.Styleable.PopupWindow_overlapAnchor = global::AudiOcean.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::AudiOceanClient.Resource.Styleable.PopupWindowBackgroundState = global::AudiOcean.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::AudiOceanClient.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::AudiOcean.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::AudiOceanClient.Resource.Styleable.RecycleListView = global::AudiOcean.Droid.Resource.Styleable.RecycleListView;
+			global::AudiOceanClient.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::AudiOcean.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::AudiOceanClient.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::AudiOcean.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::AudiOceanClient.Resource.Styleable.SearchView = global::AudiOcean.Droid.Resource.Styleable.SearchView;
+			global::AudiOceanClient.Resource.Styleable.SearchView_android_focusable = global::AudiOcean.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::AudiOceanClient.Resource.Styleable.SearchView_android_imeOptions = global::AudiOcean.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::AudiOceanClient.Resource.Styleable.SearchView_android_inputType = global::AudiOcean.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::AudiOceanClient.Resource.Styleable.SearchView_android_maxWidth = global::AudiOcean.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::AudiOceanClient.Resource.Styleable.SearchView_closeIcon = global::AudiOcean.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::AudiOceanClient.Resource.Styleable.SearchView_commitIcon = global::AudiOcean.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::AudiOceanClient.Resource.Styleable.SearchView_defaultQueryHint = global::AudiOcean.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::AudiOceanClient.Resource.Styleable.SearchView_goIcon = global::AudiOcean.Droid.Resource.Styleable.SearchView_goIcon;
+			global::AudiOceanClient.Resource.Styleable.SearchView_iconifiedByDefault = global::AudiOcean.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::AudiOceanClient.Resource.Styleable.SearchView_layout = global::AudiOcean.Droid.Resource.Styleable.SearchView_layout;
+			global::AudiOceanClient.Resource.Styleable.SearchView_queryBackground = global::AudiOcean.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::AudiOceanClient.Resource.Styleable.SearchView_queryHint = global::AudiOcean.Droid.Resource.Styleable.SearchView_queryHint;
+			global::AudiOceanClient.Resource.Styleable.SearchView_searchHintIcon = global::AudiOcean.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::AudiOceanClient.Resource.Styleable.SearchView_searchIcon = global::AudiOcean.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::AudiOceanClient.Resource.Styleable.SearchView_submitBackground = global::AudiOcean.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::AudiOceanClient.Resource.Styleable.SearchView_suggestionRowLayout = global::AudiOcean.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::AudiOceanClient.Resource.Styleable.SearchView_voiceIcon = global::AudiOcean.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::AudiOceanClient.Resource.Styleable.Spinner = global::AudiOcean.Droid.Resource.Styleable.Spinner;
+			global::AudiOceanClient.Resource.Styleable.Spinner_android_dropDownWidth = global::AudiOcean.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::AudiOceanClient.Resource.Styleable.Spinner_android_entries = global::AudiOcean.Droid.Resource.Styleable.Spinner_android_entries;
+			global::AudiOceanClient.Resource.Styleable.Spinner_android_popupBackground = global::AudiOcean.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::AudiOceanClient.Resource.Styleable.Spinner_android_prompt = global::AudiOcean.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::AudiOceanClient.Resource.Styleable.Spinner_popupTheme = global::AudiOcean.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_android_textOff = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_android_textOn = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_android_thumb = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_showText = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_splitTrack = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_switchMinWidth = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_switchPadding = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_switchTextAppearance = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_thumbTextPadding = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_thumbTint = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_thumbTintMode = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_track = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_track;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_trackTint = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::AudiOceanClient.Resource.Styleable.SwitchCompat_trackTintMode = global::AudiOcean.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance = global::AudiOcean.Droid.Resource.Styleable.TextAppearance;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_shadowColor = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_shadowDx = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_shadowDy = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_shadowRadius = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_textColor = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_textColorHint = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_textSize = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_textStyle = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_android_typeface = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::AudiOceanClient.Resource.Styleable.TextAppearance_textAllCaps = global::AudiOcean.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::AudiOceanClient.Resource.Styleable.Toolbar = global::AudiOcean.Droid.Resource.Styleable.Toolbar;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_android_gravity = global::AudiOcean.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_android_minHeight = global::AudiOcean.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_buttonGravity = global::AudiOcean.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_collapseContentDescription = global::AudiOcean.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_collapseIcon = global::AudiOcean.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_contentInsetEnd = global::AudiOcean.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::AudiOcean.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_contentInsetLeft = global::AudiOcean.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_contentInsetRight = global::AudiOcean.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_contentInsetStart = global::AudiOcean.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::AudiOcean.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_logo = global::AudiOcean.Droid.Resource.Styleable.Toolbar_logo;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_logoDescription = global::AudiOcean.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_maxButtonHeight = global::AudiOcean.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_navigationContentDescription = global::AudiOcean.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_navigationIcon = global::AudiOcean.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_popupTheme = global::AudiOcean.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_subtitle = global::AudiOcean.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_subtitleTextAppearance = global::AudiOcean.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_subtitleTextColor = global::AudiOcean.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_title = global::AudiOcean.Droid.Resource.Styleable.Toolbar_title;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleMargin = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleMarginBottom = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleMarginEnd = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleMarginStart = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleMarginTop = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleMargins = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleTextAppearance = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::AudiOceanClient.Resource.Styleable.Toolbar_titleTextColor = global::AudiOcean.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::AudiOceanClient.Resource.Styleable.View = global::AudiOcean.Droid.Resource.Styleable.View;
+			global::AudiOceanClient.Resource.Styleable.View_android_focusable = global::AudiOcean.Droid.Resource.Styleable.View_android_focusable;
+			global::AudiOceanClient.Resource.Styleable.View_android_theme = global::AudiOcean.Droid.Resource.Styleable.View_android_theme;
+			global::AudiOceanClient.Resource.Styleable.View_paddingEnd = global::AudiOcean.Droid.Resource.Styleable.View_paddingEnd;
+			global::AudiOceanClient.Resource.Styleable.View_paddingStart = global::AudiOcean.Droid.Resource.Styleable.View_paddingStart;
+			global::AudiOceanClient.Resource.Styleable.View_theme = global::AudiOcean.Droid.Resource.Styleable.View_theme;
+			global::AudiOceanClient.Resource.Styleable.ViewBackgroundHelper = global::AudiOcean.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::AudiOceanClient.Resource.Styleable.ViewBackgroundHelper_android_background = global::AudiOcean.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::AudiOceanClient.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::AudiOcean.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::AudiOceanClient.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::AudiOcean.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::AudiOceanClient.Resource.Styleable.ViewStubCompat = global::AudiOcean.Droid.Resource.Styleable.ViewStubCompat;
+			global::AudiOceanClient.Resource.Styleable.ViewStubCompat_android_id = global::AudiOcean.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::AudiOceanClient.Resource.Styleable.ViewStubCompat_android_inflatedId = global::AudiOcean.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::AudiOceanClient.Resource.Styleable.ViewStubCompat_android_layout = global::AudiOcean.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::AudiOcean.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -164,12 +1490,6 @@ namespace AudiOcean.Droid
 			
 			// aapt resource value: 0x7f05000f
 			public const int design_snackbar_out = 2131034127;
-			
-			// aapt resource value: 0x7f050010
-			public const int slide_in_right = 2131034128;
-			
-			// aapt resource value: 0x7f050011
-			public const int slide_out_left = 2131034129;
 			
 			static Animation()
 			{
@@ -1586,449 +2906,449 @@ namespace AudiOcean.Droid
 		public partial class Dimension
 		{
 			
-			// aapt resource value: 0x7f090018
-			public const int abc_action_bar_content_inset_material = 2131296280;
+			// aapt resource value: 0x7f080018
+			public const int abc_action_bar_content_inset_material = 2131230744;
 			
-			// aapt resource value: 0x7f090019
-			public const int abc_action_bar_content_inset_with_nav = 2131296281;
+			// aapt resource value: 0x7f080019
+			public const int abc_action_bar_content_inset_with_nav = 2131230745;
 			
-			// aapt resource value: 0x7f09000d
-			public const int abc_action_bar_default_height_material = 2131296269;
+			// aapt resource value: 0x7f08000d
+			public const int abc_action_bar_default_height_material = 2131230733;
 			
-			// aapt resource value: 0x7f09001a
-			public const int abc_action_bar_default_padding_end_material = 2131296282;
+			// aapt resource value: 0x7f08001a
+			public const int abc_action_bar_default_padding_end_material = 2131230746;
 			
-			// aapt resource value: 0x7f09001b
-			public const int abc_action_bar_default_padding_start_material = 2131296283;
+			// aapt resource value: 0x7f08001b
+			public const int abc_action_bar_default_padding_start_material = 2131230747;
 			
-			// aapt resource value: 0x7f090021
-			public const int abc_action_bar_elevation_material = 2131296289;
+			// aapt resource value: 0x7f080021
+			public const int abc_action_bar_elevation_material = 2131230753;
 			
-			// aapt resource value: 0x7f090022
-			public const int abc_action_bar_icon_vertical_padding_material = 2131296290;
+			// aapt resource value: 0x7f080022
+			public const int abc_action_bar_icon_vertical_padding_material = 2131230754;
 			
-			// aapt resource value: 0x7f090023
-			public const int abc_action_bar_overflow_padding_end_material = 2131296291;
+			// aapt resource value: 0x7f080023
+			public const int abc_action_bar_overflow_padding_end_material = 2131230755;
 			
-			// aapt resource value: 0x7f090024
-			public const int abc_action_bar_overflow_padding_start_material = 2131296292;
+			// aapt resource value: 0x7f080024
+			public const int abc_action_bar_overflow_padding_start_material = 2131230756;
 			
-			// aapt resource value: 0x7f09000e
-			public const int abc_action_bar_progress_bar_size = 2131296270;
+			// aapt resource value: 0x7f08000e
+			public const int abc_action_bar_progress_bar_size = 2131230734;
 			
-			// aapt resource value: 0x7f090025
-			public const int abc_action_bar_stacked_max_height = 2131296293;
+			// aapt resource value: 0x7f080025
+			public const int abc_action_bar_stacked_max_height = 2131230757;
 			
-			// aapt resource value: 0x7f090026
-			public const int abc_action_bar_stacked_tab_max_width = 2131296294;
+			// aapt resource value: 0x7f080026
+			public const int abc_action_bar_stacked_tab_max_width = 2131230758;
 			
-			// aapt resource value: 0x7f090027
-			public const int abc_action_bar_subtitle_bottom_margin_material = 2131296295;
+			// aapt resource value: 0x7f080027
+			public const int abc_action_bar_subtitle_bottom_margin_material = 2131230759;
 			
-			// aapt resource value: 0x7f090028
-			public const int abc_action_bar_subtitle_top_margin_material = 2131296296;
+			// aapt resource value: 0x7f080028
+			public const int abc_action_bar_subtitle_top_margin_material = 2131230760;
 			
-			// aapt resource value: 0x7f090029
-			public const int abc_action_button_min_height_material = 2131296297;
+			// aapt resource value: 0x7f080029
+			public const int abc_action_button_min_height_material = 2131230761;
 			
-			// aapt resource value: 0x7f09002a
-			public const int abc_action_button_min_width_material = 2131296298;
+			// aapt resource value: 0x7f08002a
+			public const int abc_action_button_min_width_material = 2131230762;
 			
-			// aapt resource value: 0x7f09002b
-			public const int abc_action_button_min_width_overflow_material = 2131296299;
+			// aapt resource value: 0x7f08002b
+			public const int abc_action_button_min_width_overflow_material = 2131230763;
 			
-			// aapt resource value: 0x7f09000c
-			public const int abc_alert_dialog_button_bar_height = 2131296268;
+			// aapt resource value: 0x7f08000c
+			public const int abc_alert_dialog_button_bar_height = 2131230732;
 			
-			// aapt resource value: 0x7f09002c
-			public const int abc_button_inset_horizontal_material = 2131296300;
+			// aapt resource value: 0x7f08002c
+			public const int abc_button_inset_horizontal_material = 2131230764;
 			
-			// aapt resource value: 0x7f09002d
-			public const int abc_button_inset_vertical_material = 2131296301;
+			// aapt resource value: 0x7f08002d
+			public const int abc_button_inset_vertical_material = 2131230765;
 			
-			// aapt resource value: 0x7f09002e
-			public const int abc_button_padding_horizontal_material = 2131296302;
+			// aapt resource value: 0x7f08002e
+			public const int abc_button_padding_horizontal_material = 2131230766;
 			
-			// aapt resource value: 0x7f09002f
-			public const int abc_button_padding_vertical_material = 2131296303;
+			// aapt resource value: 0x7f08002f
+			public const int abc_button_padding_vertical_material = 2131230767;
 			
-			// aapt resource value: 0x7f090030
-			public const int abc_cascading_menus_min_smallest_width = 2131296304;
+			// aapt resource value: 0x7f080030
+			public const int abc_cascading_menus_min_smallest_width = 2131230768;
 			
-			// aapt resource value: 0x7f090011
-			public const int abc_config_prefDialogWidth = 2131296273;
+			// aapt resource value: 0x7f080011
+			public const int abc_config_prefDialogWidth = 2131230737;
 			
-			// aapt resource value: 0x7f090031
-			public const int abc_control_corner_material = 2131296305;
+			// aapt resource value: 0x7f080031
+			public const int abc_control_corner_material = 2131230769;
 			
-			// aapt resource value: 0x7f090032
-			public const int abc_control_inset_material = 2131296306;
+			// aapt resource value: 0x7f080032
+			public const int abc_control_inset_material = 2131230770;
 			
-			// aapt resource value: 0x7f090033
-			public const int abc_control_padding_material = 2131296307;
+			// aapt resource value: 0x7f080033
+			public const int abc_control_padding_material = 2131230771;
 			
-			// aapt resource value: 0x7f090012
-			public const int abc_dialog_fixed_height_major = 2131296274;
+			// aapt resource value: 0x7f080012
+			public const int abc_dialog_fixed_height_major = 2131230738;
 			
-			// aapt resource value: 0x7f090013
-			public const int abc_dialog_fixed_height_minor = 2131296275;
+			// aapt resource value: 0x7f080013
+			public const int abc_dialog_fixed_height_minor = 2131230739;
 			
-			// aapt resource value: 0x7f090014
-			public const int abc_dialog_fixed_width_major = 2131296276;
+			// aapt resource value: 0x7f080014
+			public const int abc_dialog_fixed_width_major = 2131230740;
 			
-			// aapt resource value: 0x7f090015
-			public const int abc_dialog_fixed_width_minor = 2131296277;
+			// aapt resource value: 0x7f080015
+			public const int abc_dialog_fixed_width_minor = 2131230741;
 			
-			// aapt resource value: 0x7f090034
-			public const int abc_dialog_list_padding_bottom_no_buttons = 2131296308;
+			// aapt resource value: 0x7f080034
+			public const int abc_dialog_list_padding_bottom_no_buttons = 2131230772;
 			
-			// aapt resource value: 0x7f090035
-			public const int abc_dialog_list_padding_top_no_title = 2131296309;
+			// aapt resource value: 0x7f080035
+			public const int abc_dialog_list_padding_top_no_title = 2131230773;
 			
-			// aapt resource value: 0x7f090016
-			public const int abc_dialog_min_width_major = 2131296278;
+			// aapt resource value: 0x7f080016
+			public const int abc_dialog_min_width_major = 2131230742;
 			
-			// aapt resource value: 0x7f090017
-			public const int abc_dialog_min_width_minor = 2131296279;
+			// aapt resource value: 0x7f080017
+			public const int abc_dialog_min_width_minor = 2131230743;
 			
-			// aapt resource value: 0x7f090036
-			public const int abc_dialog_padding_material = 2131296310;
+			// aapt resource value: 0x7f080036
+			public const int abc_dialog_padding_material = 2131230774;
 			
-			// aapt resource value: 0x7f090037
-			public const int abc_dialog_padding_top_material = 2131296311;
+			// aapt resource value: 0x7f080037
+			public const int abc_dialog_padding_top_material = 2131230775;
 			
-			// aapt resource value: 0x7f090038
-			public const int abc_dialog_title_divider_material = 2131296312;
+			// aapt resource value: 0x7f080038
+			public const int abc_dialog_title_divider_material = 2131230776;
 			
-			// aapt resource value: 0x7f090039
-			public const int abc_disabled_alpha_material_dark = 2131296313;
+			// aapt resource value: 0x7f080039
+			public const int abc_disabled_alpha_material_dark = 2131230777;
 			
-			// aapt resource value: 0x7f09003a
-			public const int abc_disabled_alpha_material_light = 2131296314;
+			// aapt resource value: 0x7f08003a
+			public const int abc_disabled_alpha_material_light = 2131230778;
 			
-			// aapt resource value: 0x7f09003b
-			public const int abc_dropdownitem_icon_width = 2131296315;
+			// aapt resource value: 0x7f08003b
+			public const int abc_dropdownitem_icon_width = 2131230779;
 			
-			// aapt resource value: 0x7f09003c
-			public const int abc_dropdownitem_text_padding_left = 2131296316;
+			// aapt resource value: 0x7f08003c
+			public const int abc_dropdownitem_text_padding_left = 2131230780;
 			
-			// aapt resource value: 0x7f09003d
-			public const int abc_dropdownitem_text_padding_right = 2131296317;
+			// aapt resource value: 0x7f08003d
+			public const int abc_dropdownitem_text_padding_right = 2131230781;
 			
-			// aapt resource value: 0x7f09003e
-			public const int abc_edit_text_inset_bottom_material = 2131296318;
+			// aapt resource value: 0x7f08003e
+			public const int abc_edit_text_inset_bottom_material = 2131230782;
 			
-			// aapt resource value: 0x7f09003f
-			public const int abc_edit_text_inset_horizontal_material = 2131296319;
+			// aapt resource value: 0x7f08003f
+			public const int abc_edit_text_inset_horizontal_material = 2131230783;
 			
-			// aapt resource value: 0x7f090040
-			public const int abc_edit_text_inset_top_material = 2131296320;
+			// aapt resource value: 0x7f080040
+			public const int abc_edit_text_inset_top_material = 2131230784;
 			
-			// aapt resource value: 0x7f090041
-			public const int abc_floating_window_z = 2131296321;
+			// aapt resource value: 0x7f080041
+			public const int abc_floating_window_z = 2131230785;
 			
-			// aapt resource value: 0x7f090042
-			public const int abc_list_item_padding_horizontal_material = 2131296322;
+			// aapt resource value: 0x7f080042
+			public const int abc_list_item_padding_horizontal_material = 2131230786;
 			
-			// aapt resource value: 0x7f090043
-			public const int abc_panel_menu_list_width = 2131296323;
+			// aapt resource value: 0x7f080043
+			public const int abc_panel_menu_list_width = 2131230787;
 			
-			// aapt resource value: 0x7f090044
-			public const int abc_progress_bar_height_material = 2131296324;
+			// aapt resource value: 0x7f080044
+			public const int abc_progress_bar_height_material = 2131230788;
 			
-			// aapt resource value: 0x7f090045
-			public const int abc_search_view_preferred_height = 2131296325;
+			// aapt resource value: 0x7f080045
+			public const int abc_search_view_preferred_height = 2131230789;
 			
-			// aapt resource value: 0x7f090046
-			public const int abc_search_view_preferred_width = 2131296326;
+			// aapt resource value: 0x7f080046
+			public const int abc_search_view_preferred_width = 2131230790;
 			
-			// aapt resource value: 0x7f090047
-			public const int abc_seekbar_track_background_height_material = 2131296327;
+			// aapt resource value: 0x7f080047
+			public const int abc_seekbar_track_background_height_material = 2131230791;
 			
-			// aapt resource value: 0x7f090048
-			public const int abc_seekbar_track_progress_height_material = 2131296328;
+			// aapt resource value: 0x7f080048
+			public const int abc_seekbar_track_progress_height_material = 2131230792;
 			
-			// aapt resource value: 0x7f090049
-			public const int abc_select_dialog_padding_start_material = 2131296329;
+			// aapt resource value: 0x7f080049
+			public const int abc_select_dialog_padding_start_material = 2131230793;
 			
-			// aapt resource value: 0x7f09001d
-			public const int abc_switch_padding = 2131296285;
+			// aapt resource value: 0x7f08001d
+			public const int abc_switch_padding = 2131230749;
 			
-			// aapt resource value: 0x7f09004a
-			public const int abc_text_size_body_1_material = 2131296330;
+			// aapt resource value: 0x7f08004a
+			public const int abc_text_size_body_1_material = 2131230794;
 			
-			// aapt resource value: 0x7f09004b
-			public const int abc_text_size_body_2_material = 2131296331;
+			// aapt resource value: 0x7f08004b
+			public const int abc_text_size_body_2_material = 2131230795;
 			
-			// aapt resource value: 0x7f09004c
-			public const int abc_text_size_button_material = 2131296332;
+			// aapt resource value: 0x7f08004c
+			public const int abc_text_size_button_material = 2131230796;
 			
-			// aapt resource value: 0x7f09004d
-			public const int abc_text_size_caption_material = 2131296333;
+			// aapt resource value: 0x7f08004d
+			public const int abc_text_size_caption_material = 2131230797;
 			
-			// aapt resource value: 0x7f09004e
-			public const int abc_text_size_display_1_material = 2131296334;
+			// aapt resource value: 0x7f08004e
+			public const int abc_text_size_display_1_material = 2131230798;
 			
-			// aapt resource value: 0x7f09004f
-			public const int abc_text_size_display_2_material = 2131296335;
+			// aapt resource value: 0x7f08004f
+			public const int abc_text_size_display_2_material = 2131230799;
 			
-			// aapt resource value: 0x7f090050
-			public const int abc_text_size_display_3_material = 2131296336;
+			// aapt resource value: 0x7f080050
+			public const int abc_text_size_display_3_material = 2131230800;
 			
-			// aapt resource value: 0x7f090051
-			public const int abc_text_size_display_4_material = 2131296337;
+			// aapt resource value: 0x7f080051
+			public const int abc_text_size_display_4_material = 2131230801;
 			
-			// aapt resource value: 0x7f090052
-			public const int abc_text_size_headline_material = 2131296338;
+			// aapt resource value: 0x7f080052
+			public const int abc_text_size_headline_material = 2131230802;
 			
-			// aapt resource value: 0x7f090053
-			public const int abc_text_size_large_material = 2131296339;
+			// aapt resource value: 0x7f080053
+			public const int abc_text_size_large_material = 2131230803;
 			
-			// aapt resource value: 0x7f090054
-			public const int abc_text_size_medium_material = 2131296340;
+			// aapt resource value: 0x7f080054
+			public const int abc_text_size_medium_material = 2131230804;
 			
-			// aapt resource value: 0x7f090055
-			public const int abc_text_size_menu_header_material = 2131296341;
+			// aapt resource value: 0x7f080055
+			public const int abc_text_size_menu_header_material = 2131230805;
 			
-			// aapt resource value: 0x7f090056
-			public const int abc_text_size_menu_material = 2131296342;
+			// aapt resource value: 0x7f080056
+			public const int abc_text_size_menu_material = 2131230806;
 			
-			// aapt resource value: 0x7f090057
-			public const int abc_text_size_small_material = 2131296343;
+			// aapt resource value: 0x7f080057
+			public const int abc_text_size_small_material = 2131230807;
 			
-			// aapt resource value: 0x7f090058
-			public const int abc_text_size_subhead_material = 2131296344;
+			// aapt resource value: 0x7f080058
+			public const int abc_text_size_subhead_material = 2131230808;
 			
-			// aapt resource value: 0x7f09000f
-			public const int abc_text_size_subtitle_material_toolbar = 2131296271;
+			// aapt resource value: 0x7f08000f
+			public const int abc_text_size_subtitle_material_toolbar = 2131230735;
 			
-			// aapt resource value: 0x7f090059
-			public const int abc_text_size_title_material = 2131296345;
+			// aapt resource value: 0x7f080059
+			public const int abc_text_size_title_material = 2131230809;
 			
-			// aapt resource value: 0x7f090010
-			public const int abc_text_size_title_material_toolbar = 2131296272;
+			// aapt resource value: 0x7f080010
+			public const int abc_text_size_title_material_toolbar = 2131230736;
 			
-			// aapt resource value: 0x7f090009
-			public const int cardview_compat_inset_shadow = 2131296265;
+			// aapt resource value: 0x7f080009
+			public const int cardview_compat_inset_shadow = 2131230729;
 			
-			// aapt resource value: 0x7f09000a
-			public const int cardview_default_elevation = 2131296266;
+			// aapt resource value: 0x7f08000a
+			public const int cardview_default_elevation = 2131230730;
 			
-			// aapt resource value: 0x7f09000b
-			public const int cardview_default_radius = 2131296267;
+			// aapt resource value: 0x7f08000b
+			public const int cardview_default_radius = 2131230731;
 			
-			// aapt resource value: 0x7f090076
-			public const int design_appbar_elevation = 2131296374;
+			// aapt resource value: 0x7f080076
+			public const int design_appbar_elevation = 2131230838;
 			
-			// aapt resource value: 0x7f090077
-			public const int design_bottom_navigation_active_item_max_width = 2131296375;
+			// aapt resource value: 0x7f080077
+			public const int design_bottom_navigation_active_item_max_width = 2131230839;
 			
-			// aapt resource value: 0x7f090078
-			public const int design_bottom_navigation_active_text_size = 2131296376;
+			// aapt resource value: 0x7f080078
+			public const int design_bottom_navigation_active_text_size = 2131230840;
 			
-			// aapt resource value: 0x7f090079
-			public const int design_bottom_navigation_elevation = 2131296377;
+			// aapt resource value: 0x7f080079
+			public const int design_bottom_navigation_elevation = 2131230841;
 			
-			// aapt resource value: 0x7f09007a
-			public const int design_bottom_navigation_height = 2131296378;
+			// aapt resource value: 0x7f08007a
+			public const int design_bottom_navigation_height = 2131230842;
 			
-			// aapt resource value: 0x7f09007b
-			public const int design_bottom_navigation_item_max_width = 2131296379;
+			// aapt resource value: 0x7f08007b
+			public const int design_bottom_navigation_item_max_width = 2131230843;
 			
-			// aapt resource value: 0x7f09007c
-			public const int design_bottom_navigation_item_min_width = 2131296380;
+			// aapt resource value: 0x7f08007c
+			public const int design_bottom_navigation_item_min_width = 2131230844;
 			
-			// aapt resource value: 0x7f09007d
-			public const int design_bottom_navigation_margin = 2131296381;
+			// aapt resource value: 0x7f08007d
+			public const int design_bottom_navigation_margin = 2131230845;
 			
-			// aapt resource value: 0x7f09007e
-			public const int design_bottom_navigation_shadow_height = 2131296382;
+			// aapt resource value: 0x7f08007e
+			public const int design_bottom_navigation_shadow_height = 2131230846;
 			
-			// aapt resource value: 0x7f09007f
-			public const int design_bottom_navigation_text_size = 2131296383;
+			// aapt resource value: 0x7f08007f
+			public const int design_bottom_navigation_text_size = 2131230847;
 			
-			// aapt resource value: 0x7f090080
-			public const int design_bottom_sheet_modal_elevation = 2131296384;
+			// aapt resource value: 0x7f080080
+			public const int design_bottom_sheet_modal_elevation = 2131230848;
 			
-			// aapt resource value: 0x7f090081
-			public const int design_bottom_sheet_peek_height_min = 2131296385;
+			// aapt resource value: 0x7f080081
+			public const int design_bottom_sheet_peek_height_min = 2131230849;
 			
-			// aapt resource value: 0x7f090082
-			public const int design_fab_border_width = 2131296386;
+			// aapt resource value: 0x7f080082
+			public const int design_fab_border_width = 2131230850;
 			
-			// aapt resource value: 0x7f090083
-			public const int design_fab_elevation = 2131296387;
+			// aapt resource value: 0x7f080083
+			public const int design_fab_elevation = 2131230851;
 			
-			// aapt resource value: 0x7f090084
-			public const int design_fab_image_size = 2131296388;
+			// aapt resource value: 0x7f080084
+			public const int design_fab_image_size = 2131230852;
 			
-			// aapt resource value: 0x7f090085
-			public const int design_fab_size_mini = 2131296389;
+			// aapt resource value: 0x7f080085
+			public const int design_fab_size_mini = 2131230853;
 			
-			// aapt resource value: 0x7f090086
-			public const int design_fab_size_normal = 2131296390;
+			// aapt resource value: 0x7f080086
+			public const int design_fab_size_normal = 2131230854;
 			
-			// aapt resource value: 0x7f090087
-			public const int design_fab_translation_z_pressed = 2131296391;
+			// aapt resource value: 0x7f080087
+			public const int design_fab_translation_z_pressed = 2131230855;
 			
-			// aapt resource value: 0x7f090088
-			public const int design_navigation_elevation = 2131296392;
+			// aapt resource value: 0x7f080088
+			public const int design_navigation_elevation = 2131230856;
 			
-			// aapt resource value: 0x7f090089
-			public const int design_navigation_icon_padding = 2131296393;
+			// aapt resource value: 0x7f080089
+			public const int design_navigation_icon_padding = 2131230857;
 			
-			// aapt resource value: 0x7f09008a
-			public const int design_navigation_icon_size = 2131296394;
+			// aapt resource value: 0x7f08008a
+			public const int design_navigation_icon_size = 2131230858;
 			
-			// aapt resource value: 0x7f09006e
-			public const int design_navigation_max_width = 2131296366;
+			// aapt resource value: 0x7f08006e
+			public const int design_navigation_max_width = 2131230830;
 			
-			// aapt resource value: 0x7f09008b
-			public const int design_navigation_padding_bottom = 2131296395;
+			// aapt resource value: 0x7f08008b
+			public const int design_navigation_padding_bottom = 2131230859;
 			
-			// aapt resource value: 0x7f09008c
-			public const int design_navigation_separator_vertical_padding = 2131296396;
+			// aapt resource value: 0x7f08008c
+			public const int design_navigation_separator_vertical_padding = 2131230860;
 			
-			// aapt resource value: 0x7f09006f
-			public const int design_snackbar_action_inline_max_width = 2131296367;
+			// aapt resource value: 0x7f08006f
+			public const int design_snackbar_action_inline_max_width = 2131230831;
 			
-			// aapt resource value: 0x7f090070
-			public const int design_snackbar_background_corner_radius = 2131296368;
+			// aapt resource value: 0x7f080070
+			public const int design_snackbar_background_corner_radius = 2131230832;
 			
-			// aapt resource value: 0x7f09008d
-			public const int design_snackbar_elevation = 2131296397;
+			// aapt resource value: 0x7f08008d
+			public const int design_snackbar_elevation = 2131230861;
 			
-			// aapt resource value: 0x7f090071
-			public const int design_snackbar_extra_spacing_horizontal = 2131296369;
+			// aapt resource value: 0x7f080071
+			public const int design_snackbar_extra_spacing_horizontal = 2131230833;
 			
-			// aapt resource value: 0x7f090072
-			public const int design_snackbar_max_width = 2131296370;
+			// aapt resource value: 0x7f080072
+			public const int design_snackbar_max_width = 2131230834;
 			
-			// aapt resource value: 0x7f090073
-			public const int design_snackbar_min_width = 2131296371;
+			// aapt resource value: 0x7f080073
+			public const int design_snackbar_min_width = 2131230835;
 			
-			// aapt resource value: 0x7f09008e
-			public const int design_snackbar_padding_horizontal = 2131296398;
+			// aapt resource value: 0x7f08008e
+			public const int design_snackbar_padding_horizontal = 2131230862;
 			
-			// aapt resource value: 0x7f09008f
-			public const int design_snackbar_padding_vertical = 2131296399;
+			// aapt resource value: 0x7f08008f
+			public const int design_snackbar_padding_vertical = 2131230863;
 			
-			// aapt resource value: 0x7f090074
-			public const int design_snackbar_padding_vertical_2lines = 2131296372;
+			// aapt resource value: 0x7f080074
+			public const int design_snackbar_padding_vertical_2lines = 2131230836;
 			
-			// aapt resource value: 0x7f090090
-			public const int design_snackbar_text_size = 2131296400;
+			// aapt resource value: 0x7f080090
+			public const int design_snackbar_text_size = 2131230864;
 			
-			// aapt resource value: 0x7f090091
-			public const int design_tab_max_width = 2131296401;
+			// aapt resource value: 0x7f080091
+			public const int design_tab_max_width = 2131230865;
 			
-			// aapt resource value: 0x7f090075
-			public const int design_tab_scrollable_min_width = 2131296373;
+			// aapt resource value: 0x7f080075
+			public const int design_tab_scrollable_min_width = 2131230837;
 			
-			// aapt resource value: 0x7f090092
-			public const int design_tab_text_size = 2131296402;
+			// aapt resource value: 0x7f080092
+			public const int design_tab_text_size = 2131230866;
 			
-			// aapt resource value: 0x7f090093
-			public const int design_tab_text_size_2line = 2131296403;
+			// aapt resource value: 0x7f080093
+			public const int design_tab_text_size_2line = 2131230867;
 			
-			// aapt resource value: 0x7f09005a
-			public const int disabled_alpha_material_dark = 2131296346;
+			// aapt resource value: 0x7f08005a
+			public const int disabled_alpha_material_dark = 2131230810;
 			
-			// aapt resource value: 0x7f09005b
-			public const int disabled_alpha_material_light = 2131296347;
+			// aapt resource value: 0x7f08005b
+			public const int disabled_alpha_material_light = 2131230811;
 			
-			// aapt resource value: 0x7f09005c
-			public const int highlight_alpha_material_colored = 2131296348;
+			// aapt resource value: 0x7f08005c
+			public const int highlight_alpha_material_colored = 2131230812;
 			
-			// aapt resource value: 0x7f09005d
-			public const int highlight_alpha_material_dark = 2131296349;
+			// aapt resource value: 0x7f08005d
+			public const int highlight_alpha_material_dark = 2131230813;
 			
-			// aapt resource value: 0x7f09005e
-			public const int highlight_alpha_material_light = 2131296350;
+			// aapt resource value: 0x7f08005e
+			public const int highlight_alpha_material_light = 2131230814;
 			
-			// aapt resource value: 0x7f09005f
-			public const int hint_alpha_material_dark = 2131296351;
+			// aapt resource value: 0x7f08005f
+			public const int hint_alpha_material_dark = 2131230815;
 			
-			// aapt resource value: 0x7f090060
-			public const int hint_alpha_material_light = 2131296352;
+			// aapt resource value: 0x7f080060
+			public const int hint_alpha_material_light = 2131230816;
 			
-			// aapt resource value: 0x7f090061
-			public const int hint_pressed_alpha_material_dark = 2131296353;
+			// aapt resource value: 0x7f080061
+			public const int hint_pressed_alpha_material_dark = 2131230817;
 			
-			// aapt resource value: 0x7f090062
-			public const int hint_pressed_alpha_material_light = 2131296354;
+			// aapt resource value: 0x7f080062
+			public const int hint_pressed_alpha_material_light = 2131230818;
 			
-			// aapt resource value: 0x7f090000
-			public const int item_touch_helper_max_drag_scroll_per_frame = 2131296256;
+			// aapt resource value: 0x7f080000
+			public const int item_touch_helper_max_drag_scroll_per_frame = 2131230720;
 			
-			// aapt resource value: 0x7f090001
-			public const int item_touch_helper_swipe_escape_max_velocity = 2131296257;
+			// aapt resource value: 0x7f080001
+			public const int item_touch_helper_swipe_escape_max_velocity = 2131230721;
 			
-			// aapt resource value: 0x7f090002
-			public const int item_touch_helper_swipe_escape_velocity = 2131296258;
+			// aapt resource value: 0x7f080002
+			public const int item_touch_helper_swipe_escape_velocity = 2131230722;
 			
-			// aapt resource value: 0x7f090003
-			public const int mr_controller_volume_group_list_item_height = 2131296259;
+			// aapt resource value: 0x7f080003
+			public const int mr_controller_volume_group_list_item_height = 2131230723;
 			
-			// aapt resource value: 0x7f090004
-			public const int mr_controller_volume_group_list_item_icon_size = 2131296260;
+			// aapt resource value: 0x7f080004
+			public const int mr_controller_volume_group_list_item_icon_size = 2131230724;
 			
-			// aapt resource value: 0x7f090005
-			public const int mr_controller_volume_group_list_max_height = 2131296261;
+			// aapt resource value: 0x7f080005
+			public const int mr_controller_volume_group_list_max_height = 2131230725;
 			
-			// aapt resource value: 0x7f090008
-			public const int mr_controller_volume_group_list_padding_top = 2131296264;
+			// aapt resource value: 0x7f080008
+			public const int mr_controller_volume_group_list_padding_top = 2131230728;
 			
-			// aapt resource value: 0x7f090006
-			public const int mr_dialog_fixed_width_major = 2131296262;
+			// aapt resource value: 0x7f080006
+			public const int mr_dialog_fixed_width_major = 2131230726;
 			
-			// aapt resource value: 0x7f090007
-			public const int mr_dialog_fixed_width_minor = 2131296263;
+			// aapt resource value: 0x7f080007
+			public const int mr_dialog_fixed_width_minor = 2131230727;
 			
-			// aapt resource value: 0x7f090063
-			public const int notification_action_icon_size = 2131296355;
+			// aapt resource value: 0x7f080063
+			public const int notification_action_icon_size = 2131230819;
 			
-			// aapt resource value: 0x7f090064
-			public const int notification_action_text_size = 2131296356;
+			// aapt resource value: 0x7f080064
+			public const int notification_action_text_size = 2131230820;
 			
-			// aapt resource value: 0x7f090065
-			public const int notification_big_circle_margin = 2131296357;
+			// aapt resource value: 0x7f080065
+			public const int notification_big_circle_margin = 2131230821;
 			
-			// aapt resource value: 0x7f09001e
-			public const int notification_content_margin_start = 2131296286;
+			// aapt resource value: 0x7f08001e
+			public const int notification_content_margin_start = 2131230750;
 			
-			// aapt resource value: 0x7f090066
-			public const int notification_large_icon_height = 2131296358;
+			// aapt resource value: 0x7f080066
+			public const int notification_large_icon_height = 2131230822;
 			
-			// aapt resource value: 0x7f090067
-			public const int notification_large_icon_width = 2131296359;
+			// aapt resource value: 0x7f080067
+			public const int notification_large_icon_width = 2131230823;
 			
-			// aapt resource value: 0x7f09001f
-			public const int notification_main_column_padding_top = 2131296287;
+			// aapt resource value: 0x7f08001f
+			public const int notification_main_column_padding_top = 2131230751;
 			
-			// aapt resource value: 0x7f090020
-			public const int notification_media_narrow_margin = 2131296288;
+			// aapt resource value: 0x7f080020
+			public const int notification_media_narrow_margin = 2131230752;
 			
-			// aapt resource value: 0x7f090068
-			public const int notification_right_icon_size = 2131296360;
+			// aapt resource value: 0x7f080068
+			public const int notification_right_icon_size = 2131230824;
 			
-			// aapt resource value: 0x7f09001c
-			public const int notification_right_side_padding_top = 2131296284;
+			// aapt resource value: 0x7f08001c
+			public const int notification_right_side_padding_top = 2131230748;
 			
-			// aapt resource value: 0x7f090069
-			public const int notification_small_icon_background_padding = 2131296361;
+			// aapt resource value: 0x7f080069
+			public const int notification_small_icon_background_padding = 2131230825;
 			
-			// aapt resource value: 0x7f09006a
-			public const int notification_small_icon_size_as_large = 2131296362;
+			// aapt resource value: 0x7f08006a
+			public const int notification_small_icon_size_as_large = 2131230826;
 			
-			// aapt resource value: 0x7f09006b
-			public const int notification_subtext_size = 2131296363;
+			// aapt resource value: 0x7f08006b
+			public const int notification_subtext_size = 2131230827;
 			
-			// aapt resource value: 0x7f09006c
-			public const int notification_top_pad = 2131296364;
+			// aapt resource value: 0x7f08006c
+			public const int notification_top_pad = 2131230828;
 			
-			// aapt resource value: 0x7f09006d
-			public const int notification_top_pad_large_text = 2131296365;
+			// aapt resource value: 0x7f08006d
+			public const int notification_top_pad_large_text = 2131230829;
 			
 			static Dimension()
 			{
@@ -2293,583 +3613,610 @@ namespace AudiOcean.Droid
 			public const int abc_vector_test = 2130837586;
 			
 			// aapt resource value: 0x7f020053
-			public const int avd_hide_password = 2130837587;
-			
-			// aapt resource value: 0x7f02010e
-			public const int avd_hide_password_1 = 2130837774;
-			
-			// aapt resource value: 0x7f02010f
-			public const int avd_hide_password_2 = 2130837775;
-			
-			// aapt resource value: 0x7f020110
-			public const int avd_hide_password_3 = 2130837776;
+			public const int AudiOceanIcon01 = 2130837587;
 			
 			// aapt resource value: 0x7f020054
-			public const int avd_show_password = 2130837588;
-			
-			// aapt resource value: 0x7f020111
-			public const int avd_show_password_1 = 2130837777;
-			
-			// aapt resource value: 0x7f020112
-			public const int avd_show_password_2 = 2130837778;
-			
-			// aapt resource value: 0x7f020113
-			public const int avd_show_password_3 = 2130837779;
+			public const int AudiOceanIcon02 = 2130837588;
 			
 			// aapt resource value: 0x7f020055
-			public const int design_bottom_navigation_item_background = 2130837589;
+			public const int AudiOceanIcon03 = 2130837589;
 			
 			// aapt resource value: 0x7f020056
-			public const int design_fab_background = 2130837590;
+			public const int AudiOceanIcon04 = 2130837590;
 			
 			// aapt resource value: 0x7f020057
-			public const int design_ic_visibility = 2130837591;
+			public const int avd_hide_password = 2130837591;
+			
+			// aapt resource value: 0x7f020117
+			public const int avd_hide_password_1 = 2130837783;
+			
+			// aapt resource value: 0x7f020118
+			public const int avd_hide_password_2 = 2130837784;
+			
+			// aapt resource value: 0x7f020119
+			public const int avd_hide_password_3 = 2130837785;
 			
 			// aapt resource value: 0x7f020058
-			public const int design_ic_visibility_off = 2130837592;
+			public const int avd_show_password = 2130837592;
+			
+			// aapt resource value: 0x7f02011a
+			public const int avd_show_password_1 = 2130837786;
+			
+			// aapt resource value: 0x7f02011b
+			public const int avd_show_password_2 = 2130837787;
+			
+			// aapt resource value: 0x7f02011c
+			public const int avd_show_password_3 = 2130837788;
 			
 			// aapt resource value: 0x7f020059
-			public const int design_password_eye = 2130837593;
+			public const int BackwardButton = 2130837593;
 			
 			// aapt resource value: 0x7f02005a
-			public const int design_snackbar_background = 2130837594;
+			public const int design_bottom_navigation_item_background = 2130837594;
 			
 			// aapt resource value: 0x7f02005b
-			public const int ic_arrow_back = 2130837595;
+			public const int design_fab_background = 2130837595;
 			
 			// aapt resource value: 0x7f02005c
-			public const int ic_audiotrack_dark = 2130837596;
+			public const int design_ic_visibility = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_audiotrack_light = 2130837597;
+			public const int design_ic_visibility_off = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_dialog_close_dark = 2130837598;
+			public const int design_password_eye = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_dialog_close_light = 2130837599;
+			public const int design_snackbar_background = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_group_collapse_00 = 2130837600;
+			public const int flame = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_group_collapse_01 = 2130837601;
+			public const int ForwardButton = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_group_collapse_02 = 2130837602;
+			public const int ic_audiotrack_dark = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_group_collapse_03 = 2130837603;
+			public const int ic_audiotrack_light = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_group_collapse_04 = 2130837604;
+			public const int ic_dialog_close_dark = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_group_collapse_05 = 2130837605;
+			public const int ic_dialog_close_light = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_06 = 2130837606;
+			public const int ic_group_collapse_00 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_07 = 2130837607;
+			public const int ic_group_collapse_01 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_08 = 2130837608;
+			public const int ic_group_collapse_02 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_09 = 2130837609;
+			public const int ic_group_collapse_03 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_10 = 2130837610;
+			public const int ic_group_collapse_04 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_11 = 2130837611;
+			public const int ic_group_collapse_05 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_12 = 2130837612;
+			public const int ic_group_collapse_06 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_13 = 2130837613;
+			public const int ic_group_collapse_07 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_14 = 2130837614;
+			public const int ic_group_collapse_08 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_collapse_15 = 2130837615;
+			public const int ic_group_collapse_09 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_expand_00 = 2130837616;
+			public const int ic_group_collapse_10 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_expand_01 = 2130837617;
+			public const int ic_group_collapse_11 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_expand_02 = 2130837618;
+			public const int ic_group_collapse_12 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_expand_03 = 2130837619;
+			public const int ic_group_collapse_13 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_expand_04 = 2130837620;
+			public const int ic_group_collapse_14 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_expand_05 = 2130837621;
+			public const int ic_group_collapse_15 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_06 = 2130837622;
+			public const int ic_group_expand_00 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_07 = 2130837623;
+			public const int ic_group_expand_01 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_08 = 2130837624;
+			public const int ic_group_expand_02 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_09 = 2130837625;
+			public const int ic_group_expand_03 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_10 = 2130837626;
+			public const int ic_group_expand_04 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_11 = 2130837627;
+			public const int ic_group_expand_05 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_12 = 2130837628;
+			public const int ic_group_expand_06 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_13 = 2130837629;
+			public const int ic_group_expand_07 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_14 = 2130837630;
+			public const int ic_group_expand_08 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_group_expand_15 = 2130837631;
+			public const int ic_group_expand_09 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_media_pause_dark = 2130837632;
+			public const int ic_group_expand_10 = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_media_pause_light = 2130837633;
+			public const int ic_group_expand_11 = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_media_play_dark = 2130837634;
+			public const int ic_group_expand_12 = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_media_play_light = 2130837635;
+			public const int ic_group_expand_13 = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_media_stop_dark = 2130837636;
+			public const int ic_group_expand_14 = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_media_stop_light = 2130837637;
+			public const int ic_group_expand_15 = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_mr_button_connected_00_dark = 2130837638;
+			public const int ic_media_pause_dark = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_mr_button_connected_00_light = 2130837639;
+			public const int ic_media_pause_light = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_mr_button_connected_01_dark = 2130837640;
+			public const int ic_media_play_dark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_mr_button_connected_01_light = 2130837641;
+			public const int ic_media_play_light = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_mr_button_connected_02_dark = 2130837642;
+			public const int ic_media_stop_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_mr_button_connected_02_light = 2130837643;
+			public const int ic_media_stop_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_03_dark = 2130837644;
+			public const int ic_mr_button_connected_00_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_03_light = 2130837645;
+			public const int ic_mr_button_connected_00_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_04_dark = 2130837646;
+			public const int ic_mr_button_connected_01_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_04_light = 2130837647;
+			public const int ic_mr_button_connected_01_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_05_dark = 2130837648;
+			public const int ic_mr_button_connected_02_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_05_light = 2130837649;
+			public const int ic_mr_button_connected_02_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_06_dark = 2130837650;
+			public const int ic_mr_button_connected_03_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_06_light = 2130837651;
+			public const int ic_mr_button_connected_03_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_07_dark = 2130837652;
+			public const int ic_mr_button_connected_04_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_07_light = 2130837653;
+			public const int ic_mr_button_connected_04_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_08_dark = 2130837654;
+			public const int ic_mr_button_connected_05_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_08_light = 2130837655;
+			public const int ic_mr_button_connected_05_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_09_dark = 2130837656;
+			public const int ic_mr_button_connected_06_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_09_light = 2130837657;
+			public const int ic_mr_button_connected_06_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_10_dark = 2130837658;
+			public const int ic_mr_button_connected_07_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_10_light = 2130837659;
+			public const int ic_mr_button_connected_07_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_11_dark = 2130837660;
+			public const int ic_mr_button_connected_08_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_11_light = 2130837661;
+			public const int ic_mr_button_connected_08_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_12_dark = 2130837662;
+			public const int ic_mr_button_connected_09_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_12_light = 2130837663;
+			public const int ic_mr_button_connected_09_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_13_dark = 2130837664;
+			public const int ic_mr_button_connected_10_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_13_light = 2130837665;
+			public const int ic_mr_button_connected_10_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_14_dark = 2130837666;
+			public const int ic_mr_button_connected_11_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_14_light = 2130837667;
+			public const int ic_mr_button_connected_11_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_15_dark = 2130837668;
+			public const int ic_mr_button_connected_12_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_15_light = 2130837669;
+			public const int ic_mr_button_connected_12_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_16_dark = 2130837670;
+			public const int ic_mr_button_connected_13_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_16_light = 2130837671;
+			public const int ic_mr_button_connected_13_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_17_dark = 2130837672;
+			public const int ic_mr_button_connected_14_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_17_light = 2130837673;
+			public const int ic_mr_button_connected_14_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_18_dark = 2130837674;
+			public const int ic_mr_button_connected_15_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_18_light = 2130837675;
+			public const int ic_mr_button_connected_15_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_19_dark = 2130837676;
+			public const int ic_mr_button_connected_16_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_19_light = 2130837677;
+			public const int ic_mr_button_connected_16_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_20_dark = 2130837678;
+			public const int ic_mr_button_connected_17_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_20_light = 2130837679;
+			public const int ic_mr_button_connected_17_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_21_dark = 2130837680;
+			public const int ic_mr_button_connected_18_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_21_light = 2130837681;
+			public const int ic_mr_button_connected_18_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_22_dark = 2130837682;
+			public const int ic_mr_button_connected_19_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connected_22_light = 2130837683;
+			public const int ic_mr_button_connected_19_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connecting_00_dark = 2130837684;
+			public const int ic_mr_button_connected_20_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connecting_00_light = 2130837685;
+			public const int ic_mr_button_connected_20_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connecting_01_dark = 2130837686;
+			public const int ic_mr_button_connected_21_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connecting_01_light = 2130837687;
+			public const int ic_mr_button_connected_21_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connecting_02_dark = 2130837688;
+			public const int ic_mr_button_connected_22_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connecting_02_light = 2130837689;
+			public const int ic_mr_button_connected_22_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connecting_03_dark = 2130837690;
+			public const int ic_mr_button_connecting_00_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connecting_03_light = 2130837691;
+			public const int ic_mr_button_connecting_00_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connecting_04_dark = 2130837692;
+			public const int ic_mr_button_connecting_01_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connecting_04_light = 2130837693;
+			public const int ic_mr_button_connecting_01_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connecting_05_dark = 2130837694;
+			public const int ic_mr_button_connecting_02_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connecting_05_light = 2130837695;
+			public const int ic_mr_button_connecting_02_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connecting_06_dark = 2130837696;
+			public const int ic_mr_button_connecting_03_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connecting_06_light = 2130837697;
+			public const int ic_mr_button_connecting_03_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connecting_07_dark = 2130837698;
+			public const int ic_mr_button_connecting_04_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connecting_07_light = 2130837699;
+			public const int ic_mr_button_connecting_04_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connecting_08_dark = 2130837700;
+			public const int ic_mr_button_connecting_05_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_08_light = 2130837701;
+			public const int ic_mr_button_connecting_05_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_09_dark = 2130837702;
+			public const int ic_mr_button_connecting_06_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_09_light = 2130837703;
+			public const int ic_mr_button_connecting_06_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_10_dark = 2130837704;
+			public const int ic_mr_button_connecting_07_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_10_light = 2130837705;
+			public const int ic_mr_button_connecting_07_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_11_dark = 2130837706;
+			public const int ic_mr_button_connecting_08_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_11_light = 2130837707;
+			public const int ic_mr_button_connecting_08_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_12_dark = 2130837708;
+			public const int ic_mr_button_connecting_09_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_12_light = 2130837709;
+			public const int ic_mr_button_connecting_09_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_13_dark = 2130837710;
+			public const int ic_mr_button_connecting_10_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_13_light = 2130837711;
+			public const int ic_mr_button_connecting_10_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_14_dark = 2130837712;
+			public const int ic_mr_button_connecting_11_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_14_light = 2130837713;
+			public const int ic_mr_button_connecting_11_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_15_dark = 2130837714;
+			public const int ic_mr_button_connecting_12_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_15_light = 2130837715;
+			public const int ic_mr_button_connecting_12_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_16_dark = 2130837716;
+			public const int ic_mr_button_connecting_13_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_16_light = 2130837717;
+			public const int ic_mr_button_connecting_13_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_17_dark = 2130837718;
+			public const int ic_mr_button_connecting_14_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_17_light = 2130837719;
+			public const int ic_mr_button_connecting_14_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_18_dark = 2130837720;
+			public const int ic_mr_button_connecting_15_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_18_light = 2130837721;
+			public const int ic_mr_button_connecting_15_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_19_dark = 2130837722;
+			public const int ic_mr_button_connecting_16_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_19_light = 2130837723;
+			public const int ic_mr_button_connecting_16_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_20_dark = 2130837724;
+			public const int ic_mr_button_connecting_17_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_20_light = 2130837725;
+			public const int ic_mr_button_connecting_17_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_21_dark = 2130837726;
+			public const int ic_mr_button_connecting_18_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_21_light = 2130837727;
+			public const int ic_mr_button_connecting_18_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_22_dark = 2130837728;
+			public const int ic_mr_button_connecting_19_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_connecting_22_light = 2130837729;
+			public const int ic_mr_button_connecting_19_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_disabled_dark = 2130837730;
+			public const int ic_mr_button_connecting_20_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_disabled_light = 2130837731;
+			public const int ic_mr_button_connecting_20_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_disconnected_dark = 2130837732;
+			public const int ic_mr_button_connecting_21_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_disconnected_light = 2130837733;
+			public const int ic_mr_button_connecting_21_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_mr_button_grey = 2130837734;
+			public const int ic_mr_button_connecting_22_dark = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_vol_type_speaker_dark = 2130837735;
+			public const int ic_mr_button_connecting_22_light = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_vol_type_speaker_group_dark = 2130837736;
+			public const int ic_mr_button_disabled_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_vol_type_speaker_group_light = 2130837737;
+			public const int ic_mr_button_disabled_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_vol_type_speaker_light = 2130837738;
+			public const int ic_mr_button_disconnected_dark = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_vol_type_tv_dark = 2130837739;
+			public const int ic_mr_button_disconnected_light = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int ic_vol_type_tv_light = 2130837740;
+			public const int ic_mr_button_grey = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int mr_button_connected_dark = 2130837741;
+			public const int ic_vol_type_speaker_dark = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int mr_button_connected_light = 2130837742;
+			public const int ic_vol_type_speaker_group_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int mr_button_connecting_dark = 2130837743;
+			public const int ic_vol_type_speaker_group_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int mr_button_connecting_light = 2130837744;
+			public const int ic_vol_type_speaker_light = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int mr_button_dark = 2130837745;
+			public const int ic_vol_type_tv_dark = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int mr_button_light = 2130837746;
+			public const int ic_vol_type_tv_light = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int mr_dialog_close_dark = 2130837747;
+			public const int Logo = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int mr_dialog_close_light = 2130837748;
+			public const int mr_button_connected_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int mr_dialog_material_background_dark = 2130837749;
+			public const int mr_button_connected_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int mr_dialog_material_background_light = 2130837750;
+			public const int mr_button_connecting_dark = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int mr_group_collapse = 2130837751;
+			public const int mr_button_connecting_light = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int mr_group_expand = 2130837752;
+			public const int mr_button_dark = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int mr_media_pause_dark = 2130837753;
+			public const int mr_button_light = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int mr_media_pause_light = 2130837754;
+			public const int mr_dialog_close_dark = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int mr_media_play_dark = 2130837755;
+			public const int mr_dialog_close_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int mr_media_play_light = 2130837756;
+			public const int mr_dialog_material_background_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int mr_media_stop_dark = 2130837757;
+			public const int mr_dialog_material_background_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int mr_media_stop_light = 2130837758;
+			public const int mr_group_collapse = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int mr_vol_type_audiotrack_dark = 2130837759;
+			public const int mr_group_expand = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int mr_vol_type_audiotrack_light = 2130837760;
+			public const int mr_media_pause_dark = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int navigation_empty_icon = 2130837761;
+			public const int mr_media_pause_light = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int notification_action_background = 2130837762;
+			public const int mr_media_play_dark = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int notification_bg = 2130837763;
+			public const int mr_media_play_light = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int notification_bg_low = 2130837764;
+			public const int mr_media_stop_dark = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int notification_bg_low_normal = 2130837765;
+			public const int mr_media_stop_light = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int notification_bg_low_pressed = 2130837766;
+			public const int mr_vol_type_audiotrack_dark = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int notification_bg_normal = 2130837767;
+			public const int mr_vol_type_audiotrack_light = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int notification_bg_normal_pressed = 2130837768;
+			public const int navigation_empty_icon = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int notification_icon_background = 2130837769;
-			
-			// aapt resource value: 0x7f02010c
-			public const int notification_template_icon_bg = 2130837772;
-			
-			// aapt resource value: 0x7f02010d
-			public const int notification_template_icon_low_bg = 2130837773;
+			public const int notification_action_background = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int notification_tile_bg = 2130837770;
+			public const int notification_bg = 2130837770;
 			
 			// aapt resource value: 0x7f02010b
-			public const int notify_panel_notification_icon_bg = 2130837771;
+			public const int notification_bg_low = 2130837771;
+			
+			// aapt resource value: 0x7f02010c
+			public const int notification_bg_low_normal = 2130837772;
+			
+			// aapt resource value: 0x7f02010d
+			public const int notification_bg_low_pressed = 2130837773;
+			
+			// aapt resource value: 0x7f02010e
+			public const int notification_bg_normal = 2130837774;
+			
+			// aapt resource value: 0x7f02010f
+			public const int notification_bg_normal_pressed = 2130837775;
+			
+			// aapt resource value: 0x7f020110
+			public const int notification_icon_background = 2130837776;
+			
+			// aapt resource value: 0x7f020115
+			public const int notification_template_icon_bg = 2130837781;
+			
+			// aapt resource value: 0x7f020116
+			public const int notification_template_icon_low_bg = 2130837782;
+			
+			// aapt resource value: 0x7f020111
+			public const int notification_tile_bg = 2130837777;
+			
+			// aapt resource value: 0x7f020112
+			public const int notify_panel_notification_icon_bg = 2130837778;
+			
+			// aapt resource value: 0x7f020113
+			public const int PauseButton = 2130837779;
+			
+			// aapt resource value: 0x7f020114
+			public const int PlayButton = 2130837780;
 			
 			static Drawable()
 			{
@@ -2884,554 +4231,551 @@ namespace AudiOcean.Droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f0a009f
-			public const int action0 = 2131361951;
+			// aapt resource value: 0x7f09009e
+			public const int action0 = 2131296414;
 			
-			// aapt resource value: 0x7f0a0064
-			public const int action_bar = 2131361892;
+			// aapt resource value: 0x7f090064
+			public const int action_bar = 2131296356;
 			
-			// aapt resource value: 0x7f0a0001
-			public const int action_bar_activity_content = 2131361793;
+			// aapt resource value: 0x7f090001
+			public const int action_bar_activity_content = 2131296257;
 			
-			// aapt resource value: 0x7f0a0063
-			public const int action_bar_container = 2131361891;
+			// aapt resource value: 0x7f090063
+			public const int action_bar_container = 2131296355;
 			
-			// aapt resource value: 0x7f0a005f
-			public const int action_bar_root = 2131361887;
+			// aapt resource value: 0x7f09005f
+			public const int action_bar_root = 2131296351;
 			
-			// aapt resource value: 0x7f0a0002
-			public const int action_bar_spinner = 2131361794;
+			// aapt resource value: 0x7f090002
+			public const int action_bar_spinner = 2131296258;
 			
-			// aapt resource value: 0x7f0a0042
-			public const int action_bar_subtitle = 2131361858;
+			// aapt resource value: 0x7f090042
+			public const int action_bar_subtitle = 2131296322;
 			
-			// aapt resource value: 0x7f0a0041
-			public const int action_bar_title = 2131361857;
+			// aapt resource value: 0x7f090041
+			public const int action_bar_title = 2131296321;
 			
-			// aapt resource value: 0x7f0a009c
-			public const int action_container = 2131361948;
+			// aapt resource value: 0x7f09009b
+			public const int action_container = 2131296411;
 			
-			// aapt resource value: 0x7f0a0065
-			public const int action_context_bar = 2131361893;
+			// aapt resource value: 0x7f090065
+			public const int action_context_bar = 2131296357;
 			
-			// aapt resource value: 0x7f0a00a3
-			public const int action_divider = 2131361955;
+			// aapt resource value: 0x7f0900a2
+			public const int action_divider = 2131296418;
 			
-			// aapt resource value: 0x7f0a009d
-			public const int action_image = 2131361949;
+			// aapt resource value: 0x7f09009c
+			public const int action_image = 2131296412;
 			
-			// aapt resource value: 0x7f0a0003
-			public const int action_menu_divider = 2131361795;
+			// aapt resource value: 0x7f090003
+			public const int action_menu_divider = 2131296259;
 			
-			// aapt resource value: 0x7f0a0004
-			public const int action_menu_presenter = 2131361796;
+			// aapt resource value: 0x7f090004
+			public const int action_menu_presenter = 2131296260;
 			
-			// aapt resource value: 0x7f0a0061
-			public const int action_mode_bar = 2131361889;
+			// aapt resource value: 0x7f090061
+			public const int action_mode_bar = 2131296353;
 			
-			// aapt resource value: 0x7f0a0060
-			public const int action_mode_bar_stub = 2131361888;
+			// aapt resource value: 0x7f090060
+			public const int action_mode_bar_stub = 2131296352;
 			
-			// aapt resource value: 0x7f0a0043
-			public const int action_mode_close_button = 2131361859;
+			// aapt resource value: 0x7f090043
+			public const int action_mode_close_button = 2131296323;
 			
-			// aapt resource value: 0x7f0a009e
-			public const int action_text = 2131361950;
+			// aapt resource value: 0x7f09009d
+			public const int action_text = 2131296413;
 			
-			// aapt resource value: 0x7f0a00ac
-			public const int actions = 2131361964;
+			// aapt resource value: 0x7f0900ab
+			public const int actions = 2131296427;
 			
-			// aapt resource value: 0x7f0a0044
-			public const int activity_chooser_view_content = 2131361860;
+			// aapt resource value: 0x7f090044
+			public const int activity_chooser_view_content = 2131296324;
 			
-			// aapt resource value: 0x7f0a001e
-			public const int add = 2131361822;
+			// aapt resource value: 0x7f09001e
+			public const int add = 2131296286;
 			
-			// aapt resource value: 0x7f0a0058
-			public const int alertTitle = 2131361880;
+			// aapt resource value: 0x7f090058
+			public const int alertTitle = 2131296344;
 			
-			// aapt resource value: 0x7f0a003d
-			public const int all = 2131361853;
+			// aapt resource value: 0x7f09003d
+			public const int all = 2131296317;
 			
-			// aapt resource value: 0x7f0a0023
-			public const int always = 2131361827;
+			// aapt resource value: 0x7f090023
+			public const int always = 2131296291;
 			
-			// aapt resource value: 0x7f0a002f
-			public const int auto = 2131361839;
+			// aapt resource value: 0x7f09002f
+			public const int auto = 2131296303;
 			
-			// aapt resource value: 0x7f0a0020
-			public const int beginning = 2131361824;
+			// aapt resource value: 0x7f090020
+			public const int beginning = 2131296288;
 			
-			// aapt resource value: 0x7f0a0028
-			public const int bottom = 2131361832;
+			// aapt resource value: 0x7f090028
+			public const int bottom = 2131296296;
 			
-			// aapt resource value: 0x7f0a004b
-			public const int buttonPanel = 2131361867;
+			// aapt resource value: 0x7f09004b
+			public const int buttonPanel = 2131296331;
 			
-			// aapt resource value: 0x7f0a00a0
-			public const int cancel_action = 2131361952;
+			// aapt resource value: 0x7f09009f
+			public const int cancel_action = 2131296415;
 			
-			// aapt resource value: 0x7f0a0030
-			public const int center = 2131361840;
+			// aapt resource value: 0x7f090030
+			public const int center = 2131296304;
 			
-			// aapt resource value: 0x7f0a0031
-			public const int center_horizontal = 2131361841;
+			// aapt resource value: 0x7f090031
+			public const int center_horizontal = 2131296305;
 			
-			// aapt resource value: 0x7f0a0032
-			public const int center_vertical = 2131361842;
+			// aapt resource value: 0x7f090032
+			public const int center_vertical = 2131296306;
 			
-			// aapt resource value: 0x7f0a005b
-			public const int checkbox = 2131361883;
+			// aapt resource value: 0x7f09005b
+			public const int checkbox = 2131296347;
 			
-			// aapt resource value: 0x7f0a00a8
-			public const int chronometer = 2131361960;
+			// aapt resource value: 0x7f0900a7
+			public const int chronometer = 2131296423;
 			
-			// aapt resource value: 0x7f0a0039
-			public const int clip_horizontal = 2131361849;
+			// aapt resource value: 0x7f090039
+			public const int clip_horizontal = 2131296313;
 			
-			// aapt resource value: 0x7f0a003a
-			public const int clip_vertical = 2131361850;
+			// aapt resource value: 0x7f09003a
+			public const int clip_vertical = 2131296314;
 			
-			// aapt resource value: 0x7f0a0024
-			public const int collapseActionView = 2131361828;
+			// aapt resource value: 0x7f090024
+			public const int collapseActionView = 2131296292;
 			
-			// aapt resource value: 0x7f0a0076
-			public const int container = 2131361910;
+			// aapt resource value: 0x7f090075
+			public const int container = 2131296373;
 			
-			// aapt resource value: 0x7f0a004e
-			public const int contentPanel = 2131361870;
+			// aapt resource value: 0x7f09004e
+			public const int contentPanel = 2131296334;
 			
-			// aapt resource value: 0x7f0a0077
-			public const int coordinator = 2131361911;
+			// aapt resource value: 0x7f090076
+			public const int coordinator = 2131296374;
 			
-			// aapt resource value: 0x7f0a0055
-			public const int custom = 2131361877;
+			// aapt resource value: 0x7f090055
+			public const int custom = 2131296341;
 			
-			// aapt resource value: 0x7f0a0054
-			public const int customPanel = 2131361876;
+			// aapt resource value: 0x7f090054
+			public const int customPanel = 2131296340;
 			
-			// aapt resource value: 0x7f0a0062
-			public const int decor_content_parent = 2131361890;
+			// aapt resource value: 0x7f090062
+			public const int decor_content_parent = 2131296354;
 			
-			// aapt resource value: 0x7f0a0047
-			public const int default_activity_button = 2131361863;
+			// aapt resource value: 0x7f090047
+			public const int default_activity_button = 2131296327;
 			
-			// aapt resource value: 0x7f0a0079
-			public const int design_bottom_sheet = 2131361913;
+			// aapt resource value: 0x7f090078
+			public const int design_bottom_sheet = 2131296376;
 			
-			// aapt resource value: 0x7f0a0080
-			public const int design_menu_item_action_area = 2131361920;
+			// aapt resource value: 0x7f09007f
+			public const int design_menu_item_action_area = 2131296383;
 			
-			// aapt resource value: 0x7f0a007f
-			public const int design_menu_item_action_area_stub = 2131361919;
+			// aapt resource value: 0x7f09007e
+			public const int design_menu_item_action_area_stub = 2131296382;
 			
-			// aapt resource value: 0x7f0a007e
-			public const int design_menu_item_text = 2131361918;
+			// aapt resource value: 0x7f09007d
+			public const int design_menu_item_text = 2131296381;
 			
-			// aapt resource value: 0x7f0a007d
-			public const int design_navigation_view = 2131361917;
+			// aapt resource value: 0x7f09007c
+			public const int design_navigation_view = 2131296380;
 			
-			// aapt resource value: 0x7f0a0012
-			public const int disableHome = 2131361810;
+			// aapt resource value: 0x7f090012
+			public const int disableHome = 2131296274;
 			
-			// aapt resource value: 0x7f0a0066
-			public const int edit_query = 2131361894;
+			// aapt resource value: 0x7f090066
+			public const int edit_query = 2131296358;
 			
-			// aapt resource value: 0x7f0a0021
-			public const int end = 2131361825;
+			// aapt resource value: 0x7f090021
+			public const int end = 2131296289;
 			
-			// aapt resource value: 0x7f0a00b2
-			public const int end_padder = 2131361970;
+			// aapt resource value: 0x7f0900b1
+			public const int end_padder = 2131296433;
 			
-			// aapt resource value: 0x7f0a002a
-			public const int enterAlways = 2131361834;
+			// aapt resource value: 0x7f09002a
+			public const int enterAlways = 2131296298;
 			
-			// aapt resource value: 0x7f0a002b
-			public const int enterAlwaysCollapsed = 2131361835;
+			// aapt resource value: 0x7f09002b
+			public const int enterAlwaysCollapsed = 2131296299;
 			
-			// aapt resource value: 0x7f0a002c
-			public const int exitUntilCollapsed = 2131361836;
+			// aapt resource value: 0x7f09002c
+			public const int exitUntilCollapsed = 2131296300;
 			
-			// aapt resource value: 0x7f0a0045
-			public const int expand_activities_button = 2131361861;
+			// aapt resource value: 0x7f090045
+			public const int expand_activities_button = 2131296325;
 			
-			// aapt resource value: 0x7f0a005a
-			public const int expanded_menu = 2131361882;
+			// aapt resource value: 0x7f09005a
+			public const int expanded_menu = 2131296346;
 			
-			// aapt resource value: 0x7f0a003b
-			public const int fill = 2131361851;
+			// aapt resource value: 0x7f09003b
+			public const int fill = 2131296315;
 			
-			// aapt resource value: 0x7f0a003c
-			public const int fill_horizontal = 2131361852;
+			// aapt resource value: 0x7f09003c
+			public const int fill_horizontal = 2131296316;
 			
-			// aapt resource value: 0x7f0a0033
-			public const int fill_vertical = 2131361843;
+			// aapt resource value: 0x7f090033
+			public const int fill_vertical = 2131296307;
 			
-			// aapt resource value: 0x7f0a003f
-			public const int @fixed = 2131361855;
+			// aapt resource value: 0x7f09003f
+			public const int @fixed = 2131296319;
 			
-			// aapt resource value: 0x7f0a0005
-			public const int home = 2131361797;
+			// aapt resource value: 0x7f090005
+			public const int home = 2131296261;
 			
-			// aapt resource value: 0x7f0a0013
-			public const int homeAsUp = 2131361811;
+			// aapt resource value: 0x7f090013
+			public const int homeAsUp = 2131296275;
 			
-			// aapt resource value: 0x7f0a0049
-			public const int icon = 2131361865;
+			// aapt resource value: 0x7f090049
+			public const int icon = 2131296329;
 			
-			// aapt resource value: 0x7f0a00ad
-			public const int icon_group = 2131361965;
+			// aapt resource value: 0x7f0900ac
+			public const int icon_group = 2131296428;
 			
-			// aapt resource value: 0x7f0a0025
-			public const int ifRoom = 2131361829;
+			// aapt resource value: 0x7f090025
+			public const int ifRoom = 2131296293;
 			
-			// aapt resource value: 0x7f0a0046
-			public const int image = 2131361862;
+			// aapt resource value: 0x7f090046
+			public const int image = 2131296326;
 			
-			// aapt resource value: 0x7f0a00a9
-			public const int info = 2131361961;
+			// aapt resource value: 0x7f0900a8
+			public const int info = 2131296424;
 			
-			// aapt resource value: 0x7f0a0000
-			public const int item_touch_helper_previous_elevation = 2131361792;
+			// aapt resource value: 0x7f090000
+			public const int item_touch_helper_previous_elevation = 2131296256;
 			
-			// aapt resource value: 0x7f0a0075
-			public const int largeLabel = 2131361909;
+			// aapt resource value: 0x7f090074
+			public const int largeLabel = 2131296372;
 			
-			// aapt resource value: 0x7f0a0034
-			public const int left = 2131361844;
+			// aapt resource value: 0x7f090034
+			public const int left = 2131296308;
 			
-			// aapt resource value: 0x7f0a00ae
-			public const int line1 = 2131361966;
+			// aapt resource value: 0x7f0900ad
+			public const int line1 = 2131296429;
 			
-			// aapt resource value: 0x7f0a00b0
-			public const int line3 = 2131361968;
+			// aapt resource value: 0x7f0900af
+			public const int line3 = 2131296431;
 			
-			// aapt resource value: 0x7f0a000f
-			public const int listMode = 2131361807;
+			// aapt resource value: 0x7f09000f
+			public const int listMode = 2131296271;
 			
-			// aapt resource value: 0x7f0a0048
-			public const int list_item = 2131361864;
+			// aapt resource value: 0x7f090048
+			public const int list_item = 2131296328;
 			
-			// aapt resource value: 0x7f0a00b6
-			public const int masked = 2131361974;
+			// aapt resource value: 0x7f0900b5
+			public const int masked = 2131296437;
 			
-			// aapt resource value: 0x7f0a00a2
-			public const int media_actions = 2131361954;
+			// aapt resource value: 0x7f0900a1
+			public const int media_actions = 2131296417;
 			
-			// aapt resource value: 0x7f0a0022
-			public const int middle = 2131361826;
+			// aapt resource value: 0x7f090022
+			public const int middle = 2131296290;
 			
-			// aapt resource value: 0x7f0a003e
-			public const int mini = 2131361854;
+			// aapt resource value: 0x7f09003e
+			public const int mini = 2131296318;
 			
-			// aapt resource value: 0x7f0a008e
-			public const int mr_art = 2131361934;
+			// aapt resource value: 0x7f09008d
+			public const int mr_art = 2131296397;
 			
-			// aapt resource value: 0x7f0a0083
-			public const int mr_chooser_list = 2131361923;
+			// aapt resource value: 0x7f090082
+			public const int mr_chooser_list = 2131296386;
 			
-			// aapt resource value: 0x7f0a0086
-			public const int mr_chooser_route_desc = 2131361926;
+			// aapt resource value: 0x7f090085
+			public const int mr_chooser_route_desc = 2131296389;
 			
-			// aapt resource value: 0x7f0a0084
-			public const int mr_chooser_route_icon = 2131361924;
+			// aapt resource value: 0x7f090083
+			public const int mr_chooser_route_icon = 2131296387;
 			
-			// aapt resource value: 0x7f0a0085
-			public const int mr_chooser_route_name = 2131361925;
+			// aapt resource value: 0x7f090084
+			public const int mr_chooser_route_name = 2131296388;
 			
-			// aapt resource value: 0x7f0a0082
-			public const int mr_chooser_title = 2131361922;
+			// aapt resource value: 0x7f090081
+			public const int mr_chooser_title = 2131296385;
 			
-			// aapt resource value: 0x7f0a008b
-			public const int mr_close = 2131361931;
+			// aapt resource value: 0x7f09008a
+			public const int mr_close = 2131296394;
 			
-			// aapt resource value: 0x7f0a0091
-			public const int mr_control_divider = 2131361937;
+			// aapt resource value: 0x7f090090
+			public const int mr_control_divider = 2131296400;
 			
-			// aapt resource value: 0x7f0a0097
-			public const int mr_control_playback_ctrl = 2131361943;
+			// aapt resource value: 0x7f090096
+			public const int mr_control_playback_ctrl = 2131296406;
 			
-			// aapt resource value: 0x7f0a009a
-			public const int mr_control_subtitle = 2131361946;
+			// aapt resource value: 0x7f090099
+			public const int mr_control_subtitle = 2131296409;
 			
-			// aapt resource value: 0x7f0a0099
-			public const int mr_control_title = 2131361945;
+			// aapt resource value: 0x7f090098
+			public const int mr_control_title = 2131296408;
 			
-			// aapt resource value: 0x7f0a0098
-			public const int mr_control_title_container = 2131361944;
+			// aapt resource value: 0x7f090097
+			public const int mr_control_title_container = 2131296407;
 			
-			// aapt resource value: 0x7f0a008c
-			public const int mr_custom_control = 2131361932;
+			// aapt resource value: 0x7f09008b
+			public const int mr_custom_control = 2131296395;
 			
-			// aapt resource value: 0x7f0a008d
-			public const int mr_default_control = 2131361933;
+			// aapt resource value: 0x7f09008c
+			public const int mr_default_control = 2131296396;
 			
-			// aapt resource value: 0x7f0a0088
-			public const int mr_dialog_area = 2131361928;
+			// aapt resource value: 0x7f090087
+			public const int mr_dialog_area = 2131296391;
 			
-			// aapt resource value: 0x7f0a0087
-			public const int mr_expandable_area = 2131361927;
+			// aapt resource value: 0x7f090086
+			public const int mr_expandable_area = 2131296390;
 			
-			// aapt resource value: 0x7f0a009b
-			public const int mr_group_expand_collapse = 2131361947;
+			// aapt resource value: 0x7f09009a
+			public const int mr_group_expand_collapse = 2131296410;
 			
-			// aapt resource value: 0x7f0a008f
-			public const int mr_media_main_control = 2131361935;
+			// aapt resource value: 0x7f09008e
+			public const int mr_media_main_control = 2131296398;
 			
-			// aapt resource value: 0x7f0a008a
-			public const int mr_name = 2131361930;
+			// aapt resource value: 0x7f090089
+			public const int mr_name = 2131296393;
 			
-			// aapt resource value: 0x7f0a0090
-			public const int mr_playback_control = 2131361936;
+			// aapt resource value: 0x7f09008f
+			public const int mr_playback_control = 2131296399;
 			
-			// aapt resource value: 0x7f0a0089
-			public const int mr_title_bar = 2131361929;
+			// aapt resource value: 0x7f090088
+			public const int mr_title_bar = 2131296392;
 			
-			// aapt resource value: 0x7f0a0092
-			public const int mr_volume_control = 2131361938;
+			// aapt resource value: 0x7f090091
+			public const int mr_volume_control = 2131296401;
 			
-			// aapt resource value: 0x7f0a0093
-			public const int mr_volume_group_list = 2131361939;
+			// aapt resource value: 0x7f090092
+			public const int mr_volume_group_list = 2131296402;
 			
-			// aapt resource value: 0x7f0a0095
-			public const int mr_volume_item_icon = 2131361941;
+			// aapt resource value: 0x7f090094
+			public const int mr_volume_item_icon = 2131296404;
 			
-			// aapt resource value: 0x7f0a0096
-			public const int mr_volume_slider = 2131361942;
+			// aapt resource value: 0x7f090095
+			public const int mr_volume_slider = 2131296405;
 			
-			// aapt resource value: 0x7f0a0019
-			public const int multiply = 2131361817;
+			// aapt resource value: 0x7f090019
+			public const int multiply = 2131296281;
 			
-			// aapt resource value: 0x7f0a007c
-			public const int navigation_header_container = 2131361916;
+			// aapt resource value: 0x7f09007b
+			public const int navigation_header_container = 2131296379;
 			
-			// aapt resource value: 0x7f0a0026
-			public const int never = 2131361830;
+			// aapt resource value: 0x7f090026
+			public const int never = 2131296294;
 			
-			// aapt resource value: 0x7f0a0014
-			public const int none = 2131361812;
+			// aapt resource value: 0x7f090014
+			public const int none = 2131296276;
 			
-			// aapt resource value: 0x7f0a0010
-			public const int normal = 2131361808;
+			// aapt resource value: 0x7f090010
+			public const int normal = 2131296272;
 			
-			// aapt resource value: 0x7f0a00ab
-			public const int notification_background = 2131361963;
+			// aapt resource value: 0x7f0900aa
+			public const int notification_background = 2131296426;
 			
-			// aapt resource value: 0x7f0a00a5
-			public const int notification_main_column = 2131361957;
+			// aapt resource value: 0x7f0900a4
+			public const int notification_main_column = 2131296420;
 			
-			// aapt resource value: 0x7f0a00a4
-			public const int notification_main_column_container = 2131361956;
+			// aapt resource value: 0x7f0900a3
+			public const int notification_main_column_container = 2131296419;
 			
-			// aapt resource value: 0x7f0a0037
-			public const int parallax = 2131361847;
+			// aapt resource value: 0x7f090037
+			public const int parallax = 2131296311;
 			
-			// aapt resource value: 0x7f0a004d
-			public const int parentPanel = 2131361869;
+			// aapt resource value: 0x7f09004d
+			public const int parentPanel = 2131296333;
 			
-			// aapt resource value: 0x7f0a0038
-			public const int pin = 2131361848;
+			// aapt resource value: 0x7f090038
+			public const int pin = 2131296312;
 			
-			// aapt resource value: 0x7f0a0006
-			public const int progress_circular = 2131361798;
+			// aapt resource value: 0x7f090006
+			public const int progress_circular = 2131296262;
 			
-			// aapt resource value: 0x7f0a0007
-			public const int progress_horizontal = 2131361799;
+			// aapt resource value: 0x7f090007
+			public const int progress_horizontal = 2131296263;
 			
-			// aapt resource value: 0x7f0a005d
-			public const int radio = 2131361885;
+			// aapt resource value: 0x7f09005d
+			public const int radio = 2131296349;
 			
-			// aapt resource value: 0x7f0a0035
-			public const int right = 2131361845;
+			// aapt resource value: 0x7f090035
+			public const int right = 2131296309;
 			
-			// aapt resource value: 0x7f0a00aa
-			public const int right_icon = 2131361962;
+			// aapt resource value: 0x7f0900a9
+			public const int right_icon = 2131296425;
 			
-			// aapt resource value: 0x7f0a00a6
-			public const int right_side = 2131361958;
+			// aapt resource value: 0x7f0900a5
+			public const int right_side = 2131296421;
 			
-			// aapt resource value: 0x7f0a001a
-			public const int screen = 2131361818;
+			// aapt resource value: 0x7f09001a
+			public const int screen = 2131296282;
 			
-			// aapt resource value: 0x7f0a002d
-			public const int scroll = 2131361837;
+			// aapt resource value: 0x7f09002d
+			public const int scroll = 2131296301;
 			
-			// aapt resource value: 0x7f0a0053
-			public const int scrollIndicatorDown = 2131361875;
+			// aapt resource value: 0x7f090053
+			public const int scrollIndicatorDown = 2131296339;
 			
-			// aapt resource value: 0x7f0a004f
-			public const int scrollIndicatorUp = 2131361871;
+			// aapt resource value: 0x7f09004f
+			public const int scrollIndicatorUp = 2131296335;
 			
-			// aapt resource value: 0x7f0a0050
-			public const int scrollView = 2131361872;
+			// aapt resource value: 0x7f090050
+			public const int scrollView = 2131296336;
 			
-			// aapt resource value: 0x7f0a0040
-			public const int scrollable = 2131361856;
+			// aapt resource value: 0x7f090040
+			public const int scrollable = 2131296320;
 			
-			// aapt resource value: 0x7f0a0068
-			public const int search_badge = 2131361896;
+			// aapt resource value: 0x7f090068
+			public const int search_badge = 2131296360;
 			
-			// aapt resource value: 0x7f0a0067
-			public const int search_bar = 2131361895;
+			// aapt resource value: 0x7f090067
+			public const int search_bar = 2131296359;
 			
-			// aapt resource value: 0x7f0a0069
-			public const int search_button = 2131361897;
+			// aapt resource value: 0x7f090069
+			public const int search_button = 2131296361;
 			
-			// aapt resource value: 0x7f0a006e
-			public const int search_close_btn = 2131361902;
+			// aapt resource value: 0x7f09006e
+			public const int search_close_btn = 2131296366;
 			
-			// aapt resource value: 0x7f0a006a
-			public const int search_edit_frame = 2131361898;
+			// aapt resource value: 0x7f09006a
+			public const int search_edit_frame = 2131296362;
 			
-			// aapt resource value: 0x7f0a0070
-			public const int search_go_btn = 2131361904;
+			// aapt resource value: 0x7f090070
+			public const int search_go_btn = 2131296368;
 			
-			// aapt resource value: 0x7f0a006b
-			public const int search_mag_icon = 2131361899;
+			// aapt resource value: 0x7f09006b
+			public const int search_mag_icon = 2131296363;
 			
-			// aapt resource value: 0x7f0a006c
-			public const int search_plate = 2131361900;
+			// aapt resource value: 0x7f09006c
+			public const int search_plate = 2131296364;
 			
-			// aapt resource value: 0x7f0a006d
-			public const int search_src_text = 2131361901;
+			// aapt resource value: 0x7f09006d
+			public const int search_src_text = 2131296365;
 			
-			// aapt resource value: 0x7f0a0071
-			public const int search_voice_btn = 2131361905;
+			// aapt resource value: 0x7f090071
+			public const int search_voice_btn = 2131296369;
 			
-			// aapt resource value: 0x7f0a0072
-			public const int select_dialog_listview = 2131361906;
+			// aapt resource value: 0x7f090072
+			public const int select_dialog_listview = 2131296370;
 			
-			// aapt resource value: 0x7f0a005c
-			public const int shortcut = 2131361884;
+			// aapt resource value: 0x7f09005c
+			public const int shortcut = 2131296348;
 			
-			// aapt resource value: 0x7f0a0015
-			public const int showCustom = 2131361813;
+			// aapt resource value: 0x7f090015
+			public const int showCustom = 2131296277;
 			
-			// aapt resource value: 0x7f0a0016
-			public const int showHome = 2131361814;
+			// aapt resource value: 0x7f090016
+			public const int showHome = 2131296278;
 			
-			// aapt resource value: 0x7f0a0017
-			public const int showTitle = 2131361815;
+			// aapt resource value: 0x7f090017
+			public const int showTitle = 2131296279;
 			
-			// aapt resource value: 0x7f0a00b3
-			public const int sliding_tabs = 2131361971;
+			// aapt resource value: 0x7f0900b2
+			public const int sliding_tabs = 2131296434;
 			
-			// aapt resource value: 0x7f0a0074
-			public const int smallLabel = 2131361908;
+			// aapt resource value: 0x7f090073
+			public const int smallLabel = 2131296371;
 			
-			// aapt resource value: 0x7f0a007b
-			public const int snackbar_action = 2131361915;
+			// aapt resource value: 0x7f09007a
+			public const int snackbar_action = 2131296378;
 			
-			// aapt resource value: 0x7f0a007a
-			public const int snackbar_text = 2131361914;
+			// aapt resource value: 0x7f090079
+			public const int snackbar_text = 2131296377;
 			
-			// aapt resource value: 0x7f0a002e
-			public const int snap = 2131361838;
+			// aapt resource value: 0x7f09002e
+			public const int snap = 2131296302;
 			
-			// aapt resource value: 0x7f0a004c
-			public const int spacer = 2131361868;
+			// aapt resource value: 0x7f09004c
+			public const int spacer = 2131296332;
 			
-			// aapt resource value: 0x7f0a0008
-			public const int split_action_bar = 2131361800;
+			// aapt resource value: 0x7f090008
+			public const int split_action_bar = 2131296264;
 			
-			// aapt resource value: 0x7f0a001b
-			public const int src_atop = 2131361819;
+			// aapt resource value: 0x7f09001b
+			public const int src_atop = 2131296283;
 			
-			// aapt resource value: 0x7f0a001c
-			public const int src_in = 2131361820;
+			// aapt resource value: 0x7f09001c
+			public const int src_in = 2131296284;
 			
-			// aapt resource value: 0x7f0a001d
-			public const int src_over = 2131361821;
+			// aapt resource value: 0x7f09001d
+			public const int src_over = 2131296285;
 			
-			// aapt resource value: 0x7f0a0036
-			public const int start = 2131361846;
+			// aapt resource value: 0x7f090036
+			public const int start = 2131296310;
 			
-			// aapt resource value: 0x7f0a00a1
-			public const int status_bar_latest_event_content = 2131361953;
+			// aapt resource value: 0x7f0900a0
+			public const int status_bar_latest_event_content = 2131296416;
 			
-			// aapt resource value: 0x7f0a005e
-			public const int submenuarrow = 2131361886;
+			// aapt resource value: 0x7f09005e
+			public const int submenuarrow = 2131296350;
 			
-			// aapt resource value: 0x7f0a006f
-			public const int submit_area = 2131361903;
+			// aapt resource value: 0x7f09006f
+			public const int submit_area = 2131296367;
 			
-			// aapt resource value: 0x7f0a0011
-			public const int tabMode = 2131361809;
+			// aapt resource value: 0x7f090011
+			public const int tabMode = 2131296273;
 			
-			// aapt resource value: 0x7f0a00b1
-			public const int text = 2131361969;
+			// aapt resource value: 0x7f0900b0
+			public const int text = 2131296432;
 			
-			// aapt resource value: 0x7f0a00af
-			public const int text2 = 2131361967;
+			// aapt resource value: 0x7f0900ae
+			public const int text2 = 2131296430;
 			
-			// aapt resource value: 0x7f0a0052
-			public const int textSpacerNoButtons = 2131361874;
+			// aapt resource value: 0x7f090052
+			public const int textSpacerNoButtons = 2131296338;
 			
-			// aapt resource value: 0x7f0a0051
-			public const int textSpacerNoTitle = 2131361873;
+			// aapt resource value: 0x7f090051
+			public const int textSpacerNoTitle = 2131296337;
 			
-			// aapt resource value: 0x7f0a0081
-			public const int text_input_password_toggle = 2131361921;
+			// aapt resource value: 0x7f090080
+			public const int text_input_password_toggle = 2131296384;
 			
-			// aapt resource value: 0x7f0a000c
-			public const int textinput_counter = 2131361804;
+			// aapt resource value: 0x7f09000c
+			public const int textinput_counter = 2131296268;
 			
-			// aapt resource value: 0x7f0a000d
-			public const int textinput_error = 2131361805;
+			// aapt resource value: 0x7f09000d
+			public const int textinput_error = 2131296269;
 			
-			// aapt resource value: 0x7f0a00a7
-			public const int time = 2131361959;
+			// aapt resource value: 0x7f0900a6
+			public const int time = 2131296422;
 			
-			// aapt resource value: 0x7f0a004a
-			public const int title = 2131361866;
+			// aapt resource value: 0x7f09004a
+			public const int title = 2131296330;
 			
-			// aapt resource value: 0x7f0a0059
-			public const int titleDividerNoCustom = 2131361881;
+			// aapt resource value: 0x7f090059
+			public const int titleDividerNoCustom = 2131296345;
 			
-			// aapt resource value: 0x7f0a0057
-			public const int title_template = 2131361879;
+			// aapt resource value: 0x7f090057
+			public const int title_template = 2131296343;
 			
-			// aapt resource value: 0x7f0a00b4
-			public const int toolbar = 2131361972;
+			// aapt resource value: 0x7f0900b3
+			public const int toolbar = 2131296435;
 			
-			// aapt resource value: 0x7f0a0029
-			public const int top = 2131361833;
+			// aapt resource value: 0x7f090029
+			public const int top = 2131296297;
 			
-			// aapt resource value: 0x7f0a0056
-			public const int topPanel = 2131361878;
+			// aapt resource value: 0x7f090056
+			public const int topPanel = 2131296342;
 			
-			// aapt resource value: 0x7f0a0078
-			public const int touch_outside = 2131361912;
+			// aapt resource value: 0x7f090077
+			public const int touch_outside = 2131296375;
 			
-			// aapt resource value: 0x7f0a000a
-			public const int transition_current_scene = 2131361802;
+			// aapt resource value: 0x7f09000a
+			public const int transition_current_scene = 2131296266;
 			
-			// aapt resource value: 0x7f0a000b
-			public const int transition_scene_layoutid_cache = 2131361803;
+			// aapt resource value: 0x7f09000b
+			public const int transition_scene_layoutid_cache = 2131296267;
 			
-			// aapt resource value: 0x7f0a0009
-			public const int up = 2131361801;
+			// aapt resource value: 0x7f090009
+			public const int up = 2131296265;
 			
-			// aapt resource value: 0x7f0a0018
-			public const int useLogo = 2131361816;
+			// aapt resource value: 0x7f090018
+			public const int useLogo = 2131296280;
 			
-			// aapt resource value: 0x7f0a000e
-			public const int view_offset_helper = 2131361806;
+			// aapt resource value: 0x7f09000e
+			public const int view_offset_helper = 2131296270;
 			
-			// aapt resource value: 0x7f0a00b5
-			public const int visible = 2131361973;
+			// aapt resource value: 0x7f0900b4
+			public const int visible = 2131296436;
 			
-			// aapt resource value: 0x7f0a0094
-			public const int volume_item_container = 2131361940;
+			// aapt resource value: 0x7f090093
+			public const int volume_item_container = 2131296403;
 			
-			// aapt resource value: 0x7f0a0073
-			public const int webview = 2131361907;
+			// aapt resource value: 0x7f090027
+			public const int withText = 2131296295;
 			
-			// aapt resource value: 0x7f0a0027
-			public const int withText = 2131361831;
-			
-			// aapt resource value: 0x7f0a001f
-			public const int wrap_content = 2131361823;
+			// aapt resource value: 0x7f09001f
+			public const int wrap_content = 2131296287;
 			
 			static Id()
 			{
@@ -3596,130 +4940,127 @@ namespace AudiOcean.Droid
 			public const int abc_select_dialog_material = 2130968602;
 			
 			// aapt resource value: 0x7f04001b
-			public const int activity_webview = 2130968603;
+			public const int design_bottom_navigation_item = 2130968603;
 			
 			// aapt resource value: 0x7f04001c
-			public const int design_bottom_navigation_item = 2130968604;
+			public const int design_bottom_sheet_dialog = 2130968604;
 			
 			// aapt resource value: 0x7f04001d
-			public const int design_bottom_sheet_dialog = 2130968605;
+			public const int design_layout_snackbar = 2130968605;
 			
 			// aapt resource value: 0x7f04001e
-			public const int design_layout_snackbar = 2130968606;
+			public const int design_layout_snackbar_include = 2130968606;
 			
 			// aapt resource value: 0x7f04001f
-			public const int design_layout_snackbar_include = 2130968607;
+			public const int design_layout_tab_icon = 2130968607;
 			
 			// aapt resource value: 0x7f040020
-			public const int design_layout_tab_icon = 2130968608;
+			public const int design_layout_tab_text = 2130968608;
 			
 			// aapt resource value: 0x7f040021
-			public const int design_layout_tab_text = 2130968609;
+			public const int design_menu_item_action_area = 2130968609;
 			
 			// aapt resource value: 0x7f040022
-			public const int design_menu_item_action_area = 2130968610;
+			public const int design_navigation_item = 2130968610;
 			
 			// aapt resource value: 0x7f040023
-			public const int design_navigation_item = 2130968611;
+			public const int design_navigation_item_header = 2130968611;
 			
 			// aapt resource value: 0x7f040024
-			public const int design_navigation_item_header = 2130968612;
+			public const int design_navigation_item_separator = 2130968612;
 			
 			// aapt resource value: 0x7f040025
-			public const int design_navigation_item_separator = 2130968613;
+			public const int design_navigation_item_subheader = 2130968613;
 			
 			// aapt resource value: 0x7f040026
-			public const int design_navigation_item_subheader = 2130968614;
+			public const int design_navigation_menu = 2130968614;
 			
 			// aapt resource value: 0x7f040027
-			public const int design_navigation_menu = 2130968615;
+			public const int design_navigation_menu_item = 2130968615;
 			
 			// aapt resource value: 0x7f040028
-			public const int design_navigation_menu_item = 2130968616;
+			public const int design_text_input_password_icon = 2130968616;
 			
 			// aapt resource value: 0x7f040029
-			public const int design_text_input_password_icon = 2130968617;
+			public const int mr_chooser_dialog = 2130968617;
 			
 			// aapt resource value: 0x7f04002a
-			public const int mr_chooser_dialog = 2130968618;
+			public const int mr_chooser_list_item = 2130968618;
 			
 			// aapt resource value: 0x7f04002b
-			public const int mr_chooser_list_item = 2130968619;
+			public const int mr_controller_material_dialog_b = 2130968619;
 			
 			// aapt resource value: 0x7f04002c
-			public const int mr_controller_material_dialog_b = 2130968620;
+			public const int mr_controller_volume_item = 2130968620;
 			
 			// aapt resource value: 0x7f04002d
-			public const int mr_controller_volume_item = 2130968621;
+			public const int mr_playback_control = 2130968621;
 			
 			// aapt resource value: 0x7f04002e
-			public const int mr_playback_control = 2130968622;
+			public const int mr_volume_control = 2130968622;
 			
 			// aapt resource value: 0x7f04002f
-			public const int mr_volume_control = 2130968623;
+			public const int notification_action = 2130968623;
 			
 			// aapt resource value: 0x7f040030
-			public const int notification_action = 2130968624;
+			public const int notification_action_tombstone = 2130968624;
 			
 			// aapt resource value: 0x7f040031
-			public const int notification_action_tombstone = 2130968625;
+			public const int notification_media_action = 2130968625;
 			
 			// aapt resource value: 0x7f040032
-			public const int notification_media_action = 2130968626;
+			public const int notification_media_cancel_action = 2130968626;
 			
 			// aapt resource value: 0x7f040033
-			public const int notification_media_cancel_action = 2130968627;
+			public const int notification_template_big_media = 2130968627;
 			
 			// aapt resource value: 0x7f040034
-			public const int notification_template_big_media = 2130968628;
+			public const int notification_template_big_media_custom = 2130968628;
 			
 			// aapt resource value: 0x7f040035
-			public const int notification_template_big_media_custom = 2130968629;
+			public const int notification_template_big_media_narrow = 2130968629;
 			
 			// aapt resource value: 0x7f040036
-			public const int notification_template_big_media_narrow = 2130968630;
+			public const int notification_template_big_media_narrow_custom = 2130968630;
 			
 			// aapt resource value: 0x7f040037
-			public const int notification_template_big_media_narrow_custom = 2130968631;
+			public const int notification_template_custom_big = 2130968631;
 			
 			// aapt resource value: 0x7f040038
-			public const int notification_template_custom_big = 2130968632;
+			public const int notification_template_icon_group = 2130968632;
 			
 			// aapt resource value: 0x7f040039
-			public const int notification_template_icon_group = 2130968633;
+			public const int notification_template_lines_media = 2130968633;
 			
 			// aapt resource value: 0x7f04003a
-			public const int notification_template_lines_media = 2130968634;
+			public const int notification_template_media = 2130968634;
 			
 			// aapt resource value: 0x7f04003b
-			public const int notification_template_media = 2130968635;
+			public const int notification_template_media_custom = 2130968635;
 			
 			// aapt resource value: 0x7f04003c
-			public const int notification_template_media_custom = 2130968636;
+			public const int notification_template_part_chronometer = 2130968636;
 			
 			// aapt resource value: 0x7f04003d
-			public const int notification_template_part_chronometer = 2130968637;
+			public const int notification_template_part_time = 2130968637;
 			
 			// aapt resource value: 0x7f04003e
-			public const int notification_template_part_time = 2130968638;
+			public const int select_dialog_item_material = 2130968638;
 			
 			// aapt resource value: 0x7f04003f
-			public const int select_dialog_item_material = 2130968639;
+			public const int select_dialog_multichoice_material = 2130968639;
 			
 			// aapt resource value: 0x7f040040
-			public const int select_dialog_multichoice_material = 2130968640;
+			public const int select_dialog_singlechoice_material = 2130968640;
 			
 			// aapt resource value: 0x7f040041
-			public const int select_dialog_singlechoice_material = 2130968641;
+			public const int support_simple_spinner_dropdown_item = 2130968641;
 			
 			// aapt resource value: 0x7f040042
-			public const int support_simple_spinner_dropdown_item = 2130968642;
+			public const int Tabbar = 2130968642;
 			
 			// aapt resource value: 0x7f040043
-			public const int Tabbar = 2130968643;
-			
-			// aapt resource value: 0x7f040044
-			public const int Toolbar = 2130968644;
+			public const int Toolbar = 2130968643;
 			
 			static Layout()
 			{
@@ -3738,7 +5079,10 @@ namespace AudiOcean.Droid
 			public const int icon = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int launcher_foreground = 2130903041;
+			public const int icon_round = 2130903041;
+			
+			// aapt resource value: 0x7f030002
+			public const int launcher_foreground = 2130903042;
 			
 			static Mipmap()
 			{
@@ -3753,194 +5097,197 @@ namespace AudiOcean.Droid
 		public partial class String
 		{
 			
-			// aapt resource value: 0x7f080016
-			public const int abc_action_bar_home_description = 2131230742;
+			// aapt resource value: 0x7f0a0015
+			public const int abc_action_bar_home_description = 2131361813;
 			
-			// aapt resource value: 0x7f080017
-			public const int abc_action_bar_home_description_format = 2131230743;
+			// aapt resource value: 0x7f0a0016
+			public const int abc_action_bar_home_description_format = 2131361814;
 			
-			// aapt resource value: 0x7f080018
-			public const int abc_action_bar_home_subtitle_description_format = 2131230744;
+			// aapt resource value: 0x7f0a0017
+			public const int abc_action_bar_home_subtitle_description_format = 2131361815;
 			
-			// aapt resource value: 0x7f080019
-			public const int abc_action_bar_up_description = 2131230745;
+			// aapt resource value: 0x7f0a0018
+			public const int abc_action_bar_up_description = 2131361816;
 			
-			// aapt resource value: 0x7f08001a
-			public const int abc_action_menu_overflow_description = 2131230746;
+			// aapt resource value: 0x7f0a0019
+			public const int abc_action_menu_overflow_description = 2131361817;
 			
-			// aapt resource value: 0x7f08001b
-			public const int abc_action_mode_done = 2131230747;
+			// aapt resource value: 0x7f0a001a
+			public const int abc_action_mode_done = 2131361818;
 			
-			// aapt resource value: 0x7f08001c
-			public const int abc_activity_chooser_view_see_all = 2131230748;
+			// aapt resource value: 0x7f0a001b
+			public const int abc_activity_chooser_view_see_all = 2131361819;
 			
-			// aapt resource value: 0x7f08001d
-			public const int abc_activitychooserview_choose_application = 2131230749;
+			// aapt resource value: 0x7f0a001c
+			public const int abc_activitychooserview_choose_application = 2131361820;
 			
-			// aapt resource value: 0x7f08001e
-			public const int abc_capital_off = 2131230750;
+			// aapt resource value: 0x7f0a001d
+			public const int abc_capital_off = 2131361821;
 			
-			// aapt resource value: 0x7f08001f
-			public const int abc_capital_on = 2131230751;
+			// aapt resource value: 0x7f0a001e
+			public const int abc_capital_on = 2131361822;
 			
-			// aapt resource value: 0x7f08002b
-			public const int abc_font_family_body_1_material = 2131230763;
+			// aapt resource value: 0x7f0a002a
+			public const int abc_font_family_body_1_material = 2131361834;
 			
-			// aapt resource value: 0x7f08002c
-			public const int abc_font_family_body_2_material = 2131230764;
+			// aapt resource value: 0x7f0a002b
+			public const int abc_font_family_body_2_material = 2131361835;
 			
-			// aapt resource value: 0x7f08002d
-			public const int abc_font_family_button_material = 2131230765;
+			// aapt resource value: 0x7f0a002c
+			public const int abc_font_family_button_material = 2131361836;
 			
-			// aapt resource value: 0x7f08002e
-			public const int abc_font_family_caption_material = 2131230766;
+			// aapt resource value: 0x7f0a002d
+			public const int abc_font_family_caption_material = 2131361837;
 			
-			// aapt resource value: 0x7f08002f
-			public const int abc_font_family_display_1_material = 2131230767;
+			// aapt resource value: 0x7f0a002e
+			public const int abc_font_family_display_1_material = 2131361838;
 			
-			// aapt resource value: 0x7f080030
-			public const int abc_font_family_display_2_material = 2131230768;
+			// aapt resource value: 0x7f0a002f
+			public const int abc_font_family_display_2_material = 2131361839;
 			
-			// aapt resource value: 0x7f080031
-			public const int abc_font_family_display_3_material = 2131230769;
+			// aapt resource value: 0x7f0a0030
+			public const int abc_font_family_display_3_material = 2131361840;
 			
-			// aapt resource value: 0x7f080032
-			public const int abc_font_family_display_4_material = 2131230770;
+			// aapt resource value: 0x7f0a0031
+			public const int abc_font_family_display_4_material = 2131361841;
 			
-			// aapt resource value: 0x7f080033
-			public const int abc_font_family_headline_material = 2131230771;
+			// aapt resource value: 0x7f0a0032
+			public const int abc_font_family_headline_material = 2131361842;
 			
-			// aapt resource value: 0x7f080034
-			public const int abc_font_family_menu_material = 2131230772;
+			// aapt resource value: 0x7f0a0033
+			public const int abc_font_family_menu_material = 2131361843;
 			
-			// aapt resource value: 0x7f080035
-			public const int abc_font_family_subhead_material = 2131230773;
+			// aapt resource value: 0x7f0a0034
+			public const int abc_font_family_subhead_material = 2131361844;
 			
-			// aapt resource value: 0x7f080036
-			public const int abc_font_family_title_material = 2131230774;
+			// aapt resource value: 0x7f0a0035
+			public const int abc_font_family_title_material = 2131361845;
 			
-			// aapt resource value: 0x7f080020
-			public const int abc_search_hint = 2131230752;
+			// aapt resource value: 0x7f0a001f
+			public const int abc_search_hint = 2131361823;
 			
-			// aapt resource value: 0x7f080021
-			public const int abc_searchview_description_clear = 2131230753;
+			// aapt resource value: 0x7f0a0020
+			public const int abc_searchview_description_clear = 2131361824;
 			
-			// aapt resource value: 0x7f080022
-			public const int abc_searchview_description_query = 2131230754;
+			// aapt resource value: 0x7f0a0021
+			public const int abc_searchview_description_query = 2131361825;
 			
-			// aapt resource value: 0x7f080023
-			public const int abc_searchview_description_search = 2131230755;
+			// aapt resource value: 0x7f0a0022
+			public const int abc_searchview_description_search = 2131361826;
 			
-			// aapt resource value: 0x7f080024
-			public const int abc_searchview_description_submit = 2131230756;
+			// aapt resource value: 0x7f0a0023
+			public const int abc_searchview_description_submit = 2131361827;
 			
-			// aapt resource value: 0x7f080025
-			public const int abc_searchview_description_voice = 2131230757;
+			// aapt resource value: 0x7f0a0024
+			public const int abc_searchview_description_voice = 2131361828;
 			
-			// aapt resource value: 0x7f080026
-			public const int abc_shareactionprovider_share_with = 2131230758;
+			// aapt resource value: 0x7f0a0025
+			public const int abc_shareactionprovider_share_with = 2131361829;
 			
-			// aapt resource value: 0x7f080027
-			public const int abc_shareactionprovider_share_with_application = 2131230759;
+			// aapt resource value: 0x7f0a0026
+			public const int abc_shareactionprovider_share_with_application = 2131361830;
 			
-			// aapt resource value: 0x7f080028
-			public const int abc_toolbar_collapse_description = 2131230760;
+			// aapt resource value: 0x7f0a0027
+			public const int abc_toolbar_collapse_description = 2131361831;
 			
-			// aapt resource value: 0x7f080037
-			public const int appbar_scrolling_view_behavior = 2131230775;
+			// aapt resource value: 0x7f0a003f
+			public const int app_name = 2131361855;
 			
-			// aapt resource value: 0x7f080038
-			public const int bottom_sheet_behavior = 2131230776;
+			// aapt resource value: 0x7f0a0036
+			public const int appbar_scrolling_view_behavior = 2131361846;
 			
-			// aapt resource value: 0x7f080039
-			public const int character_counter_pattern = 2131230777;
+			// aapt resource value: 0x7f0a0037
+			public const int bottom_sheet_behavior = 2131361847;
 			
-			// aapt resource value: 0x7f080001
-			public const int mr_button_content_description = 2131230721;
+			// aapt resource value: 0x7f0a0038
+			public const int character_counter_pattern = 2131361848;
 			
-			// aapt resource value: 0x7f080002
-			public const int mr_cast_button_connected = 2131230722;
+			// aapt resource value: 0x7f0a003e
+			public const int hello = 2131361854;
 			
-			// aapt resource value: 0x7f080003
-			public const int mr_cast_button_connecting = 2131230723;
+			// aapt resource value: 0x7f0a0000
+			public const int mr_button_content_description = 2131361792;
 			
-			// aapt resource value: 0x7f080004
-			public const int mr_cast_button_disconnected = 2131230724;
+			// aapt resource value: 0x7f0a0001
+			public const int mr_cast_button_connected = 2131361793;
 			
-			// aapt resource value: 0x7f080005
-			public const int mr_chooser_searching = 2131230725;
+			// aapt resource value: 0x7f0a0002
+			public const int mr_cast_button_connecting = 2131361794;
 			
-			// aapt resource value: 0x7f080006
-			public const int mr_chooser_title = 2131230726;
+			// aapt resource value: 0x7f0a0003
+			public const int mr_cast_button_disconnected = 2131361795;
 			
-			// aapt resource value: 0x7f080007
-			public const int mr_controller_album_art = 2131230727;
+			// aapt resource value: 0x7f0a0004
+			public const int mr_chooser_searching = 2131361796;
 			
-			// aapt resource value: 0x7f080008
-			public const int mr_controller_casting_screen = 2131230728;
+			// aapt resource value: 0x7f0a0005
+			public const int mr_chooser_title = 2131361797;
 			
-			// aapt resource value: 0x7f080009
-			public const int mr_controller_close_description = 2131230729;
+			// aapt resource value: 0x7f0a0006
+			public const int mr_controller_album_art = 2131361798;
 			
-			// aapt resource value: 0x7f08000a
-			public const int mr_controller_collapse_group = 2131230730;
+			// aapt resource value: 0x7f0a0007
+			public const int mr_controller_casting_screen = 2131361799;
 			
-			// aapt resource value: 0x7f08000b
-			public const int mr_controller_disconnect = 2131230731;
+			// aapt resource value: 0x7f0a0008
+			public const int mr_controller_close_description = 2131361800;
 			
-			// aapt resource value: 0x7f08000c
-			public const int mr_controller_expand_group = 2131230732;
+			// aapt resource value: 0x7f0a0009
+			public const int mr_controller_collapse_group = 2131361801;
 			
-			// aapt resource value: 0x7f08000d
-			public const int mr_controller_no_info_available = 2131230733;
+			// aapt resource value: 0x7f0a000a
+			public const int mr_controller_disconnect = 2131361802;
 			
-			// aapt resource value: 0x7f08000e
-			public const int mr_controller_no_media_selected = 2131230734;
+			// aapt resource value: 0x7f0a000b
+			public const int mr_controller_expand_group = 2131361803;
 			
-			// aapt resource value: 0x7f08000f
-			public const int mr_controller_pause = 2131230735;
+			// aapt resource value: 0x7f0a000c
+			public const int mr_controller_no_info_available = 2131361804;
 			
-			// aapt resource value: 0x7f080010
-			public const int mr_controller_play = 2131230736;
+			// aapt resource value: 0x7f0a000d
+			public const int mr_controller_no_media_selected = 2131361805;
 			
-			// aapt resource value: 0x7f080015
-			public const int mr_controller_stop = 2131230741;
+			// aapt resource value: 0x7f0a000e
+			public const int mr_controller_pause = 2131361806;
 			
-			// aapt resource value: 0x7f080011
-			public const int mr_controller_stop_casting = 2131230737;
+			// aapt resource value: 0x7f0a000f
+			public const int mr_controller_play = 2131361807;
 			
-			// aapt resource value: 0x7f080012
-			public const int mr_controller_volume_slider = 2131230738;
+			// aapt resource value: 0x7f0a0014
+			public const int mr_controller_stop = 2131361812;
 			
-			// aapt resource value: 0x7f080013
-			public const int mr_system_route_name = 2131230739;
+			// aapt resource value: 0x7f0a0010
+			public const int mr_controller_stop_casting = 2131361808;
 			
-			// aapt resource value: 0x7f080014
-			public const int mr_user_route_category_name = 2131230740;
+			// aapt resource value: 0x7f0a0011
+			public const int mr_controller_volume_slider = 2131361809;
 			
-			// aapt resource value: 0x7f08003a
-			public const int password_toggle_content_description = 2131230778;
+			// aapt resource value: 0x7f0a0012
+			public const int mr_system_route_name = 2131361810;
 			
-			// aapt resource value: 0x7f08003b
-			public const int path_password_eye = 2131230779;
+			// aapt resource value: 0x7f0a0013
+			public const int mr_user_route_category_name = 2131361811;
 			
-			// aapt resource value: 0x7f08003c
-			public const int path_password_eye_mask_strike_through = 2131230780;
+			// aapt resource value: 0x7f0a0039
+			public const int password_toggle_content_description = 2131361849;
 			
-			// aapt resource value: 0x7f08003d
-			public const int path_password_eye_mask_visible = 2131230781;
+			// aapt resource value: 0x7f0a003a
+			public const int path_password_eye = 2131361850;
 			
-			// aapt resource value: 0x7f08003e
-			public const int path_password_strike_through = 2131230782;
+			// aapt resource value: 0x7f0a003b
+			public const int path_password_eye_mask_strike_through = 2131361851;
 			
-			// aapt resource value: 0x7f080029
-			public const int search_menu_title = 2131230761;
+			// aapt resource value: 0x7f0a003c
+			public const int path_password_eye_mask_visible = 2131361852;
 			
-			// aapt resource value: 0x7f08002a
-			public const int status_bar_notification_info_overflow = 2131230762;
+			// aapt resource value: 0x7f0a003d
+			public const int path_password_strike_through = 2131361853;
 			
-			// aapt resource value: 0x7f080000
-			public const int title_activity_webview = 2131230720;
+			// aapt resource value: 0x7f0a0028
+			public const int search_menu_title = 2131361832;
+			
+			// aapt resource value: 0x7f0a0029
+			public const int status_bar_notification_info_overflow = 2131361833;
 			
 			static String()
 			{

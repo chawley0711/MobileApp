@@ -1,10 +1,11 @@
-﻿using AudiOcean.Auth;
+﻿using AudiOceanServer;
+using AudiOcean.Auth;
 using System;
 using Xamarin.Auth;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-[assembly: XamlCompilation (XamlCompilationOptions.Compile)]
+[assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace AudiOcean
 {
 	public partial class App : Application
@@ -57,8 +58,10 @@ namespace AudiOcean
 		{
 			InitializeComponent();
 
-			MainPage = new MainPage();
-		}
+            MainPage = new NavigationPage(new HomePage() { BarBackgroundColor = Color.CornflowerBlue });
+            ((NavigationPage)MainPage).SetValue(NavigationPage.BarBackgroundColorProperty, Color.CornflowerBlue);
+            
+        }
 
 		protected override void OnStart ()
 		{
@@ -74,15 +77,24 @@ namespace AudiOcean
             var presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
             presenter.Login(_auth);
         }
+        protected override void OnStart()
+        {
+            MainPage.Navigation.PushModalAsync(new SplashPage());
+            Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
+            {
+                MainPage.Navigation.PopModalAsync();
+                return false;
+            });
+        }
 
-		protected override void OnSleep ()
-		{
-			// Handle when your app sleeps
-		}
+        protected override void OnSleep()
+        {
+            // Handle when your app sleeps
+        }
 
-		protected override void OnResume ()
-		{
-			// Handle when your app resumes
-		}
-	}
+        protected override void OnResume()
+        {
+            // Handle when your app resumes
+        }
+    }
 }

@@ -1,0 +1,495 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+  <!-- EF Runtime content -->
+  <edmx:Runtime>
+    <!-- SSDL content -->
+    <edmx:StorageModels>
+    <Schema Namespace="AudiOceanModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2012" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="AudiOceanModelStoreContainer">
+    <EntitySet Name="Comments" EntityType="AudiOceanModel.Store.Comments" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Genres" EntityType="AudiOceanModel.Store.Genres" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Ratings" EntityType="AudiOceanModel.Store.Ratings" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Songs" EntityType="AudiOceanModel.Store.Songs" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="sysdiagrams" EntityType="AudiOceanModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Users" EntityType="AudiOceanModel.Store.Users" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Subscriptions" EntityType="AudiOceanModel.Store.Subscription" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK__Comments__SongID__01142BA1" Association="AudiOceanModel.Store.FK__Comments__SongID__01142BA1">
+      <End Role="Songs" EntitySet="Songs" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Comments__UserID__02084FDA" Association="AudiOceanModel.Store.FK__Comments__UserID__02084FDA">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Comments" EntitySet="Comments" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Songs__GenreID__76969D2E" Association="AudiOceanModel.Store.FK__Songs__GenreID__76969D2E">
+      <End Role="Genres" EntitySet="Genres" />
+      <End Role="Songs" EntitySet="Songs" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ratings__SongID__7A672E12" Association="AudiOceanModel.Store.FK__Ratings__SongID__7A672E12">
+      <End Role="Songs" EntitySet="Songs" />
+      <End Role="Ratings" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Ratings__UserID__797309D9" Association="AudiOceanModel.Store.FK__Ratings__UserID__797309D9">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Ratings" EntitySet="Ratings" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Songs__OwnerID__75A278F5" Association="AudiOceanModel.Store.FK__Songs__OwnerID__75A278F5">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="Songs" EntitySet="Songs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subscriptions_Subscriber" Association="AudiOceanModel.Store.FK_Subscription_Subscriber">
+      <End Role="Subscriber" EntitySet="Users" />
+      <End Role="Subscription" EntitySet="Subscriptions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subscriptions_Subscriptions" Association="AudiOceanModel.Store.FK_Subscription_Subscriptions">
+      <End Role="Subscriptions" EntitySet="Users" />
+      <End Role="Subscription" EntitySet="Subscriptions" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Comments">
+    <Key>
+      <PropertyRef Name="CommentID" />
+    </Key>
+    <Property Name="CommentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SongID" Type="int" Nullable="true" />
+    <Property Name="Text" Type="varchar(max)" Nullable="true" />
+    <Property Name="DatePosted" Type="datetime" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="UserID" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Genres">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="true" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Ratings">
+    <Key>
+      <PropertyRef Name="UserID" />
+      <PropertyRef Name="SongID" />
+    </Key>
+    <Property Name="UserID" Type="int" Nullable="false" />
+    <Property Name="SongID" Type="int" Nullable="false" />
+    <Property Name="Rating1" Type="int" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Songs">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="SongName" Type="varchar" Nullable="true" MaxLength="30" />
+    <Property Name="OwnerID" Type="int" Nullable="true" />
+    <Property Name="DateUploaded" Type="datetime" StoreGeneratedPattern="Computed" Nullable="false" />
+    <Property Name="GenreID" Type="int" Nullable="true" />
+    <Property Name="URL" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="version" Type="int" Nullable="true" />
+    <Property Name="definition" Type="varbinary(max)" Nullable="true" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="DisplayName" Type="varchar" Nullable="true" MaxLength="20" />
+    <Property Name="ProfilePictureURL" Type="varchar(max)" Nullable="true" />
+    <Property Name="Email" Type="varchar" Nullable="true" MaxLength="40" />
+  </EntityType>
+  <EntityType Name="Subscription">
+    <Key>
+      <PropertyRef Name="Subscribers_ID" />
+      <PropertyRef Name="Subscriptions_ID" />
+    </Key>
+    <Property Name="Subscribers_ID" Type="int" Nullable="false" />
+    <Property Name="Subscriptions_ID" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK__Comments__SongID__01142BA1">
+    <End Role="Songs" Type="AudiOceanModel.Store.Songs" Multiplicity="0..1" />
+    <End Role="Comments" Type="AudiOceanModel.Store.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Songs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="SongID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Comments__UserID__02084FDA">
+    <End Role="Users" Type="AudiOceanModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Comments" Type="AudiOceanModel.Store.Comments" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Comments">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Songs__GenreID__76969D2E">
+    <End Role="Genres" Type="AudiOceanModel.Store.Genres" Multiplicity="0..1" />
+    <End Role="Songs" Type="AudiOceanModel.Store.Songs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Genres">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Songs">
+        <PropertyRef Name="GenreID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ratings__SongID__7A672E12">
+    <End Role="Songs" Type="AudiOceanModel.Store.Songs" Multiplicity="1" />
+    <End Role="Ratings" Type="AudiOceanModel.Store.Ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Songs">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ratings">
+        <PropertyRef Name="SongID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Ratings__UserID__797309D9">
+    <End Role="Users" Type="AudiOceanModel.Store.Users" Multiplicity="1" />
+    <End Role="Ratings" Type="AudiOceanModel.Store.Ratings" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Ratings">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Songs__OwnerID__75A278F5">
+    <End Role="Users" Type="AudiOceanModel.Store.Users" Multiplicity="0..1" />
+    <End Role="Songs" Type="AudiOceanModel.Store.Songs" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Songs">
+        <PropertyRef Name="OwnerID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subscription_Subscriber">
+    <End Role="Subscriber" Type="AudiOceanModel.Store.Users" Multiplicity="1" />
+    <End Role="Subscription" Type="AudiOceanModel.Store.Subscription" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subscriber">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Subscription">
+        <PropertyRef Name="Subscribers_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subscription_Subscriptions">
+    <End Role="Subscription" Type="AudiOceanModel.Store.Subscription" Multiplicity="*" />
+    <End Role="Subscriptions" Type="AudiOceanModel.Store.Users" Multiplicity="1" />
+    <ReferentialConstraint>
+      <Principal Role="Subscriptions">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="Subscription">
+        <PropertyRef Name="Subscriptions_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema></edmx:StorageModels>
+    <!-- CSDL content -->
+    <edmx:ConceptualModels>
+      <Schema Namespace="AudiOceanModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+        <EntityType Name="Comment">
+          <Key>
+            <PropertyRef Name="CommentID" />
+          </Key>
+          <Property Name="CommentID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SongID" Type="Int32" />
+          <Property Name="Text" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="DatePosted" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="UserID" Type="Int32" />
+          <NavigationProperty Name="Song" Relationship="Self.FK__Comments__SongID__01142BA1" FromRole="Comments" ToRole="Songs" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Comments__UserID__02084FDA" FromRole="Comments" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Genre">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Songs" Relationship="Self.FK__Songs__GenreID__76969D2E" FromRole="Genres" ToRole="Songs" />
+        </EntityType>
+        <EntityType Name="Rating">
+          <Key>
+            <PropertyRef Name="UserID" />
+            <PropertyRef Name="SongID" />
+          </Key>
+          <Property Name="UserID" Type="Int32" Nullable="false" />
+          <Property Name="SongID" Type="Int32" Nullable="false" />
+          <Property Name="Rating1" Type="Int32" />
+          <NavigationProperty Name="Song" Relationship="Self.FK__Ratings__SongID__7A672E12" FromRole="Ratings" ToRole="Songs" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Ratings__UserID__797309D9" FromRole="Ratings" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="Song">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="SongName" Type="String" MaxLength="30" FixedLength="false" Unicode="false" />
+          <Property Name="OwnerID" Type="Int32" />
+          <Property Name="DateUploaded" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Computed" />
+          <Property Name="GenreID" Type="Int32" />
+          <Property Name="URL" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+          <NavigationProperty Name="Comments" Relationship="Self.FK__Comments__SongID__01142BA1" FromRole="Songs" ToRole="Comments" />
+          <NavigationProperty Name="Genre" Relationship="Self.FK__Songs__GenreID__76969D2E" FromRole="Songs" ToRole="Genres" />
+          <NavigationProperty Name="Ratings" Relationship="Self.FK__Ratings__SongID__7A672E12" FromRole="Songs" ToRole="Ratings" />
+          <NavigationProperty Name="User" Relationship="Self.FK__Songs__OwnerID__75A278F5" FromRole="Songs" ToRole="Users" />
+        </EntityType>
+        <EntityType Name="sysdiagram">
+          <Key>
+            <PropertyRef Name="diagram_id" />
+          </Key>
+          <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+          <Property Name="principal_id" Type="Int32" Nullable="false" />
+          <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="version" Type="Int32" />
+          <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+        </EntityType>
+        <EntityType Name="User">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="Name" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="DisplayName" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+          <Property Name="ProfilePictureURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="40" FixedLength="false" Unicode="false" />
+          <NavigationProperty Name="Comments" Relationship="Self.FK__Comments__UserID__02084FDA" FromRole="Users" ToRole="Comments" />
+          <NavigationProperty Name="Ratings" Relationship="Self.FK__Ratings__UserID__797309D9" FromRole="Users" ToRole="Ratings" />
+          <NavigationProperty Name="Songs" Relationship="Self.FK__Songs__OwnerID__75A278F5" FromRole="Users" ToRole="Songs" />
+          <NavigationProperty Name="Subscriptions" Relationship="AudiOceanModel.Subscription" FromRole="Subscriber" ToRole="Subscriptions" />
+          <NavigationProperty Name="Subscribers" Relationship="AudiOceanModel.Subscription" FromRole="Subscriptions" ToRole="Subscriber" />
+        </EntityType>
+        <Association Name="FK__Comments__SongID__01142BA1">
+          <End Role="Songs" Type="Self.Song" Multiplicity="0..1" />
+          <End Role="Comments" Type="Self.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Songs">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="SongID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Comments__UserID__02084FDA">
+          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+          <End Role="Comments" Type="Self.Comment" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Comments">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Songs__GenreID__76969D2E">
+          <End Role="Genres" Type="Self.Genre" Multiplicity="0..1" />
+          <End Role="Songs" Type="Self.Song" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Genres">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Songs">
+              <PropertyRef Name="GenreID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ratings__SongID__7A672E12">
+          <End Role="Songs" Type="Self.Song" Multiplicity="1" />
+          <End Role="Ratings" Type="Self.Rating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Songs">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Ratings">
+              <PropertyRef Name="SongID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Ratings__UserID__797309D9">
+          <End Role="Users" Type="Self.User" Multiplicity="1" />
+          <End Role="Ratings" Type="Self.Rating" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Ratings">
+              <PropertyRef Name="UserID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="FK__Songs__OwnerID__75A278F5">
+          <End Role="Users" Type="Self.User" Multiplicity="0..1" />
+          <End Role="Songs" Type="Self.Song" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="Users">
+              <PropertyRef Name="ID" />
+            </Principal>
+            <Dependent Role="Songs">
+              <PropertyRef Name="OwnerID" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="Subscription">
+          <End Role="Subscriber" Type="Self.User" Multiplicity="*" />
+          <End Role="Subscriptions" Type="Self.User" Multiplicity="*" />
+        </Association>
+        <EntityContainer Name="AudiOceanEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="Comments" EntityType="Self.Comment" />
+          <EntitySet Name="Genres" EntityType="Self.Genre" />
+          <EntitySet Name="Ratings" EntityType="Self.Rating" />
+          <EntitySet Name="Songs" EntityType="Self.Song" />
+          <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="Users" EntityType="Self.User" />
+          <AssociationSet Name="FK__Comments__SongID__01142BA1" Association="Self.FK__Comments__SongID__01142BA1">
+            <End Role="Songs" EntitySet="Songs" />
+            <End Role="Comments" EntitySet="Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Comments__UserID__02084FDA" Association="Self.FK__Comments__UserID__02084FDA">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Comments" EntitySet="Comments" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Songs__GenreID__76969D2E" Association="Self.FK__Songs__GenreID__76969D2E">
+            <End Role="Genres" EntitySet="Genres" />
+            <End Role="Songs" EntitySet="Songs" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ratings__SongID__7A672E12" Association="Self.FK__Ratings__SongID__7A672E12">
+            <End Role="Songs" EntitySet="Songs" />
+            <End Role="Ratings" EntitySet="Ratings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Ratings__UserID__797309D9" Association="Self.FK__Ratings__UserID__797309D9">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Ratings" EntitySet="Ratings" />
+          </AssociationSet>
+          <AssociationSet Name="FK__Songs__OwnerID__75A278F5" Association="Self.FK__Songs__OwnerID__75A278F5">
+            <End Role="Users" EntitySet="Users" />
+            <End Role="Songs" EntitySet="Songs" />
+          </AssociationSet>
+          <AssociationSet Name="Subscriptions" Association="AudiOceanModel.Subscription">
+            <End Role="Subscriber" EntitySet="Users" />
+            <End Role="Subscriptions" EntitySet="Users" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
+    </edmx:ConceptualModels>
+    <!-- C-S mapping content -->
+    <edmx:Mappings>
+    <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AudiOceanModelStoreContainer" CdmEntityContainer="AudiOceanEntities">
+    <EntitySetMapping Name="Comments">
+      <EntityTypeMapping TypeName="IsTypeOf(AudiOceanModel.Comment)">
+        <MappingFragment StoreEntitySet="Comments">
+          <ScalarProperty Name="CommentID" ColumnName="CommentID" />
+          <ScalarProperty Name="SongID" ColumnName="SongID" />
+          <ScalarProperty Name="Text" ColumnName="Text" />
+          <ScalarProperty Name="DatePosted" ColumnName="DatePosted" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Genres">
+      <EntityTypeMapping TypeName="IsTypeOf(AudiOceanModel.Genre)">
+        <MappingFragment StoreEntitySet="Genres">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Ratings">
+      <EntityTypeMapping TypeName="IsTypeOf(AudiOceanModel.Rating)">
+        <MappingFragment StoreEntitySet="Ratings">
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="SongID" ColumnName="SongID" />
+          <ScalarProperty Name="Rating1" ColumnName="Rating1" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Songs">
+      <EntityTypeMapping TypeName="IsTypeOf(AudiOceanModel.Song)">
+        <MappingFragment StoreEntitySet="Songs">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="SongName" ColumnName="SongName" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+          <ScalarProperty Name="DateUploaded" ColumnName="DateUploaded" />
+          <ScalarProperty Name="GenreID" ColumnName="GenreID" />
+          <ScalarProperty Name="URL" ColumnName="URL" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IsTypeOf(AudiOceanModel.sysdiagram)">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="IsTypeOf(AudiOceanModel.User)">
+        <MappingFragment StoreEntitySet="Users">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="DisplayName" ColumnName="DisplayName" />
+          <ScalarProperty Name="ProfilePictureURL" ColumnName="ProfilePictureURL" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <AssociationSetMapping Name="Subscriptions" TypeName="AudiOceanModel.Subscription" StoreEntitySet="Subscriptions">
+      <EndProperty Name="Subscriber">
+        <ScalarProperty Name="ID" ColumnName="Subscribers_ID" />
+      </EndProperty>
+      <EndProperty Name="Subscriptions">
+        <ScalarProperty Name="ID" ColumnName="Subscriptions_ID" />
+      </EndProperty>
+    </AssociationSetMapping>
+  </EntityContainerMapping>
+</Mapping></edmx:Mappings>
+  </edmx:Runtime>
+  <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <Connection>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="MetadataArtifactProcessing" Value="EmbedInOutputAssembly" />
+      </DesignerInfoPropertySet>
+    </Connection>
+    <Options>
+      <DesignerInfoPropertySet>
+        <DesignerProperty Name="ValidateOnBuild" Value="true" />
+        <DesignerProperty Name="EnablePluralization" Value="true" />
+        <DesignerProperty Name="IncludeForeignKeysInModel" Value="true" />
+        <DesignerProperty Name="UseLegacyProvider" Value="False" />
+        <DesignerProperty Name="CodeGenerationStrategy" Value="None" />
+      </DesignerInfoPropertySet>
+    </Options>
+    <!-- Diagram content (shape and connector positions) -->
+    <Diagrams></Diagrams>
+  </Designer>
+</edmx:Edmx>
