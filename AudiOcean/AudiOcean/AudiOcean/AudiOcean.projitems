@@ -31,4 +31,7 @@
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)test.raw" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Retrograde-_Mastered_.wav" />
+  </ItemGroup>
 </Project>
