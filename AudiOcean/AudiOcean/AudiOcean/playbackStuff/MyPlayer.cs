@@ -15,30 +15,28 @@ namespace AudiOcean
     {
         Assembly _assembly;
         private readonly int SAMPLE_RATE = 44100;
-        byte[] mSamples; // the samples to play
-        int mNumSamples;
-        
-        public void init()
-        {
-            _assembly = IntrospectionExtensions.GetTypeInfo(typeof(MyPlayer)).Assembly;
-            myLoader l = new myLoader();
-            byte[] x = l.GetEmbeddedResourceBytes(_assembly, "Retrograde-_Mastered_.wav");
+        public System.IO.Stream stream { get; set; }
+        public AudioTrack track { get; set; }
 
-            PlayAudioTrack(x);
-        }
-        public void PlayAudioTrack(byte[] audioBuffer)
+        public MyPlayer (System.IO.Stream s)
         {
-            Java.Lang.Thread t = new Java.Lang.Thread(() =>
+            this.stream = s;
+            byte[] x;
+            using (var memoryStream = new MemoryStream())
             {
-
-                int mBufferSize = AudioTrack.GetMinBufferSize(SAMPLE_RATE, ChannelOut.Stereo,
-                Android.Media.Encoding .Pcm16bit);
-                if (mBufferSize == (int)TrackStatus.Error || mBufferSize == (int)TrackStatus.ErrorBadValue)
-                {
-                    // For some readon we couldn't obtain a buffer size
-                    mBufferSize = SAMPLE_RATE * 2 * 2;
-                }
-                AudioTrack audioTrack = new AudioTrack(
+                s.CopyTo(memoryStream);
+                x =  memoryStream.ToArray();
+            }
+            setTrack();
+        }
+        public void setTrack()
+        {
+            int mBufferSize = AudioTrack.GetMinBufferSize(SAMPLE_RATE, ChannelOut.Stereo, Android.Media.Encoding.Pcm16bit);
+            if (mBufferSize == (int)TrackStatus.Error || mBufferSize == (int)TrackStatus.ErrorBadValue)
+            {
+                mBufferSize = SAMPLE_RATE * 2 * 2;
+            }
+            this.track = new AudioTrack(
                   // Stream type
                   Android.Media.Stream.Music,
                   // Frequency
@@ -51,8 +49,12 @@ namespace AudiOcean
                   mBufferSize,
                   // Mode. Stream or static.
                   AudioTrackMode.Stream);
-
-                audioTrack.Play();
+        }
+        public void Play(byte[] audioBuffer)
+        {
+            Java.Lang.Thread t = new Java.Lang.Thread(() =>
+            {
+                this.track.Play();
                 bool mShouldContinue = true;
                 for (int i = 0, step = 15000; i < audioBuffer.Length; i += step)
                 {
@@ -61,18 +63,16 @@ namespace AudiOcean
                         step = audioBuffer.Length - i;
                         mShouldContinue = false;
                     }
-                    audioTrack.Write(audioBuffer, i, step);
+                    this.track.Write(audioBuffer, i, step);
                 }
 
                 if (!mShouldContinue)
                 {
-                    audioTrack.Release();
+                    this.track.Release();
                 }
 
             });
             t.Start();
-
-
         }
     }
 }
