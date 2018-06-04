@@ -29,6 +29,22 @@ namespace AudiOcean
             }
             setTrack();
         }
+        public void myPause()
+        {
+            this.track.Pause();
+        }
+        public void myStop()
+        {
+            this.track.Stop();
+        }
+        public void myRelease()
+        {
+            this.track.Release();
+        }
+        public void myWrite(byte[] bytes, int start, int size)
+        {
+            this.track.Write(bytes, start, size);
+        }
         public void setTrack()
         {
             int mBufferSize = AudioTrack.GetMinBufferSize(SAMPLE_RATE, ChannelOut.Stereo, Android.Media.Encoding.Pcm16bit);
@@ -63,16 +79,17 @@ namespace AudiOcean
                         step = audioBuffer.Length - i;
                         mShouldContinue = false;
                     }
-                    this.track.Write(audioBuffer, i, step);
+                    myWrite(audioBuffer, i, step);
                 }
 
                 if (!mShouldContinue)
                 {
-                    this.track.Release();
+                    myRelease();
                 }
 
             });
             t.Start();
         }
+        
     }
 }
