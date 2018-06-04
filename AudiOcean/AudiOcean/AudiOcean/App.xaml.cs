@@ -1,4 +1,3 @@
-using AudiOceanServer;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -8,7 +7,7 @@ namespace AudiOcean
 {
 	public partial class App : Application
 	{
-        public static AudiOceanHttpClient HttpClient { get; private set; }
+    //    public static AudiOceanHttpClient HttpClient { get; private set; }
 
         public App()
 		{
