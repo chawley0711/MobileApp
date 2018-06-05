@@ -64,12 +64,11 @@
                                             <ColumnDefinition Width="2*" />
                                             <ColumnDefinition Width="2*" />
                                         </Grid.ColumnDefinitions>
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="SongNameLink_Tapped"  NumberOfTapsRequired="1" />
+                                        </Grid.GestureRecognizers>
                                         <Image Source="drawable/PlayButton" Margin="10, 0, 0, 0" Grid.RowSpan="3"></Image>
-                                        <Label FontSize="11" Grid.Column="1" Text="{Binding name}">
-                                            <Label.GestureRecognizers>
-                                                <TapGestureRecognizer Tapped="SongNameLink_Tapped"  NumberOfTapsRequired="1" />
-                                            </Label.GestureRecognizers>
-                                        </Label>
+                                        <Label FontSize="11" Grid.Column="1" Text="{Binding name}"></Label>
                                         <Label FontSize="11" Grid.Column="1" Grid.Row="1" Text="{Binding artist}"></Label>
                                         <Label FontSize="11" Grid.Column="1" Grid.Row="2" Text="{Binding lengthFormat}"></Label>
                                         <Label FontSize="11" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="End" Text="{Binding rating}"></Label>

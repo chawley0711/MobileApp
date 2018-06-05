@@ -42,8 +42,7 @@ namespace AudiOcean
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
             var l = sender as Grid;
-            //Song s = (Song)l.BindingContext;
-            Navigation.PushAsync(new SongPage());
+            Navigation.PushAsync(new SongPage(l.BindingContext as Song));
         }
 
         private void MySongs_Tapped(object sender, EventArgs e)
