@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudiOceanClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -21,24 +22,36 @@ namespace AudiOcean
         {
             List<Song> songs =
             new List<Song>();
-            foreach (var mi in App.HttpClient.GetMostRecentMusicUploadedInformation(20))
+            var task = App.HttpClient.GetMostRecentMusicUploadedInformation(20);
+            task.ContinueWith((t) =>
             {
-                songs.Add(new Song(mi.NAME, App.HttpClient.GetUserInformation(mi.OWNER_ID).DISPLAY_NAME, 0, mi.RATING));
-            }
+                if (t.Status == TaskStatus.Faulted)
+                {
 
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        defaultItemTemplate = SongList.ItemTemplate;
+                        SongList.ItemTemplate = null;
+                        SongList.ItemsSource = new[] { "Could not load page" };
+
+                    });
+                }
+                else
+                {
+                    foreach (var mi in t.Result)
+                    {
+                        songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING));
+                    }
+                    SongList.ItemsSource = songs;
+                }
+
+            });
             //new List<Song>()
             //{
             //    new Song("Run", "Ski Mask", 107, 4.6),
             //    new Song("Massacre", "Dodge & Fuski", 181, 4.1),
             //    new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
             //};
-            if (songs.Count != 0)
-                SongList.ItemsSource = songs;
-            else {
-                defaultItemTemplate = SongList.ItemTemplate;
-                SongList.ItemTemplate = null;
-                SongList.ItemsSource = new[] { "Could not load page" };
-            }
         }
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
