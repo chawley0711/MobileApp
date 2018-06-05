@@ -387,7 +387,7 @@ namespace AudiOceanServer
             User user;
             if (!QueryStringHasKey(context, "id"))
             {
-                user = audiOceanServices.GetUserWithEmail(token.Email);
+                user = audiOceanServices.GetUserWithEmail(token.Payload.Email);
             }
             else
             {
