@@ -7,7 +7,7 @@ using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace AudiOceanServer
+namespace AudiOceanClient
 {
     public class AudiOceanHttpClient
     {
@@ -73,11 +73,11 @@ namespace AudiOceanServer
             return task.Result.ReadByte();
         }
 
-        public bool GetCurrentlyLoggedInUsersID()
+        public UserInformation GetCurrentlyLoggedInUsersID()
         {
-            Task<HttpResponseMessage> task = httpClient.GetAsync($"{remoteAddress}users");
+            Task<string> task = httpClient.GetStringAsync($"{remoteAddress}users");
             task.RunSynchronously();
-
+            return new UserInformation(task.Result);
         }
 
         public bool PostNewUser()

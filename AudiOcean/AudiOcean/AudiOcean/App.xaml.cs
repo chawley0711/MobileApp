@@ -1,3 +1,4 @@
+using AudiOceanClient;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -7,7 +8,9 @@ namespace AudiOcean
 {
 	public partial class App : Application
 	{
-    //    public static AudiOceanHttpClient HttpClient { get; private set; }
+        public static AudiOceanHttpClient HttpClient { get; private set; } = new AudiOceanHttpClient(string.Empty);
+
+        //    public static AudiOceanHttpClient HttpClient { get; private set; }
 
         public App()
 		{
@@ -21,7 +24,7 @@ namespace AudiOcean
         protected override void OnStart()
         {
             MainPage.Navigation.PushModalAsync(new SplashPage());
-            Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
+            Device.StartTimer(TimeSpan.FromMilliseconds(3000), () =>
             {
                 MainPage.Navigation.PopModalAsync();
                 return false;
