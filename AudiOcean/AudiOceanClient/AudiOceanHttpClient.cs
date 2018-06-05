@@ -73,7 +73,12 @@ namespace AudiOceanServer
             return task.Result.ReadByte();
         }
 
+        public bool GetCurrentlyLoggedInUsersID()
+        {
+            Task<HttpResponseMessage> task = httpClient.GetAsync($"{remoteAddress}users");
+            task.RunSynchronously();
 
+        }
 
         public bool PostNewUser()
         {
