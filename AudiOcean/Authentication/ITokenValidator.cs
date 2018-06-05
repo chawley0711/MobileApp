@@ -4,10 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace GUILibrary
+namespace Authentication
 {
-    public class GUIMain
+    public interface ITokenValidator<T, U>
     {
-        
+        bool ValidateToken(Token<T, U> token);
     }
 }

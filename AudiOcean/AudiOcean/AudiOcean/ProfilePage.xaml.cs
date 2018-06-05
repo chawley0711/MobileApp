@@ -31,11 +31,17 @@ namespace AudiOcean
                 new AudiOceanUser("@notme", "Not Me", "ProfilePicture", null, null),
                 new AudiOceanUser("@notyou", "Not You", "ProfilePicture", null, null)
             });
+                //    new List<Song>();
+                //{
+                //foreach (var mi in App.HttpClient.GetMusicInformationCollection(App.HttpClient.GetUserInformation(0).ID))
+                //    songs.Add(new Song(mi.NAME, App.HttpClient.GetUserInformation(mi.OWNER_ID).DISPLAY_NAME, 0, mi.RATING));
+                //}
+                //Replace 0 with logged in user
         }
 
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
-            Label l = (Label)sender;
+            var l = sender as Grid;
             //Song s = (Song)l.BindingContext;
             Navigation.PushAsync(new SongPage());
         }

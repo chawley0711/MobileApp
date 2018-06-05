@@ -1,3 +1,4 @@
+using AudiOceanServer;
 using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -5,11 +6,13 @@ using Xamarin.Forms.Xaml;
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace AudiOcean
 {
-    public partial class App : Application
-    {
+	public partial class App : Application
+	{
+        public static AudiOceanHttpClient HttpClient { get; }
+
         public App()
-        {
-            InitializeComponent();
+		{
+			InitializeComponent();
 
             MainPage = new NavigationPage(new HomePage() { BarBackgroundColor = Color.CornflowerBlue });
             ((NavigationPage)MainPage).SetValue(NavigationPage.BarBackgroundColorProperty, Color.CornflowerBlue);
