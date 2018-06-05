@@ -8,6 +8,7 @@ namespace AudiOcean.Static_Helper_Classes
 {
     public class MusicServiceHelper : MusicService
     {
+        public static MusicServiceHelper Helper { get; } = new MusicServiceHelper();
         public void Next()
         {
             DependencyService.Get<MusicService>().Next();

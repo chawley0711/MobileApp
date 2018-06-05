@@ -13,6 +13,7 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using AudiOcean.Droid.BroadcastRecievers;
 using static Android.Media.AudioManager;
 using static Android.Net.Wifi.WifiManager;
 
@@ -49,7 +50,12 @@ namespace AudiOcean.Droid.Services
 
         private void Pause()
         {
-           // player.Pause();
+            var playIntent = new Intent(this, typeof(AndroidMusicServiceBroadcastReceiver));
+            playIntent.SetAction(AndroidMusicServiceBroadcastReceiver.PLAY_BROADCAST);
+            //Resource.Drawable.PauseButton, "Pause"
+            UpdateNotification(playIntent, Resource.Drawable.PlayButton, "Play");
+
+            // player.Pause();
         }
 
         private void Stop()
@@ -57,15 +63,29 @@ namespace AudiOcean.Droid.Services
             StopForeground(true);
             startedForgroundService = false;
             ReleaseWifiLock();
-          //  player.Release();
+            //  player.Release();
         }
 
         private void Play()
         {
+            var pauseIntent = new Intent(this, typeof(AndroidMusicServiceBroadcastReceiver));
+            pauseIntent.SetAction(AndroidMusicServiceBroadcastReceiver.PAUSE_BROADCAST);
+            //Resource.Drawable.PauseButton, "Pause"
+            UpdateNotification(pauseIntent, Resource.Drawable.PauseButton, "Pause");
 
+            InitilizePlayer();
+            AquireWifiLock();
+
+        }
+
+        private void UpdateNotification(Intent extraAction, int icon, string title)
+        {
+            if (startedForgroundService) { startedForgroundService = false; }
             var pendingIntent = PendingIntent.GetActivity(ApplicationContext, 0,
                     new Intent(ApplicationContext, typeof(MainActivity)),
                     PendingIntentFlags.UpdateCurrent);
+            var pendingIntentExtraAction = PendingIntent.GetBroadcast(this, 0, extraAction, PendingIntentFlags.UpdateCurrent);
+
             //TODO Fill notification with song info.
             var notification = new Notification.Builder(Android.App.Application.Context)
                 .SetVisibility(NotificationVisibility.Public)
@@ -73,7 +93,9 @@ namespace AudiOcean.Droid.Services
                 .SetSmallIcon(Resource.Drawable.ic_audiotrack_light)
                 .SetLargeIcon(BitmapFactory.DecodeResource(Resources, Resource.Drawable.ic_audiotrack_dark))
                 .SetTicker("Song Playing")
-                .SetContentIntent(pendingIntent).Build();
+                .SetContentIntent(pendingIntent)
+                .AddAction(new Notification.Action(icon, title, pendingIntentExtraAction))
+                .Build();
 
             notification.Flags |= NotificationFlags.OngoingEvent;
 
@@ -81,10 +103,6 @@ namespace AudiOcean.Droid.Services
             {
                 StartForeground(FORGROUND_SERVICE_ID, notification);
             }
-
-            InitilizePlayer();
-            AquireWifiLock();
-
         }
 
         WifiManager wifiManager;
@@ -137,7 +155,7 @@ namespace AudiOcean.Droid.Services
             }
         }
 
-        private async void InitilizePlayer()
+        private void InitilizePlayer()
         {
             //Initilize Player here.
             wifiManager = WifiManager.FromContext(ApplicationContext);
