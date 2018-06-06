@@ -37,10 +37,11 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Interfaces\MusicService.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)myLoader.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)playbackStuff\MyPlayer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)playbackStuff\myPlaylist.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SongBar.xaml.cs">
       <DependentUpon>SongBar.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -106,7 +107,5 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
-    <Compile Include="$(MSBuildThisFileDirectory)MyPlayer.cs" />
   </ItemGroup>
-
 </Project>
