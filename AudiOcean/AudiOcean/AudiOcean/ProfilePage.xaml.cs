@@ -1,5 +1,4 @@
-﻿using AudiOceanServer;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,7 +16,32 @@ namespace AudiOcean
         {
             InitializeComponent();
 
-            SetUpSongs();
+            var task = App.HttpClient.GetCurrentlyLoggedInUsersID();
+            task.ContinueWith((t) =>
+            {
+                if (t.IsFaulted)
+                {
+
+                }
+                else
+                {
+                    int thisUsersID = t.Result;
+                    var au = App.HttpClient.GetUserInformation(thisUsersID);
+                    au.ContinueWith((a) =>
+                    {
+                        if(a.IsFaulted)
+                        {
+                            
+                        }
+                        else
+                        {
+                            new AudiOceanUser(a);
+                        }
+                    });
+                }
+            });
+
+            //SetUpSongs();
         }
 
         public void SetUpSongs()
