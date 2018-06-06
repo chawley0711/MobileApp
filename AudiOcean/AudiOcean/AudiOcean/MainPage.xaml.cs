@@ -17,7 +17,7 @@ namespace AudiOcean
 
             SetUpSongs();
             //needs a way to change title
-		}
+        }
 
         public void SetUpSongs()
         {
@@ -29,23 +29,19 @@ namespace AudiOcean
                 if (t.Status == TaskStatus.Faulted)
                 {
 
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        defaultItemTemplate = SongList.ItemTemplate;
-                        SongList.ItemTemplate = null;
-                        SongList.ItemsSource = new[] { "Could not load page" };
-
-                    });
+                    defaultItemTemplate = SongList.ItemTemplate;
+                    SongList.ItemTemplate = null;
+                    SongList.ItemsSource = new[] { "Could not load page" };
                 }
                 else
                 {
                     foreach (var mi in t.Result)
                     {
-                        songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING, new List<CommentInformation>()));
+                        Task<UserInformation> userInformation = App.HttpClient.GetUserInformation(mi.OWNER_ID);
+                        userInformation.ContinueWith((a) => { if (t.IsCompletedSuccessfully) { AddSong(songs, mi, a.Result); } });
                     }
                     SongList.ItemsSource = songs;
                 }
-
             });
             //new List<Song>()
             //{
@@ -53,6 +49,11 @@ namespace AudiOcean
             //    new Song("Massacre", "Dodge & Fuski", 181, 4.1),
             //    new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9)
             //};
+        }
+
+        public void AddSong(List<Song> songs, MusicInformation mi, UserInformation us)
+        {
+            songs.Add(new Song(mi.NAME, us.DISPLAY_NAME, mi.RATING));
         }
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using AudiOceanClient;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,33 +15,6 @@ namespace AudiOcean
         public ProfilePage()
         {
             InitializeComponent();
-
-            var task = App.HttpClient.GetCurrentlyLoggedInUsersID();
-            task.ContinueWith((t) =>
-            {
-                if (t.IsFaulted)
-                {
-
-                }
-                else
-                {
-                    var thisUsersID = t.Result;
-
-                    //var au = App.HttpClient.GetUserInformation(thisUsersID);
-                    //au.ContinueWith((a) =>
-                    //{
-                    //    if(a.IsFaulted)
-                    //    {
-                            
-                    //    }
-                    //    else
-                    //    {
-                    //        new AudiOceanUser(a.Result.DISPLAY_NAME, a.Result.DISPLAY_NAME, a.Result.PROFILE_URL, new List<Song>(), new List<AudiOceanUser>());
-                    //    }
-                    //});
-                }
-            });
-
             //SetUpSongs();
         }
 
@@ -54,22 +27,18 @@ namespace AudiOcean
             {
                 if (t.IsFaulted)
                 {
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        SongList.ItemTemplate = null;
-                        SongList.ItemsSource = new[] { "Couldn't load page." };
-                    });
+
+                    SongList.ItemTemplate = null;
+                    SongList.ItemsSource = new[] { "Couldn't load page." };
                     return;
                 }
                 foreach (var mi in t.Result)
                 {
-                    songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING, new List<AudiOceanClient.CommentInformation>()));
+                    Task<UserInformation> userInformation = App.HttpClient.GetUserInformation(mi.OWNER_ID);
+                    userInformation.ContinueWith((a) => { if (t.IsCompletedSuccessfully) { AddSong(songs, mi, a.Result); } });
                 }
 
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    SongList.ItemsSource = songs;
-                });
+                SongList.ItemsSource = songs;
             });
             //Replace 0 with logged in user
 
@@ -83,6 +52,11 @@ namespace AudiOcean
             //    new Song("Run", "Ski Mask", 107, 4.6),
             //    new Song("Massacre", "Dodge & Fuski", 181, 4.1)
             //};
+        }
+
+        private void AddSong(List<Song> songs, MusicInformation mi, UserInformation result)
+        {
+            songs.Add(new Song(mi.NAME, us.DISPLAY_NAME, mi.RATING));
         }
 
         private void SongNameLink_Tapped(object sender, EventArgs e)

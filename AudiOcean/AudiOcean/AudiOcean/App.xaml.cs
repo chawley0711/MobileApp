@@ -8,7 +8,7 @@ namespace AudiOcean
 {
 	public partial class App : Application
 	{
-        public static AudiOceanHttpClient HttpClient { get; private set; } = new AudiOceanHttpClient(string.Empty);
+        public static AudiOceanHttpClient HttpClient { get; private set; }
 
         //    public static AudiOceanHttpClient HttpClient { get; private set; }
 
