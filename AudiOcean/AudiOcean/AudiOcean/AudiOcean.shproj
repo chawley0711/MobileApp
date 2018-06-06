@@ -3,6 +3,11 @@
   <PropertyGroup>
     <ProjectGuid>{0986E3C5-26F4-44A3-A860-36CE168498DF}</ProjectGuid>
   </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Auth\GoogleOAuthToken.cs" />
+    <Compile Include="Auth\IGoogleAuthenticationDelegate.cs" />
+    <Compile Include="ValueConverters\SecondsToDurationFormatter.cs" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.Default.props" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CodeSharing\Microsoft.CodeSharing.Common.props" />

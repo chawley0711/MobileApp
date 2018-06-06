@@ -6,6 +6,8 @@ using Android.Runtime;
 using Android.Views;
 using Android.Widget;
 using Android.OS;
+using AudiOcean.Droid.Auth;
+using Android.Content;
 
 namespace AudiOcean.Droid
 {
@@ -18,9 +20,16 @@ namespace AudiOcean.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
             global::Xamarin.Forms.Forms.Init(this, bundle);
-            LoadApplication(new App());
+
+            global::Xamarin.Auth.Presenters.XamarinAndroid.AuthenticationConfiguration.Init(this, bundle);
+
+            if (Intent.HasExtra("net.audiocean.token"))
+            {
+                LoadApplication(new App(new AudiOcean.Auth.GoogleOAuthToken() { AccessToken = Intent.GetStringExtra("net.audiocean.token") }));
+            }
+            else
+                LoadApplication(new App());
         }
     }
 }
