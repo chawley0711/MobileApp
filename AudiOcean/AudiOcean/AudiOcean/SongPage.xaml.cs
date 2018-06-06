@@ -13,9 +13,9 @@ namespace AudiOcean
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class SongPage : ContentPage
 	{
-		public SongPage()
+		public SongPage(Song s)
 		{
-            //add a way to pass in song and load it
+            BindingContext = new Song(s.name, s.artist, s.length, s.rating, s.comments);
 
 			InitializeComponent();
 		}

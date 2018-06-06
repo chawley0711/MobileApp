@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using AudiOceanClient;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,8 +15,7 @@ namespace AudiOcean
         public ProfilePage()
         {
             InitializeComponent();
-
-            SetUpSongs();
+            //SetUpSongs();
         }
 
         public void SetUpSongs()
@@ -28,22 +27,18 @@ namespace AudiOcean
             {
                 if (t.IsFaulted)
                 {
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        SongList.ItemTemplate = null;
-                        SongList.ItemsSource = new[] { "Couldn't load page." };
-                    });
+
+                    SongList.ItemTemplate = null;
+                    SongList.ItemsSource = new[] { "Couldn't load page." };
                     return;
                 }
                 foreach (var mi in t.Result)
                 {
-                    songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING));
+                    Task<UserInformation> userInformation = App.HttpClient.GetUserInformation(mi.OWNER_ID);
+                    userInformation.ContinueWith((a) => { if (t.IsCompletedSuccessfully) { AddSong(songs, mi, a.Result); } });
                 }
 
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    SongList.ItemsSource = songs;
-                });
+                SongList.ItemsSource = songs;
             });
             //Replace 0 with logged in user
 
@@ -59,11 +54,27 @@ namespace AudiOcean
             //};
         }
 
+        private void AddSong(List<Song> songs, MusicInformation mi, UserInformation result)
+        {
+            songs.Add(new Song(mi.NAME, us.DISPLAY_NAME, mi.RATING));
+        }
+
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {
             var l = sender as Grid;
-            //Song s = (Song)l.BindingContext;
-            Navigation.PushAsync(new SongPage());
+            Navigation.PushAsync(new SongPage(l.BindingContext as Song));
+        }
+
+        private void MySongs_Tapped(object sender, EventArgs e)
+        {
+            SongList.IsVisible = true;
+            SubscribeList.IsVisible = false;
+        }
+
+        private void SubbedTo_Tapped(object sender, EventArgs e)
+        {
+            SongList.IsVisible = false;
+            SubscribeList.IsVisible = true;
         }
     }
 }
