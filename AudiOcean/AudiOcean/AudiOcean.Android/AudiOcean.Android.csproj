@@ -48,6 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="Xamarin.Android.Support.Compat">
+      <Version>27.0.2</Version>
+    </PackageReference>
     <PackageReference Include="Xamarin.Android.Support.Design">
       <Version>27.0.2</Version>
     </PackageReference>
@@ -75,8 +78,6 @@
     <Compile Include="Auth\GoogleAuthenticator.cs" />
     <Compile Include="Auth\GoogleOAuthToken.cs" />
     <Compile Include="Auth\IGoogleAuthenticationDelegate.cs" />
-    <Compile Include="Configuration.cs" />
-    <Compile Include="GoogleAuthInterceptor.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
