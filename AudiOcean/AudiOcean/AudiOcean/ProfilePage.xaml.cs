@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudiOceanClient;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -17,6 +18,11 @@ namespace AudiOcean
             InitializeComponent();
 
             var task = App.HttpClient.GetCurrentlyLoggedInUsersID();
+            var thisUsersMusic = App.HttpClient.GetMusicInformationCollection(t.Result.ID).Result;
+
+
+
+
             task.ContinueWith((t) =>
             {
                 if (t.IsFaulted)
@@ -26,13 +32,13 @@ namespace AudiOcean
                 else
                 {
                     var thisUsersID = t.Result;
-
+                    AudiOceanUser au = new AudiOceanUser(thisUsersID.DISPLAY_NAME, thisUsersID.DISPLAY_NAME, thisUsersID.PROFILE_URL, ;
                     //var au = App.HttpClient.GetUserInformation(thisUsersID);
                     //au.ContinueWith((a) =>
                     //{
                     //    if(a.IsFaulted)
                     //    {
-                            
+
                     //    }
                     //    else
                     //    {
@@ -43,6 +49,28 @@ namespace AudiOcean
             });
 
             //SetUpSongs();
+        }
+
+        public void SetupLoggedInUserArea()
+        {
+            Task<UserInformation> userTask = App.HttpClient.GetCurrentlyLoggedInUsersID();
+            userTask.ContinueWith((t) =>
+            {
+                if (t.IsFaulted)
+                {
+
+                }
+                else
+                {
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        DisplayNameLabel.Text = t.Result.DISPLAY_NAME;
+
+                    });
+
+                    SetUpSongs();
+                }
+            });
         }
 
         public void SetUpSongs()
