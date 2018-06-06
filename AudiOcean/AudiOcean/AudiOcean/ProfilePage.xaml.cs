@@ -1,4 +1,7 @@
-﻿using AudiOceanClient;
+﻿using AudiOcean.Static_Helper_Classes;
+using AudiOceanClient;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -18,11 +21,6 @@ namespace AudiOcean
             InitializeComponent();
 
             var task = App.HttpClient.GetCurrentlyLoggedInUsersID();
-            var thisUsersMusic = App.HttpClient.GetMusicInformationCollection(t.Result.ID).Result;
-
-
-
-
             task.ContinueWith((t) =>
             {
                 if (t.IsFaulted)
@@ -32,7 +30,7 @@ namespace AudiOcean
                 else
                 {
                     var thisUsersID = t.Result;
-                    AudiOceanUser au = new AudiOceanUser(thisUsersID.DISPLAY_NAME, thisUsersID.DISPLAY_NAME, thisUsersID.PROFILE_URL, ;
+                    //AudiOceanUser au = new AudiOceanUser(thisUsersID.DISPLAY_NAME, thisUsersID.DISPLAY_NAME, thisUsersID.PROFILE_URL, ;
                     //var au = App.HttpClient.GetUserInformation(thisUsersID);
                     //au.ContinueWith((a) =>
                     //{
@@ -48,7 +46,7 @@ namespace AudiOcean
                 }
             });
 
-            //SetUpSongs();
+            SetUpSongs();
         }
 
         public void SetupLoggedInUserArea()
@@ -76,41 +74,41 @@ namespace AudiOcean
         public void SetUpSongs()
         {
             List<Song> songs =
-                    new List<Song>();
-            var task = App.HttpClient.GetMusicInformationCollection(0);
-            task.ContinueWith((t) =>
-            {
-                if (t.IsFaulted)
-                {
-                    Device.BeginInvokeOnMainThread(() =>
-                    {
-                        SongList.ItemTemplate = null;
-                        SongList.ItemsSource = new[] { "Couldn't load page." };
-                    });
-                    return;
-                }
-                foreach (var mi in t.Result)
-                {
-                    songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING, new List<AudiOceanClient.CommentInformation>()));
-                }
+            //        new List<Song>();
+            //var task = App.HttpClient.GetMusicInformationCollection(0);
+            //task.ContinueWith((t) =>
+            //{
+            //    if (t.IsFaulted)
+            //    {
+            //        Device.BeginInvokeOnMainThread(() =>
+            //        {
+            //            SongList.ItemTemplate = null;
+            //            SongList.ItemsSource = new[] { "Couldn't load page." };
+            //        });
+            //        return;
+            //    }
+            //    foreach (var mi in t.Result)
+            //    {
+            //        songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING, new List<AudiOceanClient.CommentInformation>()));
+            //    }
 
-                Device.BeginInvokeOnMainThread(() =>
-                {
-                    SongList.ItemsSource = songs;
-                });
-            });
+            //    Device.BeginInvokeOnMainThread(() =>
+            //    {
+            //        SongList.ItemsSource = songs;
+            //    });
+            //});
             //Replace 0 with logged in user
 
-            //new List<Song>()
-            //{
-            //    new Song("Run", "Ski Mask", 107, 4.6),
-            //    new Song("Massacre", "Dodge & Fuski", 181, 4.1),
-            //    new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9),
-            //    new Song("Run", "Ski Mask", 107, 4.6),
-            //    new Song("Massacre", "Dodge & Fuski", 181, 4.1),
-            //    new Song("Run", "Ski Mask", 107, 4.6),
-            //    new Song("Massacre", "Dodge & Fuski", 181, 4.1)
-            //};
+            new List<Song>()
+            {
+                new Song("Run", "Ski Mask", 107, 4.6, null),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1, null),
+                new Song("Bounce Out With That", "YBN Nahmir", 108, 3.9, null),
+                new Song("Run", "Ski Mask", 107, 4.6, null),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1, null),
+                new Song("Run", "Ski Mask", 107, 4.6, null),
+                new Song("Massacre", "Dodge & Fuski", 181, 4.1, null)
+            };
         }
 
         private void SongNameLink_Tapped(object sender, EventArgs e)
@@ -129,6 +127,33 @@ namespace AudiOcean
         {
             SongList.IsVisible = false;
             SubscribeList.IsVisible = true;
+        }
+
+        private async void Upload_Tapped(object sender, EventArgs e)
+        {
+            try
+            {
+                FileData fd = await CrossFilePicker.Current.PickFile();
+            } catch(Exception) { }
+        }
+
+        private bool isPaused = true;
+        private void PlayTapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var img = sender as Image;
+            if (isPaused)
+            {
+                img.Source = ImageSource.FromResource("drawable/PauseButton");
+                MusicServiceHelper.Helper.Play();
+                isPaused = false;
+            }
+            else
+            {
+                img.Source = ImageSource.FromResource("drawable/Playbutton");
+                MusicServiceHelper.Helper.Pause();
+                isPaused = true;
+            }
+
         }
     }
 }

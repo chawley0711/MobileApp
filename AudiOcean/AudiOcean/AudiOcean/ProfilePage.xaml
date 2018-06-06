@@ -22,12 +22,12 @@
                             <ColumnDefinition />
                             <ColumnDefinition />
                         </Grid.ColumnDefinitions>
-                        <Label HorizontalTextAlignment="Center">My Songs
+                        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="#83e900" FontSize="10">My Songs
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="MySongs_Tapped"  NumberOfTapsRequired="1" />
                             </Label.GestureRecognizers>
                         </Label>
-                        <Label Grid.Column="1" HorizontalTextAlignment="Center">Subbed to
+                        <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="#83e900" FontSize="10">Subbed to
                             <Label.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="SubbedTo_Tapped"  NumberOfTapsRequired="1" />
                             </Label.GestureRecognizers>
@@ -67,7 +67,11 @@
                                         <Grid.GestureRecognizers>
                                             <TapGestureRecognizer Tapped="SongNameLink_Tapped"  NumberOfTapsRequired="1" />
                                         </Grid.GestureRecognizers>
-                                        <Image Source="drawable/PlayButton" Margin="10, 0, 0, 0" Grid.RowSpan="3"></Image>
+                                        <Image Source="drawable/PlayButton" Margin="10, 0, 0, 0" Grid.RowSpan="3">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="PlayTapGestureRecognizer_Tapped"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
                                         <Label FontSize="11" Grid.Column="1" Text="{Binding name}"></Label>
                                         <Label FontSize="11" Grid.Column="1" Grid.Row="1" Text="{Binding artist}"></Label>
                                         <Label FontSize="11" Grid.Column="1" Grid.Row="2" Text="{Binding lengthFormat}"></Label>
@@ -110,7 +114,11 @@
                         <RowDefinition Height="1*" />
                     </Grid.RowDefinitions>
                     <Label Text="{Binding profilePicture}"></Label>
-                    <Label x:Name="UploadSubscribe" Grid.Row="1" HorizontalTextAlignment="Center">Upload/Subscribe</Label>
+                    <Label x:Name="UploadSubscribe" Grid.Row="1" HorizontalTextAlignment="Center" BackgroundColor="#83e900" Margin="5" FontSize="10">Upload
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Upload_Tapped"  NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
                 </Grid>
             </Grid>
             <local:SongBar Grid.Row="2" />
