@@ -57,7 +57,7 @@
                         <Label Text="Rating" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
                         <Label Text="{Binding rating}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
                     </Grid>
-                    <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" Grid.Row="4">
+                    <StackLayout MinimumHeightRequest="100" Orientation="Horizontal" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Grid.Row="4">
                         <Image Source="drawable/darkBeachBall">
                             <Image.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="RateSong1GestureRecognizer_Tapped"/>

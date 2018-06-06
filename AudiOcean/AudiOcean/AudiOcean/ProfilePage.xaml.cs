@@ -20,7 +20,17 @@ namespace AudiOcean
         public ProfilePage()
         {
             InitializeComponent();
+            App.UpdateUser += UpdatedUser;
             SetUpSongs();
+        }
+
+        public void UpdatedUser()
+        {
+            Device.BeginInvokeOnMainThread(() =>
+            {
+                var user = App.CURRENT_USER;
+                ProfileHead.BindingContext = user;
+            });
         }
 
         public void SetUpSongs()
@@ -90,10 +100,11 @@ namespace AudiOcean
 
         private async void Upload_Tapped(object sender, EventArgs e)
         {
-            try
-            {
-                FileData fd = await CrossFilePicker.Current.PickFile();
-            } catch(Exception) { }
+
+            FileData fd = await CrossFilePicker.Current.PickFile();
+            if (fd != null)
+                await App.HttpClient.PostNewSong(fd.FileName.Substring(0, fd.FileName.Length - 4), "none", fd.FileName.Substring(fd.FileName.Length - 4, 3), fd.DataArray);
+
         }
 
         private bool isPaused = true;

@@ -13,6 +13,8 @@ namespace AudiOcean
 {
     public partial class App : Application
     {
+        public static event Action UpdateUser;
+
         public static AudiOceanHttpClient HttpClient { get; private set; }
         //private const string AuthorizeUrl = "https://accounts.google.com/o/oauth2/v2/auth";
         //private const string AccessTokenUrl = "https://www.googleapis.com/oauth2/v4/token";
@@ -20,7 +22,7 @@ namespace AudiOcean
 
         public static OAuth2Authenticator OAuth2Authenticator { get; private set; }
         public GoogleOAuthToken Token { get; private set; }
-        public UserInformation CURRENT_USER { get; private set; }
+        public static UserInformation CURRENT_USER { get; private set; }
 
         public App(GoogleOAuthToken token = null)
         {
@@ -47,6 +49,7 @@ namespace AudiOcean
                     if (t.IsCompletedSuccessfully)
                     {
                         CURRENT_USER = t.Result;
+                        UpdateUser?.Invoke();
                     }
                 });
             }
