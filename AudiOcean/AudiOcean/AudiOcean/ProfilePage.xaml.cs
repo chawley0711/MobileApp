@@ -1,4 +1,8 @@
-﻿using System;
+﻿using AudiOcean.Static_Helper_Classes;
+using AudiOceanClient;
+using Plugin.FilePicker;
+using Plugin.FilePicker.Abstractions;
+using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
@@ -82,6 +86,33 @@ namespace AudiOcean
         {
             SongList.IsVisible = false;
             SubscribeList.IsVisible = true;
+        }
+
+        private async void Upload_Tapped(object sender, EventArgs e)
+        {
+            try
+            {
+                FileData fd = await CrossFilePicker.Current.PickFile();
+            } catch(Exception) { }
+        }
+
+        private bool isPaused = true;
+        private void PlayTapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var img = sender as Image;
+            if (isPaused)
+            {
+                img.Source = ImageSource.FromResource("drawable/PauseButton");
+                MusicServiceHelper.Helper.Play();
+                isPaused = false;
+            }
+            else
+            {
+                img.Source = ImageSource.FromResource("drawable/Playbutton");
+                MusicServiceHelper.Helper.Pause();
+                isPaused = true;
+            }
+
         }
     }
 }

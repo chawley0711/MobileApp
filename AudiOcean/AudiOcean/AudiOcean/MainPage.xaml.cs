@@ -1,4 +1,5 @@
-﻿using AudiOceanClient;
+﻿using AudiOcean.Static_Helper_Classes;
+using AudiOceanClient;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -68,6 +69,24 @@ namespace AudiOcean
         {
             var l = sender as Grid;
             Navigation.PushAsync(new SongPage(l.BindingContext as Song));
+        }
+        private bool isPaused = true;
+        private void PlayTapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            var img = sender as Image;
+            if (isPaused)
+            {
+                img.Source = ImageSource.FromResource("drawable/PauseButton");
+                MusicServiceHelper.Helper.Play();
+                isPaused = false;
+            }
+            else
+            {
+                img.Source = ImageSource.FromResource("drawable/Playbutton");
+                MusicServiceHelper.Helper.Pause();
+                isPaused = true;
+            }
+
         }
     }
 }
