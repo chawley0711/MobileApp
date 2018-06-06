@@ -46,7 +46,7 @@
             </Grid.ColumnDefinitions>
             <Image Aspect="AspectFit" Source="drawable/Logo" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
             <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
-            <Picker Grid.Column="2">
+            <Picker Grid.Column="2" FontSize="10">
                 <Picker.Items>
                     <x:String>Alphabetical Ascending</x:String>
                     <x:String>Alphabetical Descending</x:String>

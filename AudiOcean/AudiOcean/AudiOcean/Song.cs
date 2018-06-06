@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AudiOceanServer;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -16,9 +17,9 @@ namespace AudiOcean
         }
 
         public double rating { get; set; }
-        public List<string> comments { get; set; }
+        public List<CommentInformation> comments { get; set; }
 
-        public Song(string n, string a, int l, double r, List<string> c)
+        public Song(string n, string a, int l, double r, List<CommentInformation> c)
         {
             this.name = n;
             this.artist = a;

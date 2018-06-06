@@ -9,7 +9,7 @@
                 <RowDefinition Height="50" />
                 <RowDefinition Height="300"/>
             </Grid.RowDefinitions>
-            <ScrollView Grid.Row="1" MinimumHeightRequest="298">
+            <ScrollView Grid.Row="1" MinimumHeightRequest="298" VerticalOptions="FillAndExpand">
 
                 <Grid>
                     <Grid.RowDefinitions>

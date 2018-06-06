@@ -92,8 +92,8 @@
                     </Grid.RowDefinitions>
                     <Label FontSize="10" Text="{Binding displayName}"></Label>
                     <Label Grid.Row="1" FontSize="10" Text="{Binding userName}"></Label>
-                    <Picker Grid.Row="2">
-                        <Picker.Items FontSize="10">
+                    <Picker Grid.Row="2" FontSize="10">
+                        <Picker.Items>
                             <x:String>Alphabetical Ascending</x:String>
                             <x:String>Alphabetical Descending</x:String>
                             <x:String>Rating Ascending</x:String>
