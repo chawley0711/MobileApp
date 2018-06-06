@@ -63,7 +63,7 @@ namespace AudiOcean
 
         public void AddSong(ObservableCollection<Song> songs, MusicInformation mi, UserInformation us)
         {
-            songs.Add(new Song(mi.NAME, us.DISPLAY_NAME, mi.RATING));
+            songs.Add(new Song(mi.ID, mi.NAME, us.DISPLAY_NAME, mi.RATING));
         }
         private void SongNameLink_Tapped(object sender, EventArgs e)
         {

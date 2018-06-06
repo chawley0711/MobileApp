@@ -4,8 +4,8 @@
             xmlns:local="clr-namespace:AudiOcean"
             x:Class="AudiOcean.HomePage"
             >
-    <local:MainPage Icon="AudiOceanIcon03" />
+    <!--<local:MainPage Icon="AudiOceanIcon03" />-->
     <local:MainPage Icon="AudiOceanIcon01" />
-    <local:MainPage Icon="AudiOceanIcon04" />
+    <!--<local:MainPage Icon="AudiOceanIcon04" />-->
     <local:ProfilePage Icon="AudiOceanIcon02" />
 </TabbedPage>

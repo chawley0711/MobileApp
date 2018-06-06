@@ -29,7 +29,7 @@ namespace AudiOcean.Droid
             // Load redirectUrl page
             App.OAuth2Authenticator.Completed += OAuth2Authenticator_Completed;
             App.OAuth2Authenticator.OnPageLoading(uri);
-
+            
             Finish();
 
 
@@ -40,6 +40,7 @@ namespace AudiOcean.Droid
         private void OAuth2Authenticator_Completed(object sender, Xamarin.Auth.AuthenticatorCompletedEventArgs e)
         {
             Intent intent = new Intent(this, typeof(MainActivity));
+            intent.AddFlags(ActivityFlags.ClearTask);
             if (e.IsAuthenticated)
             {
                 intent.PutExtra("net.audiocean.token", e.Account.Properties["access_token"]);

@@ -8,6 +8,8 @@ using Xamarin.Forms.Internals;
 using Android.Content.Res;
 using Xamarin.Forms;
 using Java.Nio;
+using Java.Util.Concurrent.Locks;
+using AudiOcean.Static_Helper_Classes;
 
 namespace AudiOcean
 {
@@ -19,6 +21,7 @@ namespace AudiOcean
         public int Duration { get; private set; }
 
         private int SAMPLE_BUFFER_SIZE;
+        private bool isPaused;
 
         public event Action<int> TrackDurationPositionNotifier;
 
@@ -29,7 +32,8 @@ namespace AudiOcean
         }
         public void Pause()
         {
-            this.Track.Pause();
+            // this.Track.Pause();
+            isPaused = true;
         }
         public void Stop()
         {
@@ -65,7 +69,7 @@ namespace AudiOcean
                   AudioTrackMode.Stream);
 
             Track.SetPositionNotificationPeriod(SAMPLE_RATE);
-            Duration =  (int)(Stream.Length / SAMPLE_BUFFER_SIZE);
+            Duration = (int)(Stream.Length / SAMPLE_BUFFER_SIZE);
             Track.PeriodicNotification += Track_PeriodicNotification;
         }
 
@@ -74,18 +78,28 @@ namespace AudiOcean
             TrackDurationPositionNotifier?.Invoke(e.Track.PlaybackHeadPosition / SAMPLE_RATE);
         }
 
+        Java.Lang.Thread t = null;
+        ReentrantLock l = new ReentrantLock();
+
         public void BeginWriting()
         {
-            Java.Lang.Thread t = new Java.Lang.Thread(() =>
+            t = new Java.Lang.Thread(() =>
             {
+
+                this.Track.Play();
                 var audioBuffer = new byte[SAMPLE_BUFFER_SIZE];
                 for (int i = 0, step = SAMPLE_BUFFER_SIZE; i < Stream.Length; i += step)
                 {
+                    while (isPaused)
+                    {
+                        Java.Lang.Thread.Sleep(500);
+                    }
                     if (i + step > Stream.Length)
                     {
                         step = (int)(Stream.Length - i);
+                        MusicServiceHelper.Helper.Release();
                     }
-                    Stream.Write(audioBuffer, 0, step);
+                    Stream.Read(audioBuffer, 0, step);
                     Write(audioBuffer, 0, step);
                 }
             });
@@ -94,7 +108,7 @@ namespace AudiOcean
 
         public void Play()
         {
-            this.Track.Play();
+            isPaused = false;
         }
 
     }

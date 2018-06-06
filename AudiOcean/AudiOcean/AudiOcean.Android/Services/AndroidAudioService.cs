@@ -57,13 +57,15 @@ namespace AudiOcean.Droid.Services
 
         private void SetSource(int songId)
         {
-            var musicStream = App.HttpClient.GetMusic(songId);
-            musicStream.ContinueWith((t) =>
+            if(Player != null)
             {
-                Player = new AndroidAudiOceanPlayer(t.Result);
-                Player.SetTrack();
-                canPlay = true;
-            });
+                Player.Release();
+            }
+            var musicStream = App.HttpClient.GetMusic(songId);
+            Player = new AndroidAudiOceanPlayer(musicStream);
+            Player.SetTrack();
+            Player.BeginWriting();
+            canPlay = true;
         }
 
         private void Pause()
@@ -94,7 +96,8 @@ namespace AudiOcean.Droid.Services
 
             InitilizePlayer();
             AquireWifiLock();
-            Player.Play();
+            if (canPlay)
+                Player.Play();
         }
 
         private void UpdateNotification(Intent extraAction, int icon, string title)

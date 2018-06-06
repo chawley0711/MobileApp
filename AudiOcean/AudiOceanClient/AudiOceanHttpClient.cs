@@ -24,9 +24,10 @@ namespace AudiOceanClient
         }
 
 
-        public async Task<Stream> GetMusic(int id)
+        public Stream GetMusic(int id)
         {
-            return await httpClient.GetStreamAsync($"{remoteAddress}music?id={id}");
+            Task<Stream> s = httpClient.GetStreamAsync($"{remoteAddress}music?id={id}");
+            return s.Result;
         }
 
         public async Task<UserInformation> GetUserInformation(int id)

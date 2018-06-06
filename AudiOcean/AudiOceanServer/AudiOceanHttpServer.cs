@@ -13,6 +13,8 @@ using Newtonsoft.Json;
 using System.Threading.Tasks;
 using System.Text.RegularExpressions;
 using CSCore.MediaFoundation;
+using CSCore;
+using System.Threading;
 
 namespace AudiOceanServer
 {
@@ -22,8 +24,9 @@ namespace AudiOceanServer
         private GoogleTokenValidator tokenValidator = new GoogleTokenValidator();
         private readonly string localAddress = "http://" + IPAddress.Parse("192.168.0.100").ToString() + "/";
         IAudiOceanServices audiOceanServices = new AudiOceanServices();
+        private bool serverStarted;
         private readonly string DIR_PATH_TO_MUSIC_FOLDER = @"C:\Users\Jeffrey\Desktop\AudiOceanMusicFolder";
-        private readonly int SONG_BUFFER_SIZE = 200;
+        private readonly int SONG_BUFFER_SIZE = 44100;
 
         public AudiOceanHttpServer()
         {
@@ -48,10 +51,19 @@ namespace AudiOceanServer
         public void StartServer()
         {
             listener.Start();
-            listener.GetContextAsync().ContinueWith((context) => HandleClientRequest(context.Result));
+            serverStarted = true;
+            var t = new Thread(() =>
+            {
+                while (serverStarted)
+                {
+                    listener.GetContextAsync().ContinueWith((context) => HandleClientRequest(context.Result)); 
+                }
+            });
+            t.Start();
         }
         public void StopServer()
         {
+            serverStarted = false;
             listener.Stop();
             listener.Close();
         }
@@ -94,7 +106,6 @@ namespace AudiOceanServer
                     break;
             }
 
-            listener.GetContextAsync().ContinueWith((c) => HandleClientRequest(c.Result));
         }
 
 
@@ -364,7 +375,7 @@ namespace AudiOceanServer
             else if (context.Request.QueryString["id"] != null)
             {
                 songs = audiOceanServices.GetSongsUploadedByUser(audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"])));
-                
+
             }
             string json = "{ songs: [";
             List<string> songArray = new List<string>();
@@ -428,39 +439,43 @@ namespace AudiOceanServer
 
         private void GetSong(HttpListenerContext context)
         {
+            Console.WriteLine("Getting song");
             if (!QueryStringHasKey(context, "id"))
             {
+                Console.WriteLine("Bad Request no id");
                 CreateResponseMessage((int)HttpStatusCode.BadRequest, "Query string must contain an \"id\" key in order to fulfill request.", context);
                 return;
             }
 
             Song song = audiOceanServices.GetSongByID(int.Parse(context.Request.QueryString["id"]));
-
             if (song == null)
             {
+                Console.WriteLine("Couldn't find song");
                 CreateResponseMessage((int)HttpStatusCode.NotFound, "Could not find the requested song", context);
                 return;
             }
+            Console.WriteLine($"{song.SongName} retrieved");
 
-            var decoder = new MediaFoundationDecoder(new MFByteStream(File.Open(song.URL, FileMode.Open), true));
-            byte[] songBytes = new byte[decoder.Length];
-            decoder.Read(songBytes, 0, songBytes.Length);
-
+            Console.WriteLine("Opened file");
+            byte[] songBytes = File.ReadAllBytes(Path.Combine(DIR_PATH_TO_MUSIC_FOLDER, song.URL));
+            Console.WriteLine($"Read {songBytes.Length} bytes");
             context.Response.SendChunked = true;
             context.Response.ContentLength64 = songBytes.Length;
             context.Response.ContentType = "audio/raw";
             context.Response.StatusCode = 200;
             context.Response.StatusDescription = "OK";
 
+            Console.WriteLine("Sending...");
             for (int i = 0, step = SONG_BUFFER_SIZE; i < songBytes.Length; i += step)
             {
+
                 if (i + step >= songBytes.Length)
                 {
                     step = songBytes.Length - i;
                 }
                 context.Response.OutputStream.Write(songBytes, i, step);
-                context.Response.OutputStream.Flush();
             }
+            Console.WriteLine("Done");
         }
 
 
@@ -555,10 +570,10 @@ namespace AudiOceanServer
                 return;
             }
 
-            string fileName = $"{Guid.NewGuid().ToString()}.{ext}";
+            string fileName = $"{Guid.NewGuid().ToString()}.raw";
             byte[] songBytes = new byte[context.Request.ContentLength64];
             context.Request.InputStream.Read(songBytes, 0, songBytes.Length);
-            File.WriteAllBytes(Path.Combine(DIR_PATH_TO_MUSIC_FOLDER, fileName), songBytes);
+            new MediaFoundationDecoder(new MFByteStream(new MemoryStream(songBytes), true)).WriteToFile(Path.Combine(DIR_PATH_TO_MUSIC_FOLDER, fileName));
             audiOceanServices.AddSong(songOwner,
                 new Song()
                 {

@@ -12,6 +12,7 @@ using Android.Widget;
 using AudiOcean.Droid.DependencyServices;
 using AudiOcean.Interfaces;
 using Xamarin.Forms;
+using AudiOcean.Droid.Services;
 
 [assembly: Dependency(typeof(AndroidMusicDependencyService))]
 namespace AudiOcean.Droid.DependencyServices
@@ -25,12 +26,18 @@ namespace AudiOcean.Droid.DependencyServices
 
         public void Pause()
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(Android.App.Application.Context, typeof(AndroidAudioService));
+            intent.SetAction(AndroidAudioService.ActionPause);
+            //intent.GetIntExtra("id", 0)
+            Android.App.Application.Context.StartService(intent);
         }
 
         public void Play()
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(Android.App.Application.Context, typeof(AndroidAudioService));
+            intent.SetAction(AndroidAudioService.ActionPlay);
+            //intent.GetIntExtra("id", 0)
+            Android.App.Application.Context.StartService(intent);
         }
 
         public void Previous()
@@ -40,17 +47,25 @@ namespace AudiOcean.Droid.DependencyServices
 
         public void Release()
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(Android.App.Application.Context, typeof(AndroidAudioService));
+            intent.SetAction(AndroidAudioService.ActionStop);
+            //intent.GetIntExtra("id", 0)
+            Android.App.Application.Context.StartService(intent);
         }
 
         public void SetSong(Song songs)
         {
-            throw new NotImplementedException();
+            Intent intent = new Intent(Android.App.Application.Context, typeof(AndroidAudioService));
+            intent.SetAction(AndroidAudioService.ActionSetSource);
+            //intent.GetIntExtra("id", 0)
+            intent.PutExtra("id", songs.id);
+            Android.App.Application.Context.StartService(intent);
+
         }
 
         public void Start()
         {
-            throw new NotImplementedException();
+  
         }
     }
 }
