@@ -41,7 +41,7 @@ namespace AudiOcean
                 {
                     foreach (var mi in t.Result)
                     {
-                        songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING));
+                        songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING, new List<CommentInformation>()));
                     }
                     SongList.ItemsSource = songs;
                 }

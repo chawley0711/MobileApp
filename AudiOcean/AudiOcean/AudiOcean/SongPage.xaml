@@ -31,12 +31,11 @@
                             <Style TargetType="Label">
                                 <Setter Property="Margin" Value="5"/>
                             </Style>
-                            </StackLayout.Resource>
-                            <Label Text="{Binding name}" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
-                            <Label Text="{Binding artist}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                        </StackLayout.Resources>
+                        <Label Text="{Binding name}" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
+                        <Label Text="{Binding artist}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
                     </StackLayout>
                 </StackLayout>
-
                 <Grid Grid.Row="4">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition/>

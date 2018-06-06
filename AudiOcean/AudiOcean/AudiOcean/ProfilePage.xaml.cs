@@ -25,19 +25,20 @@ namespace AudiOcean
                 }
                 else
                 {
-                    int thisUsersID = t.Result;
-                    var au = App.HttpClient.GetUserInformation(thisUsersID);
-                    au.ContinueWith((a) =>
-                    {
-                        if(a.IsFaulted)
-                        {
+                    var thisUsersID = t.Result;
+
+                    //var au = App.HttpClient.GetUserInformation(thisUsersID);
+                    //au.ContinueWith((a) =>
+                    //{
+                    //    if(a.IsFaulted)
+                    //    {
                             
-                        }
-                        else
-                        {
-                            new AudiOceanUser(a);
-                        }
-                    });
+                    //    }
+                    //    else
+                    //    {
+                    //        new AudiOceanUser(a.Result.DISPLAY_NAME, a.Result.DISPLAY_NAME, a.Result.PROFILE_URL, new List<Song>(), new List<AudiOceanUser>());
+                    //    }
+                    //});
                 }
             });
 
@@ -62,7 +63,7 @@ namespace AudiOcean
                 }
                 foreach (var mi in t.Result)
                 {
-                    songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING));
+                    songs.Add(new Song(mi.NAME, "Blah", 0, mi.RATING, new List<AudiOceanClient.CommentInformation>()));
                 }
 
                 Device.BeginInvokeOnMainThread(() =>
