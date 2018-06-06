@@ -106,7 +106,7 @@ namespace AudiOceanServer
 
         private void HandleGetRequest(HttpListenerContext context)
         {
-            AuthenticateRequest(context);
+            GoogleToken token = AuthenticateRequest(context);
             if (context.Response.StatusCode == (int)HttpStatusCode.Unauthorized) { return; }
 
             var dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
@@ -117,7 +117,7 @@ namespace AudiOceanServer
             }
             else if (dir == "users")
             {
-                GetUser(context);
+                GetUser(context, token);
             }
             else if (dir == "list-music")
             {
@@ -382,15 +382,17 @@ namespace AudiOceanServer
 
         }
 
-        private void GetUser(HttpListenerContext context)
+        private void GetUser(HttpListenerContext context, GoogleToken token)
         {
+            User user;
             if (!QueryStringHasKey(context, "id"))
             {
-                CreateResponseMessage((int)HttpStatusCode.BadRequest, "\"id\" must be specified in query string in order to fulfill request for user information.", context);
-                return;
+                user = audiOceanServices.GetUserWithEmail(token.Payload.Email);
             }
-
-            User user = audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"]));
+            else
+            {
+                user = audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"]));
+            }
             if (user == null)
             {
                 CreateResponseMessage((int)HttpStatusCode.NotFound, "Could not find the user with the specified id.", context);
@@ -427,7 +429,7 @@ namespace AudiOceanServer
             var decoder = new MediaFoundationDecoder(new MFByteStream(File.Open(song.URL, FileMode.Open), true));
             byte[] songBytes = new byte[decoder.Length];
             decoder.Read(songBytes, 0, songBytes.Length);
-            
+
             context.Response.SendChunked = true;
             context.Response.ContentLength64 = songBytes.Length;
             context.Response.ContentType = "audio/raw";
@@ -583,7 +585,7 @@ namespace AudiOceanServer
 
         private void PostNewUser(HttpListenerContext context, GoogleToken token)
         {
-            if(audiOceanServices.GetUserWithEmail(token.Payload.Email) != null)
+            if (audiOceanServices.GetUserWithEmail(token.Payload.Email) != null)
             {
                 CreateResponseMessage((int)HttpStatusCode.Conflict, "Already a user with that email registered.", context);
                 return;

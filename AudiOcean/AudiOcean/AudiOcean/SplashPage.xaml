@@ -4,7 +4,7 @@
              x:Class="AudiOcean.SplashPage">
     <ContentPage.Content>
         <StackLayout>
-            <Image VerticalOptions="CenterAndExpand" Source="@drawable/flame"></Image>
+            <Image VerticalOptions="CenterAndExpand" Source="@drawable/Logo"></Image>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
