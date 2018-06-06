@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace AudiOceanServer
+namespace AudiOceanClient
 {
     public class MusicInformation
     {

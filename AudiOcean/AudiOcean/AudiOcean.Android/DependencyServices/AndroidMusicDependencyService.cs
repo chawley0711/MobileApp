@@ -43,7 +43,7 @@ namespace AudiOcean.Droid.DependencyServices
             throw new NotImplementedException();
         }
 
-        public void SetSongs(ICollection<Song> songs)
+        public void SetSong(Song songs)
         {
             throw new NotImplementedException();
         }

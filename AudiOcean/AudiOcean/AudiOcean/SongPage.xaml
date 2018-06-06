@@ -28,8 +28,8 @@
                         <ColumnDefinition/>
                     </Grid.ColumnDefinitions>
                     <Button Text="Left"/>
-                    <Button Grid.Column="1" Text="Play"/>
-                    <Button Grid.Column="2" Text="Right"/>
+                    <Button Grid.Column="1" Text="Play" Clicked="PlayButton_Clicked"/>
+                    <Button Grid.Column="2" Text="Right" Clicked="NextButton_Clicked"/>
                 </Grid>
                 <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand">
                     <Slider x:Name="slider" WidthRequest="400" Maximum="201" HorizontalOptions="CenterAndExpand"/>

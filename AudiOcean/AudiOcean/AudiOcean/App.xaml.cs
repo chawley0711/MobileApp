@@ -1,4 +1,5 @@
-﻿using AudiOcean.Auth;
+﻿using AudiOceanClient;
+using AudiOcean.Auth;
 using System;
 using Xamarin.Auth;
 using Xamarin.Forms;
@@ -81,7 +82,7 @@ namespace AudiOcean
         {
 
             MainPage.Navigation.PushModalAsync(new SplashPage());
-            Device.StartTimer(TimeSpan.FromMilliseconds(5000), () =>
+            Device.StartTimer(TimeSpan.FromMilliseconds(3000), () =>
             {
                 MainPage.Navigation.PopModalAsync();
                 return false;

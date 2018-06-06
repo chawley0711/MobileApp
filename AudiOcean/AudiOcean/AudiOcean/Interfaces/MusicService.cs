@@ -6,7 +6,7 @@ namespace AudiOcean.Interfaces
 {
     public interface MusicService
     {
-        void SetSongs(ICollection<Song> songs);
+        void SetSong(Song songs);
         void Play();
         void Pause();
         void Release();
