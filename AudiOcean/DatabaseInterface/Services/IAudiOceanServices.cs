@@ -25,5 +25,6 @@ namespace DatabaseInterface.Services
         void DeleteSong(Song song);
         Song GetSongByID(int v);
         Genre GetGenreWithName(string v);
+        int GetAverageRating(Song song);
     }
 }

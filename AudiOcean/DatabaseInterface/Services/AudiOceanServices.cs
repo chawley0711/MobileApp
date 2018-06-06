@@ -100,6 +100,16 @@ namespace DatabaseInterface.Services
             }
         }
 
+        public int GetAverageRating(Song song)
+        {
+            int avgRating = 0;
+            using (var db = new AudiOceanEntities())
+            {
+                avgRating = (int) (db.Ratings.Where((r) => r.SongID == song.ID).Average((r) => r.Rating1) ?? 0);
+            }
+            return avgRating;
+        }
+
         public ICollection<Comment> GetCommentsForSong(Song song)
         {
             ICollection<Comment> AllCommentsForSong = new List<Comment>();

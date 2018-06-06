@@ -1,12 +1,8 @@
 ﻿using Authentication;
-using Google.Apis.Auth;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using static Google.Apis.Auth.GoogleJsonWebSignature;
-using Google.Apis.Auth.OAuth2;
+using System.Net;
+using System.IO;
+using Carbon.Json;
 
 namespace GoogleAuthentication
 {
@@ -14,15 +10,27 @@ namespace GoogleAuthentication
     {
         public bool ValidateToken(Token<string, Payload> token)
         {
-            Task<Payload> validationTask = null;
-            try
+            var req = WebRequest.CreateHttp("https://www.googleapis.com/oauth2/v2/userinfo");
+            req.Headers.Add(HttpRequestHeader.Authorization, $"Bearer {token.Value}");
+            req.Method = "GET";
+            req.ContentLength = 0;
+            var res = req.GetResponse() as HttpWebResponse;
+            if (res.StatusCode != HttpStatusCode.OK)
             {
-                validationTask = ValidateAsync(token.Value);
-                validationTask.RunSynchronously();
-                token.Payload = validationTask.Result;
-                return true;
+                return false;
             }
-            catch (InvalidJwtException) { return false; }
+            var json = new StreamReader(res.GetResponseStream()).ReadToEnd();
+            JsonObject value = JsonObject.Parse(json);
+            token.Payload = new Payload()
+            {
+                Email = value["email"],
+                Name = value["name"],
+                GivenName = value["given_name"],
+                Picture = value["picture"],
+                FamilyName = value["family_name"]
+            };
+            return true;
+            
         }
     }
 }

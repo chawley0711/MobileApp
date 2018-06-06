@@ -13,9 +13,9 @@ namespace AudiOcean
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class LogInPage : ContentPage
     {
-        private const string AuthorizeUrl = "https://accounts.google.com/o/oauth2/v2/auth";
-        private const string AccessTokenUrl = "https://www.googleapis.com/oauth2/v4/token";
-        private const bool IsUsingNativeUI = false;
+        //private const string AuthorizeUrl = "https://accounts.google.com/o/oauth2/v2/auth";
+        //private const string AccessTokenUrl = "https://www.googleapis.com/oauth2/v4/token";
+        //private const bool IsUsingNativeUI = false;
    //     private IGoogleAuthenticatorDelegate _authenticationDelegate;
 
 
@@ -54,27 +54,8 @@ namespace AudiOcean
             var presenter = new Xamarin.Auth.Presenters.OAuthLoginPresenter();
             presenter.Login(App.OAuth2Authenticator);
         }
-        public void OnAuthenticationCompleted(object sender, AuthenticatorCompletedEventArgs e)
-        {
+     
 
-            if (e.IsAuthenticated)
-            {
-                var token = new GoogleOAuthToken
-                {
-                    TokenType = e.Account.Properties["token_type"],
-                    AccessToken = e.Account.Properties["access_token"]
-                };
-                Navigation.PushAsync(new HomePage() { BarBackgroundColor = Color.CornflowerBlue });
-            }
-            else
-            {
-                //_authenticationDelegate.OnAuthenticationCancelled();
-            }
-        }
-
-        public void OnAuthenticationFailed(object sender, AuthenticatorErrorEventArgs e)
-        {
-
-        }
+    
     }
 }

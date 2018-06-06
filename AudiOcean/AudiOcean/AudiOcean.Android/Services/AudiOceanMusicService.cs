@@ -23,17 +23,21 @@ namespace AudiOcean.Droid.Services
     [IntentFilter(new[] { ActionPlay, ActionPause, ActionStop })]
     public class AndroidAudioService : Service, IOnAudioFocusChangeListener
     {
+        private bool canPlay = false;
         private bool startedForgroundService = false;
         public const string ActionPlay = "net.audiocean.action.play";
         public const string ActionPause = "net.audiocean.action.pause";
         public const string ActionStop = "net.audiocean.action.stop";
+        public const string ActionSetSource = "net.audiocean.action.set_source";
         private const int FORGROUND_SERVICE_ID = 123545363;
         private const string WIFI_LOCK_TAG = "audiocean_wifi_lock";
         private WifiManager wifiManager;
         private WifiLock wifiLock;
 
         //Player goes here.
-        object player;
+        private AndroidAudiOceanPlayer Player { get; set; }
+
+
 
 
         public override StartCommandResult OnStartCommand(Intent intent, StartCommandFlags flags, int startId)
@@ -43,11 +47,23 @@ namespace AudiOcean.Droid.Services
                 case ActionPlay: Play(); break;
                 case ActionStop: Stop(); break;
                 case ActionPause: Pause(); break;
+                case ActionSetSource: SetSource(intent.GetIntExtra("id", 0)); break;
             }
 
             //Set sticky as we are a long running operation
 
             return StartCommandResult.Sticky;
+        }
+
+        private void SetSource(int songId)
+        {
+            var musicStream = App.HttpClient.GetMusic(songId);
+            musicStream.ContinueWith((t) =>
+            {
+                Player = new AndroidAudiOceanPlayer(t.Result);
+                Player.SetTrack();
+                canPlay = true;
+            });
         }
 
         private void Pause()
@@ -56,7 +72,7 @@ namespace AudiOcean.Droid.Services
             playIntent.SetAction(AndroidMusicServiceBroadcastReceiver.PLAY_BROADCAST);
             //Resource.Drawable.PauseButton, "Pause"
             UpdateNotification(playIntent, Resource.Drawable.PlayButton, "Play");
-
+            Player.Pause();
             // player.Pause();
         }
 
@@ -65,6 +81,7 @@ namespace AudiOcean.Droid.Services
             StopForeground(true);
             startedForgroundService = false;
             ReleaseWifiLock();
+            Player.Release();
             //  player.Release();
         }
 
@@ -77,7 +94,7 @@ namespace AudiOcean.Droid.Services
 
             InitilizePlayer();
             AquireWifiLock();
-
+            Player.Play();
         }
 
         private void UpdateNotification(Intent extraAction, int icon, string title)
@@ -135,7 +152,7 @@ namespace AudiOcean.Droid.Services
             switch (focusChange)
             {
                 case AudioFocus.Gain:
-                    if (player == null)
+                    if (Player == null)
                         InitilizePlayer();
 
                     //Turn it up!

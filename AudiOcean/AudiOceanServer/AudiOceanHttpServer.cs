@@ -20,9 +20,9 @@ namespace AudiOceanServer
     {
         HttpListener listener;
         private GoogleTokenValidator tokenValidator = new GoogleTokenValidator();
-        private readonly string localAddress = "http://" + IPAddress.Parse("10.10.18.46").ToString() + "/";
+        private readonly string localAddress = "http://" + IPAddress.Parse("192.168.0.100").ToString() + "/";
         IAudiOceanServices audiOceanServices = new AudiOceanServices();
-        private readonly string DIR_PATH_TO_MUSIC_FOLDER;
+        private readonly string DIR_PATH_TO_MUSIC_FOLDER = @"C:\Users\Jeffrey\Desktop\AudiOceanMusicFolder";
         private readonly int SONG_BUFFER_SIZE = 200;
 
         public AudiOceanHttpServer()
@@ -48,7 +48,7 @@ namespace AudiOceanServer
         public void StartServer()
         {
             listener.Start();
-            listener.GetContextAsync().ContinueWith((context) => HandleClientRequest(context.Result)).Start();
+            listener.GetContextAsync().ContinueWith((context) => HandleClientRequest(context.Result));
         }
         public void StopServer()
         {
@@ -69,7 +69,6 @@ namespace AudiOceanServer
                 if (!canParse)
                 {
                     CreateResponseMessage((int)HttpStatusCode.BadRequest, "The value for id in the query string is not an integer", context);
-                    context.Response.Close();
                     return;
                 }
             }
@@ -92,11 +91,10 @@ namespace AudiOceanServer
                     context.Response.KeepAlive = false;
                     context.Response.StatusDescription = "Method type cannot be performed.";
                     context.Response.OutputStream.Flush();
-                    context.Response.Close();
                     break;
             }
 
-            context.Response.Close();
+            listener.GetContextAsync().ContinueWith((c) => HandleClientRequest(c.Result));
         }
 
 
@@ -163,7 +161,7 @@ namespace AudiOceanServer
 
             string dir = context.Request.RawUrl.Split('?')[0].Replace("/", "");
 
-            if (dir == "user") { PostNewUser(context, token); }
+            if (dir == "users") { PostNewUser(context, token); }
             //Post Comment ?songId commentBody
             else if (dir == "comments") { PostNewComment(context, token); }
             //Post Song ?name; genre   - byteBody
@@ -350,6 +348,7 @@ namespace AudiOceanServer
 
         private void GetListOfMusic(HttpListenerContext context)
         {
+            Console.WriteLine("Getting list of songs");
             ICollection<Song> songs = null;
 
             if (!QueryStringHasKey(context, "id") && !QueryStringHasKey(context, "numOfSongs"))
@@ -365,14 +364,29 @@ namespace AudiOceanServer
             else if (context.Request.QueryString["id"] != null)
             {
                 songs = audiOceanServices.GetSongsUploadedByUser(audiOceanServices.GetUser(int.Parse(context.Request.QueryString["id"])));
+                
             }
             string json = "{ songs: [";
+            List<string> songArray = new List<string>();
             foreach (var song in songs)
             {
-                json += JsonConvert.SerializeObject(SongToJSong(song));
+                var obj = new
+                {
+                    name = song.SongName,
+                    rating = audiOceanServices.GetAverageRating(song),
+                    id = song.ID,
+                    ownerId = song.OwnerID,
+                    genre = song.Genre?.Name ?? "",
+                    dateUploaded = song.DateUploaded
+                };
+                songArray.Add(JsonConvert.SerializeObject(obj));
             }
 
+            json += string.Join(",", songArray);
+
             json += "] }";
+
+            Console.WriteLine(json);
 
             byte[] jsonbytes = Encoding.UTF8.GetBytes(json);
 
@@ -382,6 +396,7 @@ namespace AudiOceanServer
 
         private void GetUser(HttpListenerContext context, GoogleToken token)
         {
+            Console.WriteLine("Getting user");
             User user;
             if (!QueryStringHasKey(context, "id"))
             {
@@ -397,13 +412,16 @@ namespace AudiOceanServer
                 return;
             }
 
-
-            byte[] jsonBytes = Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(new
+            Console.WriteLine(user.Email);
+            string json = null;
+            byte[] jsonBytes = Encoding.UTF8.GetBytes(json = JsonConvert.SerializeObject(new
             {
                 displayName = user.DisplayName,
                 profilePictureURL = user.ProfilePictureURL,
                 id = user.ID
             }));
+
+            Console.WriteLine(json);
 
             CreateResponseMessage((int)HttpStatusCode.OK, "OK", context, "application/json", body: jsonBytes);
         }
@@ -443,7 +461,6 @@ namespace AudiOceanServer
                 context.Response.OutputStream.Write(songBytes, i, step);
                 context.Response.OutputStream.Flush();
             }
-            context.Response.OutputStream.Close();
         }
 
 
@@ -600,25 +617,6 @@ namespace AudiOceanServer
             CreateResponseMessage((int)HttpStatusCode.OK, "Successfully created new user account.", context);
         }
 
-
-
-
-        public object SongToJSong(Song song)
-        {
-            var jsong = new
-            {
-                type = "Song",
-                name = song.SongName,
-                rating = song.Ratings.Average((r) => r.Rating1),
-                id = song.ID,
-                ownerId = song.OwnerID,
-                genre = song.Genre.Name,
-                dateUploaded = song.DateUploaded
-            };
-
-            return jsong;
-        }
-
         public static string MakeJson(string name, string value)
         {
             return $"\"{name}\": \"{value}\"";
@@ -628,13 +626,15 @@ namespace AudiOceanServer
         {
             context.Response.StatusCode = statusCode;
             context.Response.ProtocolVersion = new Version("1.1");
-            foreach (var header in headers)
-            {
-                context.Response.Headers.Add(header.Key, header.Value);
-            }
+            if (headers != null)
+                foreach (var header in headers)
+                {
+                    context.Response.Headers.Add(header.Key, header.Value);
+                }
             context.Response.ContentType = contentType;
             context.Response.ContentLength64 = body == null ? 0 : body.Length;
-            context.Response.OutputStream.Write(body, 0, body.Length);
+            if (body != null)
+                context.Response.OutputStream.Write(body, 0, body.Length);
             context.Response.KeepAlive = false;
             context.Response.StatusDescription = description;
             context.Response.OutputStream.Flush();
@@ -649,9 +649,9 @@ namespace AudiOceanServer
 
         private GoogleToken AuthenticateRequest(HttpListenerContext context)
         {
-            string authType = context.Request.Headers["Authorization"].Split(' ')[0];
+            string authType = context.Request.Headers["Authentication"].Split(' ')[0];
             GoogleToken googToken = null;
-            if (authType != "Bearer")
+            if (authType == "Bearer")
             {
                 string token = context.Request.Headers["Authentication"].Split(' ')[1];
                 tokenValidator.ValidateToken(googToken = new GoogleToken(token));

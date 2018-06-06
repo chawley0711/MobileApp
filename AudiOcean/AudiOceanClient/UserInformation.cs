@@ -16,7 +16,7 @@ namespace AudiOceanClient
             var user = new JSONObject(result);
             ID = user.GetInt("id");
             DISPLAY_NAME = user.GetString("displayName");
-            PROFILE_URL = user.GetString("profileURL");
+            PROFILE_URL = user.GetString("profilePictureURL");
         }
 
 

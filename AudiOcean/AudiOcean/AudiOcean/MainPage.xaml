@@ -31,7 +31,6 @@
                             <Label FontSize="11" Grid.Column="1" Text="{Binding name}">
                             </Label>
                             <Label FontSize="11" Grid.Column="1" Grid.Row="1" Text="{Binding artist}"></Label>
-                            <Label FontSize="11" Grid.Column="1" Grid.Row="2" Text="{Binding lengthFormat}"></Label>
                             <Label FontSize="11" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="End" Text="{Binding rating}"></Label>
                         </Grid>
                     </ViewCell>

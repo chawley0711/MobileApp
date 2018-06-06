@@ -1,6 +1,7 @@
 ﻿using AudiOceanClient;
 using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -21,14 +22,13 @@ namespace AudiOcean
 
         public void SetUpSongs()
         {
-            List<Song> songs =
-            new List<Song>();
-            var task = App.HttpClient.GetMostRecentMusicUploadedInformation(20);
+            ObservableCollection<Song> songs =
+            new ObservableCollection<Song>();
+            var task = App.HttpClient.GetMostRecentMusicUploadedInformation(1);
             task.ContinueWith((t) =>
             {
                 if (t.Status == TaskStatus.Faulted)
                 {
-
                     defaultItemTemplate = SongList.ItemTemplate;
                     SongList.ItemTemplate = null;
                     SongList.ItemsSource = new[] { "Could not load page" };
@@ -38,9 +38,18 @@ namespace AudiOcean
                     foreach (var mi in t.Result)
                     {
                         Task<UserInformation> userInformation = App.HttpClient.GetUserInformation(mi.OWNER_ID);
-                        userInformation.ContinueWith((a) => { if (t.IsCompletedSuccessfully) { AddSong(songs, mi, a.Result); } });
+                        userInformation.ContinueWith((a) =>
+                        {
+                            if (a.IsCompletedSuccessfully)
+                            {
+                                AddSong(songs, mi, a.Result);
+                            }
+                        });
                     }
-                    SongList.ItemsSource = songs;
+                    Device.BeginInvokeOnMainThread(() =>
+                    {
+                        SongList.ItemsSource = songs;
+                    });
                 }
             });
             //new List<Song>()
@@ -51,7 +60,7 @@ namespace AudiOcean
             //};
         }
 
-        public void AddSong(List<Song> songs, MusicInformation mi, UserInformation us)
+        public void AddSong(ObservableCollection<Song> songs, MusicInformation mi, UserInformation us)
         {
             songs.Add(new Song(mi.NAME, us.DISPLAY_NAME, mi.RATING));
         }

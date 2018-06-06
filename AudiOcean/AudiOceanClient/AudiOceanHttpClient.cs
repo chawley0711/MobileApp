@@ -13,7 +13,7 @@ namespace AudiOceanClient
     {
         HttpClient httpClient;
         //Point address to ServerApp
-        private static readonly string remoteAddress = "http://" + "10.10.48.47" + "/";
+        private static readonly string remoteAddress = "http://" + "192.168.0.100" + "/";
         private readonly string token;
 
         public AudiOceanHttpClient(string token)
@@ -67,7 +67,7 @@ namespace AudiOceanClient
             return task.ReadByte();
         }
 
-        public async Task<UserInformation> GetCurrentlyLoggedInUsersID()
+        public async Task<UserInformation> GetCurrentlyLoggedInUserInformation()
         {
             var task = await httpClient.GetStringAsync($"{remoteAddress}users");
             return new UserInformation(task);

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,14 +16,14 @@ namespace AudiOcean
         public ProfilePage()
         {
             InitializeComponent();
-            //SetUpSongs();
+            SetUpSongs();
         }
 
         public void SetUpSongs()
         {
-            List<Song> songs =
-                    new List<Song>();
-            var task = App.HttpClient.GetMusicInformationCollection(0);
+            ObservableCollection<Song> songs =
+                    new ObservableCollection<Song>();
+            var task = App.HttpClient.GetMusicInformationCollection(1);
             task.ContinueWith((t) =>
             {
                 if (t.IsFaulted)
@@ -35,10 +36,16 @@ namespace AudiOcean
                 foreach (var mi in t.Result)
                 {
                     Task<UserInformation> userInformation = App.HttpClient.GetUserInformation(mi.OWNER_ID);
-                    userInformation.ContinueWith((a) => { if (t.IsCompletedSuccessfully) { AddSong(songs, mi, a.Result); } });
+                    userInformation.ContinueWith((a) =>
+                    {
+                        if (a.IsCompletedSuccessfully)
+                        {
+                            AddSong(songs, mi, a.Result);
+                        }
+                    });
                 }
 
-                SongList.ItemsSource = songs;
+                Device.BeginInvokeOnMainThread(() => SongList.ItemsSource = songs);
             });
             //Replace 0 with logged in user
 
@@ -54,7 +61,7 @@ namespace AudiOcean
             //};
         }
 
-        private void AddSong(List<Song> songs, MusicInformation mi, UserInformation result)
+        private void AddSong(ObservableCollection<Song> songs, MusicInformation mi, UserInformation result)
         {
             songs.Add(new Song(mi.NAME, result.DISPLAY_NAME, mi.RATING));
         }
