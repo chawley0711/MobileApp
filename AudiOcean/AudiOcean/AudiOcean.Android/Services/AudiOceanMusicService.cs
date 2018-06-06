@@ -29,6 +29,8 @@ namespace AudiOcean.Droid.Services
         public const string ActionStop = "net.audiocean.action.stop";
         private const int FORGROUND_SERVICE_ID = 123545363;
         private const string WIFI_LOCK_TAG = "audiocean_wifi_lock";
+        private WifiManager wifiManager;
+        private WifiLock wifiLock;
 
         //Player goes here.
         object player;
@@ -105,8 +107,6 @@ namespace AudiOcean.Droid.Services
             }
         }
 
-        WifiManager wifiManager;
-        WifiLock wifiLock;
 
         private void AquireWifiLock()
         {

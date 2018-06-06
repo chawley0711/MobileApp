@@ -34,9 +34,9 @@ namespace AudiOcean.Static_Helper_Classes
             DependencyService.Get<MusicService>().Release();
         }
 
-        public void SetSongs(ICollection<Song> songs)
+        public void SetSong(Song songs)
         {
-            DependencyService.Get<MusicService>().SetSongs(songs);
+            DependencyService.Get<MusicService>().SetSong(songs);
         }
 
         public void Start()
