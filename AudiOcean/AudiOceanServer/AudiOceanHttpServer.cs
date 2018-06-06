@@ -45,8 +45,6 @@ namespace AudiOceanServer
             }
         }
 
-
-
         public void StartServer()
         {
             listener.Start();

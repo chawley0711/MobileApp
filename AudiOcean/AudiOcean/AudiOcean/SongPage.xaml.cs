@@ -15,7 +15,7 @@ namespace AudiOcean
 	{
 		public SongPage(Song s)
 		{
-            BindingContext = new Song(s.name, s.artist, s.length, s.rating, s.comments);
+            BindingContext = new Song(s.name, s.artist, s.rating);
 
 			InitializeComponent();
 		}

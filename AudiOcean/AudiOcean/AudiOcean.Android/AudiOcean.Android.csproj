@@ -72,7 +72,7 @@
     <PackageReference Include="Xamarin.Auth">
       <Version>1.6.0.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="3.0.0.482510" />
+    <PackageReference Include="Xamarin.Forms" Version="3.0.0.530893" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BroadcastRecievers\AndroidMusicServiceBroadcastReceiver.cs" />
@@ -84,7 +84,6 @@
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Services\AudiOceanMusicService.cs" />
-    <Compile Include="Service\GoogleEmail.cs" />
     <Compile Include="SignInActivity.cs" />
   </ItemGroup>
   <ItemGroup>
