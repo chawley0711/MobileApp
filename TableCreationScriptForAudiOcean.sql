@@ -14,7 +14,8 @@ Create Table Songs(ID int Primary Key identity(1,1),
 					SongName varchar(30),
 					OwnerID int Foreign Key references Users(ID), 
 					DateUploaded timestamp, 
-					GenreID int foreign key references Genres(ID))
+					GenreID int foreign key references Genres(ID),
+					URL varchar(30) not null)
 go
 
 Create Table Ratings(UserID int Foreign Key References Users(ID)

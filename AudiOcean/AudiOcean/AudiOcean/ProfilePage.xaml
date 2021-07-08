@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AudiOcean"
+             x:Class="AudiOcean.ProfilePage"
+             x:Name="profilePage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="40" />
+            </Grid.RowDefinitions>
+            <ScrollView IsClippedToBounds="True" Grid.Row="1">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20" />
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition />
+                            <ColumnDefinition />
+                        </Grid.ColumnDefinitions>
+                        <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="#83e900" FontSize="10">My Songs
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="MySongs_Tapped"  NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" BackgroundColor="#83e900" FontSize="10">Subbed to
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SubbedTo_Tapped"  NumberOfTapsRequired="1" />
+                            </Label.GestureRecognizers>
+                        </Label>
+                    </Grid>
+                    <ListView x:Name="SubscribeList" ItemsSource="{Binding subscribedList}" IsVisible="False" Grid.Row="1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition />
+                                            <ColumnDefinition />
+                                        </Grid.ColumnDefinitions>
+                                        <Label Text="{Binding profilePicture}" FontSize="7"></Label>
+                                        <Label Text="{Binding userName}" Grid.Column="1" FontSize="6"></Label>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                    <ListView RowHeight="60" x:Name="SongList" ItemsSource="{Binding userSongs}" Grid.Row="1">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                            <RowDefinition />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="1*" />
+                                            <ColumnDefinition Width="2*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+                                        <Grid.GestureRecognizers>
+                                            <TapGestureRecognizer Tapped="SongNameLink_Tapped"  NumberOfTapsRequired="1" />
+                                        </Grid.GestureRecognizers>
+                                        <Image Source="drawable/PlayButton" Margin="10, 0, 0, 0" Grid.RowSpan="3">
+                                            <Image.GestureRecognizers>
+                                                <TapGestureRecognizer Tapped="PlayTapGestureRecognizer_Tapped"/>
+                                            </Image.GestureRecognizers>
+                                        </Image>
+                                        <Label FontSize="11" Grid.Column="1" Text="{Binding name}"></Label>
+                                        <Label FontSize="11" Grid.Column="1" Grid.Row="1" Text="{Binding artist}"></Label>
+                                        <Label FontSize="11" Grid.Column="1" Grid.Row="2" Text="{Binding lengthFormat}"></Label>
+                                        <Label FontSize="11" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="End" Text="{Binding rating}"></Label>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </ScrollView>
+            <Grid x:Name="ProfileHead" BackgroundColor="CornflowerBlue">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition />
+                    <ColumnDefinition />
+                </Grid.ColumnDefinitions>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="1*" />
+                        <RowDefinition Height="3*" />
+                    </Grid.RowDefinitions>
+                    <Label x:Name="DisplayNameLabel" FontSize="10" Text="{Binding displayName}"></Label>
+                    <Label Grid.Row="1" FontSize="10" Text="{Binding userName}"></Label>
+                    <Picker Grid.Row="2" FontSize="10">
+                        <Picker.Items>
+                            <x:String>Alphabetical Ascending</x:String>
+                            <x:String>Alphabetical Descending</x:String>
+                            <x:String>Rating Ascending</x:String>
+                            <x:String>Rating Descending</x:String>
+                            <x:String>Date Uploaded Ascending</x:String>
+                            <x:String>Date Uploaded Descending</x:String>
+                        </Picker.Items>
+                        <Picker.SelectedIndex>0</Picker.SelectedIndex>
+                    </Picker>
+                </Grid>
+                <Grid Grid.Column="1">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="3*" />
+                        <RowDefinition Height="1*" />
+                    </Grid.RowDefinitions>
+                    <Label Text="{Binding profilePicture}"></Label>
+                    <Label x:Name="UploadSubscribe" Grid.Row="1" HorizontalTextAlignment="Center" BackgroundColor="#83e900" Margin="5" FontSize="10">Upload
+                        <Label.GestureRecognizers>
+                            <TapGestureRecognizer Tapped="Upload_Tapped"  NumberOfTapsRequired="1" />
+                        </Label.GestureRecognizers>
+                    </Label>
+                </Grid>
+            </Grid>
+            <local:SongBar Grid.Row="2" />
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

@@ -3,12 +3,65 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:AudiOcean"
              x:Class="AudiOcean.MainPage">
-
-    <StackLayout>
-        <!-- Place new controls here -->
-    	<Label Text="Welcome to Xamarin.Forms!" 
-           HorizontalOptions="Center"
-           VerticalOptions="CenterAndExpand" />
-    </StackLayout>
-
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="40" />
+        </Grid.RowDefinitions>
+        <ListView x:Name="SongList" RowHeight="70" Grid.Row="1">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <Grid>
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="SongNameLink_Tapped"  NumberOfTapsRequired="1" />
+                            </Grid.GestureRecognizers>
+                            <Grid.RowDefinitions>
+                                <RowDefinition />
+                                <RowDefinition />
+                                <RowDefinition />
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="1*" />
+                                <ColumnDefinition Width="2*" />
+                                <ColumnDefinition Width="2*" />
+                            </Grid.ColumnDefinitions>
+                            <Image Source="drawable/PlayButton" Margin="10, 0, 0, 0" Grid.RowSpan="3">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="PlayTapGestureRecognizer_Tapped"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+                            <Label FontSize="11" Grid.Column="1" Text="{Binding name}">
+                            </Label>
+                            <Label FontSize="11" Grid.Column="1" Grid.Row="1" Text="{Binding artist}"></Label>
+                            <Label FontSize="11" Grid.Column="1" Grid.Row="2" Text="{Binding lengthFormat}"></Label>
+                            <Label FontSize="11" Grid.Column="2" Grid.Row="1" HorizontalTextAlignment="End" Text="{Binding rating}"></Label>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="1*" />
+                <ColumnDefinition Width="2*" />
+                <ColumnDefinition Width="2*" />
+            </Grid.ColumnDefinitions>
+            <Image Aspect="AspectFit" Source="drawable/Logo" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Title</Label>
+            <Picker Grid.Column="2" FontSize="10">
+                <Picker.Items>
+                    <x:String>Alphabetical Ascending</x:String>
+                    <x:String>Alphabetical Descending</x:String>
+                    <x:String>Rating Ascending</x:String>
+                    <x:String>Rating Descending</x:String>
+                    <x:String>Date Uploaded Ascending</x:String>
+                    <x:String>Date Uploaded Descending</x:String>
+                </Picker.Items>
+                <Picker.SelectedIndex>0</Picker.SelectedIndex>
+            </Picker>
+        </Grid>
+        <local:SongBar Grid.Row="2" />
+    </Grid>
 </ContentPage>

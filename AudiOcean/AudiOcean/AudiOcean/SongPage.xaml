@@ -1,0 +1,72 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:AudiOcean.ValueConverters"
+             x:Class="AudiOcean.SongPage">
+    <ContentPage.Content>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+                <RowDefinition Height="300"/>
+            </Grid.RowDefinitions>
+            <ScrollView Grid.Row="1" MinimumHeightRequest="298" VerticalOptions="FillAndExpand">
+
+                <Frame Margin="20,0" OutlineColor="Black">
+                    <Label  VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Text="Oscillator" />
+                </Frame>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Button Text="Left"/>
+                    <Button Grid.Column="1" Text="Play" Clicked="PlayButton_Clicked"/>
+                    <Button Grid.Column="2" Text="Right" Clicked="NextButton_Clicked"/>
+                </Grid>
+                <StackLayout Grid.Row="2" HorizontalOptions="CenterAndExpand">
+                    <Slider x:Name="slider" WidthRequest="400" Maximum="201" HorizontalOptions="CenterAndExpand"/>
+                    <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                        <StackLayout.Resources>
+                            <Style TargetType="Label">
+                                <Setter Property="Margin" Value="5"/>
+                            </Style>
+                        </StackLayout.Resources>
+                        <Label Text="{Binding name}" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
+                        <Label Text="{Binding artist}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                    </StackLayout>
+                </StackLayout>
+                <Grid Grid.Row="4">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="Margin" Value="5"/>
+                        </Style>
+                    </Grid.Resources>
+                    <Label Text="Rating" HorizontalTextAlignment="Start" HorizontalOptions="StartAndExpand"/>
+                    <Label Text="{Binding rating}" Grid.Column="1" HorizontalTextAlignment="End" HorizontalOptions="EndAndExpand"/>
+                </Grid>
+                <Grid Grid.Row="5">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="60"/>
+                        <RowDefinition Height="*" />
+                    </Grid.RowDefinitions>
+                    <Label HorizontalTextAlignment="Center">Comment Box</Label>
+                    <ListView Grid.Row="1" ItemsSource="{Binding comments}"></ListView>
+                </Grid>
+
+            </ScrollView>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="4*" />
+                </Grid.ColumnDefinitions>
+                <Image Aspect="AspectFit" Source="drawable/Logo" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+                <Label Grid.Column="1" HorizontalTextAlignment="Center" VerticalTextAlignment="Center">Song Page</Label>
+            </Grid>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
